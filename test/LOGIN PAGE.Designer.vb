@@ -335,8 +335,8 @@ Partial Class LOGIN_PAGE
         ClientSize = New Size(1050, 591)
         Controls.Add(Button3)
         Controls.Add(Button2)
-        Controls.Add(regPanel)
         Controls.Add(loginPanel)
+        Controls.Add(regPanel)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Name = "LOGIN_PAGE"

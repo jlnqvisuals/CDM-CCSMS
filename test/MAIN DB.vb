@@ -85,4 +85,8 @@ Public Class NGD_Dashboard
     Private Sub NGD_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         getCurrentUser(LOGIN_PAGE.StudentID)
     End Sub
+
+    Private Sub currentUser_Click(sender As Object, e As EventArgs) Handles currentUser.Click
+
+    End Sub
 End Class

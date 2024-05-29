@@ -45,11 +45,13 @@ Partial Class NGD_Dashboard
         ' currentUser
         ' 
         currentUser.BackColor = Color.Transparent
-        currentUser.Font = New Font("Poppins Medium", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        currentUser.ForeColor = Color.Transparent
-        currentUser.Location = New Point(95, 25)
+        currentUser.FlatStyle = FlatStyle.Flat
+        currentUser.Font = New Font("Poppins Medium", 25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        currentUser.ForeColor = Color.FromArgb(CByte(224), CByte(253), CByte(43))
+        currentUser.ImageAlign = ContentAlignment.MiddleLeft
+        currentUser.Location = New Point(139, 37)
         currentUser.Name = "currentUser"
-        currentUser.Size = New Size(232, 35)
+        currentUser.Size = New Size(232, 43)
         currentUser.TabIndex = 2
         currentUser.Text = "User Name"
         ' 
@@ -95,11 +97,13 @@ Partial Class NGD_Dashboard
         ' StudentID
         ' 
         StudentID.BackColor = Color.Transparent
-        StudentID.Font = New Font("Poppins Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        StudentID.FlatStyle = FlatStyle.Flat
+        StudentID.Font = New Font("Poppins Medium", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         StudentID.ForeColor = Color.Transparent
-        StudentID.Location = New Point(95, 50)
+        StudentID.ImageAlign = ContentAlignment.MiddleLeft
+        StudentID.Location = New Point(145, 75)
         StudentID.Name = "StudentID"
-        StudentID.Size = New Size(232, 22)
+        StudentID.Size = New Size(232, 30)
         StudentID.TabIndex = 11
         StudentID.Text = "StudentID"
         ' 
@@ -110,11 +114,11 @@ Partial Class NGD_Dashboard
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1626, 927)
+        Controls.Add(currentUser)
         Controls.Add(StudentID)
         Controls.Add(Button3)
         Controls.Add(ExitBTN)
         Controls.Add(logOutBtn)
-        Controls.Add(currentUser)
         Controls.Add(Label1)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
