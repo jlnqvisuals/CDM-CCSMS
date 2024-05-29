@@ -49,7 +49,7 @@ Partial Class NGD_Dashboard
         currentUser.Font = New Font("Poppins Medium", 25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         currentUser.ForeColor = Color.FromArgb(CByte(224), CByte(253), CByte(43))
         currentUser.ImageAlign = ContentAlignment.MiddleLeft
-        currentUser.Location = New Point(139, 37)
+        currentUser.Location = New Point(139, 44)
         currentUser.Name = "currentUser"
         currentUser.Size = New Size(232, 43)
         currentUser.TabIndex = 2
@@ -101,7 +101,7 @@ Partial Class NGD_Dashboard
         StudentID.Font = New Font("Poppins Medium", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         StudentID.ForeColor = Color.Transparent
         StudentID.ImageAlign = ContentAlignment.MiddleLeft
-        StudentID.Location = New Point(145, 75)
+        StudentID.Location = New Point(145, 81)
         StudentID.Name = "StudentID"
         StudentID.Size = New Size(232, 30)
         StudentID.TabIndex = 11
