@@ -2,7 +2,7 @@
 
 
 '05/29/24
-'4:26 PM
+'4:54 PM
 
 Imports System.Drawing.Drawing2D
 Imports MySql.Data.MySqlClient
@@ -13,7 +13,6 @@ Imports Org.BouncyCastle.Bcpg.OpenPgp
 
 
 Public Class NGD_Dashboard
-
 
     Private Sub RoundedCorners(sender As Object, e As EventArgs) Handles MyBase.Load
 
