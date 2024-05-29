@@ -32,6 +32,47 @@ Public Class NGD_Dashboard
     End Sub
 
 
+
+
+
+
+    Private isDragging As Boolean = False
+    Private startPoint As Point
+
+    ' Event handler for Mouse Down event
+    Private Sub Form1_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
+        If e.Button = MouseButtons.Left Then
+            isDragging = True
+            startPoint = New Point(e.X, e.Y)
+        End If
+    End Sub
+
+    ' Event handler for Mouse Move event
+    Private Sub Form1_MouseMove(sender As Object, e As MouseEventArgs) Handles MyBase.MouseMove
+        If isDragging Then
+            Dim p As Point = PointToScreen(e.Location)
+            Location = New Point(p.X - startPoint.X, p.Y - startPoint.Y)
+        End If
+    End Sub
+
+    ' Event handler for Mouse Up event
+    Private Sub Form1_MouseUp(sender As Object, e As MouseEventArgs) Handles MyBase.MouseUp
+        If e.Button = MouseButtons.Left Then
+            isDragging = False
+        End If
+    End Sub
+
+
+
+
+
+
+
+
+
+
+
+
     Private connectionString As String = "server=localhost;userid=root;password=;database=prac"
     Private connection As MySqlConnection
     Dim FirstName As String

@@ -32,6 +32,7 @@ Partial Class AboutDev
         Button1.BackColor = Color.Transparent
         Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
         Button1.BackgroundImageLayout = ImageLayout.Stretch
+        Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatAppearance.MouseDownBackColor = Color.Transparent
         Button1.FlatAppearance.MouseOverBackColor = Color.Transparent
