@@ -29,6 +29,7 @@ Partial Class NGD_Dashboard
         Button3 = New Button()
         ExitBTN = New Button()
         StudentID = New Label()
+        Panel1 = New Panel()
         SuspendLayout()
         ' 
         ' Label1
@@ -47,7 +48,7 @@ Partial Class NGD_Dashboard
         currentUser.BackColor = Color.Transparent
         currentUser.Font = New Font("Poppins Medium", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         currentUser.ForeColor = Color.Transparent
-        currentUser.Location = New Point(12, 9)
+        currentUser.Location = New Point(68, 15)
         currentUser.Name = "currentUser"
         currentUser.Size = New Size(232, 35)
         currentUser.TabIndex = 2
@@ -97,11 +98,18 @@ Partial Class NGD_Dashboard
         StudentID.BackColor = Color.Transparent
         StudentID.Font = New Font("Poppins Medium", 10F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         StudentID.ForeColor = Color.Transparent
-        StudentID.Location = New Point(12, 34)
+        StudentID.Location = New Point(68, 40)
         StudentID.Name = "StudentID"
         StudentID.Size = New Size(232, 22)
         StudentID.TabIndex = 11
         StudentID.Text = "StudentID"
+        ' 
+        ' Panel1
+        ' 
+        Panel1.Location = New Point(0, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(51, 927)
+        Panel1.TabIndex = 12
         ' 
         ' NGD_Dashboard
         ' 
@@ -110,6 +118,7 @@ Partial Class NGD_Dashboard
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1626, 927)
+        Controls.Add(Panel1)
         Controls.Add(StudentID)
         Controls.Add(Button3)
         Controls.Add(ExitBTN)
@@ -131,4 +140,5 @@ Partial Class NGD_Dashboard
     Friend WithEvents Button3 As Button
     Friend WithEvents ExitBTN As Button
     Friend WithEvents StudentID As Label
+    Friend WithEvents Panel1 As Panel
 End Class
