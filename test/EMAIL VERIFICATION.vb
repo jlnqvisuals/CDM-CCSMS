@@ -31,14 +31,20 @@ Public Class EMAIL_VERIFICATION
         Try
             Dim smtpClient As New SmtpClient("smtp.gmail.com")
             smtpClient.Port = 587
-            smtpClient.Credentials = New System.Net.NetworkCredential("no-reply@cdm.ccsms.com", "rezr ewrt nbud lvar")
+            smtpClient.Credentials = New System.Net.NetworkCredential("cdm.ccsms@gmail.com", "rezr ewrt nbud lvar")
             smtpClient.EnableSsl = True
 
             Dim mailMessage As New MailMessage()
             mailMessage.From = New MailAddress("cdm.ccsms@gmail.com")
             mailMessage.To.Add(toEmail)
-            mailMessage.Subject = "CDM-DMS Verification Code"
-            mailMessage.Body = "Your verification code is: " & verificationCode
+            mailMessage.Subject = "CDM CCSMS Verification Code"
+
+            ' HTML formatting for the email body
+            mailMessage.IsBodyHtml = True
+            mailMessage.Body = "For security purposes, we have generated a One-Time Password (OTP) <br/>" &
+                           "to authenticate your recent request. Please use the following OTP to proceed:<br/><br/>" &
+                           "<b>Your One-Time Password (OTP) is: " & verificationCode & "<br/>" &
+                           "Do not share this OTP with anyone."
 
             smtpClient.Send(mailMessage)
             MsgBox("Code Sent")
@@ -47,7 +53,12 @@ Public Class EMAIL_VERIFICATION
         End Try
     End Sub
 
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
     End Sub
 End Class

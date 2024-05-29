@@ -22,6 +22,7 @@ Partial Class EMAIL_VERIFICATION
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EMAIL_VERIFICATION))
         verifyBtn = New Button()
         verifyTxt = New TextBox()
         Label3 = New Label()
@@ -31,18 +32,24 @@ Partial Class EMAIL_VERIFICATION
         ' 
         ' verifyBtn
         ' 
-        verifyBtn.Location = New Point(110, 93)
+        verifyBtn.BackColor = Color.Transparent
+        verifyBtn.BackgroundImageLayout = ImageLayout.None
+        verifyBtn.FlatAppearance.BorderSize = 0
+        verifyBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
+        verifyBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
+        verifyBtn.FlatStyle = FlatStyle.Flat
+        verifyBtn.Location = New Point(92, 98)
         verifyBtn.Name = "verifyBtn"
-        verifyBtn.Size = New Size(75, 23)
+        verifyBtn.Size = New Size(112, 31)
         verifyBtn.TabIndex = 7
-        verifyBtn.Text = "Verify"
-        verifyBtn.UseVisualStyleBackColor = True
+        verifyBtn.UseVisualStyleBackColor = False
         ' 
         ' verifyTxt
         ' 
-        verifyTxt.Location = New Point(90, 64)
+        verifyTxt.BorderStyle = BorderStyle.None
+        verifyTxt.Location = New Point(83, 64)
         verifyTxt.Name = "verifyTxt"
-        verifyTxt.Size = New Size(114, 23)
+        verifyTxt.Size = New Size(130, 16)
         verifyTxt.TabIndex = 6
         ' 
         ' Label3
@@ -50,10 +57,10 @@ Partial Class EMAIL_VERIFICATION
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
         Label3.FlatStyle = FlatStyle.Flat
-        Label3.Font = New Font("Poppins", 9F)
-        Label3.Location = New Point(38, 41)
+        Label3.Font = New Font("Poppins", 8F)
+        Label3.Location = New Point(46, 40)
         Label3.Name = "Label3"
-        Label3.Size = New Size(221, 22)
+        Label3.Size = New Size(203, 19)
         Label3.TabIndex = 5
         Label3.Text = "A code has been sent to your inbox:"
         ' 
@@ -63,7 +70,7 @@ Partial Class EMAIL_VERIFICATION
         Label2.BackColor = Color.Transparent
         Label2.FlatStyle = FlatStyle.Flat
         Label2.Font = New Font("Poppins", 10F, FontStyle.Bold)
-        Label2.Location = New Point(73, 25)
+        Label2.Location = New Point(75, 23)
         Label2.Name = "Label2"
         Label2.Size = New Size(147, 25)
         Label2.TabIndex = 4
@@ -71,18 +78,23 @@ Partial Class EMAIL_VERIFICATION
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(269, 4)
+        Button1.BackColor = Color.Transparent
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button1.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Location = New Point(263, 10)
         Button1.Name = "Button1"
-        Button1.Size = New Size(23, 22)
+        Button1.Size = New Size(22, 23)
         Button1.TabIndex = 8
-        Button1.Text = "x"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' EMAIL_VERIFICATION
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(296, 144)
         Controls.Add(Button1)
         Controls.Add(verifyBtn)
