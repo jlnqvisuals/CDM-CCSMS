@@ -5,6 +5,7 @@
 'TEST COMMIT/PUSH 2
 
 
+Imports System.Drawing.Drawing2D
 Imports System.Net.Mail
 Imports System.Web
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
@@ -12,8 +13,27 @@ Imports MySql.Data.MySqlClient
 
 
 
-
 Public Class LOGIN_PAGE
+
+
+    Private Sub RoundedCorners(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Create a rounded rectangle shape
+        Dim path As New GraphicsPath()
+        Dim rect As New Rectangle(0, 0, Me.Width, Me.Height)
+        Dim radius As Integer = 20 ' Adjust the radius to change the roundness of the corners
+        path.AddArc(rect.X, rect.Y, radius, radius, 180, 90)
+        path.AddArc(rect.X + rect.Width - radius, rect.Y, radius, radius, 270, 90)
+        path.AddArc(rect.X + rect.Width - radius, rect.Y + rect.Height - radius, radius, radius, 0, 90)
+        path.AddArc(rect.X, rect.Y + rect.Height - radius, radius, radius, 90, 90)
+        path.CloseFigure()
+
+        ' Apply the custom region to the form
+        Me.Region = New Region(path)
+    End Sub
+
+
+
+
 
     Public Sub New()
         ' This call is required by the designer.
@@ -66,18 +86,26 @@ Public Class LOGIN_PAGE
     Private connection As MySqlConnection
     Public Shared email As String
     Public Shared StudentID As String = ""
+
+
+
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             connection = New MySqlConnection(connectionString)
 
             connection.Open()
-            MessageBox.Show("Connection successful!")
+            'MessageBox.Show("Connection successful!")
 
             connection.Close()
         Catch ex As MySqlException
             MessageBox.Show("Error: " & ex.Message)
         End Try
     End Sub
+
+
+
+
 
     Private Sub ExecuteQuery(query As String)
         Try
