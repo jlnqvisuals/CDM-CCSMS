@@ -17,6 +17,11 @@ Public Class LOGIN_PAGE
 
 
     Private Sub RoundedCorners(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        'Default Hide button (Reg Pass Conf)
+        regHideConPass.Visible = False
+        regHidePass.Visible = False
+
         ' Create a rounded rectangle shape
         Dim path As New GraphicsPath()
         Dim rect As New Rectangle(0, 0, Me.Width, Me.Height)
@@ -29,6 +34,7 @@ Public Class LOGIN_PAGE
 
         ' Apply the custom region to the form
         Me.Region = New Region(path)
+
     End Sub
 
 
@@ -213,6 +219,8 @@ Public Class LOGIN_PAGE
         regPanel.Hide()
     End Sub
 
+
+
     Private Sub regFirstName_Click(sender As Object, e As EventArgs) Handles regFirstName.Click
         If regFirstName.Text = "First Name" Then
             regFirstName.Text = ""
@@ -259,11 +267,21 @@ Public Class LOGIN_PAGE
         End If
     End Sub
 
+
+
+
+
     Private Sub regPass_Click(sender As Object, e As EventArgs) Handles regPass.Click
         If regPass.Text = "Password" Then
             regPass.Text = ""
         End If
     End Sub
+
+
+
+
+
+
 
     Private Sub regPass_LostFocus(sender As Object, e As EventArgs) Handles regPass.LostFocus
         If regPass.Text = "" Then
@@ -278,6 +296,10 @@ Public Class LOGIN_PAGE
             regPass.PasswordChar = ""
         End If
     End Sub
+
+
+
+
 
     Private Sub regShowPass_Click(sender As Object, e As EventArgs) Handles regShowPass.Click
         regPass.PasswordChar = ""
@@ -295,17 +317,31 @@ Public Class LOGIN_PAGE
         regHidePass.Hide()
     End Sub
 
+
+
+
+
+
     Private Sub regConfirmPass_Click(sender As Object, e As EventArgs) Handles regConfirmPass.Click
         If regConfirmPass.Text = "Confirm Password" Then
             regConfirmPass.Text = ""
         End If
     End Sub
 
+
+
+
     Private Sub regConfirmPass_LostFocus(sender As Object, e As EventArgs) Handles regConfirmPass.LostFocus
         If regConfirmPass.Text = "" Then
             regConfirmPass.Text = "Confirm Password"
         End If
     End Sub
+
+
+
+
+
+
 
     Private Sub regConfirmPass_TextChanged(sender As Object, e As EventArgs) Handles regConfirmPass.TextChanged
         If regConfirmPass.Text <> "Confirm Password" Then
@@ -314,6 +350,10 @@ Public Class LOGIN_PAGE
             regConfirmPass.PasswordChar = ""
         End If
     End Sub
+
+
+
+
 
     Private Sub regShowConPass_Click(sender As Object, e As EventArgs) Handles regShowConPass.Click
         regConfirmPass.PasswordChar = ""
@@ -330,6 +370,13 @@ Public Class LOGIN_PAGE
         regShowConPass.Show()
         regHideConPass.Hide()
     End Sub
+
+
+
+
+
+
+
 
     Private Sub passMatch(sender As Object, e As EventArgs) Handles regPass.TextChanged, regConfirmPass.TextChanged
         If regPass.Text = regConfirmPass.Text Then

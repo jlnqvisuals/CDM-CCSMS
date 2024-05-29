@@ -214,7 +214,7 @@ Partial Class LOGIN_PAGE
         ' 
         ' regShowConPass
         ' 
-        regShowConPass.Location = New Point(250, 253)
+        regShowConPass.Location = New Point(273, 253)
         regShowConPass.Name = "regShowConPass"
         regShowConPass.Size = New Size(17, 25)
         regShowConPass.TabIndex = 5
@@ -223,7 +223,7 @@ Partial Class LOGIN_PAGE
         ' 
         ' regShowPass
         ' 
-        regShowPass.Location = New Point(250, 203)
+        regShowPass.Location = New Point(273, 203)
         regShowPass.Name = "regShowPass"
         regShowPass.Size = New Size(17, 23)
         regShowPass.TabIndex = 5
