@@ -58,11 +58,12 @@ Partial Class EMAIL_VERIFICATION
         Label3.BackColor = Color.Transparent
         Label3.FlatStyle = FlatStyle.Flat
         Label3.Font = New Font("Poppins", 8F)
-        Label3.Location = New Point(46, 40)
+        Label3.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Label3.Location = New Point(48, 40)
         Label3.Name = "Label3"
-        Label3.Size = New Size(203, 19)
+        Label3.Size = New Size(201, 19)
         Label3.TabIndex = 5
-        Label3.Text = "A code has been sent to your inbox:"
+        Label3.Text = "A code has been sent to your inbox"
         ' 
         ' Label2
         ' 
@@ -70,11 +71,12 @@ Partial Class EMAIL_VERIFICATION
         Label2.BackColor = Color.Transparent
         Label2.FlatStyle = FlatStyle.Flat
         Label2.Font = New Font("Poppins", 10F, FontStyle.Bold)
-        Label2.Location = New Point(75, 23)
+        Label2.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Label2.Location = New Point(48, 23)
         Label2.Name = "Label2"
-        Label2.Size = New Size(147, 25)
+        Label2.Size = New Size(200, 25)
         Label2.TabIndex = 4
-        Label2.Text = "VERIFY YOUR EMAIL"
+        Label2.Text = "EMAIL VERIFICATION (OTP)"
         ' 
         ' Button1
         ' 
