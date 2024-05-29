@@ -332,7 +332,7 @@ Partial Class LOGIN_PAGE
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1050, 587)
+        ClientSize = New Size(1050, 591)
         Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(regPanel)
