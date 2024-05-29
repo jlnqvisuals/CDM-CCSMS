@@ -131,7 +131,7 @@ Partial Class LOGIN_PAGE
         loginPanel.Controls.Add(showRegBtn)
         loginPanel.Controls.Add(loginBtn)
         loginPanel.Controls.Add(logPass)
-        loginPanel.Location = New Point(383, 179)
+        loginPanel.Location = New Point(383, 160)
         loginPanel.Name = "loginPanel"
         loginPanel.Size = New Size(282, 332)
         loginPanel.TabIndex = 3
@@ -197,7 +197,7 @@ Partial Class LOGIN_PAGE
         regPanel.Controls.Add(regBtn)
         regPanel.Controls.Add(regHidePass)
         regPanel.Controls.Add(regHideConPass)
-        regPanel.Location = New Point(354, 178)
+        regPanel.Location = New Point(354, 159)
         regPanel.Name = "regPanel"
         regPanel.Size = New Size(342, 364)
         regPanel.TabIndex = 4
