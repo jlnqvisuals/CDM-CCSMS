@@ -1,4 +1,12 @@
-﻿Imports System.Net.Mail
+﻿
+
+
+'TEST COMMIT/PUSH
+
+
+
+
+Imports System.Net.Mail
 Imports System.Web
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 Imports MySql.Data.MySqlClient
@@ -8,6 +16,17 @@ Imports MySql.Data.MySqlClient
 
 Public Class LOGIN_PAGE
 
+    Public Sub New()
+        ' This call is required by the designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+        regPanel.Hide() ' Hide regPanel by default
+    End Sub
+
+    Private Sub LOGIN_PAGE_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Other code...
+    End Sub
 
 
 
@@ -135,22 +154,22 @@ Public Class LOGIN_PAGE
     Private Sub regBtn_Click(sender As Object, e As EventArgs) Handles regBtn.Click
         RegisterData(regSID.Text, regFirstName.Text, regLastName.Text, regEmail.Text, regPass.Text)
         email = regEmail.Text
-        regEmail.Text = "Email"
-        regSID.Text = "SID (EX. 24-12345)"
-        regFirstName.Text = "First Name"
-        regLastName.Text = "Last Name"
-        regPass.Text = "Password"
-        regConfirmPass.Text = "Confirm Password"
+        regEmail.Text = ""
+        regSID.Text = "XX-XXXXX"
+        regFirstName.Text = ""
+        regLastName.Text = ""
+        regPass.Text = ""
+        regConfirmPass.Text = ""
         EMAIL_VERIFICATION.Show()
     End Sub
 
     Private Sub loginBtn_Click(sender As Object, e As EventArgs) Handles loginBtn.Click
         If ValidateLogin(logUser.Text, logPass.Text) Then
             MsgBox("Login Successful!")
-            LOGIN_PAGE.StudentID = logUser.Text
+            StudentID = logUser.Text
             logUser.Text = ""
             logPass.Text = ""
-            Me.Hide()
+            Hide()
             NGD_Dashboard.Show()
         Else
             MsgBox("Invalid Username/Password.")
@@ -158,11 +177,13 @@ Public Class LOGIN_PAGE
     End Sub
 
     Private Sub showRegBtn_Click(sender As Object, e As EventArgs) Handles showRegBtn.Click
-        regPanel.BringToFront()
+        regPanel.Show()
+        loginPanel.Hide()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles showLoginBtn.Click
-        loginPanel.BringToFront()
+        loginPanel.Show()
+        regPanel.Hide()
     End Sub
 
     Private Sub regFirstName_Click(sender As Object, e As EventArgs) Handles regFirstName.Click
@@ -303,8 +324,36 @@ Public Class LOGIN_PAGE
         End If
     End Sub
 
-    Private Sub forgotBtn_Click(sender As Object, e As EventArgs) Handles forgotBtn.Click
+    Private Sub forgotBtn_Click(sender As Object, e As EventArgs)
         ForgotPassword.Show()
+    End Sub
+
+    Private Sub regPanel_Paint(sender As Object, e As PaintEventArgs) Handles regPanel.Paint
+
+    End Sub
+
+    Private Sub loginPanel_Paint(sender As Object, e As PaintEventArgs) Handles loginPanel.Paint
+
+    End Sub
+
+    Private Sub passMatchIdentifier_Click(sender As Object, e As EventArgs) Handles passMatchIdentifier.Click
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ForgotPassword.Show()
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        Close()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        AboutDev.Show()
+    End Sub
+
+    Private Sub logUser_TextChanged(sender As Object, e As EventArgs) Handles logUser.TextChanged
+
     End Sub
 End Class
 

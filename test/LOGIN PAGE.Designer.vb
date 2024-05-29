@@ -22,20 +22,17 @@ Partial Class LOGIN_PAGE
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LOGIN_PAGE))
         regFirstName = New TextBox()
         regSID = New TextBox()
-        Label1 = New Label()
         logUser = New TextBox()
         logPass = New TextBox()
-        Label4 = New Label()
-        Label5 = New Label()
-        Label6 = New Label()
         regBtn = New Button()
         loginBtn = New Button()
         loginPanel = New Panel()
-        forgotBtn = New Button()
-        showLoginBtn = New Button()
+        Button1 = New Button()
         showRegBtn = New Button()
+        showLoginBtn = New Button()
         regPanel = New Panel()
         passMatchIdentifier = New Label()
         regShowConPass = New Button()
@@ -46,143 +43,149 @@ Partial Class LOGIN_PAGE
         regLastName = New TextBox()
         regHidePass = New Button()
         regHideConPass = New Button()
+        Button2 = New Button()
+        Button3 = New Button()
         loginPanel.SuspendLayout()
         regPanel.SuspendLayout()
         SuspendLayout()
         ' 
         ' regFirstName
         ' 
-        regFirstName.Location = New Point(166, 35)
+        regFirstName.BorderStyle = BorderStyle.None
+        regFirstName.Cursor = Cursors.IBeam
+        regFirstName.Font = New Font("Poppins", 9F)
+        regFirstName.ForeColor = Color.Black
+        regFirstName.Location = New Point(70, 103)
         regFirstName.MaxLength = 50
         regFirstName.Name = "regFirstName"
-        regFirstName.Size = New Size(135, 23)
+        regFirstName.Size = New Size(86, 18)
         regFirstName.TabIndex = 0
-        regFirstName.Text = "First Name"
         ' 
         ' regSID
         ' 
-        regSID.Location = New Point(342, 64)
+        regSID.BorderStyle = BorderStyle.None
+        regSID.Cursor = Cursors.IBeam
+        regSID.Font = New Font("Poppins", 9F)
+        regSID.ForeColor = Color.Black
+        regSID.Location = New Point(198, 155)
         regSID.MaxLength = 8
         regSID.Name = "regSID"
-        regSID.Size = New Size(100, 23)
+        regSID.Size = New Size(70, 18)
         regSID.TabIndex = 0
-        regSID.Text = "SID (EX. 24-12345)"
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(268, 11)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(56, 15)
-        Label1.TabIndex = 1
-        Label1.Text = "REGISTER"
         ' 
         ' logUser
         ' 
-        logUser.Location = New Point(262, 83)
+        logUser.BorderStyle = BorderStyle.None
+        logUser.Cursor = Cursors.IBeam
+        logUser.Location = New Point(45, 101)
         logUser.Name = "logUser"
-        logUser.Size = New Size(100, 23)
+        logUser.Size = New Size(192, 16)
         logUser.TabIndex = 0
         ' 
         ' logPass
         ' 
-        logPass.Location = New Point(262, 131)
+        logPass.BorderStyle = BorderStyle.None
+        logPass.Cursor = Cursors.IBeam
+        logPass.Location = New Point(45, 155)
         logPass.Name = "logPass"
         logPass.PasswordChar = "•"c
-        logPass.Size = New Size(100, 23)
+        logPass.Size = New Size(173, 16)
         logPass.TabIndex = 0
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(278, 54)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(42, 15)
-        Label4.TabIndex = 1
-        Label4.Text = "LOGIN"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(193, 86)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(65, 15)
-        Label5.TabIndex = 1
-        Label5.Text = "Student ID:"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(196, 134)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(60, 15)
-        Label6.TabIndex = 1
-        Label6.Text = "Password:"
         ' 
         ' regBtn
         ' 
-        regBtn.Location = New Point(261, 166)
+        regBtn.Cursor = Cursors.Hand
+        regBtn.FlatAppearance.BorderSize = 0
+        regBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
+        regBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
+        regBtn.FlatStyle = FlatStyle.Flat
+        regBtn.ForeColor = Color.Transparent
+        regBtn.Location = New Point(59, 318)
         regBtn.Name = "regBtn"
-        regBtn.Size = New Size(75, 23)
+        regBtn.Size = New Size(107, 26)
         regBtn.TabIndex = 2
-        regBtn.Text = "Register"
+        regBtn.Text = " "
         regBtn.UseVisualStyleBackColor = True
         ' 
         ' loginBtn
         ' 
-        loginBtn.Location = New Point(287, 169)
+        loginBtn.Cursor = Cursors.Hand
+        loginBtn.FlatAppearance.BorderSize = 0
+        loginBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
+        loginBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
+        loginBtn.FlatStyle = FlatStyle.Flat
+        loginBtn.ForeColor = Color.Transparent
+        loginBtn.Location = New Point(36, 219)
         loginBtn.Name = "loginBtn"
-        loginBtn.Size = New Size(75, 23)
+        loginBtn.Size = New Size(101, 28)
         loginBtn.TabIndex = 2
-        loginBtn.Text = "Login"
         loginBtn.UseVisualStyleBackColor = True
         ' 
         ' loginPanel
         ' 
-        loginPanel.Controls.Add(forgotBtn)
-        loginPanel.Controls.Add(showLoginBtn)
-        loginPanel.Controls.Add(showRegBtn)
+        loginPanel.BackColor = Color.Transparent
+        loginPanel.BackgroundImage = CType(resources.GetObject("loginPanel.BackgroundImage"), Image)
+        loginPanel.BackgroundImageLayout = ImageLayout.Stretch
+        loginPanel.Controls.Add(Button1)
         loginPanel.Controls.Add(logUser)
+        loginPanel.Controls.Add(showRegBtn)
         loginPanel.Controls.Add(loginBtn)
         loginPanel.Controls.Add(logPass)
-        loginPanel.Controls.Add(Label4)
-        loginPanel.Controls.Add(Label6)
-        loginPanel.Controls.Add(Label5)
-        loginPanel.Location = New Point(58, 34)
+        loginPanel.Location = New Point(383, 179)
         loginPanel.Name = "loginPanel"
-        loginPanel.Size = New Size(599, 389)
+        loginPanel.Size = New Size(282, 332)
         loginPanel.TabIndex = 3
         ' 
-        ' forgotBtn
+        ' Button1
         ' 
-        forgotBtn.Location = New Point(247, 198)
-        forgotBtn.Name = "forgotBtn"
-        forgotBtn.Size = New Size(115, 23)
-        forgotBtn.TabIndex = 5
-        forgotBtn.Text = "Forgot Password"
-        forgotBtn.UseVisualStyleBackColor = True
-        ' 
-        ' showLoginBtn
-        ' 
-        showLoginBtn.Location = New Point(299, 0)
-        showLoginBtn.Name = "showLoginBtn"
-        showLoginBtn.Size = New Size(300, 30)
-        showLoginBtn.TabIndex = 4
-        showLoginBtn.Text = "Log In"
-        showLoginBtn.UseVisualStyleBackColor = True
+        Button1.Cursor = Cursors.Hand
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button1.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.ForeColor = Color.Transparent
+        Button1.Location = New Point(38, 186)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(101, 15)
+        Button1.TabIndex = 4
+        Button1.UseVisualStyleBackColor = True
         ' 
         ' showRegBtn
         ' 
-        showRegBtn.Location = New Point(0, 0)
+        showRegBtn.Cursor = Cursors.Hand
+        showRegBtn.FlatAppearance.BorderSize = 0
+        showRegBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
+        showRegBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
+        showRegBtn.FlatStyle = FlatStyle.Flat
+        showRegBtn.ForeColor = Color.Transparent
+        showRegBtn.Location = New Point(146, 219)
         showRegBtn.Name = "showRegBtn"
-        showRegBtn.Size = New Size(301, 30)
+        showRegBtn.Size = New Size(100, 28)
         showRegBtn.TabIndex = 3
-        showRegBtn.Text = "Register"
         showRegBtn.UseVisualStyleBackColor = True
+        ' 
+        ' showLoginBtn
+        ' 
+        showLoginBtn.Cursor = Cursors.Hand
+        showLoginBtn.FlatAppearance.BorderSize = 0
+        showLoginBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
+        showLoginBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
+        showLoginBtn.FlatStyle = FlatStyle.Flat
+        showLoginBtn.ForeColor = Color.Transparent
+        showLoginBtn.Location = New Point(172, 318)
+        showLoginBtn.Name = "showLoginBtn"
+        showLoginBtn.Size = New Size(107, 26)
+        showLoginBtn.TabIndex = 4
+        showLoginBtn.Text = " "
+        showLoginBtn.UseVisualStyleBackColor = True
         ' 
         ' regPanel
         ' 
+        regPanel.BackColor = Color.Transparent
+        regPanel.BackgroundImage = CType(resources.GetObject("regPanel.BackgroundImage"), Image)
+        regPanel.BackgroundImageLayout = ImageLayout.Stretch
         regPanel.Controls.Add(passMatchIdentifier)
+        regPanel.Controls.Add(showLoginBtn)
         regPanel.Controls.Add(regShowConPass)
         regPanel.Controls.Add(regShowPass)
         regPanel.Controls.Add(regConfirmPass)
@@ -192,27 +195,26 @@ Partial Class LOGIN_PAGE
         regPanel.Controls.Add(regLastName)
         regPanel.Controls.Add(regFirstName)
         regPanel.Controls.Add(regBtn)
-        regPanel.Controls.Add(Label1)
         regPanel.Controls.Add(regHidePass)
         regPanel.Controls.Add(regHideConPass)
-        regPanel.Location = New Point(58, 66)
+        regPanel.Location = New Point(354, 178)
         regPanel.Name = "regPanel"
-        regPanel.Size = New Size(599, 360)
+        regPanel.Size = New Size(342, 364)
         regPanel.TabIndex = 4
         ' 
         ' passMatchIdentifier
         ' 
         passMatchIdentifier.AutoSize = True
         passMatchIdentifier.ForeColor = Color.RoyalBlue
-        passMatchIdentifier.Location = New Point(448, 127)
+        passMatchIdentifier.Location = New Point(64, 288)
         passMatchIdentifier.Name = "passMatchIdentifier"
-        passMatchIdentifier.Size = New Size(34, 15)
+        passMatchIdentifier.Size = New Size(62, 15)
         passMatchIdentifier.TabIndex = 6
-        passMatchIdentifier.Text = "OOO"
+        passMatchIdentifier.Text = "(Required)"
         ' 
         ' regShowConPass
         ' 
-        regShowConPass.Location = New Point(425, 122)
+        regShowConPass.Location = New Point(250, 253)
         regShowConPass.Name = "regShowConPass"
         regShowConPass.Size = New Size(17, 25)
         regShowConPass.TabIndex = 5
@@ -221,7 +223,7 @@ Partial Class LOGIN_PAGE
         ' 
         ' regShowPass
         ' 
-        regShowPass.Location = New Point(425, 93)
+        regShowPass.Location = New Point(250, 203)
         regShowPass.Name = "regShowPass"
         regShowPass.Size = New Size(17, 23)
         regShowPass.TabIndex = 5
@@ -230,43 +232,55 @@ Partial Class LOGIN_PAGE
         ' 
         ' regConfirmPass
         ' 
-        regConfirmPass.Location = New Point(166, 122)
+        regConfirmPass.BorderStyle = BorderStyle.None
+        regConfirmPass.Cursor = Cursors.IBeam
+        regConfirmPass.Font = New Font("Poppins", 9F)
+        regConfirmPass.ForeColor = Color.Black
+        regConfirmPass.Location = New Point(70, 258)
         regConfirmPass.MaxLength = 100
         regConfirmPass.Name = "regConfirmPass"
-        regConfirmPass.Size = New Size(257, 23)
+        regConfirmPass.Size = New Size(170, 18)
         regConfirmPass.TabIndex = 4
-        regConfirmPass.Text = "Confirm Password"
         ' 
         ' regPass
         ' 
-        regPass.Location = New Point(166, 93)
+        regPass.BorderStyle = BorderStyle.None
+        regPass.Cursor = Cursors.IBeam
+        regPass.Font = New Font("Poppins", 9F)
+        regPass.ForeColor = Color.Black
+        regPass.Location = New Point(70, 206)
         regPass.MaxLength = 100
         regPass.Name = "regPass"
-        regPass.Size = New Size(257, 23)
+        regPass.Size = New Size(170, 18)
         regPass.TabIndex = 4
-        regPass.Text = "Password"
         ' 
         ' regEmail
         ' 
-        regEmail.Location = New Point(166, 64)
+        regEmail.BorderStyle = BorderStyle.None
+        regEmail.Cursor = Cursors.IBeam
+        regEmail.Font = New Font("Poppins", 9F)
+        regEmail.ForeColor = Color.Black
+        regEmail.Location = New Point(70, 155)
         regEmail.MaxLength = 100
         regEmail.Name = "regEmail"
-        regEmail.Size = New Size(170, 23)
+        regEmail.Size = New Size(103, 18)
         regEmail.TabIndex = 3
-        regEmail.Text = "Email"
         ' 
         ' regLastName
         ' 
-        regLastName.Location = New Point(307, 35)
+        regLastName.BorderStyle = BorderStyle.None
+        regLastName.Cursor = Cursors.IBeam
+        regLastName.Font = New Font("Poppins", 9F)
+        regLastName.ForeColor = Color.Black
+        regLastName.Location = New Point(182, 103)
         regLastName.MaxLength = 50
         regLastName.Name = "regLastName"
-        regLastName.Size = New Size(135, 23)
+        regLastName.Size = New Size(86, 18)
         regLastName.TabIndex = 0
-        regLastName.Text = "Last Name"
         ' 
         ' regHidePass
         ' 
-        regHidePass.Location = New Point(425, 93)
+        regHidePass.Location = New Point(250, 203)
         regHidePass.Name = "regHidePass"
         regHidePass.Size = New Size(17, 23)
         regHidePass.TabIndex = 5
@@ -275,21 +289,58 @@ Partial Class LOGIN_PAGE
         ' 
         ' regHideConPass
         ' 
-        regHideConPass.Location = New Point(425, 122)
+        regHideConPass.Location = New Point(250, 253)
         regHideConPass.Name = "regHideConPass"
         regHideConPass.Size = New Size(17, 25)
         regHideConPass.TabIndex = 5
         regHideConPass.Text = "H"
         regHideConPass.UseVisualStyleBackColor = True
         ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.Transparent
+        Button2.Cursor = Cursors.Hand
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button2.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.ForeColor = Color.Transparent
+        Button2.Location = New Point(1018, 11)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(20, 19)
+        Button2.TabIndex = 5
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Button3
+        ' 
+        Button3.BackColor = Color.Transparent
+        Button3.Cursor = Cursors.Hand
+        Button3.FlatAppearance.BorderSize = 0
+        Button3.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button3.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.ForeColor = Color.Transparent
+        Button3.Location = New Point(963, 12)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(20, 19)
+        Button3.TabIndex = 6
+        Button3.UseVisualStyleBackColor = False
+        ' 
         ' LOGIN_PAGE
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(702, 489)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(1050, 587)
+        Controls.Add(Button3)
+        Controls.Add(Button2)
         Controls.Add(regPanel)
         Controls.Add(loginPanel)
+        DoubleBuffered = True
+        FormBorderStyle = FormBorderStyle.None
         Name = "LOGIN_PAGE"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Form1"
         loginPanel.ResumeLayout(False)
         loginPanel.PerformLayout()
@@ -300,12 +351,8 @@ Partial Class LOGIN_PAGE
 
     Friend WithEvents regFirstName As TextBox
     Friend WithEvents regSID As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents logUser As TextBox
     Friend WithEvents logPass As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents regBtn As Button
     Friend WithEvents loginBtn As Button
     Friend WithEvents loginPanel As Panel
@@ -321,6 +368,8 @@ Partial Class LOGIN_PAGE
     Friend WithEvents regHideConPass As Button
     Friend WithEvents passMatchIdentifier As Label
     Public WithEvents regEmail As TextBox
-    Friend WithEvents forgotBtn As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 
 End Class

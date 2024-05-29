@@ -8,11 +8,11 @@ Public Class EMAIL_VERIFICATION
         SendVerificationEmail(LOGIN_PAGE.email, code)
     End Sub
 
-    Private Sub verifyBtn_Click(sender As Object, e As EventArgs) Handles verifyBtn.Click
+    Private Sub verifyBtn_Click(sender As Object, e As EventArgs) Handles verifyBtn.Click, Button1.Click
         If VerifyCode(verifyTxt.Text) Then
             MsgBox("Email Verification Successful!")
-            Me.Close()
-            LOGIN_PAGE.Show()
+            Close
+            LOGIN_PAGE.Show
         Else
             MsgBox("Invalid Code")
         End If
@@ -31,7 +31,7 @@ Public Class EMAIL_VERIFICATION
         Try
             Dim smtpClient As New SmtpClient("smtp.gmail.com")
             smtpClient.Port = 587
-            smtpClient.Credentials = New System.Net.NetworkCredential("cdm.ccsms@gmail.com", "rezr ewrt nbud lvar")
+            smtpClient.Credentials = New System.Net.NetworkCredential("no-reply@cdm.ccsms.com", "rezr ewrt nbud lvar")
             smtpClient.EnableSsl = True
 
             Dim mailMessage As New MailMessage()
@@ -45,5 +45,9 @@ Public Class EMAIL_VERIFICATION
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
     End Sub
 End Class

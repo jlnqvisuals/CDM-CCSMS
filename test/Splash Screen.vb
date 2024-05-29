@@ -1,0 +1,5 @@
+﻿Public Class Splash_Screen
+    Private Sub Splash_Screen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class

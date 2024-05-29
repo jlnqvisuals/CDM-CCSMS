@@ -96,7 +96,7 @@ Partial Class ForgotPassword
         changePassPanel.Controls.Add(Label4)
         changePassPanel.Controls.Add(confirmNewPassTxt)
         changePassPanel.Controls.Add(newPassTxt)
-        changePassPanel.Location = New Point(12, 26)
+        changePassPanel.Location = New Point(12, 12)
         changePassPanel.Name = "changePassPanel"
         changePassPanel.Size = New Size(503, 157)
         changePassPanel.TabIndex = 6
@@ -158,7 +158,7 @@ Partial Class ForgotPassword
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(543, 309)
+        ClientSize = New Size(530, 182)
         Controls.Add(changePassPanel)
         Controls.Add(Label2)
         Controls.Add(Label1)
@@ -166,7 +166,9 @@ Partial Class ForgotPassword
         Controls.Add(emailTxt)
         Controls.Add(changePassBtn)
         Controls.Add(sendCodeBtn)
+        FormBorderStyle = FormBorderStyle.None
         Name = "ForgotPassword"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "ForgotPassword"
         changePassPanel.ResumeLayout(False)
         changePassPanel.PerformLayout()

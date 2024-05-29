@@ -61,13 +61,14 @@ Partial Class NGD_Dashboard
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources._123
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(794, 489)
+        ClientSize = New Size(825, 489)
         Controls.Add(logOutBtn)
         Controls.Add(currentUser)
         Controls.Add(Label1)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "NGD_Dashboard"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "NGD"
         ResumeLayout(False)
     End Sub
