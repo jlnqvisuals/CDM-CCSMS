@@ -86,7 +86,42 @@ Public Class NGD_Dashboard
         getCurrentUser(LOGIN_PAGE.StudentID)
     End Sub
 
+
+
+
+
     Private Sub currentUser_Click(sender As Object, e As EventArgs) Handles currentUser.Click
 
     End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+
+
+
+    Private Sub Label03_Click_1(sender As Object, e As EventArgs) Handles Label03.Click
+
+
+    End Sub
+
+    Private Sub Label1_Click_1(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
 End Class
+
+
+
+
+
+
+
