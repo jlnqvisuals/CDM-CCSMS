@@ -185,16 +185,70 @@ Public Class LOGIN_PAGE
     End Function
 
     Private Sub regBtn_Click(sender As Object, e As EventArgs) Handles regBtn.Click
-        RegisterData(regSID.Text, regFirstName.Text, regLastName.Text, regEmail.Text, regPass.Text)
-        email = regEmail.Text
-        regEmail.Text = ""
-        regSID.Text = "XX-XXXXX"
-        regFirstName.Text = ""
-        regLastName.Text = ""
-        regPass.Text = ""
-        regConfirmPass.Text = ""
-        EMAIL_VERIFICATION.Show()
+        If isSIDTaken(regSID.Text) And isEmailTaken(regEmail.Text) Then
+            MsgBox("Email and Student ID is already taken.")
+        ElseIf (isEmailTaken(regEmail.Text)) Then
+            MsgBox("Email is already taken.")
+        ElseIf isSIDTaken(regSID.Text) Then
+            MsgBox("An account with the same Student ID is already existing.")
+        Else
+            RegisterData(regSID.Text, regFirstName.Text, regLastName.Text, regEmail.Text, regPass.Text)
+            email = regEmail.Text
+            regEmail.Text = ""
+            regSID.Text = "XX-XXXXX"
+            regFirstName.Text = ""
+            regLastName.Text = ""
+            regPass.Text = ""
+            regConfirmPass.Text = ""
+            EMAIL_VERIFICATION.Show()
+        End If
     End Sub
+
+    Function isSIDTaken(SID As String) As Boolean
+
+        ' SQL query to check if the username exists
+        Dim query As String = "SELECT COUNT(*) FROM user_data WHERE `Student ID` = @SID"
+
+        ' Create and open a connection to the database
+        Using connection As New MySqlConnection(connectionString)
+            connection.Open()
+
+            ' Create a command to execute the SQL query
+            Using command As New MySqlCommand(query, connection)
+                ' Add the username parameter to the query
+                command.Parameters.AddWithValue("@SID", SID)
+
+                ' Execute the query and get the result
+                Dim count As Integer = Convert.ToInt32(command.ExecuteScalar())
+
+                ' If count is greater than 0, the username is taken
+                Return count > 0
+            End Using
+        End Using
+    End Function
+
+    Function isEmailTaken(Email As String) As Boolean
+
+        ' SQL query to check if the username exists
+        Dim query As String = "SELECT COUNT(*) FROM user_data WHERE Email = @Email"
+
+        ' Create and open a connection to the database
+        Using connection As New MySqlConnection(connectionString)
+            connection.Open()
+
+            ' Create a command to execute the SQL query
+            Using command As New MySqlCommand(query, connection)
+                ' Add the username parameter to the query
+                command.Parameters.AddWithValue("@Email", Email)
+
+                ' Execute the query and get the result
+                Dim count As Integer = Convert.ToInt32(command.ExecuteScalar())
+
+                ' If count is greater than 0, the username is taken
+                Return count > 0
+            End Using
+        End Using
+    End Function
 
     Private Sub loginBtn_Click(sender As Object, e As EventArgs) Handles loginBtn.Click
         If ValidateLogin(logUser.Text, logPass.Text) Then

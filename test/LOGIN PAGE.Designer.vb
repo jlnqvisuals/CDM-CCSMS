@@ -53,24 +53,24 @@ Partial Class LOGIN_PAGE
         ' 
         regFirstName.BorderStyle = BorderStyle.None
         regFirstName.Cursor = Cursors.IBeam
-        regFirstName.Font = New Font("Poppins", 9F)
+        regFirstName.Font = New Font("Microsoft Sans Serif", 9F)
         regFirstName.ForeColor = Color.Black
         regFirstName.Location = New Point(70, 103)
         regFirstName.MaxLength = 50
         regFirstName.Name = "regFirstName"
-        regFirstName.Size = New Size(86, 18)
+        regFirstName.Size = New Size(86, 14)
         regFirstName.TabIndex = 0
         ' 
         ' regSID
         ' 
         regSID.BorderStyle = BorderStyle.None
         regSID.Cursor = Cursors.IBeam
-        regSID.Font = New Font("Poppins", 9F)
+        regSID.Font = New Font("Microsoft Sans Serif", 9F)
         regSID.ForeColor = Color.Black
         regSID.Location = New Point(198, 155)
         regSID.MaxLength = 8
         regSID.Name = "regSID"
-        regSID.Size = New Size(70, 18)
+        regSID.Size = New Size(70, 14)
         regSID.TabIndex = 0
         ' 
         ' logUser
@@ -234,48 +234,48 @@ Partial Class LOGIN_PAGE
         ' 
         regConfirmPass.BorderStyle = BorderStyle.None
         regConfirmPass.Cursor = Cursors.IBeam
-        regConfirmPass.Font = New Font("Poppins", 9F)
+        regConfirmPass.Font = New Font("Microsoft Sans Serif", 9F)
         regConfirmPass.ForeColor = Color.Black
         regConfirmPass.Location = New Point(70, 258)
         regConfirmPass.MaxLength = 100
         regConfirmPass.Name = "regConfirmPass"
-        regConfirmPass.Size = New Size(170, 18)
+        regConfirmPass.Size = New Size(170, 14)
         regConfirmPass.TabIndex = 4
         ' 
         ' regPass
         ' 
         regPass.BorderStyle = BorderStyle.None
         regPass.Cursor = Cursors.IBeam
-        regPass.Font = New Font("Poppins", 9F)
+        regPass.Font = New Font("Microsoft Sans Serif", 9F)
         regPass.ForeColor = Color.Black
         regPass.Location = New Point(70, 206)
         regPass.MaxLength = 100
         regPass.Name = "regPass"
-        regPass.Size = New Size(170, 18)
+        regPass.Size = New Size(170, 14)
         regPass.TabIndex = 4
         ' 
         ' regEmail
         ' 
         regEmail.BorderStyle = BorderStyle.None
         regEmail.Cursor = Cursors.IBeam
-        regEmail.Font = New Font("Poppins", 9F)
+        regEmail.Font = New Font("Microsoft Sans Serif", 9F)
         regEmail.ForeColor = Color.Black
         regEmail.Location = New Point(70, 155)
         regEmail.MaxLength = 100
         regEmail.Name = "regEmail"
-        regEmail.Size = New Size(103, 18)
+        regEmail.Size = New Size(103, 14)
         regEmail.TabIndex = 3
         ' 
         ' regLastName
         ' 
         regLastName.BorderStyle = BorderStyle.None
         regLastName.Cursor = Cursors.IBeam
-        regLastName.Font = New Font("Poppins", 9F)
+        regLastName.Font = New Font("Microsoft Sans Serif", 9F)
         regLastName.ForeColor = Color.Black
         regLastName.Location = New Point(182, 103)
         regLastName.MaxLength = 50
         regLastName.Name = "regLastName"
-        regLastName.Size = New Size(86, 18)
+        regLastName.Size = New Size(86, 14)
         regLastName.TabIndex = 0
         ' 
         ' regHidePass

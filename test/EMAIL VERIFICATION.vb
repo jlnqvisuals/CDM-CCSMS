@@ -35,6 +35,8 @@ Public Class EMAIL_VERIFICATION
         If VerifyCode(verifyTxt.Text) Then
             MsgBox("Email Verification Successful!")
             Close()
+            LOGIN_PAGE.regPanel.Hide()
+            LOGIN_PAGE.loginPanel.Show()
             LOGIN_PAGE.Show()
         Else
             MsgBox("Invalid Code")
