@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AboutDev
+Partial Class EXIT_PROMPT
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,57 +22,58 @@ Partial Class AboutDev
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AboutDev))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EXIT_PROMPT))
+        showRegBtn = New Button()
         Button1 = New Button()
-        ExitBTN = New Button()
         SuspendLayout()
+        ' 
+        ' showRegBtn
+        ' 
+        showRegBtn.BackColor = Color.Transparent
+        showRegBtn.Cursor = Cursors.Hand
+        showRegBtn.FlatAppearance.BorderSize = 0
+        showRegBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
+        showRegBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
+        showRegBtn.FlatStyle = FlatStyle.Flat
+        showRegBtn.ForeColor = Color.Transparent
+        showRegBtn.Location = New Point(160, 87)
+        showRegBtn.Name = "showRegBtn"
+        showRegBtn.Size = New Size(65, 21)
+        showRegBtn.TabIndex = 4
+        showRegBtn.UseVisualStyleBackColor = False
         ' 
         ' Button1
         ' 
         Button1.BackColor = Color.Transparent
-        Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
-        Button1.BackgroundImageLayout = ImageLayout.Stretch
         Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatAppearance.MouseDownBackColor = Color.Transparent
         Button1.FlatAppearance.MouseOverBackColor = Color.Transparent
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.Location = New Point(200, 33)
+        Button1.ForeColor = Color.Transparent
+        Button1.Location = New Point(72, 87)
         Button1.Name = "Button1"
-        Button1.Size = New Size(74, 74)
-        Button1.TabIndex = 0
+        Button1.Size = New Size(65, 21)
+        Button1.TabIndex = 5
         Button1.UseVisualStyleBackColor = False
         ' 
-        ' ExitBTN
-        ' 
-        ExitBTN.BackColor = Color.Transparent
-        ExitBTN.Cursor = Cursors.Hand
-        ExitBTN.FlatAppearance.BorderSize = 0
-        ExitBTN.FlatAppearance.MouseDownBackColor = Color.Transparent
-        ExitBTN.FlatAppearance.MouseOverBackColor = Color.Transparent
-        ExitBTN.FlatStyle = FlatStyle.Flat
-        ExitBTN.ForeColor = Color.Transparent
-        ExitBTN.Location = New Point(443, 12)
-        ExitBTN.Name = "ExitBTN"
-        ExitBTN.Size = New Size(20, 19)
-        ExitBTN.TabIndex = 10
-        ExitBTN.UseVisualStyleBackColor = False
-        ' 
-        ' AboutDev
+        ' EXIT_PROMPT
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(475, 565)
-        Controls.Add(ExitBTN)
+        BackgroundImageLayout = ImageLayout.None
+        ClientSize = New Size(296, 144)
         Controls.Add(Button1)
+        Controls.Add(showRegBtn)
         FormBorderStyle = FormBorderStyle.None
-        Name = "AboutDev"
+        Name = "EXIT_PROMPT"
+        ShowInTaskbar = False
         StartPosition = FormStartPosition.CenterScreen
-        Text = "AboutDev"
+        Text = "EXIT_PROMPT"
         ResumeLayout(False)
     End Sub
 
+    Friend WithEvents showRegBtn As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents ExitBTN As Button
 End Class

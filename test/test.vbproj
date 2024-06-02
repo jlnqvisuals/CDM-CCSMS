@@ -46,4 +46,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="My Project\FEATURES\" />
+  </ItemGroup>
+
 </Project>

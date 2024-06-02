@@ -12,7 +12,7 @@ Imports Org.BouncyCastle.Bcpg.OpenPgp
 
 
 
-Public Class NGD_Dashboard
+Public Class MainDB_User
 
     Private Sub RoundedCorners(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -67,12 +67,6 @@ Public Class NGD_Dashboard
 
 
 
-
-
-
-
-
-
     Private connectionString As String = "server=localhost;userid=root;password=;database=prac"
     Private connection As MySqlConnection
     Dim FirstName As String
@@ -117,8 +111,7 @@ Public Class NGD_Dashboard
 
 
     Private Sub ExitBTN_Click(sender As Object, e As EventArgs) Handles ExitBTN.Click
-        Close()
-        LOGIN_PAGE.Show()
+        EXIT_PROMPT.Show()
     End Sub
 
 
@@ -157,6 +150,10 @@ Public Class NGD_Dashboard
 
     Private Sub Label1_Click_1(sender As Object, e As EventArgs) Handles Label1.Click
 
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class
 

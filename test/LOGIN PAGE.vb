@@ -16,6 +16,15 @@ Imports MySql.Data.MySqlClient
 Public Class LOGIN_PAGE
 
 
+
+
+
+
+
+
+
+
+
     Private Sub RoundedCorners(sender As Object, e As EventArgs) Handles MyBase.Load
 
         'Default Hide button (Reg Pass Conf)
@@ -96,7 +105,7 @@ Public Class LOGIN_PAGE
 
 
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub DBtest_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             connection = New MySqlConnection(connectionString)
 
@@ -250,14 +259,27 @@ Public Class LOGIN_PAGE
         End Using
     End Function
 
+
+
+
+
+
+
+
+
+
+
     Private Sub loginBtn_Click(sender As Object, e As EventArgs) Handles loginBtn.Click
         If ValidateLogin(logUser.Text, logPass.Text) Then
-            MsgBox("Login Successful!")
+
+            LOGIN_SUCCESS_PROMPT.Show()
+            LOGIN_SUCCESS_PROMPT.StartCloseTimer()
+
             StudentID = logUser.Text
             logUser.Text = ""
             logPass.Text = ""
             Hide()
-            NGD_Dashboard.Show()
+            MainDB_User.Show()
         Else
             MsgBox("Invalid Username/Password.")
         End If
@@ -473,7 +495,8 @@ Public Class LOGIN_PAGE
     End Sub
 
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
-        Close()
+        EXIT_PROMPT.Show()
+        'Close()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -483,6 +506,38 @@ Public Class LOGIN_PAGE
     Private Sub logUser_TextChanged(sender As Object, e As EventArgs) Handles logUser.TextChanged
 
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+
+
+
+
+    'ENTER TO LOGIN
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Set the KeyPreview property to True so the form can receive key events
+        Me.KeyPreview = True
+    End Sub
+
+
+    Private Sub LOGINPAGE_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        ' Check if the Enter key is pressed
+        If e.KeyCode = Keys.Enter Then
+            ' Call the Button1_Click event handler
+            loginBtn_Click(loginBtn, EventArgs.Empty)
+        End If
+    End Sub
+
+
+
+
+
+
+
+
+
 End Class
 
 

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Splash_Screen
+Partial Class DevInf
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,19 +22,40 @@ Partial Class Splash_Screen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Splash_Screen))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DevInf))
+        ExitBTN = New Button()
         SuspendLayout()
         ' 
-        ' Splash_Screen
+        ' ExitBTN
+        ' 
+        ExitBTN.BackColor = Color.Transparent
+        ExitBTN.Cursor = Cursors.Hand
+        ExitBTN.FlatAppearance.BorderSize = 0
+        ExitBTN.FlatAppearance.MouseDownBackColor = Color.Transparent
+        ExitBTN.FlatAppearance.MouseOverBackColor = Color.Transparent
+        ExitBTN.FlatStyle = FlatStyle.Flat
+        ExitBTN.ForeColor = Color.Transparent
+        ExitBTN.Location = New Point(448, 15)
+        ExitBTN.Name = "ExitBTN"
+        ExitBTN.Size = New Size(10, 10)
+        ExitBTN.TabIndex = 11
+        ExitBTN.UseVisualStyleBackColor = False
+        ' 
+        ' DevInf
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(484, 246)
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(475, 565)
+        Controls.Add(ExitBTN)
+        DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
-        Name = "Splash_Screen"
+        Name = "DevInf"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Splash_Screen"
+        Text = "DevInf"
         ResumeLayout(False)
     End Sub
+
+    Friend WithEvents ExitBTN As Button
 End Class

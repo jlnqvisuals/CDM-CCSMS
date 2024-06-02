@@ -1,7 +1,7 @@
-﻿
-Imports System.Diagnostics
-Imports System.Drawing.Drawing2D
-Public Class AboutDev
+﻿Imports System.Drawing.Drawing2D
+
+Public Class DevInf
+
 
     Private Sub RoundedCorners(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -20,27 +20,13 @@ Public Class AboutDev
 
     End Sub
 
-
-    Private Sub AboutDev_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-    End Sub
-
-
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-
-        Try
-            Process.Start("cmd", "/c start " & "https://www.facebook.com/Tech.DMS")
-        Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
-        End Try
-
-
-    End Sub
-
     Private Sub ExitBTN_Click(sender As Object, e As EventArgs) Handles ExitBTN.Click
         Me.Close()
     End Sub
+
+
+
+
+
+
 End Class

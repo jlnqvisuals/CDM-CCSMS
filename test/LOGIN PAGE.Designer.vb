@@ -22,6 +22,7 @@ Partial Class LOGIN_PAGE
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LOGIN_PAGE))
         regFirstName = New TextBox()
         regSID = New TextBox()
@@ -30,6 +31,7 @@ Partial Class LOGIN_PAGE
         regBtn = New Button()
         loginBtn = New Button()
         loginPanel = New Panel()
+        GuestBTN = New Button()
         Button1 = New Button()
         showRegBtn = New Button()
         showLoginBtn = New Button()
@@ -45,6 +47,11 @@ Partial Class LOGIN_PAGE
         regHideConPass = New Button()
         Button2 = New Button()
         Button3 = New Button()
+        Button4 = New Button()
+        PrivacyPolicyBTN = New Button()
+        TnC_BTN = New Button()
+        ContactsBTN = New Button()
+        Timer1 = New Timer(components)
         loginPanel.SuspendLayout()
         regPanel.SuspendLayout()
         SuspendLayout()
@@ -126,6 +133,7 @@ Partial Class LOGIN_PAGE
         loginPanel.BackColor = Color.Transparent
         loginPanel.BackgroundImage = CType(resources.GetObject("loginPanel.BackgroundImage"), Image)
         loginPanel.BackgroundImageLayout = ImageLayout.Stretch
+        loginPanel.Controls.Add(GuestBTN)
         loginPanel.Controls.Add(Button1)
         loginPanel.Controls.Add(logUser)
         loginPanel.Controls.Add(showRegBtn)
@@ -135,6 +143,21 @@ Partial Class LOGIN_PAGE
         loginPanel.Name = "loginPanel"
         loginPanel.Size = New Size(282, 332)
         loginPanel.TabIndex = 3
+        ' 
+        ' GuestBTN
+        ' 
+        GuestBTN.BackColor = Color.Transparent
+        GuestBTN.Cursor = Cursors.Hand
+        GuestBTN.FlatAppearance.BorderSize = 0
+        GuestBTN.FlatAppearance.MouseDownBackColor = Color.Transparent
+        GuestBTN.FlatAppearance.MouseOverBackColor = Color.Transparent
+        GuestBTN.FlatStyle = FlatStyle.Flat
+        GuestBTN.ForeColor = Color.Transparent
+        GuestBTN.Location = New Point(41, 278)
+        GuestBTN.Name = "GuestBTN"
+        GuestBTN.Size = New Size(201, 23)
+        GuestBTN.TabIndex = 11
+        GuestBTN.UseVisualStyleBackColor = False
         ' 
         ' Button1
         ' 
@@ -305,9 +328,9 @@ Partial Class LOGIN_PAGE
         Button2.FlatAppearance.MouseOverBackColor = Color.Transparent
         Button2.FlatStyle = FlatStyle.Flat
         Button2.ForeColor = Color.Transparent
-        Button2.Location = New Point(1018, 11)
+        Button2.Location = New Point(1022, 13)
         Button2.Name = "Button2"
-        Button2.Size = New Size(20, 19)
+        Button2.Size = New Size(13, 15)
         Button2.TabIndex = 5
         Button2.UseVisualStyleBackColor = False
         ' 
@@ -320,11 +343,71 @@ Partial Class LOGIN_PAGE
         Button3.FlatAppearance.MouseOverBackColor = Color.Transparent
         Button3.FlatStyle = FlatStyle.Flat
         Button3.ForeColor = Color.Transparent
-        Button3.Location = New Point(963, 12)
+        Button3.Location = New Point(969, 15)
         Button3.Name = "Button3"
-        Button3.Size = New Size(20, 19)
+        Button3.Size = New Size(10, 11)
         Button3.TabIndex = 6
         Button3.UseVisualStyleBackColor = False
+        ' 
+        ' Button4
+        ' 
+        Button4.BackColor = Color.Transparent
+        Button4.Cursor = Cursors.Hand
+        Button4.FlatAppearance.BorderSize = 0
+        Button4.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button4.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.ForeColor = Color.Transparent
+        Button4.Location = New Point(995, 14)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(12, 12)
+        Button4.TabIndex = 7
+        Button4.UseVisualStyleBackColor = False
+        ' 
+        ' PrivacyPolicyBTN
+        ' 
+        PrivacyPolicyBTN.BackColor = Color.Transparent
+        PrivacyPolicyBTN.Cursor = Cursors.Hand
+        PrivacyPolicyBTN.FlatAppearance.BorderSize = 0
+        PrivacyPolicyBTN.FlatAppearance.MouseDownBackColor = Color.Transparent
+        PrivacyPolicyBTN.FlatAppearance.MouseOverBackColor = Color.Transparent
+        PrivacyPolicyBTN.FlatStyle = FlatStyle.Flat
+        PrivacyPolicyBTN.ForeColor = Color.Transparent
+        PrivacyPolicyBTN.Location = New Point(41, 27)
+        PrivacyPolicyBTN.Name = "PrivacyPolicyBTN"
+        PrivacyPolicyBTN.Size = New Size(73, 10)
+        PrivacyPolicyBTN.TabIndex = 8
+        PrivacyPolicyBTN.UseVisualStyleBackColor = False
+        ' 
+        ' TnC_BTN
+        ' 
+        TnC_BTN.BackColor = Color.Transparent
+        TnC_BTN.Cursor = Cursors.Hand
+        TnC_BTN.FlatAppearance.BorderSize = 0
+        TnC_BTN.FlatAppearance.MouseDownBackColor = Color.Transparent
+        TnC_BTN.FlatAppearance.MouseOverBackColor = Color.Transparent
+        TnC_BTN.FlatStyle = FlatStyle.Flat
+        TnC_BTN.ForeColor = Color.Transparent
+        TnC_BTN.Location = New Point(139, 27)
+        TnC_BTN.Name = "TnC_BTN"
+        TnC_BTN.Size = New Size(100, 10)
+        TnC_BTN.TabIndex = 9
+        TnC_BTN.UseVisualStyleBackColor = False
+        ' 
+        ' ContactsBTN
+        ' 
+        ContactsBTN.BackColor = Color.Transparent
+        ContactsBTN.Cursor = Cursors.Hand
+        ContactsBTN.FlatAppearance.BorderSize = 0
+        ContactsBTN.FlatAppearance.MouseDownBackColor = Color.Transparent
+        ContactsBTN.FlatAppearance.MouseOverBackColor = Color.Transparent
+        ContactsBTN.FlatStyle = FlatStyle.Flat
+        ContactsBTN.ForeColor = Color.Transparent
+        ContactsBTN.Location = New Point(261, 27)
+        ContactsBTN.Name = "ContactsBTN"
+        ContactsBTN.Size = New Size(53, 10)
+        ContactsBTN.TabIndex = 10
+        ContactsBTN.UseVisualStyleBackColor = False
         ' 
         ' LOGIN_PAGE
         ' 
@@ -333,12 +416,17 @@ Partial Class LOGIN_PAGE
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1050, 591)
+        Controls.Add(ContactsBTN)
+        Controls.Add(TnC_BTN)
+        Controls.Add(PrivacyPolicyBTN)
+        Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(loginPanel)
         Controls.Add(regPanel)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "LOGIN_PAGE"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form1"
@@ -371,5 +459,11 @@ Partial Class LOGIN_PAGE
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents PrivacyPolicyBTN As Button
+    Friend WithEvents TnC_BTN As Button
+    Friend WithEvents ContactsBTN As Button
+    Friend WithEvents GuestBTN As Button
+    Friend WithEvents Timer1 As Timer
 
 End Class
