@@ -429,7 +429,7 @@ Partial Class LOGIN_PAGE
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "LOGIN_PAGE"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Form1"
+        Text = "CDM CCSMS"
         loginPanel.ResumeLayout(False)
         loginPanel.PerformLayout()
         regPanel.ResumeLayout(False)
