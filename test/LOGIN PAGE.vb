@@ -8,6 +8,7 @@
 Imports System.Drawing.Drawing2D
 Imports System.Net.Mail
 Imports System.Web
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 Imports MySql.Data.MySqlClient
 
@@ -203,12 +204,12 @@ Public Class LOGIN_PAGE
         Else
             RegisterData(regSID.Text, regFirstName.Text, regLastName.Text, regEmail.Text, regPass.Text)
             email = regEmail.Text
-            regEmail.Text = ""
+            regEmail.Text = "Email"
             regSID.Text = "XX-XXXXX"
-            regFirstName.Text = ""
-            regLastName.Text = ""
-            regPass.Text = ""
-            regConfirmPass.Text = ""
+            regFirstName.Text = "First Name"
+            regLastName.Text = "Last Name"
+            regPass.Text = "Password"
+            regConfirmPass.Text = "Confirm Password"
             EMAIL_VERIFICATION.Show()
         End If
     End Sub
@@ -322,14 +323,14 @@ Public Class LOGIN_PAGE
     End Sub
 
     Private Sub regSID_Click(sender As Object, e As EventArgs) Handles regSID.Click
-        If regSID.Text = "SID (EX. 24-12345)" Then
+        If regSID.Text = "XX-XXXXX" Then
             regSID.Text = ""
         End If
     End Sub
 
     Private Sub regSID_LostFocus(sender As Object, e As EventArgs) Handles regSID.LostFocus
         If regSID.Text = "" Then
-            regSID.Text = "SID (EX. 24-12345)"
+            regSID.Text = "XX-XXXXX"
         End If
     End Sub
     Private Sub regEmail_Click(sender As Object, e As EventArgs) Handles regEmail.Click
@@ -456,18 +457,19 @@ Public Class LOGIN_PAGE
 
     Private Sub passMatch(sender As Object, e As EventArgs) Handles regPass.TextChanged, regConfirmPass.TextChanged
         If regPass.Text = regConfirmPass.Text Then
-            passMatchIdentifier.ForeColor = Color.Green
-            passMatchIdentifier.Text = "PASSWORD MATCHED"
+            passMatchIdentifier.ForeColor = Color.Blue
+            passMatchIdentifier.Text = "Password Matches"
             regBtn.Enabled = True
         Else
-            passMatchIdentifier.Text = "PASSWORD UNMATCHED"
+            passMatchIdentifier.Text = "Password doesn't match"
             passMatchIdentifier.ForeColor = Color.Red
             regBtn.Enabled = False
         End If
     End Sub
 
     Private Sub canRegister(sender As Object, e As EventArgs) Handles regPass.TextChanged, regConfirmPass.TextChanged, regFirstName.TextChanged, regLastName.TextChanged, regEmail.TextChanged, regSID.TextChanged
-        If regPass.Text = "Password" Or regPass.Text = "" Or regConfirmPass.Text = "Confirm Password" Or regConfirmPass.Text = "" Or regFirstName.Text = "First Name" Or regFirstName.Text = "" Or regLastName.Text = "Last Name" Or regLastName.Text = "" Or regEmail.Text = "Email" Or regEmail.Text = "" Or regSID.Text = "SID (EX. 24-12345)" Or regSID.Text = "" Or passMatchIdentifier.Text = "PASSWORD UNMATCHED" Then
+
+        If regPass.Text = "Password" Or regPass.Text = "" Or regConfirmPass.Text = "Confirm Password" Or regConfirmPass.Text = "" Or regFirstName.Text = "First Name" Or regFirstName.Text = "" Or regLastName.Text = "Last Name" Or regLastName.Text = "" Or regEmail.Text = "Email" Or regEmail.Text = "" Or regSID.Text = "XX-XXXXX" Or regSID.Text = "" Or passMatchIdentifier.Text = "PASSWORD UNMATCHED" Then
             regBtn.Enabled = False
         Else
             regBtn.Enabled = True
@@ -478,17 +480,6 @@ Public Class LOGIN_PAGE
         ForgotPassword.Show()
     End Sub
 
-    Private Sub regPanel_Paint(sender As Object, e As PaintEventArgs) Handles regPanel.Paint
-
-    End Sub
-
-    Private Sub loginPanel_Paint(sender As Object, e As PaintEventArgs) Handles loginPanel.Paint
-
-    End Sub
-
-    Private Sub passMatchIdentifier_Click(sender As Object, e As EventArgs) Handles passMatchIdentifier.Click
-
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ForgotPassword.Show()
@@ -503,9 +494,41 @@ Public Class LOGIN_PAGE
         AboutDev.Show()
     End Sub
 
-    Private Sub logUser_TextChanged(sender As Object, e As EventArgs) Handles logUser.TextChanged
 
+
+
+
+
+
+    Private Sub logUser_Click(sender As Object, e As EventArgs) Handles logUser.Click
+        If logUser.Text = "Student ID (XX-XXXXX)" Then
+            logUser.Text = ""
+        End If
     End Sub
+
+    Private Sub logUser_LostFocus(sender As Object, e As EventArgs) Handles logUser.LostFocus
+        If logUser.Text = "" Then
+            logUser.Text = "Student ID (XX-XXXXX)"
+        End If
+    End Sub
+
+    '    logPass
+
+    Private Sub logPass_Click(sender As Object, e As EventArgs) Handles logPass.Click
+        If logPass.Text = "Password" Then
+            logPass.Text = ""
+        End If
+    End Sub
+
+    Private Sub logPass_LostFocus(sender As Object, e As EventArgs) Handles logPass.LostFocus
+        If logPass.Text = "" Then
+            logPass.Text = "Password"
+        End If
+    End Sub
+
+
+
+
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.WindowState = FormWindowState.Minimized
@@ -530,7 +553,19 @@ Public Class LOGIN_PAGE
         End If
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
+    Private Sub logPass_TextChanged(sender As Object, e As EventArgs) Handles logPass.TextChanged
+
+    End Sub
+
+    Private Sub regPanel_Paint(sender As Object, e As PaintEventArgs) Handles regPanel.Paint
+
+    End Sub
+
+    Private Sub logUser_TextChanged(sender As Object, e As EventArgs) Handles logUser.TextChanged
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
 End Class

@@ -119,13 +119,13 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="currentUser.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 23pt, style=Bold</value>
+    <value>Poppins Medium, 23pt, style=Bold</value>
   </data>
   <data name="currentUser.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
   <data name="currentUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 43</value>
+    <value>304, 56</value>
   </data>
   <data name="currentUser.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 43</value>
@@ -147,10 +147,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;currentUser.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="logOutBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1050, 10</value>
+    <value>87, 756</value>
   </data>
   <data name="logOutBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -168,10 +168,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;logOutBtn.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>Panel2</value>
   </data>
   <data name="&gt;&gt;logOutBtn.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>0</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -196,7 +196,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Button3.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="ExitBTN.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -220,16 +220,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ExitBTN.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="StudentID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13pt</value>
+    <value>Poppins Medium, 13pt</value>
   </data>
   <data name="StudentID.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
   <data name="StudentID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 79</value>
+    <value>310, 92</value>
   </data>
   <data name="StudentID.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 30</value>
@@ -250,7 +250,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;StudentID.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="Button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -274,7 +274,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="Panel1.AutoScrollMargin" type="System.Drawing.Size, System.Drawing">
     <value>1, 1</value>
@@ -311,7 +311,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt</value>
@@ -323,7 +323,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 311</value>
+    <value>308, 324</value>
   </data>
   <data name="Label4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 0, 3, 0</value>
@@ -347,22 +347,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13pt, style=Bold</value>
+    <value>Poppins, 13pt, style=Bold</value>
   </data>
   <data name="Label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 286</value>
+    <value>308, 299</value>
   </data>
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 22</value>
+    <value>233, 31</value>
   </data>
   <data name="Label5.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -380,40 +380,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
-  <data name="navigateBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="BTN01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="navigateBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="BTN01.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="navigateBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="BTN01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="navigateBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 135</value>
+  <data name="BTN01.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 148</value>
   </data>
-  <data name="navigateBtn.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="BTN01.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 148</value>
   </data>
-  <data name="navigateBtn.TabIndex" type="System.Int32, mscorlib">
+  <data name="BTN01.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
-  <data name="navigateBtn.Text" xml:space="preserve">
-    <value>Navigate</value>
+  <data name="BTN01.Text" xml:space="preserve">
+    <value>BTN01</value>
   </data>
-  <data name="&gt;&gt;navigateBtn.Name" xml:space="preserve">
-    <value>navigateBtn</value>
+  <data name="&gt;&gt;BTN01.Name" xml:space="preserve">
+    <value>BTN01</value>
   </data>
-  <data name="&gt;&gt;navigateBtn.Type" xml:space="preserve">
+  <data name="&gt;&gt;BTN01.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;navigateBtn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;BTN01.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;navigateBtn.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;BTN01.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt</value>
@@ -425,7 +425,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 311</value>
+    <value>784, 324</value>
   </data>
   <data name="Label1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 0, 3, 0</value>
@@ -449,22 +449,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13pt, style=Bold</value>
+    <value>Poppins, 13pt, style=Bold</value>
   </data>
   <data name="Label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 286</value>
+    <value>784, 299</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
+    <value>213, 31</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -482,40 +482,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
-  <data name="searchBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="Button2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="searchBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="Button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="searchBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="searchBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 135</value>
+  <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>784, 148</value>
   </data>
-  <data name="searchBtn.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 148</value>
   </data>
-  <data name="searchBtn.TabIndex" type="System.Int32, mscorlib">
+  <data name="Button2.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
-  <data name="searchBtn.Text" xml:space="preserve">
-    <value>Search</value>
+  <data name="Button2.Text" xml:space="preserve">
+    <value>Button2</value>
   </data>
-  <data name="&gt;&gt;searchBtn.Name" xml:space="preserve">
-    <value>searchBtn</value>
+  <data name="&gt;&gt;Button2.Name" xml:space="preserve">
+    <value>Button2</value>
   </data>
-  <data name="&gt;&gt;searchBtn.Type" xml:space="preserve">
+  <data name="&gt;&gt;Button2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;searchBtn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Button2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;searchBtn.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;Button2.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt</value>
@@ -527,7 +527,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 311</value>
+    <value>546, 324</value>
   </data>
   <data name="Label3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 0, 3, 0</value>
@@ -551,22 +551,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13pt, style=Bold</value>
+    <value>Poppins, 13pt, style=Bold</value>
   </data>
   <data name="Label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 286</value>
+    <value>546, 299</value>
   </data>
   <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 22</value>
+    <value>170, 31</value>
   </data>
   <data name="Label6.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -584,40 +584,61 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
-  <data name="reserveBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="Button4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="reserveBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="Button4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="reserveBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="reserveBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 135</value>
+  <data name="Button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 148</value>
   </data>
-  <data name="reserveBtn.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 148</value>
   </data>
-  <data name="reserveBtn.TabIndex" type="System.Int32, mscorlib">
+  <data name="Button4.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
   </data>
-  <data name="reserveBtn.Text" xml:space="preserve">
-    <value>Reserve</value>
+  <data name="Button4.Text" xml:space="preserve">
+    <value>Button4</value>
   </data>
-  <data name="&gt;&gt;reserveBtn.Name" xml:space="preserve">
-    <value>reserveBtn</value>
+  <data name="&gt;&gt;Button4.Name" xml:space="preserve">
+    <value>Button4</value>
   </data>
-  <data name="&gt;&gt;reserveBtn.Type" xml:space="preserve">
+  <data name="&gt;&gt;Button4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;reserveBtn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Button4.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;reserveBtn.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;Button4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="Panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 805</value>
+  </data>
+  <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Name" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

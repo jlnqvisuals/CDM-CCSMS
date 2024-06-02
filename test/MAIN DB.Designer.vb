@@ -32,13 +32,15 @@ Partial Class MainDB_User
         Panel1 = New Panel()
         Label4 = New Label()
         Label5 = New Label()
-        navigateBtn = New Button()
+        BTN01 = New Button()
         Label1 = New Label()
         Label2 = New Label()
-        searchBtn = New Button()
+        Button2 = New Button()
         Label3 = New Label()
         Label6 = New Label()
-        reserveBtn = New Button()
+        Button4 = New Button()
+        Panel2 = New Panel()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' currentUser
@@ -120,15 +122,15 @@ Partial Class MainDB_User
         Label5.ForeColor = Color.FromArgb(CByte(224), CByte(253), CByte(43))
         Label5.Name = "Label5"
         ' 
-        ' navigateBtn
+        ' BTN01
         ' 
-        navigateBtn.BackColor = Color.White
-        resources.ApplyResources(navigateBtn, "navigateBtn")
-        navigateBtn.FlatAppearance.BorderSize = 0
-        navigateBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
-        navigateBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
-        navigateBtn.Name = "navigateBtn"
-        navigateBtn.UseVisualStyleBackColor = False
+        BTN01.BackColor = Color.White
+        resources.ApplyResources(BTN01, "BTN01")
+        BTN01.FlatAppearance.BorderSize = 0
+        BTN01.FlatAppearance.MouseDownBackColor = Color.Transparent
+        BTN01.FlatAppearance.MouseOverBackColor = Color.Transparent
+        BTN01.Name = "BTN01"
+        BTN01.UseVisualStyleBackColor = False
         ' 
         ' Label1
         ' 
@@ -145,15 +147,15 @@ Partial Class MainDB_User
         Label2.ForeColor = Color.FromArgb(CByte(224), CByte(253), CByte(43))
         Label2.Name = "Label2"
         ' 
-        ' searchBtn
+        ' Button2
         ' 
-        searchBtn.BackColor = Color.White
-        resources.ApplyResources(searchBtn, "searchBtn")
-        searchBtn.FlatAppearance.BorderSize = 0
-        searchBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
-        searchBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
-        searchBtn.Name = "searchBtn"
-        searchBtn.UseVisualStyleBackColor = False
+        Button2.BackColor = Color.White
+        resources.ApplyResources(Button2, "Button2")
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button2.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button2.Name = "Button2"
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Label3
         ' 
@@ -170,39 +172,46 @@ Partial Class MainDB_User
         Label6.ForeColor = Color.FromArgb(CByte(224), CByte(253), CByte(43))
         Label6.Name = "Label6"
         ' 
-        ' reserveBtn
+        ' Button4
         ' 
-        reserveBtn.BackColor = Color.White
-        resources.ApplyResources(reserveBtn, "reserveBtn")
-        reserveBtn.FlatAppearance.BorderSize = 0
-        reserveBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
-        reserveBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
-        reserveBtn.Name = "reserveBtn"
-        reserveBtn.UseVisualStyleBackColor = False
+        Button4.BackColor = Color.White
+        resources.ApplyResources(Button4, "Button4")
+        Button4.FlatAppearance.BorderSize = 0
+        Button4.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button4.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button4.Name = "Button4"
+        Button4.UseVisualStyleBackColor = False
+        ' 
+        ' Panel2
+        ' 
+        Panel2.Controls.Add(logOutBtn)
+        resources.ApplyResources(Panel2, "Panel2")
+        Panel2.Name = "Panel2"
         ' 
         ' MainDB_User
         ' 
         AutoScaleMode = AutoScaleMode.Inherit
         resources.ApplyResources(Me, "$this")
+        Controls.Add(Panel2)
         Controls.Add(Label3)
         Controls.Add(Label6)
-        Controls.Add(reserveBtn)
+        Controls.Add(Button4)
         Controls.Add(Label1)
         Controls.Add(Label2)
-        Controls.Add(searchBtn)
+        Controls.Add(Button2)
         Controls.Add(Label4)
         Controls.Add(Label5)
-        Controls.Add(navigateBtn)
+        Controls.Add(BTN01)
         Controls.Add(Panel1)
         Controls.Add(Button1)
         Controls.Add(currentUser)
         Controls.Add(StudentID)
         Controls.Add(Button3)
         Controls.Add(ExitBTN)
-        Controls.Add(logOutBtn)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Name = "MainDB_User"
+        Panel2.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -215,11 +224,12 @@ Partial Class MainDB_User
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents navigateBtn As Button
+    Friend WithEvents BTN01 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents searchBtn As Button
+    Friend WithEvents Button2 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents reserveBtn As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Panel2 As Panel
 End Class
