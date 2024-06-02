@@ -156,7 +156,9 @@ Public Class MainDB_User
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
+    Private Sub BTN01_Click(sender As Object, e As EventArgs) Handles navigateBtn.Click
 
+    End Sub
 End Class
 
 

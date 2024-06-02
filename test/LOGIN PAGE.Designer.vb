@@ -422,8 +422,8 @@ Partial Class LOGIN_PAGE
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
-        Controls.Add(loginPanel)
         Controls.Add(regPanel)
+        Controls.Add(loginPanel)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
