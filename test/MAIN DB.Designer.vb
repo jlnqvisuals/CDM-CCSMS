@@ -39,6 +39,8 @@ Partial Class MainDB_User
         Label3 = New Label()
         Label6 = New Label()
         Button4 = New Button()
+        Panel2 = New Panel()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' currentUser
@@ -180,10 +182,17 @@ Partial Class MainDB_User
         Button4.Name = "Button4"
         Button4.UseVisualStyleBackColor = False
         ' 
+        ' Panel2
+        ' 
+        Panel2.Controls.Add(logOutBtn)
+        resources.ApplyResources(Panel2, "Panel2")
+        Panel2.Name = "Panel2"
+        ' 
         ' MainDB_User
         ' 
         AutoScaleMode = AutoScaleMode.Inherit
         resources.ApplyResources(Me, "$this")
+        Controls.Add(Panel2)
         Controls.Add(Label3)
         Controls.Add(Label6)
         Controls.Add(Button4)
@@ -199,10 +208,10 @@ Partial Class MainDB_User
         Controls.Add(StudentID)
         Controls.Add(Button3)
         Controls.Add(ExitBTN)
-        Controls.Add(logOutBtn)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Name = "MainDB_User"
+        Panel2.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -222,4 +231,5 @@ Partial Class MainDB_User
     Friend WithEvents Label3 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Button4 As Button
+    Friend WithEvents Panel2 As Panel
 End Class
