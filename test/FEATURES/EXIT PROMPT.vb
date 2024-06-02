@@ -35,6 +35,11 @@ Public Class EXIT_PROMPT
     End Sub
 
     Private Sub showRegBtn_Click(sender As Object, e As EventArgs) Handles showRegBtn.Click
+
         Me.Close()
+
+
+
+
     End Sub
 End Class
