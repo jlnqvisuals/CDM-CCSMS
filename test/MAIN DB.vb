@@ -157,7 +157,8 @@ Public Class MainDB_User
     End Sub
 
     Private Sub BTN01_Click(sender As Object, e As EventArgs) Handles navigateBtn.Click
-
+        Me.Hide()
+        NAVIGATE_CAMPUS.Show()
     End Sub
 End Class
 

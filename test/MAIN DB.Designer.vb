@@ -32,7 +32,7 @@ Partial Class MainDB_User
         Panel1 = New Panel()
         Label4 = New Label()
         Label5 = New Label()
-        BTN01 = New Button()
+        navigateBtn = New Button()
         Label1 = New Label()
         Label2 = New Label()
         Button2 = New Button()
@@ -122,15 +122,15 @@ Partial Class MainDB_User
         Label5.ForeColor = Color.FromArgb(CByte(224), CByte(253), CByte(43))
         Label5.Name = "Label5"
         ' 
-        ' BTN01
+        ' navigateBtn
         ' 
-        BTN01.BackColor = Color.White
-        resources.ApplyResources(BTN01, "BTN01")
-        BTN01.FlatAppearance.BorderSize = 0
-        BTN01.FlatAppearance.MouseDownBackColor = Color.Transparent
-        BTN01.FlatAppearance.MouseOverBackColor = Color.Transparent
-        BTN01.Name = "BTN01"
-        BTN01.UseVisualStyleBackColor = False
+        navigateBtn.BackColor = Color.White
+        resources.ApplyResources(navigateBtn, "navigateBtn")
+        navigateBtn.FlatAppearance.BorderSize = 0
+        navigateBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
+        navigateBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
+        navigateBtn.Name = "navigateBtn"
+        navigateBtn.UseVisualStyleBackColor = False
         ' 
         ' Label1
         ' 
@@ -201,7 +201,7 @@ Partial Class MainDB_User
         Controls.Add(Button2)
         Controls.Add(Label4)
         Controls.Add(Label5)
-        Controls.Add(BTN01)
+        Controls.Add(navigateBtn)
         Controls.Add(Panel1)
         Controls.Add(Button1)
         Controls.Add(currentUser)
@@ -224,7 +224,7 @@ Partial Class MainDB_User
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents BTN01 As Button
+    Friend WithEvents navigateBtn As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button2 As Button

@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="currentUser.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Medium, 23pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 23pt, style=Bold</value>
   </data>
   <data name="currentUser.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -223,7 +223,7 @@
     <value>15</value>
   </data>
   <data name="StudentID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Medium, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="StudentID.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -353,7 +353,7 @@
     <value>True</value>
   </data>
   <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 13pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 13pt, style=Bold</value>
   </data>
   <data name="Label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -362,7 +362,7 @@
     <value>308, 299</value>
   </data>
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 31</value>
+    <value>246, 22</value>
   </data>
   <data name="Label5.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -382,37 +382,37 @@
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="BTN01.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="navigateBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="BTN01.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="navigateBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="BTN01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="navigateBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="BTN01.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="navigateBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 148</value>
   </data>
-  <data name="BTN01.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="navigateBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 148</value>
   </data>
-  <data name="BTN01.TabIndex" type="System.Int32, mscorlib">
+  <data name="navigateBtn.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
-  <data name="BTN01.Text" xml:space="preserve">
+  <data name="navigateBtn.Text" xml:space="preserve">
     <value>BTN01</value>
   </data>
-  <data name="&gt;&gt;BTN01.Name" xml:space="preserve">
-    <value>BTN01</value>
+  <data name="&gt;&gt;navigateBtn.Name" xml:space="preserve">
+    <value>navigateBtn</value>
   </data>
-  <data name="&gt;&gt;BTN01.Type" xml:space="preserve">
+  <data name="&gt;&gt;navigateBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BTN01.Parent" xml:space="preserve">
+  <data name="&gt;&gt;navigateBtn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;BTN01.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;navigateBtn.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
@@ -455,7 +455,7 @@
     <value>True</value>
   </data>
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 13pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 13pt, style=Bold</value>
   </data>
   <data name="Label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -464,7 +464,7 @@
     <value>784, 299</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 31</value>
+    <value>228, 22</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -557,7 +557,7 @@
     <value>True</value>
   </data>
   <data name="Label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 13pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 13pt, style=Bold</value>
   </data>
   <data name="Label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -566,7 +566,7 @@
     <value>546, 299</value>
   </data>
   <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 31</value>
+    <value>187, 22</value>
   </data>
   <data name="Label6.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
