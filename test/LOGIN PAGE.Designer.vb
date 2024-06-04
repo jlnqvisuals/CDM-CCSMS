@@ -54,9 +54,23 @@ Partial Class LOGIN_PAGE
         Timer1 = New Timer(components)
         PictureBox1 = New PictureBox()
         TextBox1 = New TextBox()
+        PrivacyPolicy_Panel = New Panel()
+        Button5 = New Button()
+        Label1 = New Label()
+        TnC_Panel = New Panel()
+        Button6 = New Button()
+        Label2 = New Label()
+        TextBox2 = New TextBox()
+        ContactUs_Panel = New Panel()
+        Button7 = New Button()
+        Label3 = New Label()
+        TextBox3 = New TextBox()
         loginPanel.SuspendLayout()
         regPanel.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        PrivacyPolicy_Panel.SuspendLayout()
+        TnC_Panel.SuspendLayout()
+        ContactUs_Panel.SuspendLayout()
         SuspendLayout()
         ' 
         ' regFirstName
@@ -461,14 +475,165 @@ Partial Class LOGIN_PAGE
         TextBox1.BackColor = Color.White
         TextBox1.BorderStyle = BorderStyle.None
         TextBox1.Font = New Font("Poppins", 10F)
-        TextBox1.Location = New Point(758, 208)
+        TextBox1.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        TextBox1.Location = New Point(37, 66)
         TextBox1.Multiline = True
         TextBox1.Name = "TextBox1"
         TextBox1.ReadOnly = True
         TextBox1.ScrollBars = ScrollBars.Vertical
-        TextBox1.Size = New Size(249, 187)
+        TextBox1.Size = New Size(845, 247)
         TextBox1.TabIndex = 12
         TextBox1.Text = resources.GetString("TextBox1.Text")
+        ' 
+        ' PrivacyPolicy_Panel
+        ' 
+        PrivacyPolicy_Panel.BackColor = Color.Transparent
+        PrivacyPolicy_Panel.BackgroundImage = CType(resources.GetObject("PrivacyPolicy_Panel.BackgroundImage"), Image)
+        PrivacyPolicy_Panel.Controls.Add(Button5)
+        PrivacyPolicy_Panel.Controls.Add(Label1)
+        PrivacyPolicy_Panel.Controls.Add(TextBox1)
+        PrivacyPolicy_Panel.Location = New Point(71, 161)
+        PrivacyPolicy_Panel.Name = "PrivacyPolicy_Panel"
+        PrivacyPolicy_Panel.Size = New Size(911, 373)
+        PrivacyPolicy_Panel.TabIndex = 13
+        PrivacyPolicy_Panel.Visible = False
+        ' 
+        ' Button5
+        ' 
+        Button5.BackColor = Color.Transparent
+        Button5.Cursor = Cursors.Hand
+        Button5.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Button5.FlatAppearance.BorderSize = 0
+        Button5.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button5.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button5.FlatStyle = FlatStyle.Flat
+        Button5.ForeColor = Color.Transparent
+        Button5.Location = New Point(423, 331)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(60, 15)
+        Button5.TabIndex = 14
+        Button5.UseVisualStyleBackColor = False
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Label1.Location = New Point(351, 22)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(205, 32)
+        Label1.TabIndex = 13
+        Label1.Text = "PRIVACY POLICY"
+        ' 
+        ' TnC_Panel
+        ' 
+        TnC_Panel.BackColor = Color.Transparent
+        TnC_Panel.BackgroundImage = CType(resources.GetObject("TnC_Panel.BackgroundImage"), Image)
+        TnC_Panel.Controls.Add(Button6)
+        TnC_Panel.Controls.Add(Label2)
+        TnC_Panel.Controls.Add(TextBox2)
+        TnC_Panel.Location = New Point(71, 161)
+        TnC_Panel.Name = "TnC_Panel"
+        TnC_Panel.Size = New Size(911, 373)
+        TnC_Panel.TabIndex = 15
+        TnC_Panel.Visible = False
+        ' 
+        ' Button6
+        ' 
+        Button6.BackColor = Color.Transparent
+        Button6.Cursor = Cursors.Hand
+        Button6.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Button6.FlatAppearance.BorderSize = 0
+        Button6.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button6.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button6.FlatStyle = FlatStyle.Flat
+        Button6.ForeColor = Color.Transparent
+        Button6.Location = New Point(423, 331)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(60, 15)
+        Button6.TabIndex = 14
+        Button6.UseVisualStyleBackColor = False
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Label2.Location = New Point(301, 22)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(311, 32)
+        Label2.TabIndex = 13
+        Label2.Text = "TERMS AND CONDITIONS"
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.BackColor = Color.White
+        TextBox2.BorderStyle = BorderStyle.None
+        TextBox2.Font = New Font("Poppins", 10F)
+        TextBox2.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        TextBox2.Location = New Point(37, 66)
+        TextBox2.Multiline = True
+        TextBox2.Name = "TextBox2"
+        TextBox2.ReadOnly = True
+        TextBox2.ScrollBars = ScrollBars.Vertical
+        TextBox2.Size = New Size(845, 247)
+        TextBox2.TabIndex = 12
+        TextBox2.Text = resources.GetString("TextBox2.Text")
+        ' 
+        ' ContactUs_Panel
+        ' 
+        ContactUs_Panel.BackColor = Color.Transparent
+        ContactUs_Panel.BackgroundImage = CType(resources.GetObject("ContactUs_Panel.BackgroundImage"), Image)
+        ContactUs_Panel.Controls.Add(Button7)
+        ContactUs_Panel.Controls.Add(Label3)
+        ContactUs_Panel.Controls.Add(TextBox3)
+        ContactUs_Panel.Location = New Point(71, 161)
+        ContactUs_Panel.Name = "ContactUs_Panel"
+        ContactUs_Panel.Size = New Size(911, 373)
+        ContactUs_Panel.TabIndex = 16
+        ContactUs_Panel.Visible = False
+        ' 
+        ' Button7
+        ' 
+        Button7.BackColor = Color.Transparent
+        Button7.Cursor = Cursors.Hand
+        Button7.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Button7.FlatAppearance.BorderSize = 0
+        Button7.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button7.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button7.FlatStyle = FlatStyle.Flat
+        Button7.ForeColor = Color.Transparent
+        Button7.Location = New Point(423, 331)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(60, 15)
+        Button7.TabIndex = 14
+        Button7.UseVisualStyleBackColor = False
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Label3.Location = New Point(368, 22)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(161, 32)
+        Label3.TabIndex = 13
+        Label3.Text = "CONTACT US"
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.BackColor = Color.White
+        TextBox3.BorderStyle = BorderStyle.None
+        TextBox3.Font = New Font("Poppins", 10F)
+        TextBox3.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        TextBox3.Location = New Point(37, 66)
+        TextBox3.Multiline = True
+        TextBox3.Name = "TextBox3"
+        TextBox3.ReadOnly = True
+        TextBox3.ScrollBars = ScrollBars.Vertical
+        TextBox3.Size = New Size(845, 247)
+        TextBox3.TabIndex = 12
+        TextBox3.Text = vbCrLf & "- OFFICIAL SOCIAL MEDIA -" & vbCrLf & "Facebook:" & vbCrLf & vbCrLf & vbCrLf & "- DEVELOPERS -" & vbCrLf & "DEL VALLE, FRENCH JOHN" & vbCrLf & "GitHub: " & vbCrLf & "Facebook:" & vbCrLf & vbCrLf & "QUILINO, JOHN LLOYD N." & vbCrLf & "GitHub:" & vbCrLf & "Facebook: "
         ' 
         ' LOGIN_PAGE
         ' 
@@ -477,7 +642,9 @@ Partial Class LOGIN_PAGE
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1050, 591)
-        Controls.Add(TextBox1)
+        Controls.Add(ContactUs_Panel)
+        Controls.Add(TnC_Panel)
+        Controls.Add(PrivacyPolicy_Panel)
         Controls.Add(ContactsBTN)
         Controls.Add(TnC_BTN)
         Controls.Add(PrivacyPolicyBTN)
@@ -498,8 +665,13 @@ Partial Class LOGIN_PAGE
         regPanel.ResumeLayout(False)
         regPanel.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        PrivacyPolicy_Panel.ResumeLayout(False)
+        PrivacyPolicy_Panel.PerformLayout()
+        TnC_Panel.ResumeLayout(False)
+        TnC_Panel.PerformLayout()
+        ContactUs_Panel.ResumeLayout(False)
+        ContactUs_Panel.PerformLayout()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents regFirstName As TextBox
@@ -532,5 +704,16 @@ Partial Class LOGIN_PAGE
     Friend WithEvents Timer1 As Timer
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PrivacyPolicy_Panel As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Button5 As Button
+    Friend WithEvents TnC_Panel As Panel
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents ContactUs_Panel As Panel
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox3 As TextBox
 
 End Class
