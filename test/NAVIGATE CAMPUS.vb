@@ -49,5 +49,10 @@
         prrcBldgPanel.Hide()
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Close()
+        MainDB_User.Show()
 
+
+    End Sub
 End Class

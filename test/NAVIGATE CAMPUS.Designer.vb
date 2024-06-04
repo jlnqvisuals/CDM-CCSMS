@@ -32,17 +32,18 @@ Partial Class NAVIGATE_CAMPUS
         Label2 = New Label()
         Label1 = New Label()
         prrcBldgPanel = New Panel()
+        prrcBackBtn = New Button()
+        prrcNavBtn = New Button()
+        Label7 = New Label()
+        Label8 = New Label()
+        lale = New Label()
         newBldgPanel = New Panel()
         newBackBtn = New Button()
         newNavBtn = New Button()
         Label4 = New Label()
         Label5 = New Label()
         Label6 = New Label()
-        prrcBackBtn = New Button()
-        prrcNavBtn = New Button()
-        Label7 = New Label()
-        Label8 = New Label()
-        lale = New Label()
+        Button2 = New Button()
         adminBldgPanel.SuspendLayout()
         prrcBldgPanel.SuspendLayout()
         newBldgPanel.SuspendLayout()
@@ -50,7 +51,7 @@ Partial Class NAVIGATE_CAMPUS
         ' 
         ' adminBldgBtn
         ' 
-        adminBldgBtn.Location = New Point(77, 100)
+        adminBldgBtn.Location = New Point(195, 168)
         adminBldgBtn.Name = "adminBldgBtn"
         adminBldgBtn.Size = New Size(104, 35)
         adminBldgBtn.TabIndex = 0
@@ -59,7 +60,7 @@ Partial Class NAVIGATE_CAMPUS
         ' 
         ' prrcBldgBtn
         ' 
-        prrcBldgBtn.Location = New Point(101, 291)
+        prrcBldgBtn.Location = New Point(219, 359)
         prrcBldgBtn.Name = "prrcBldgBtn"
         prrcBldgBtn.Size = New Size(94, 42)
         prrcBldgBtn.TabIndex = 0
@@ -68,7 +69,7 @@ Partial Class NAVIGATE_CAMPUS
         ' 
         ' newBldgBtn
         ' 
-        newBldgBtn.Location = New Point(221, 174)
+        newBldgBtn.Location = New Point(339, 242)
         newBldgBtn.Name = "newBldgBtn"
         newBldgBtn.Size = New Size(104, 52)
         newBldgBtn.TabIndex = 0
@@ -82,7 +83,7 @@ Partial Class NAVIGATE_CAMPUS
         adminBldgPanel.Controls.Add(Label3)
         adminBldgPanel.Controls.Add(Label2)
         adminBldgPanel.Controls.Add(Label1)
-        adminBldgPanel.Location = New Point(469, 12)
+        adminBldgPanel.Location = New Point(594, 57)
         adminBldgPanel.Name = "adminBldgPanel"
         adminBldgPanel.Size = New Size(348, 463)
         adminBldgPanel.TabIndex = 1
@@ -142,10 +143,58 @@ Partial Class NAVIGATE_CAMPUS
         prrcBldgPanel.Controls.Add(Label7)
         prrcBldgPanel.Controls.Add(Label8)
         prrcBldgPanel.Controls.Add(lale)
-        prrcBldgPanel.Location = New Point(467, 12)
+        prrcBldgPanel.Location = New Point(592, 57)
         prrcBldgPanel.Name = "prrcBldgPanel"
         prrcBldgPanel.Size = New Size(348, 463)
         prrcBldgPanel.TabIndex = 1
+        ' 
+        ' prrcBackBtn
+        ' 
+        prrcBackBtn.Location = New Point(249, 425)
+        prrcBackBtn.Name = "prrcBackBtn"
+        prrcBackBtn.Size = New Size(75, 23)
+        prrcBackBtn.TabIndex = 1
+        prrcBackBtn.Text = "Back"
+        prrcBackBtn.UseVisualStyleBackColor = True
+        ' 
+        ' prrcNavBtn
+        ' 
+        prrcNavBtn.Location = New Point(15, 425)
+        prrcNavBtn.Name = "prrcNavBtn"
+        prrcNavBtn.Size = New Size(75, 23)
+        prrcNavBtn.TabIndex = 1
+        prrcNavBtn.Text = "Navigate"
+        prrcNavBtn.UseVisualStyleBackColor = True
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label7.Location = New Point(15, 162)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(240, 32)
+        Label7.TabIndex = 0
+        Label7.Text = "Total Room Count: ??"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label8.Location = New Point(15, 100)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(161, 32)
+        Label8.TabIndex = 0
+        Label8.Text = "Floor count: 4"
+        ' 
+        ' lale
+        ' 
+        lale.AutoSize = True
+        lale.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lale.Location = New Point(15, 12)
+        lale.Name = "lale"
+        lale.Size = New Size(135, 32)
+        lale.TabIndex = 0
+        lale.Text = "PRRC BLDG"
         ' 
         ' newBldgPanel
         ' 
@@ -154,7 +203,7 @@ Partial Class NAVIGATE_CAMPUS
         newBldgPanel.Controls.Add(Label4)
         newBldgPanel.Controls.Add(Label5)
         newBldgPanel.Controls.Add(Label6)
-        newBldgPanel.Location = New Point(467, 12)
+        newBldgPanel.Location = New Point(592, 57)
         newBldgPanel.Name = "newBldgPanel"
         newBldgPanel.Size = New Size(348, 463)
         newBldgPanel.TabIndex = 1
@@ -207,65 +256,35 @@ Partial Class NAVIGATE_CAMPUS
         Label6.TabIndex = 0
         Label6.Text = "NEW BLDG"
         ' 
-        ' prrcBackBtn
+        ' Button2
         ' 
-        prrcBackBtn.Location = New Point(249, 425)
-        prrcBackBtn.Name = "prrcBackBtn"
-        prrcBackBtn.Size = New Size(75, 23)
-        prrcBackBtn.TabIndex = 1
-        prrcBackBtn.Text = "Back"
-        prrcBackBtn.UseVisualStyleBackColor = True
-        ' 
-        ' prrcNavBtn
-        ' 
-        prrcNavBtn.Location = New Point(15, 425)
-        prrcNavBtn.Name = "prrcNavBtn"
-        prrcNavBtn.Size = New Size(75, 23)
-        prrcNavBtn.TabIndex = 1
-        prrcNavBtn.Text = "Navigate"
-        prrcNavBtn.UseVisualStyleBackColor = True
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(15, 162)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(240, 32)
-        Label7.TabIndex = 0
-        Label7.Text = "Total Room Count: ??"
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(15, 100)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(161, 32)
-        Label8.TabIndex = 0
-        Label8.Text = "Floor count: 4"
-        ' 
-        ' lale
-        ' 
-        lale.AutoSize = True
-        lale.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lale.Location = New Point(15, 12)
-        lale.Name = "lale"
-        lale.Size = New Size(135, 32)
-        lale.TabIndex = 0
-        lale.Text = "PRRC BLDG"
+        Button2.BackColor = Color.Transparent
+        Button2.Cursor = Cursors.Hand
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button2.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.ForeColor = Color.Black
+        Button2.Location = New Point(909, 9)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(70, 27)
+        Button2.TabIndex = 6
+        Button2.Text = "exit"
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' NAVIGATE_CAMPUS
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(827, 487)
+        ClientSize = New Size(990, 558)
+        Controls.Add(Button2)
         Controls.Add(adminBldgPanel)
         Controls.Add(newBldgBtn)
         Controls.Add(prrcBldgBtn)
         Controls.Add(adminBldgBtn)
         Controls.Add(prrcBldgPanel)
         Controls.Add(newBldgPanel)
+        FormBorderStyle = FormBorderStyle.None
         Name = "NAVIGATE_CAMPUS"
         Text = "NAVIGATE_CAMPUS"
         adminBldgPanel.ResumeLayout(False)
@@ -298,4 +317,5 @@ Partial Class NAVIGATE_CAMPUS
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents lale As Label
+    Friend WithEvents Button2 As Button
 End Class
