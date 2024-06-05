@@ -617,7 +617,7 @@ Public Class LOGIN_PAGE
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         If logUser.Text = "admin" And logPass.Text = "admin" Then
-            Me.Close()
+            Me.Hide()
             ADMIN_DB.Show()
         Else
             MsgBox("LOGIN ERROR")
