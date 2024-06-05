@@ -32,7 +32,7 @@ Partial Class _7to8amSched
         ' 
         ' nameTxt
         ' 
-        nameTxt.BackColor = Color.FromArgb(CByte(217), CByte(217), CByte(217))
+        nameTxt.BackColor = Color.White
         nameTxt.BorderStyle = BorderStyle.None
         nameTxt.Enabled = False
         nameTxt.Location = New Point(61, 108)
@@ -42,7 +42,7 @@ Partial Class _7to8amSched
         ' 
         ' reasonTxt
         ' 
-        reasonTxt.BackColor = Color.FromArgb(CByte(217), CByte(217), CByte(217))
+        reasonTxt.BackColor = Color.White
         reasonTxt.BorderStyle = BorderStyle.None
         reasonTxt.Location = New Point(56, 230)
         reasonTxt.Multiline = True
@@ -67,7 +67,7 @@ Partial Class _7to8amSched
         ' 
         ' sidTxt
         ' 
-        sidTxt.BackColor = Color.FromArgb(CByte(217), CByte(217), CByte(217))
+        sidTxt.BackColor = Color.White
         sidTxt.BorderStyle = BorderStyle.None
         sidTxt.Enabled = False
         sidTxt.Location = New Point(61, 161)
