@@ -31,6 +31,7 @@ Partial Class ADMIN_DB
         Button1 = New Button()
         Label1 = New Label()
         Button2 = New Button()
+        Button3 = New Button()
         CType(reviewGrid, ComponentModel.ISupportInitialize).BeginInit()
         CType(acceptedGrid, ComponentModel.ISupportInitialize).BeginInit()
         acceptedLogPanel.SuspendLayout()
@@ -120,11 +121,21 @@ Partial Class ADMIN_DB
         Button2.Text = "LOG OUT"
         Button2.UseVisualStyleBackColor = True
         ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(86, 484)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(75, 23)
+        Button3.TabIndex = 8
+        Button3.Text = "Refresh"
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' ADMIN_DB
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(802, 540)
+        Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(schedLogBtn)
         Controls.Add(reviewGrid)
@@ -152,4 +163,5 @@ Partial Class ADMIN_DB
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class

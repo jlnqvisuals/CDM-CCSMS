@@ -107,6 +107,7 @@ Partial Class PRRC_BLDG
         ContextMenuStrip1 = New ContextMenuStrip(components)
         Button51 = New Button()
         updateDB = New Timer(components)
+        roomsched10 = New Button()
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
@@ -674,6 +675,7 @@ Partial Class PRRC_BLDG
         ' 
         ' lab1SchedPanel
         ' 
+        lab1SchedPanel.Controls.Add(roomsched10)
         lab1SchedPanel.Controls.Add(roomsched9)
         lab1SchedPanel.Controls.Add(roomsched8)
         lab1SchedPanel.Controls.Add(roomsched7)
@@ -696,7 +698,7 @@ Partial Class PRRC_BLDG
         roomsched9.Name = "roomsched9"
         roomsched9.Size = New Size(125, 22)
         roomsched9.TabIndex = 5
-        roomsched9.Text = "4:00 PM - 5:00 PM"
+        roomsched9.Text = "3:00 PM - 4:00 PM"
         roomsched9.UseVisualStyleBackColor = True
         ' 
         ' roomsched8
@@ -705,7 +707,7 @@ Partial Class PRRC_BLDG
         roomsched8.Name = "roomsched8"
         roomsched8.Size = New Size(125, 22)
         roomsched8.TabIndex = 5
-        roomsched8.Text = "3:00 PM - 4:00 PM"
+        roomsched8.Text = "2:00 PM - 3:00 PM"
         roomsched8.UseVisualStyleBackColor = True
         ' 
         ' roomsched7
@@ -714,7 +716,7 @@ Partial Class PRRC_BLDG
         roomsched7.Name = "roomsched7"
         roomsched7.Size = New Size(125, 21)
         roomsched7.TabIndex = 5
-        roomsched7.Text = "2:00 PM - 3:00 PM"
+        roomsched7.Text = "1:00 PM - 2:00 PM"
         roomsched7.UseVisualStyleBackColor = True
         ' 
         ' roomsched6
@@ -723,7 +725,7 @@ Partial Class PRRC_BLDG
         roomsched6.Name = "roomsched6"
         roomsched6.Size = New Size(125, 26)
         roomsched6.TabIndex = 5
-        roomsched6.Text = "1:00 PM - 2:00 PM"
+        roomsched6.Text = "12:00 PM - 1:00 PM"
         roomsched6.UseVisualStyleBackColor = True
         ' 
         ' roomsched5
@@ -732,7 +734,7 @@ Partial Class PRRC_BLDG
         roomsched5.Name = "roomsched5"
         roomsched5.Size = New Size(125, 22)
         roomsched5.TabIndex = 5
-        roomsched5.Text = "12:00 PM - 1:00 PM"
+        roomsched5.Text = "11:00 AM - 12:00 PM"
         roomsched5.UseVisualStyleBackColor = True
         ' 
         ' roomsched4
@@ -741,7 +743,7 @@ Partial Class PRRC_BLDG
         roomsched4.Name = "roomsched4"
         roomsched4.Size = New Size(125, 21)
         roomsched4.TabIndex = 4
-        roomsched4.Text = "11:00 AM - 12:00 PM"
+        roomsched4.Text = "10:00 AM - 11:00 AM"
         roomsched4.UseVisualStyleBackColor = True
         ' 
         ' roomsched3
@@ -937,6 +939,15 @@ Partial Class PRRC_BLDG
         ' updateDB
         ' 
         ' 
+        ' roomsched10
+        ' 
+        roomsched10.Location = New Point(19, 284)
+        roomsched10.Name = "roomsched10"
+        roomsched10.Size = New Size(125, 22)
+        roomsched10.TabIndex = 5
+        roomsched10.Text = "4:00 PM - 5:00 PM"
+        roomsched10.UseVisualStyleBackColor = True
+        ' 
         ' PRRC_BLDG
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -1046,4 +1057,5 @@ Partial Class PRRC_BLDG
     Friend WithEvents roomsched9 As Button
     Friend WithEvents Button51 As Button
     Friend WithEvents updateDB As Timer
+    Friend WithEvents roomsched10 As Button
 End Class

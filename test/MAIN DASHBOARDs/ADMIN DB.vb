@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports Mysqlx.Crud
 
 Public Class ADMIN_DB
     Private connectionString As String = "server=localhost;userid=root;password=;database=prac"
@@ -7,6 +8,7 @@ Public Class ADMIN_DB
     Private Sub ADMIN_DB_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisplayData()
         AcceptedData()
+
     End Sub
 
 
@@ -94,5 +96,10 @@ Public Class ADMIN_DB
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Hide()
         LOGIN_PAGE.Show()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        AcceptedData()
+        DisplayData()
     End Sub
 End Class
