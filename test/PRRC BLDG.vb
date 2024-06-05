@@ -112,15 +112,6 @@ Public Class PRRC_BLDG
         End If
     End Sub
 
-    Private Sub lab1Btn_Click(sender As Object, e As EventArgs) Handles lab1Btn.Click
-        If lab1SchedPanel.Visible = False Then
-            lab1SchedPanel.Visible = True
-        Else
-            lab1SchedPanel.Visible = False
-        End If
-
-    End Sub
-
     Private Sub Button47_Click(sender As Object, e As EventArgs) Handles Button47.Click
         isVisible(Button35)
     End Sub
@@ -223,6 +214,25 @@ Public Class PRRC_BLDG
         End If
     End Sub
 
+    Sub isPanelVisible2(mainPanel As Panel, pan1 As Panel, pan2 As Panel, pan3 As Panel, pan4 As Panel, pan5 As Panel)
+        If mainPanel.Visible = False Then
+            mainPanel.Visible = True
+            pan1.Visible = False
+            pan2.Visible = False
+            pan3.Visible = False
+            pan4.Visible = False
+            pan5.Visible = False
+
+        Else
+            mainPanel.Visible = False
+            pan1.Visible = False
+            pan2.Visible = False
+            pan3.Visible = False
+            pan4.Visible = False
+            pan5.Visible = False
+        End If
+    End Sub
+
     'FIRST FLOOR ROOMS
     Private Sub r101Btn_Click(sender As Object, e As EventArgs) Handles r101Btn.Click
         isPanelVisible(r101Panel, r102Panel, r108Panel, r103Panel, r104Panel, r105Panel, r106Panel, r107Panel)
@@ -276,6 +286,23 @@ Public Class PRRC_BLDG
     End Sub
 
     'THIRD FLOOR ROOMS
+    Private Sub r301Btn_Click(sender As Object, e As EventArgs) Handles r301Btn.Click
+        isPanelVisible2(r301Panel, r302Panel, r303Panel, r304Panel, lab1SchedPanel, lab2SchedPanel)
+    End Sub
+    Private Sub r302Btn_Click(sender As Object, e As EventArgs) Handles r302Btn.Click
+        isPanelVisible2(r302Panel, r301Panel, r303Panel, r304Panel, lab1SchedPanel, lab2SchedPanel)
+    End Sub
+    Private Sub r303Btn_Click(sender As Object, e As EventArgs) Handles r303Btn.Click
+        isPanelVisible2(r303Panel, r302Panel, r301Panel, r304Panel, lab1SchedPanel, lab2SchedPanel)
+    End Sub
+    Private Sub r304Btn_Click(sender As Object, e As EventArgs) Handles r304Btn.Click
+        isPanelVisible2(r304Panel, r302Panel, r303Panel, r301Panel, lab1SchedPanel, lab2SchedPanel)
+    End Sub
+    Private Sub lab1Btn_Click(sender As Object, e As EventArgs) Handles lab1Btn.Click
+        isPanelVisible2(lab1SchedPanel, r302Panel, r303Panel, r304Panel, r301Panel, lab2SchedPanel)
+    End Sub
 
-
+    Private Sub lab2Btn_Click(sender As Object, e As EventArgs) Handles lab2Btn.Click
+        isPanelVisible2(lab2SchedPanel, r302Panel, r303Panel, r304Panel, lab1SchedPanel, r301Panel)
+    End Sub
 End Class

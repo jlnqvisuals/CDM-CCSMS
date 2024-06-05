@@ -80,16 +80,16 @@ Partial Class PRRC_BLDG
         Button35 = New Button()
         Label12 = New Label()
         Button38 = New Button()
-        Button39 = New Button()
+        r301Btn = New Button()
         Button40 = New Button()
-        Button41 = New Button()
+        r302Btn = New Button()
         Button42 = New Button()
         Button43 = New Button()
         Button44 = New Button()
-        Button45 = New Button()
-        Button46 = New Button()
+        r303Btn = New Button()
+        lab2Btn = New Button()
         Button47 = New Button()
-        Button48 = New Button()
+        r304Btn = New Button()
         lab1Btn = New Button()
         Button50 = New Button()
         lab1SchedPanel = New Panel()
@@ -276,6 +276,63 @@ Partial Class PRRC_BLDG
         Label145 = New Label()
         Label146 = New Label()
         Label147 = New Label()
+        r301Panel = New Panel()
+        Button39 = New Button()
+        Label148 = New Label()
+        Label149 = New Label()
+        Label150 = New Label()
+        Label151 = New Label()
+        Label152 = New Label()
+        Label153 = New Label()
+        Label154 = New Label()
+        Label155 = New Label()
+        Label156 = New Label()
+        r302Panel = New Panel()
+        Button41 = New Button()
+        Label157 = New Label()
+        Label158 = New Label()
+        Label159 = New Label()
+        Label160 = New Label()
+        Label161 = New Label()
+        Label162 = New Label()
+        Label163 = New Label()
+        Label164 = New Label()
+        Label165 = New Label()
+        r303Panel = New Panel()
+        Button45 = New Button()
+        Label166 = New Label()
+        Label167 = New Label()
+        Label168 = New Label()
+        Label169 = New Label()
+        Label170 = New Label()
+        Label171 = New Label()
+        Label172 = New Label()
+        Label173 = New Label()
+        Label174 = New Label()
+        r304Panel = New Panel()
+        Button48 = New Button()
+        Label175 = New Label()
+        Label176 = New Label()
+        Label177 = New Label()
+        Label178 = New Label()
+        Label179 = New Label()
+        Label180 = New Label()
+        Label181 = New Label()
+        Label182 = New Label()
+        Label183 = New Label()
+        lab2SchedPanel = New Panel()
+        Label184 = New Label()
+        Button52 = New Button()
+        Button53 = New Button()
+        Button54 = New Button()
+        Button55 = New Button()
+        Button56 = New Button()
+        Button57 = New Button()
+        Button58 = New Button()
+        Button59 = New Button()
+        Button60 = New Button()
+        Button61 = New Button()
+        Button62 = New Button()
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
@@ -297,6 +354,11 @@ Partial Class PRRC_BLDG
         r206Panel.SuspendLayout()
         r207Panel.SuspendLayout()
         r208Panel.SuspendLayout()
+        r301Panel.SuspendLayout()
+        r302Panel.SuspendLayout()
+        r303Panel.SuspendLayout()
+        r304Panel.SuspendLayout()
+        lab2SchedPanel.SuspendLayout()
         SuspendLayout()
         ' 
         ' Button1
@@ -454,7 +516,7 @@ Partial Class PRRC_BLDG
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 10F)
+        Label9.Font = New Font("Segoe UI", 10.0F)
         Label9.Location = New Point(14, 287)
         Label9.Name = "Label9"
         Label9.Size = New Size(138, 19)
@@ -464,7 +526,7 @@ Partial Class PRRC_BLDG
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 10F)
+        Label5.Font = New Font("Segoe UI", 10.0F)
         Label5.Location = New Point(14, 179)
         Label5.Name = "Label5"
         Label5.Size = New Size(138, 19)
@@ -474,7 +536,7 @@ Partial Class PRRC_BLDG
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI", 10F)
+        Label8.Font = New Font("Segoe UI", 10.0F)
         Label8.Location = New Point(14, 259)
         Label8.Name = "Label8"
         Label8.Size = New Size(138, 19)
@@ -484,7 +546,7 @@ Partial Class PRRC_BLDG
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI", 10F)
+        Label7.Font = New Font("Segoe UI", 10.0F)
         Label7.Location = New Point(14, 232)
         Label7.Name = "Label7"
         Label7.Size = New Size(138, 19)
@@ -494,7 +556,7 @@ Partial Class PRRC_BLDG
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 10F)
+        Label4.Font = New Font("Segoe UI", 10.0F)
         Label4.Location = New Point(14, 151)
         Label4.Name = "Label4"
         Label4.Size = New Size(138, 19)
@@ -504,7 +566,7 @@ Partial Class PRRC_BLDG
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 10F)
+        Label6.Font = New Font("Segoe UI", 10.0F)
         Label6.Location = New Point(14, 204)
         Label6.Name = "Label6"
         Label6.Size = New Size(138, 19)
@@ -514,7 +576,7 @@ Partial Class PRRC_BLDG
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 10F)
+        Label3.Font = New Font("Segoe UI", 10.0F)
         Label3.Location = New Point(14, 124)
         Label3.Name = "Label3"
         Label3.Size = New Size(138, 19)
@@ -524,7 +586,7 @@ Partial Class PRRC_BLDG
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 10F)
+        Label2.Font = New Font("Segoe UI", 10.0F)
         Label2.Location = New Point(14, 96)
         Label2.Name = "Label2"
         Label2.Size = New Size(138, 19)
@@ -534,7 +596,7 @@ Partial Class PRRC_BLDG
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label1.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label1.Location = New Point(14, 51)
         Label1.Name = "Label1"
         Label1.Size = New Size(233, 28)
@@ -833,16 +895,16 @@ Partial Class PRRC_BLDG
         thirdFloorPanel.Controls.Add(Button35)
         thirdFloorPanel.Controls.Add(Label12)
         thirdFloorPanel.Controls.Add(Button38)
-        thirdFloorPanel.Controls.Add(Button39)
+        thirdFloorPanel.Controls.Add(r301Btn)
         thirdFloorPanel.Controls.Add(Button40)
-        thirdFloorPanel.Controls.Add(Button41)
+        thirdFloorPanel.Controls.Add(r302Btn)
         thirdFloorPanel.Controls.Add(Button42)
         thirdFloorPanel.Controls.Add(Button43)
         thirdFloorPanel.Controls.Add(Button44)
-        thirdFloorPanel.Controls.Add(Button45)
-        thirdFloorPanel.Controls.Add(Button46)
+        thirdFloorPanel.Controls.Add(r303Btn)
+        thirdFloorPanel.Controls.Add(lab2Btn)
         thirdFloorPanel.Controls.Add(Button47)
-        thirdFloorPanel.Controls.Add(Button48)
+        thirdFloorPanel.Controls.Add(r304Btn)
         thirdFloorPanel.Controls.Add(lab1Btn)
         thirdFloorPanel.Controls.Add(Button50)
         thirdFloorPanel.Location = New Point(74, 110)
@@ -900,14 +962,14 @@ Partial Class PRRC_BLDG
         Button38.Text = "MALE CR"
         Button38.UseVisualStyleBackColor = True
         ' 
-        ' Button39
+        ' r301Btn
         ' 
-        Button39.Location = New Point(79, 128)
-        Button39.Name = "Button39"
-        Button39.Size = New Size(60, 47)
-        Button39.TabIndex = 19
-        Button39.Text = "301"
-        Button39.UseVisualStyleBackColor = True
+        r301Btn.Location = New Point(79, 128)
+        r301Btn.Name = "r301Btn"
+        r301Btn.Size = New Size(60, 47)
+        r301Btn.TabIndex = 19
+        r301Btn.Text = "301"
+        r301Btn.UseVisualStyleBackColor = True
         ' 
         ' Button40
         ' 
@@ -918,14 +980,14 @@ Partial Class PRRC_BLDG
         Button40.Text = "STAIR"
         Button40.UseVisualStyleBackColor = True
         ' 
-        ' Button41
+        ' r302Btn
         ' 
-        Button41.Location = New Point(145, 128)
-        Button41.Name = "Button41"
-        Button41.Size = New Size(60, 47)
-        Button41.TabIndex = 21
-        Button41.Text = "302"
-        Button41.UseVisualStyleBackColor = True
+        r302Btn.Location = New Point(145, 128)
+        r302Btn.Name = "r302Btn"
+        r302Btn.Size = New Size(60, 47)
+        r302Btn.TabIndex = 21
+        r302Btn.Text = "302"
+        r302Btn.UseVisualStyleBackColor = True
         ' 
         ' Button42
         ' 
@@ -954,23 +1016,23 @@ Partial Class PRRC_BLDG
         Button44.Text = "FEMALE CR"
         Button44.UseVisualStyleBackColor = True
         ' 
-        ' Button45
+        ' r303Btn
         ' 
-        Button45.Location = New Point(79, 231)
-        Button45.Name = "Button45"
-        Button45.Size = New Size(60, 47)
-        Button45.TabIndex = 25
-        Button45.Text = "303"
-        Button45.UseVisualStyleBackColor = True
+        r303Btn.Location = New Point(79, 231)
+        r303Btn.Name = "r303Btn"
+        r303Btn.Size = New Size(60, 47)
+        r303Btn.TabIndex = 25
+        r303Btn.Text = "303"
+        r303Btn.UseVisualStyleBackColor = True
         ' 
-        ' Button46
+        ' lab2Btn
         ' 
-        Button46.Location = New Point(359, 128)
-        Button46.Name = "Button46"
-        Button46.Size = New Size(60, 47)
-        Button46.TabIndex = 26
-        Button46.Text = "LAB 2"
-        Button46.UseVisualStyleBackColor = True
+        lab2Btn.Location = New Point(359, 128)
+        lab2Btn.Name = "lab2Btn"
+        lab2Btn.Size = New Size(60, 47)
+        lab2Btn.TabIndex = 26
+        lab2Btn.Text = "LAB 2"
+        lab2Btn.UseVisualStyleBackColor = True
         ' 
         ' Button47
         ' 
@@ -981,14 +1043,14 @@ Partial Class PRRC_BLDG
         Button47.Text = "STAIR"
         Button47.UseVisualStyleBackColor = True
         ' 
-        ' Button48
+        ' r304Btn
         ' 
-        Button48.Location = New Point(145, 231)
-        Button48.Name = "Button48"
-        Button48.Size = New Size(60, 47)
-        Button48.TabIndex = 28
-        Button48.Text = "304"
-        Button48.UseVisualStyleBackColor = True
+        r304Btn.Location = New Point(145, 231)
+        r304Btn.Name = "r304Btn"
+        r304Btn.Size = New Size(60, 47)
+        r304Btn.TabIndex = 28
+        r304Btn.Text = "304"
+        r304Btn.UseVisualStyleBackColor = True
         ' 
         ' lab1Btn
         ' 
@@ -1033,7 +1095,7 @@ Partial Class PRRC_BLDG
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label13.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label13.Location = New Point(76, 31)
         Label13.Name = "Label13"
         Label13.Size = New Size(163, 28)
@@ -1254,7 +1316,7 @@ Partial Class PRRC_BLDG
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Segoe UI", 10F)
+        Label14.Font = New Font("Segoe UI", 10.0F)
         Label14.Location = New Point(14, 287)
         Label14.Name = "Label14"
         Label14.Size = New Size(138, 19)
@@ -1264,7 +1326,7 @@ Partial Class PRRC_BLDG
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Segoe UI", 10F)
+        Label15.Font = New Font("Segoe UI", 10.0F)
         Label15.Location = New Point(14, 179)
         Label15.Name = "Label15"
         Label15.Size = New Size(138, 19)
@@ -1274,7 +1336,7 @@ Partial Class PRRC_BLDG
         ' Label17
         ' 
         Label17.AutoSize = True
-        Label17.Font = New Font("Segoe UI", 10F)
+        Label17.Font = New Font("Segoe UI", 10.0F)
         Label17.Location = New Point(14, 259)
         Label17.Name = "Label17"
         Label17.Size = New Size(138, 19)
@@ -1284,7 +1346,7 @@ Partial Class PRRC_BLDG
         ' Label18
         ' 
         Label18.AutoSize = True
-        Label18.Font = New Font("Segoe UI", 10F)
+        Label18.Font = New Font("Segoe UI", 10.0F)
         Label18.Location = New Point(14, 232)
         Label18.Name = "Label18"
         Label18.Size = New Size(138, 19)
@@ -1294,7 +1356,7 @@ Partial Class PRRC_BLDG
         ' Label19
         ' 
         Label19.AutoSize = True
-        Label19.Font = New Font("Segoe UI", 10F)
+        Label19.Font = New Font("Segoe UI", 10.0F)
         Label19.Location = New Point(14, 151)
         Label19.Name = "Label19"
         Label19.Size = New Size(138, 19)
@@ -1304,7 +1366,7 @@ Partial Class PRRC_BLDG
         ' Label20
         ' 
         Label20.AutoSize = True
-        Label20.Font = New Font("Segoe UI", 10F)
+        Label20.Font = New Font("Segoe UI", 10.0F)
         Label20.Location = New Point(14, 204)
         Label20.Name = "Label20"
         Label20.Size = New Size(138, 19)
@@ -1314,7 +1376,7 @@ Partial Class PRRC_BLDG
         ' Label21
         ' 
         Label21.AutoSize = True
-        Label21.Font = New Font("Segoe UI", 10F)
+        Label21.Font = New Font("Segoe UI", 10.0F)
         Label21.Location = New Point(14, 124)
         Label21.Name = "Label21"
         Label21.Size = New Size(138, 19)
@@ -1324,7 +1386,7 @@ Partial Class PRRC_BLDG
         ' Label22
         ' 
         Label22.AutoSize = True
-        Label22.Font = New Font("Segoe UI", 10F)
+        Label22.Font = New Font("Segoe UI", 10.0F)
         Label22.Location = New Point(14, 96)
         Label22.Name = "Label22"
         Label22.Size = New Size(138, 19)
@@ -1334,7 +1396,7 @@ Partial Class PRRC_BLDG
         ' Label23
         ' 
         Label23.AutoSize = True
-        Label23.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label23.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label23.Location = New Point(14, 51)
         Label23.Name = "Label23"
         Label23.Size = New Size(233, 28)
@@ -1380,7 +1442,7 @@ Partial Class PRRC_BLDG
         ' Label24
         ' 
         Label24.AutoSize = True
-        Label24.Font = New Font("Segoe UI", 10F)
+        Label24.Font = New Font("Segoe UI", 10.0F)
         Label24.Location = New Point(14, 287)
         Label24.Name = "Label24"
         Label24.Size = New Size(138, 19)
@@ -1390,7 +1452,7 @@ Partial Class PRRC_BLDG
         ' Label25
         ' 
         Label25.AutoSize = True
-        Label25.Font = New Font("Segoe UI", 10F)
+        Label25.Font = New Font("Segoe UI", 10.0F)
         Label25.Location = New Point(14, 179)
         Label25.Name = "Label25"
         Label25.Size = New Size(138, 19)
@@ -1400,7 +1462,7 @@ Partial Class PRRC_BLDG
         ' Label26
         ' 
         Label26.AutoSize = True
-        Label26.Font = New Font("Segoe UI", 10F)
+        Label26.Font = New Font("Segoe UI", 10.0F)
         Label26.Location = New Point(14, 259)
         Label26.Name = "Label26"
         Label26.Size = New Size(138, 19)
@@ -1410,7 +1472,7 @@ Partial Class PRRC_BLDG
         ' Label27
         ' 
         Label27.AutoSize = True
-        Label27.Font = New Font("Segoe UI", 10F)
+        Label27.Font = New Font("Segoe UI", 10.0F)
         Label27.Location = New Point(14, 232)
         Label27.Name = "Label27"
         Label27.Size = New Size(138, 19)
@@ -1420,7 +1482,7 @@ Partial Class PRRC_BLDG
         ' Label28
         ' 
         Label28.AutoSize = True
-        Label28.Font = New Font("Segoe UI", 10F)
+        Label28.Font = New Font("Segoe UI", 10.0F)
         Label28.Location = New Point(14, 151)
         Label28.Name = "Label28"
         Label28.Size = New Size(138, 19)
@@ -1430,7 +1492,7 @@ Partial Class PRRC_BLDG
         ' Label29
         ' 
         Label29.AutoSize = True
-        Label29.Font = New Font("Segoe UI", 10F)
+        Label29.Font = New Font("Segoe UI", 10.0F)
         Label29.Location = New Point(14, 204)
         Label29.Name = "Label29"
         Label29.Size = New Size(138, 19)
@@ -1440,7 +1502,7 @@ Partial Class PRRC_BLDG
         ' Label30
         ' 
         Label30.AutoSize = True
-        Label30.Font = New Font("Segoe UI", 10F)
+        Label30.Font = New Font("Segoe UI", 10.0F)
         Label30.Location = New Point(14, 124)
         Label30.Name = "Label30"
         Label30.Size = New Size(138, 19)
@@ -1450,7 +1512,7 @@ Partial Class PRRC_BLDG
         ' Label31
         ' 
         Label31.AutoSize = True
-        Label31.Font = New Font("Segoe UI", 10F)
+        Label31.Font = New Font("Segoe UI", 10.0F)
         Label31.Location = New Point(14, 96)
         Label31.Name = "Label31"
         Label31.Size = New Size(138, 19)
@@ -1460,7 +1522,7 @@ Partial Class PRRC_BLDG
         ' Label32
         ' 
         Label32.AutoSize = True
-        Label32.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label32.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label32.Location = New Point(14, 51)
         Label32.Name = "Label32"
         Label32.Size = New Size(233, 28)
@@ -1506,7 +1568,7 @@ Partial Class PRRC_BLDG
         ' Label33
         ' 
         Label33.AutoSize = True
-        Label33.Font = New Font("Segoe UI", 10F)
+        Label33.Font = New Font("Segoe UI", 10.0F)
         Label33.Location = New Point(14, 287)
         Label33.Name = "Label33"
         Label33.Size = New Size(138, 19)
@@ -1516,7 +1578,7 @@ Partial Class PRRC_BLDG
         ' Label34
         ' 
         Label34.AutoSize = True
-        Label34.Font = New Font("Segoe UI", 10F)
+        Label34.Font = New Font("Segoe UI", 10.0F)
         Label34.Location = New Point(14, 179)
         Label34.Name = "Label34"
         Label34.Size = New Size(138, 19)
@@ -1526,7 +1588,7 @@ Partial Class PRRC_BLDG
         ' Label35
         ' 
         Label35.AutoSize = True
-        Label35.Font = New Font("Segoe UI", 10F)
+        Label35.Font = New Font("Segoe UI", 10.0F)
         Label35.Location = New Point(14, 259)
         Label35.Name = "Label35"
         Label35.Size = New Size(138, 19)
@@ -1536,7 +1598,7 @@ Partial Class PRRC_BLDG
         ' Label36
         ' 
         Label36.AutoSize = True
-        Label36.Font = New Font("Segoe UI", 10F)
+        Label36.Font = New Font("Segoe UI", 10.0F)
         Label36.Location = New Point(14, 232)
         Label36.Name = "Label36"
         Label36.Size = New Size(138, 19)
@@ -1546,7 +1608,7 @@ Partial Class PRRC_BLDG
         ' Label37
         ' 
         Label37.AutoSize = True
-        Label37.Font = New Font("Segoe UI", 10F)
+        Label37.Font = New Font("Segoe UI", 10.0F)
         Label37.Location = New Point(14, 151)
         Label37.Name = "Label37"
         Label37.Size = New Size(138, 19)
@@ -1556,7 +1618,7 @@ Partial Class PRRC_BLDG
         ' Label38
         ' 
         Label38.AutoSize = True
-        Label38.Font = New Font("Segoe UI", 10F)
+        Label38.Font = New Font("Segoe UI", 10.0F)
         Label38.Location = New Point(14, 204)
         Label38.Name = "Label38"
         Label38.Size = New Size(138, 19)
@@ -1566,7 +1628,7 @@ Partial Class PRRC_BLDG
         ' Label39
         ' 
         Label39.AutoSize = True
-        Label39.Font = New Font("Segoe UI", 10F)
+        Label39.Font = New Font("Segoe UI", 10.0F)
         Label39.Location = New Point(14, 124)
         Label39.Name = "Label39"
         Label39.Size = New Size(138, 19)
@@ -1576,7 +1638,7 @@ Partial Class PRRC_BLDG
         ' Label40
         ' 
         Label40.AutoSize = True
-        Label40.Font = New Font("Segoe UI", 10F)
+        Label40.Font = New Font("Segoe UI", 10.0F)
         Label40.Location = New Point(14, 96)
         Label40.Name = "Label40"
         Label40.Size = New Size(138, 19)
@@ -1586,7 +1648,7 @@ Partial Class PRRC_BLDG
         ' Label41
         ' 
         Label41.AutoSize = True
-        Label41.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label41.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label41.Location = New Point(14, 51)
         Label41.Name = "Label41"
         Label41.Size = New Size(233, 28)
@@ -1632,7 +1694,7 @@ Partial Class PRRC_BLDG
         ' Label42
         ' 
         Label42.AutoSize = True
-        Label42.Font = New Font("Segoe UI", 10F)
+        Label42.Font = New Font("Segoe UI", 10.0F)
         Label42.Location = New Point(14, 287)
         Label42.Name = "Label42"
         Label42.Size = New Size(138, 19)
@@ -1642,7 +1704,7 @@ Partial Class PRRC_BLDG
         ' Label43
         ' 
         Label43.AutoSize = True
-        Label43.Font = New Font("Segoe UI", 10F)
+        Label43.Font = New Font("Segoe UI", 10.0F)
         Label43.Location = New Point(14, 179)
         Label43.Name = "Label43"
         Label43.Size = New Size(138, 19)
@@ -1652,7 +1714,7 @@ Partial Class PRRC_BLDG
         ' Label44
         ' 
         Label44.AutoSize = True
-        Label44.Font = New Font("Segoe UI", 10F)
+        Label44.Font = New Font("Segoe UI", 10.0F)
         Label44.Location = New Point(14, 259)
         Label44.Name = "Label44"
         Label44.Size = New Size(138, 19)
@@ -1662,7 +1724,7 @@ Partial Class PRRC_BLDG
         ' Label45
         ' 
         Label45.AutoSize = True
-        Label45.Font = New Font("Segoe UI", 10F)
+        Label45.Font = New Font("Segoe UI", 10.0F)
         Label45.Location = New Point(14, 232)
         Label45.Name = "Label45"
         Label45.Size = New Size(138, 19)
@@ -1672,7 +1734,7 @@ Partial Class PRRC_BLDG
         ' Label46
         ' 
         Label46.AutoSize = True
-        Label46.Font = New Font("Segoe UI", 10F)
+        Label46.Font = New Font("Segoe UI", 10.0F)
         Label46.Location = New Point(14, 151)
         Label46.Name = "Label46"
         Label46.Size = New Size(138, 19)
@@ -1682,7 +1744,7 @@ Partial Class PRRC_BLDG
         ' Label47
         ' 
         Label47.AutoSize = True
-        Label47.Font = New Font("Segoe UI", 10F)
+        Label47.Font = New Font("Segoe UI", 10.0F)
         Label47.Location = New Point(14, 204)
         Label47.Name = "Label47"
         Label47.Size = New Size(138, 19)
@@ -1692,7 +1754,7 @@ Partial Class PRRC_BLDG
         ' Label48
         ' 
         Label48.AutoSize = True
-        Label48.Font = New Font("Segoe UI", 10F)
+        Label48.Font = New Font("Segoe UI", 10.0F)
         Label48.Location = New Point(14, 124)
         Label48.Name = "Label48"
         Label48.Size = New Size(138, 19)
@@ -1702,7 +1764,7 @@ Partial Class PRRC_BLDG
         ' Label49
         ' 
         Label49.AutoSize = True
-        Label49.Font = New Font("Segoe UI", 10F)
+        Label49.Font = New Font("Segoe UI", 10.0F)
         Label49.Location = New Point(14, 96)
         Label49.Name = "Label49"
         Label49.Size = New Size(138, 19)
@@ -1712,7 +1774,7 @@ Partial Class PRRC_BLDG
         ' Label50
         ' 
         Label50.AutoSize = True
-        Label50.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label50.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label50.Location = New Point(14, 51)
         Label50.Name = "Label50"
         Label50.Size = New Size(233, 28)
@@ -1758,7 +1820,7 @@ Partial Class PRRC_BLDG
         ' Label51
         ' 
         Label51.AutoSize = True
-        Label51.Font = New Font("Segoe UI", 10F)
+        Label51.Font = New Font("Segoe UI", 10.0F)
         Label51.Location = New Point(14, 287)
         Label51.Name = "Label51"
         Label51.Size = New Size(138, 19)
@@ -1768,7 +1830,7 @@ Partial Class PRRC_BLDG
         ' Label52
         ' 
         Label52.AutoSize = True
-        Label52.Font = New Font("Segoe UI", 10F)
+        Label52.Font = New Font("Segoe UI", 10.0F)
         Label52.Location = New Point(14, 179)
         Label52.Name = "Label52"
         Label52.Size = New Size(138, 19)
@@ -1778,7 +1840,7 @@ Partial Class PRRC_BLDG
         ' Label53
         ' 
         Label53.AutoSize = True
-        Label53.Font = New Font("Segoe UI", 10F)
+        Label53.Font = New Font("Segoe UI", 10.0F)
         Label53.Location = New Point(14, 259)
         Label53.Name = "Label53"
         Label53.Size = New Size(138, 19)
@@ -1788,7 +1850,7 @@ Partial Class PRRC_BLDG
         ' Label54
         ' 
         Label54.AutoSize = True
-        Label54.Font = New Font("Segoe UI", 10F)
+        Label54.Font = New Font("Segoe UI", 10.0F)
         Label54.Location = New Point(14, 232)
         Label54.Name = "Label54"
         Label54.Size = New Size(138, 19)
@@ -1798,7 +1860,7 @@ Partial Class PRRC_BLDG
         ' Label55
         ' 
         Label55.AutoSize = True
-        Label55.Font = New Font("Segoe UI", 10F)
+        Label55.Font = New Font("Segoe UI", 10.0F)
         Label55.Location = New Point(14, 151)
         Label55.Name = "Label55"
         Label55.Size = New Size(138, 19)
@@ -1808,7 +1870,7 @@ Partial Class PRRC_BLDG
         ' Label56
         ' 
         Label56.AutoSize = True
-        Label56.Font = New Font("Segoe UI", 10F)
+        Label56.Font = New Font("Segoe UI", 10.0F)
         Label56.Location = New Point(14, 204)
         Label56.Name = "Label56"
         Label56.Size = New Size(138, 19)
@@ -1818,7 +1880,7 @@ Partial Class PRRC_BLDG
         ' Label57
         ' 
         Label57.AutoSize = True
-        Label57.Font = New Font("Segoe UI", 10F)
+        Label57.Font = New Font("Segoe UI", 10.0F)
         Label57.Location = New Point(14, 124)
         Label57.Name = "Label57"
         Label57.Size = New Size(138, 19)
@@ -1828,7 +1890,7 @@ Partial Class PRRC_BLDG
         ' Label58
         ' 
         Label58.AutoSize = True
-        Label58.Font = New Font("Segoe UI", 10F)
+        Label58.Font = New Font("Segoe UI", 10.0F)
         Label58.Location = New Point(14, 96)
         Label58.Name = "Label58"
         Label58.Size = New Size(138, 19)
@@ -1838,7 +1900,7 @@ Partial Class PRRC_BLDG
         ' Label59
         ' 
         Label59.AutoSize = True
-        Label59.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label59.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label59.Location = New Point(14, 51)
         Label59.Name = "Label59"
         Label59.Size = New Size(233, 28)
@@ -1884,7 +1946,7 @@ Partial Class PRRC_BLDG
         ' Label60
         ' 
         Label60.AutoSize = True
-        Label60.Font = New Font("Segoe UI", 10F)
+        Label60.Font = New Font("Segoe UI", 10.0F)
         Label60.Location = New Point(14, 287)
         Label60.Name = "Label60"
         Label60.Size = New Size(138, 19)
@@ -1894,7 +1956,7 @@ Partial Class PRRC_BLDG
         ' Label61
         ' 
         Label61.AutoSize = True
-        Label61.Font = New Font("Segoe UI", 10F)
+        Label61.Font = New Font("Segoe UI", 10.0F)
         Label61.Location = New Point(14, 179)
         Label61.Name = "Label61"
         Label61.Size = New Size(138, 19)
@@ -1904,7 +1966,7 @@ Partial Class PRRC_BLDG
         ' Label62
         ' 
         Label62.AutoSize = True
-        Label62.Font = New Font("Segoe UI", 10F)
+        Label62.Font = New Font("Segoe UI", 10.0F)
         Label62.Location = New Point(14, 259)
         Label62.Name = "Label62"
         Label62.Size = New Size(138, 19)
@@ -1914,7 +1976,7 @@ Partial Class PRRC_BLDG
         ' Label63
         ' 
         Label63.AutoSize = True
-        Label63.Font = New Font("Segoe UI", 10F)
+        Label63.Font = New Font("Segoe UI", 10.0F)
         Label63.Location = New Point(14, 232)
         Label63.Name = "Label63"
         Label63.Size = New Size(138, 19)
@@ -1924,7 +1986,7 @@ Partial Class PRRC_BLDG
         ' Label64
         ' 
         Label64.AutoSize = True
-        Label64.Font = New Font("Segoe UI", 10F)
+        Label64.Font = New Font("Segoe UI", 10.0F)
         Label64.Location = New Point(14, 151)
         Label64.Name = "Label64"
         Label64.Size = New Size(138, 19)
@@ -1934,7 +1996,7 @@ Partial Class PRRC_BLDG
         ' Label65
         ' 
         Label65.AutoSize = True
-        Label65.Font = New Font("Segoe UI", 10F)
+        Label65.Font = New Font("Segoe UI", 10.0F)
         Label65.Location = New Point(14, 204)
         Label65.Name = "Label65"
         Label65.Size = New Size(138, 19)
@@ -1944,7 +2006,7 @@ Partial Class PRRC_BLDG
         ' Label66
         ' 
         Label66.AutoSize = True
-        Label66.Font = New Font("Segoe UI", 10F)
+        Label66.Font = New Font("Segoe UI", 10.0F)
         Label66.Location = New Point(14, 124)
         Label66.Name = "Label66"
         Label66.Size = New Size(138, 19)
@@ -1954,7 +2016,7 @@ Partial Class PRRC_BLDG
         ' Label67
         ' 
         Label67.AutoSize = True
-        Label67.Font = New Font("Segoe UI", 10F)
+        Label67.Font = New Font("Segoe UI", 10.0F)
         Label67.Location = New Point(14, 96)
         Label67.Name = "Label67"
         Label67.Size = New Size(138, 19)
@@ -1964,7 +2026,7 @@ Partial Class PRRC_BLDG
         ' Label68
         ' 
         Label68.AutoSize = True
-        Label68.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label68.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label68.Location = New Point(14, 51)
         Label68.Name = "Label68"
         Label68.Size = New Size(233, 28)
@@ -2010,7 +2072,7 @@ Partial Class PRRC_BLDG
         ' Label69
         ' 
         Label69.AutoSize = True
-        Label69.Font = New Font("Segoe UI", 10F)
+        Label69.Font = New Font("Segoe UI", 10.0F)
         Label69.Location = New Point(14, 287)
         Label69.Name = "Label69"
         Label69.Size = New Size(138, 19)
@@ -2020,7 +2082,7 @@ Partial Class PRRC_BLDG
         ' Label70
         ' 
         Label70.AutoSize = True
-        Label70.Font = New Font("Segoe UI", 10F)
+        Label70.Font = New Font("Segoe UI", 10.0F)
         Label70.Location = New Point(14, 179)
         Label70.Name = "Label70"
         Label70.Size = New Size(138, 19)
@@ -2030,7 +2092,7 @@ Partial Class PRRC_BLDG
         ' Label71
         ' 
         Label71.AutoSize = True
-        Label71.Font = New Font("Segoe UI", 10F)
+        Label71.Font = New Font("Segoe UI", 10.0F)
         Label71.Location = New Point(14, 259)
         Label71.Name = "Label71"
         Label71.Size = New Size(138, 19)
@@ -2040,7 +2102,7 @@ Partial Class PRRC_BLDG
         ' Label72
         ' 
         Label72.AutoSize = True
-        Label72.Font = New Font("Segoe UI", 10F)
+        Label72.Font = New Font("Segoe UI", 10.0F)
         Label72.Location = New Point(14, 232)
         Label72.Name = "Label72"
         Label72.Size = New Size(138, 19)
@@ -2050,7 +2112,7 @@ Partial Class PRRC_BLDG
         ' Label73
         ' 
         Label73.AutoSize = True
-        Label73.Font = New Font("Segoe UI", 10F)
+        Label73.Font = New Font("Segoe UI", 10.0F)
         Label73.Location = New Point(14, 151)
         Label73.Name = "Label73"
         Label73.Size = New Size(138, 19)
@@ -2060,7 +2122,7 @@ Partial Class PRRC_BLDG
         ' Label74
         ' 
         Label74.AutoSize = True
-        Label74.Font = New Font("Segoe UI", 10F)
+        Label74.Font = New Font("Segoe UI", 10.0F)
         Label74.Location = New Point(14, 204)
         Label74.Name = "Label74"
         Label74.Size = New Size(138, 19)
@@ -2070,7 +2132,7 @@ Partial Class PRRC_BLDG
         ' Label75
         ' 
         Label75.AutoSize = True
-        Label75.Font = New Font("Segoe UI", 10F)
+        Label75.Font = New Font("Segoe UI", 10.0F)
         Label75.Location = New Point(14, 124)
         Label75.Name = "Label75"
         Label75.Size = New Size(138, 19)
@@ -2080,7 +2142,7 @@ Partial Class PRRC_BLDG
         ' Label76
         ' 
         Label76.AutoSize = True
-        Label76.Font = New Font("Segoe UI", 10F)
+        Label76.Font = New Font("Segoe UI", 10.0F)
         Label76.Location = New Point(14, 96)
         Label76.Name = "Label76"
         Label76.Size = New Size(138, 19)
@@ -2090,7 +2152,7 @@ Partial Class PRRC_BLDG
         ' Label77
         ' 
         Label77.AutoSize = True
-        Label77.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label77.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label77.Location = New Point(14, 51)
         Label77.Name = "Label77"
         Label77.Size = New Size(233, 28)
@@ -2136,7 +2198,7 @@ Partial Class PRRC_BLDG
         ' Label78
         ' 
         Label78.AutoSize = True
-        Label78.Font = New Font("Segoe UI", 10F)
+        Label78.Font = New Font("Segoe UI", 10.0F)
         Label78.Location = New Point(14, 287)
         Label78.Name = "Label78"
         Label78.Size = New Size(138, 19)
@@ -2146,7 +2208,7 @@ Partial Class PRRC_BLDG
         ' Label79
         ' 
         Label79.AutoSize = True
-        Label79.Font = New Font("Segoe UI", 10F)
+        Label79.Font = New Font("Segoe UI", 10.0F)
         Label79.Location = New Point(14, 179)
         Label79.Name = "Label79"
         Label79.Size = New Size(138, 19)
@@ -2156,7 +2218,7 @@ Partial Class PRRC_BLDG
         ' Label80
         ' 
         Label80.AutoSize = True
-        Label80.Font = New Font("Segoe UI", 10F)
+        Label80.Font = New Font("Segoe UI", 10.0F)
         Label80.Location = New Point(14, 259)
         Label80.Name = "Label80"
         Label80.Size = New Size(138, 19)
@@ -2166,7 +2228,7 @@ Partial Class PRRC_BLDG
         ' Label81
         ' 
         Label81.AutoSize = True
-        Label81.Font = New Font("Segoe UI", 10F)
+        Label81.Font = New Font("Segoe UI", 10.0F)
         Label81.Location = New Point(14, 232)
         Label81.Name = "Label81"
         Label81.Size = New Size(138, 19)
@@ -2176,7 +2238,7 @@ Partial Class PRRC_BLDG
         ' Label82
         ' 
         Label82.AutoSize = True
-        Label82.Font = New Font("Segoe UI", 10F)
+        Label82.Font = New Font("Segoe UI", 10.0F)
         Label82.Location = New Point(14, 151)
         Label82.Name = "Label82"
         Label82.Size = New Size(138, 19)
@@ -2186,7 +2248,7 @@ Partial Class PRRC_BLDG
         ' Label83
         ' 
         Label83.AutoSize = True
-        Label83.Font = New Font("Segoe UI", 10F)
+        Label83.Font = New Font("Segoe UI", 10.0F)
         Label83.Location = New Point(14, 204)
         Label83.Name = "Label83"
         Label83.Size = New Size(138, 19)
@@ -2196,7 +2258,7 @@ Partial Class PRRC_BLDG
         ' Label84
         ' 
         Label84.AutoSize = True
-        Label84.Font = New Font("Segoe UI", 10F)
+        Label84.Font = New Font("Segoe UI", 10.0F)
         Label84.Location = New Point(14, 124)
         Label84.Name = "Label84"
         Label84.Size = New Size(138, 19)
@@ -2206,7 +2268,7 @@ Partial Class PRRC_BLDG
         ' Label85
         ' 
         Label85.AutoSize = True
-        Label85.Font = New Font("Segoe UI", 10F)
+        Label85.Font = New Font("Segoe UI", 10.0F)
         Label85.Location = New Point(14, 96)
         Label85.Name = "Label85"
         Label85.Size = New Size(138, 19)
@@ -2216,7 +2278,7 @@ Partial Class PRRC_BLDG
         ' label
         ' 
         label.AutoSize = True
-        label.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        label.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         label.Location = New Point(14, 51)
         label.Name = "label"
         label.Size = New Size(233, 28)
@@ -2262,7 +2324,7 @@ Partial Class PRRC_BLDG
         ' Label86
         ' 
         Label86.AutoSize = True
-        Label86.Font = New Font("Segoe UI", 10F)
+        Label86.Font = New Font("Segoe UI", 10.0F)
         Label86.Location = New Point(14, 287)
         Label86.Name = "Label86"
         Label86.Size = New Size(138, 19)
@@ -2272,7 +2334,7 @@ Partial Class PRRC_BLDG
         ' Label87
         ' 
         Label87.AutoSize = True
-        Label87.Font = New Font("Segoe UI", 10F)
+        Label87.Font = New Font("Segoe UI", 10.0F)
         Label87.Location = New Point(14, 179)
         Label87.Name = "Label87"
         Label87.Size = New Size(138, 19)
@@ -2282,7 +2344,7 @@ Partial Class PRRC_BLDG
         ' Label88
         ' 
         Label88.AutoSize = True
-        Label88.Font = New Font("Segoe UI", 10F)
+        Label88.Font = New Font("Segoe UI", 10.0F)
         Label88.Location = New Point(14, 259)
         Label88.Name = "Label88"
         Label88.Size = New Size(138, 19)
@@ -2292,7 +2354,7 @@ Partial Class PRRC_BLDG
         ' Label89
         ' 
         Label89.AutoSize = True
-        Label89.Font = New Font("Segoe UI", 10F)
+        Label89.Font = New Font("Segoe UI", 10.0F)
         Label89.Location = New Point(14, 232)
         Label89.Name = "Label89"
         Label89.Size = New Size(138, 19)
@@ -2302,7 +2364,7 @@ Partial Class PRRC_BLDG
         ' Label90
         ' 
         Label90.AutoSize = True
-        Label90.Font = New Font("Segoe UI", 10F)
+        Label90.Font = New Font("Segoe UI", 10.0F)
         Label90.Location = New Point(14, 151)
         Label90.Name = "Label90"
         Label90.Size = New Size(138, 19)
@@ -2312,7 +2374,7 @@ Partial Class PRRC_BLDG
         ' Label91
         ' 
         Label91.AutoSize = True
-        Label91.Font = New Font("Segoe UI", 10F)
+        Label91.Font = New Font("Segoe UI", 10.0F)
         Label91.Location = New Point(14, 204)
         Label91.Name = "Label91"
         Label91.Size = New Size(138, 19)
@@ -2322,7 +2384,7 @@ Partial Class PRRC_BLDG
         ' Label92
         ' 
         Label92.AutoSize = True
-        Label92.Font = New Font("Segoe UI", 10F)
+        Label92.Font = New Font("Segoe UI", 10.0F)
         Label92.Location = New Point(14, 124)
         Label92.Name = "Label92"
         Label92.Size = New Size(138, 19)
@@ -2332,7 +2394,7 @@ Partial Class PRRC_BLDG
         ' Label93
         ' 
         Label93.AutoSize = True
-        Label93.Font = New Font("Segoe UI", 10F)
+        Label93.Font = New Font("Segoe UI", 10.0F)
         Label93.Location = New Point(14, 96)
         Label93.Name = "Label93"
         Label93.Size = New Size(138, 19)
@@ -2342,7 +2404,7 @@ Partial Class PRRC_BLDG
         ' lq
         ' 
         lq.AutoSize = True
-        lq.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        lq.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         lq.Location = New Point(14, 51)
         lq.Name = "lq"
         lq.Size = New Size(233, 28)
@@ -2388,7 +2450,7 @@ Partial Class PRRC_BLDG
         ' Label94
         ' 
         Label94.AutoSize = True
-        Label94.Font = New Font("Segoe UI", 10F)
+        Label94.Font = New Font("Segoe UI", 10.0F)
         Label94.Location = New Point(14, 287)
         Label94.Name = "Label94"
         Label94.Size = New Size(138, 19)
@@ -2398,7 +2460,7 @@ Partial Class PRRC_BLDG
         ' Label95
         ' 
         Label95.AutoSize = True
-        Label95.Font = New Font("Segoe UI", 10F)
+        Label95.Font = New Font("Segoe UI", 10.0F)
         Label95.Location = New Point(14, 179)
         Label95.Name = "Label95"
         Label95.Size = New Size(138, 19)
@@ -2408,7 +2470,7 @@ Partial Class PRRC_BLDG
         ' Label96
         ' 
         Label96.AutoSize = True
-        Label96.Font = New Font("Segoe UI", 10F)
+        Label96.Font = New Font("Segoe UI", 10.0F)
         Label96.Location = New Point(14, 259)
         Label96.Name = "Label96"
         Label96.Size = New Size(138, 19)
@@ -2418,7 +2480,7 @@ Partial Class PRRC_BLDG
         ' Label97
         ' 
         Label97.AutoSize = True
-        Label97.Font = New Font("Segoe UI", 10F)
+        Label97.Font = New Font("Segoe UI", 10.0F)
         Label97.Location = New Point(14, 232)
         Label97.Name = "Label97"
         Label97.Size = New Size(138, 19)
@@ -2428,7 +2490,7 @@ Partial Class PRRC_BLDG
         ' Label98
         ' 
         Label98.AutoSize = True
-        Label98.Font = New Font("Segoe UI", 10F)
+        Label98.Font = New Font("Segoe UI", 10.0F)
         Label98.Location = New Point(14, 151)
         Label98.Name = "Label98"
         Label98.Size = New Size(138, 19)
@@ -2438,7 +2500,7 @@ Partial Class PRRC_BLDG
         ' Label99
         ' 
         Label99.AutoSize = True
-        Label99.Font = New Font("Segoe UI", 10F)
+        Label99.Font = New Font("Segoe UI", 10.0F)
         Label99.Location = New Point(14, 204)
         Label99.Name = "Label99"
         Label99.Size = New Size(138, 19)
@@ -2448,7 +2510,7 @@ Partial Class PRRC_BLDG
         ' Label100
         ' 
         Label100.AutoSize = True
-        Label100.Font = New Font("Segoe UI", 10F)
+        Label100.Font = New Font("Segoe UI", 10.0F)
         Label100.Location = New Point(14, 124)
         Label100.Name = "Label100"
         Label100.Size = New Size(138, 19)
@@ -2458,7 +2520,7 @@ Partial Class PRRC_BLDG
         ' Label101
         ' 
         Label101.AutoSize = True
-        Label101.Font = New Font("Segoe UI", 10F)
+        Label101.Font = New Font("Segoe UI", 10.0F)
         Label101.Location = New Point(14, 96)
         Label101.Name = "Label101"
         Label101.Size = New Size(138, 19)
@@ -2468,7 +2530,7 @@ Partial Class PRRC_BLDG
         ' Label102
         ' 
         Label102.AutoSize = True
-        Label102.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label102.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label102.Location = New Point(14, 51)
         Label102.Name = "Label102"
         Label102.Size = New Size(233, 28)
@@ -2514,7 +2576,7 @@ Partial Class PRRC_BLDG
         ' Label103
         ' 
         Label103.AutoSize = True
-        Label103.Font = New Font("Segoe UI", 10F)
+        Label103.Font = New Font("Segoe UI", 10.0F)
         Label103.Location = New Point(14, 287)
         Label103.Name = "Label103"
         Label103.Size = New Size(138, 19)
@@ -2524,7 +2586,7 @@ Partial Class PRRC_BLDG
         ' Label104
         ' 
         Label104.AutoSize = True
-        Label104.Font = New Font("Segoe UI", 10F)
+        Label104.Font = New Font("Segoe UI", 10.0F)
         Label104.Location = New Point(14, 179)
         Label104.Name = "Label104"
         Label104.Size = New Size(138, 19)
@@ -2534,7 +2596,7 @@ Partial Class PRRC_BLDG
         ' Label105
         ' 
         Label105.AutoSize = True
-        Label105.Font = New Font("Segoe UI", 10F)
+        Label105.Font = New Font("Segoe UI", 10.0F)
         Label105.Location = New Point(14, 259)
         Label105.Name = "Label105"
         Label105.Size = New Size(138, 19)
@@ -2544,7 +2606,7 @@ Partial Class PRRC_BLDG
         ' Label106
         ' 
         Label106.AutoSize = True
-        Label106.Font = New Font("Segoe UI", 10F)
+        Label106.Font = New Font("Segoe UI", 10.0F)
         Label106.Location = New Point(14, 232)
         Label106.Name = "Label106"
         Label106.Size = New Size(138, 19)
@@ -2554,7 +2616,7 @@ Partial Class PRRC_BLDG
         ' Label107
         ' 
         Label107.AutoSize = True
-        Label107.Font = New Font("Segoe UI", 10F)
+        Label107.Font = New Font("Segoe UI", 10.0F)
         Label107.Location = New Point(14, 151)
         Label107.Name = "Label107"
         Label107.Size = New Size(138, 19)
@@ -2564,7 +2626,7 @@ Partial Class PRRC_BLDG
         ' Label108
         ' 
         Label108.AutoSize = True
-        Label108.Font = New Font("Segoe UI", 10F)
+        Label108.Font = New Font("Segoe UI", 10.0F)
         Label108.Location = New Point(14, 204)
         Label108.Name = "Label108"
         Label108.Size = New Size(138, 19)
@@ -2574,7 +2636,7 @@ Partial Class PRRC_BLDG
         ' Label109
         ' 
         Label109.AutoSize = True
-        Label109.Font = New Font("Segoe UI", 10F)
+        Label109.Font = New Font("Segoe UI", 10.0F)
         Label109.Location = New Point(14, 124)
         Label109.Name = "Label109"
         Label109.Size = New Size(138, 19)
@@ -2584,7 +2646,7 @@ Partial Class PRRC_BLDG
         ' Label110
         ' 
         Label110.AutoSize = True
-        Label110.Font = New Font("Segoe UI", 10F)
+        Label110.Font = New Font("Segoe UI", 10.0F)
         Label110.Location = New Point(14, 96)
         Label110.Name = "Label110"
         Label110.Size = New Size(138, 19)
@@ -2594,7 +2656,7 @@ Partial Class PRRC_BLDG
         ' Label111
         ' 
         Label111.AutoSize = True
-        Label111.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label111.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label111.Location = New Point(14, 51)
         Label111.Name = "Label111"
         Label111.Size = New Size(233, 28)
@@ -2640,7 +2702,7 @@ Partial Class PRRC_BLDG
         ' Label112
         ' 
         Label112.AutoSize = True
-        Label112.Font = New Font("Segoe UI", 10F)
+        Label112.Font = New Font("Segoe UI", 10.0F)
         Label112.Location = New Point(14, 287)
         Label112.Name = "Label112"
         Label112.Size = New Size(138, 19)
@@ -2650,7 +2712,7 @@ Partial Class PRRC_BLDG
         ' Label113
         ' 
         Label113.AutoSize = True
-        Label113.Font = New Font("Segoe UI", 10F)
+        Label113.Font = New Font("Segoe UI", 10.0F)
         Label113.Location = New Point(14, 179)
         Label113.Name = "Label113"
         Label113.Size = New Size(138, 19)
@@ -2660,7 +2722,7 @@ Partial Class PRRC_BLDG
         ' Label114
         ' 
         Label114.AutoSize = True
-        Label114.Font = New Font("Segoe UI", 10F)
+        Label114.Font = New Font("Segoe UI", 10.0F)
         Label114.Location = New Point(14, 259)
         Label114.Name = "Label114"
         Label114.Size = New Size(138, 19)
@@ -2670,7 +2732,7 @@ Partial Class PRRC_BLDG
         ' Label115
         ' 
         Label115.AutoSize = True
-        Label115.Font = New Font("Segoe UI", 10F)
+        Label115.Font = New Font("Segoe UI", 10.0F)
         Label115.Location = New Point(14, 232)
         Label115.Name = "Label115"
         Label115.Size = New Size(138, 19)
@@ -2680,7 +2742,7 @@ Partial Class PRRC_BLDG
         ' Label116
         ' 
         Label116.AutoSize = True
-        Label116.Font = New Font("Segoe UI", 10F)
+        Label116.Font = New Font("Segoe UI", 10.0F)
         Label116.Location = New Point(14, 151)
         Label116.Name = "Label116"
         Label116.Size = New Size(138, 19)
@@ -2690,7 +2752,7 @@ Partial Class PRRC_BLDG
         ' Label117
         ' 
         Label117.AutoSize = True
-        Label117.Font = New Font("Segoe UI", 10F)
+        Label117.Font = New Font("Segoe UI", 10.0F)
         Label117.Location = New Point(14, 204)
         Label117.Name = "Label117"
         Label117.Size = New Size(138, 19)
@@ -2700,7 +2762,7 @@ Partial Class PRRC_BLDG
         ' Label118
         ' 
         Label118.AutoSize = True
-        Label118.Font = New Font("Segoe UI", 10F)
+        Label118.Font = New Font("Segoe UI", 10.0F)
         Label118.Location = New Point(14, 124)
         Label118.Name = "Label118"
         Label118.Size = New Size(138, 19)
@@ -2710,7 +2772,7 @@ Partial Class PRRC_BLDG
         ' Label119
         ' 
         Label119.AutoSize = True
-        Label119.Font = New Font("Segoe UI", 10F)
+        Label119.Font = New Font("Segoe UI", 10.0F)
         Label119.Location = New Point(14, 96)
         Label119.Name = "Label119"
         Label119.Size = New Size(138, 19)
@@ -2720,7 +2782,7 @@ Partial Class PRRC_BLDG
         ' Label120
         ' 
         Label120.AutoSize = True
-        Label120.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label120.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label120.Location = New Point(14, 51)
         Label120.Name = "Label120"
         Label120.Size = New Size(233, 28)
@@ -2766,7 +2828,7 @@ Partial Class PRRC_BLDG
         ' Label121
         ' 
         Label121.AutoSize = True
-        Label121.Font = New Font("Segoe UI", 10F)
+        Label121.Font = New Font("Segoe UI", 10.0F)
         Label121.Location = New Point(14, 287)
         Label121.Name = "Label121"
         Label121.Size = New Size(138, 19)
@@ -2776,7 +2838,7 @@ Partial Class PRRC_BLDG
         ' Label122
         ' 
         Label122.AutoSize = True
-        Label122.Font = New Font("Segoe UI", 10F)
+        Label122.Font = New Font("Segoe UI", 10.0F)
         Label122.Location = New Point(14, 179)
         Label122.Name = "Label122"
         Label122.Size = New Size(138, 19)
@@ -2786,7 +2848,7 @@ Partial Class PRRC_BLDG
         ' Label123
         ' 
         Label123.AutoSize = True
-        Label123.Font = New Font("Segoe UI", 10F)
+        Label123.Font = New Font("Segoe UI", 10.0F)
         Label123.Location = New Point(14, 259)
         Label123.Name = "Label123"
         Label123.Size = New Size(138, 19)
@@ -2796,7 +2858,7 @@ Partial Class PRRC_BLDG
         ' Label124
         ' 
         Label124.AutoSize = True
-        Label124.Font = New Font("Segoe UI", 10F)
+        Label124.Font = New Font("Segoe UI", 10.0F)
         Label124.Location = New Point(14, 232)
         Label124.Name = "Label124"
         Label124.Size = New Size(138, 19)
@@ -2806,7 +2868,7 @@ Partial Class PRRC_BLDG
         ' Label125
         ' 
         Label125.AutoSize = True
-        Label125.Font = New Font("Segoe UI", 10F)
+        Label125.Font = New Font("Segoe UI", 10.0F)
         Label125.Location = New Point(14, 151)
         Label125.Name = "Label125"
         Label125.Size = New Size(138, 19)
@@ -2816,7 +2878,7 @@ Partial Class PRRC_BLDG
         ' Label126
         ' 
         Label126.AutoSize = True
-        Label126.Font = New Font("Segoe UI", 10F)
+        Label126.Font = New Font("Segoe UI", 10.0F)
         Label126.Location = New Point(14, 204)
         Label126.Name = "Label126"
         Label126.Size = New Size(138, 19)
@@ -2826,7 +2888,7 @@ Partial Class PRRC_BLDG
         ' Label127
         ' 
         Label127.AutoSize = True
-        Label127.Font = New Font("Segoe UI", 10F)
+        Label127.Font = New Font("Segoe UI", 10.0F)
         Label127.Location = New Point(14, 124)
         Label127.Name = "Label127"
         Label127.Size = New Size(138, 19)
@@ -2836,7 +2898,7 @@ Partial Class PRRC_BLDG
         ' Label128
         ' 
         Label128.AutoSize = True
-        Label128.Font = New Font("Segoe UI", 10F)
+        Label128.Font = New Font("Segoe UI", 10.0F)
         Label128.Location = New Point(14, 96)
         Label128.Name = "Label128"
         Label128.Size = New Size(138, 19)
@@ -2846,7 +2908,7 @@ Partial Class PRRC_BLDG
         ' Label129
         ' 
         Label129.AutoSize = True
-        Label129.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label129.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label129.Location = New Point(14, 51)
         Label129.Name = "Label129"
         Label129.Size = New Size(233, 28)
@@ -2892,7 +2954,7 @@ Partial Class PRRC_BLDG
         ' Label130
         ' 
         Label130.AutoSize = True
-        Label130.Font = New Font("Segoe UI", 10F)
+        Label130.Font = New Font("Segoe UI", 10.0F)
         Label130.Location = New Point(14, 287)
         Label130.Name = "Label130"
         Label130.Size = New Size(138, 19)
@@ -2902,7 +2964,7 @@ Partial Class PRRC_BLDG
         ' Label131
         ' 
         Label131.AutoSize = True
-        Label131.Font = New Font("Segoe UI", 10F)
+        Label131.Font = New Font("Segoe UI", 10.0F)
         Label131.Location = New Point(14, 179)
         Label131.Name = "Label131"
         Label131.Size = New Size(138, 19)
@@ -2912,7 +2974,7 @@ Partial Class PRRC_BLDG
         ' Label132
         ' 
         Label132.AutoSize = True
-        Label132.Font = New Font("Segoe UI", 10F)
+        Label132.Font = New Font("Segoe UI", 10.0F)
         Label132.Location = New Point(14, 259)
         Label132.Name = "Label132"
         Label132.Size = New Size(138, 19)
@@ -2922,7 +2984,7 @@ Partial Class PRRC_BLDG
         ' Label133
         ' 
         Label133.AutoSize = True
-        Label133.Font = New Font("Segoe UI", 10F)
+        Label133.Font = New Font("Segoe UI", 10.0F)
         Label133.Location = New Point(14, 232)
         Label133.Name = "Label133"
         Label133.Size = New Size(138, 19)
@@ -2932,7 +2994,7 @@ Partial Class PRRC_BLDG
         ' Label134
         ' 
         Label134.AutoSize = True
-        Label134.Font = New Font("Segoe UI", 10F)
+        Label134.Font = New Font("Segoe UI", 10.0F)
         Label134.Location = New Point(14, 151)
         Label134.Name = "Label134"
         Label134.Size = New Size(138, 19)
@@ -2942,7 +3004,7 @@ Partial Class PRRC_BLDG
         ' Label135
         ' 
         Label135.AutoSize = True
-        Label135.Font = New Font("Segoe UI", 10F)
+        Label135.Font = New Font("Segoe UI", 10.0F)
         Label135.Location = New Point(14, 204)
         Label135.Name = "Label135"
         Label135.Size = New Size(138, 19)
@@ -2952,7 +3014,7 @@ Partial Class PRRC_BLDG
         ' Label136
         ' 
         Label136.AutoSize = True
-        Label136.Font = New Font("Segoe UI", 10F)
+        Label136.Font = New Font("Segoe UI", 10.0F)
         Label136.Location = New Point(14, 124)
         Label136.Name = "Label136"
         Label136.Size = New Size(138, 19)
@@ -2962,7 +3024,7 @@ Partial Class PRRC_BLDG
         ' Label137
         ' 
         Label137.AutoSize = True
-        Label137.Font = New Font("Segoe UI", 10F)
+        Label137.Font = New Font("Segoe UI", 10.0F)
         Label137.Location = New Point(14, 96)
         Label137.Name = "Label137"
         Label137.Size = New Size(138, 19)
@@ -2972,7 +3034,7 @@ Partial Class PRRC_BLDG
         ' Label138
         ' 
         Label138.AutoSize = True
-        Label138.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label138.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label138.Location = New Point(14, 51)
         Label138.Name = "Label138"
         Label138.Size = New Size(233, 28)
@@ -3018,7 +3080,7 @@ Partial Class PRRC_BLDG
         ' Label139
         ' 
         Label139.AutoSize = True
-        Label139.Font = New Font("Segoe UI", 10F)
+        Label139.Font = New Font("Segoe UI", 10.0F)
         Label139.Location = New Point(14, 287)
         Label139.Name = "Label139"
         Label139.Size = New Size(138, 19)
@@ -3028,7 +3090,7 @@ Partial Class PRRC_BLDG
         ' Label140
         ' 
         Label140.AutoSize = True
-        Label140.Font = New Font("Segoe UI", 10F)
+        Label140.Font = New Font("Segoe UI", 10.0F)
         Label140.Location = New Point(14, 179)
         Label140.Name = "Label140"
         Label140.Size = New Size(138, 19)
@@ -3038,7 +3100,7 @@ Partial Class PRRC_BLDG
         ' Label141
         ' 
         Label141.AutoSize = True
-        Label141.Font = New Font("Segoe UI", 10F)
+        Label141.Font = New Font("Segoe UI", 10.0F)
         Label141.Location = New Point(14, 259)
         Label141.Name = "Label141"
         Label141.Size = New Size(138, 19)
@@ -3048,7 +3110,7 @@ Partial Class PRRC_BLDG
         ' Label142
         ' 
         Label142.AutoSize = True
-        Label142.Font = New Font("Segoe UI", 10F)
+        Label142.Font = New Font("Segoe UI", 10.0F)
         Label142.Location = New Point(14, 232)
         Label142.Name = "Label142"
         Label142.Size = New Size(138, 19)
@@ -3058,7 +3120,7 @@ Partial Class PRRC_BLDG
         ' Label143
         ' 
         Label143.AutoSize = True
-        Label143.Font = New Font("Segoe UI", 10F)
+        Label143.Font = New Font("Segoe UI", 10.0F)
         Label143.Location = New Point(14, 151)
         Label143.Name = "Label143"
         Label143.Size = New Size(138, 19)
@@ -3068,7 +3130,7 @@ Partial Class PRRC_BLDG
         ' Label144
         ' 
         Label144.AutoSize = True
-        Label144.Font = New Font("Segoe UI", 10F)
+        Label144.Font = New Font("Segoe UI", 10.0F)
         Label144.Location = New Point(14, 204)
         Label144.Name = "Label144"
         Label144.Size = New Size(138, 19)
@@ -3078,7 +3140,7 @@ Partial Class PRRC_BLDG
         ' Label145
         ' 
         Label145.AutoSize = True
-        Label145.Font = New Font("Segoe UI", 10F)
+        Label145.Font = New Font("Segoe UI", 10.0F)
         Label145.Location = New Point(14, 124)
         Label145.Name = "Label145"
         Label145.Size = New Size(138, 19)
@@ -3088,7 +3150,7 @@ Partial Class PRRC_BLDG
         ' Label146
         ' 
         Label146.AutoSize = True
-        Label146.Font = New Font("Segoe UI", 10F)
+        Label146.Font = New Font("Segoe UI", 10.0F)
         Label146.Location = New Point(14, 96)
         Label146.Name = "Label146"
         Label146.Size = New Size(138, 19)
@@ -3098,7 +3160,7 @@ Partial Class PRRC_BLDG
         ' Label147
         ' 
         Label147.AutoSize = True
-        Label147.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label147.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
         Label147.Location = New Point(14, 51)
         Label147.Name = "Label147"
         Label147.Size = New Size(233, 28)
@@ -3106,12 +3168,680 @@ Partial Class PRRC_BLDG
         Label147.Text = "ROOM P208 SCHEDULE"
         Label147.TextAlign = ContentAlignment.MiddleCenter
         ' 
+        ' r301Panel
+        ' 
+        r301Panel.BackColor = Color.White
+        r301Panel.BackgroundImage = CType(resources.GetObject("r301Panel.BackgroundImage"), Image)
+        r301Panel.Controls.Add(Button39)
+        r301Panel.Controls.Add(Label148)
+        r301Panel.Controls.Add(Label149)
+        r301Panel.Controls.Add(Label150)
+        r301Panel.Controls.Add(Label151)
+        r301Panel.Controls.Add(Label152)
+        r301Panel.Controls.Add(Label153)
+        r301Panel.Controls.Add(Label154)
+        r301Panel.Controls.Add(Label155)
+        r301Panel.Controls.Add(Label156)
+        r301Panel.Location = New Point(672, 95)
+        r301Panel.Name = "r301Panel"
+        r301Panel.Size = New Size(313, 426)
+        r301Panel.TabIndex = 47
+        r301Panel.Visible = False
+        ' 
+        ' Button39
+        ' 
+        Button39.BackColor = Color.Transparent
+        Button39.Cursor = Cursors.Hand
+        Button39.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Button39.FlatAppearance.BorderSize = 0
+        Button39.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button39.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button39.FlatStyle = FlatStyle.Flat
+        Button39.Location = New Point(119, 390)
+        Button39.Name = "Button39"
+        Button39.Size = New Size(75, 20)
+        Button39.TabIndex = 1
+        Button39.UseVisualStyleBackColor = False
+        ' 
+        ' Label148
+        ' 
+        Label148.AutoSize = True
+        Label148.Font = New Font("Segoe UI", 10.0F)
+        Label148.Location = New Point(14, 287)
+        Label148.Name = "Label148"
+        Label148.Size = New Size(138, 19)
+        Label148.TabIndex = 0
+        Label148.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label149
+        ' 
+        Label149.AutoSize = True
+        Label149.Font = New Font("Segoe UI", 10.0F)
+        Label149.Location = New Point(14, 179)
+        Label149.Name = "Label149"
+        Label149.Size = New Size(138, 19)
+        Label149.TabIndex = 0
+        Label149.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label150
+        ' 
+        Label150.AutoSize = True
+        Label150.Font = New Font("Segoe UI", 10.0F)
+        Label150.Location = New Point(14, 259)
+        Label150.Name = "Label150"
+        Label150.Size = New Size(138, 19)
+        Label150.TabIndex = 0
+        Label150.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label151
+        ' 
+        Label151.AutoSize = True
+        Label151.Font = New Font("Segoe UI", 10.0F)
+        Label151.Location = New Point(14, 232)
+        Label151.Name = "Label151"
+        Label151.Size = New Size(138, 19)
+        Label151.TabIndex = 0
+        Label151.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label152
+        ' 
+        Label152.AutoSize = True
+        Label152.Font = New Font("Segoe UI", 10.0F)
+        Label152.Location = New Point(14, 151)
+        Label152.Name = "Label152"
+        Label152.Size = New Size(138, 19)
+        Label152.TabIndex = 0
+        Label152.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label153
+        ' 
+        Label153.AutoSize = True
+        Label153.Font = New Font("Segoe UI", 10.0F)
+        Label153.Location = New Point(14, 204)
+        Label153.Name = "Label153"
+        Label153.Size = New Size(138, 19)
+        Label153.TabIndex = 0
+        Label153.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label154
+        ' 
+        Label154.AutoSize = True
+        Label154.Font = New Font("Segoe UI", 10.0F)
+        Label154.Location = New Point(14, 124)
+        Label154.Name = "Label154"
+        Label154.Size = New Size(138, 19)
+        Label154.TabIndex = 0
+        Label154.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label155
+        ' 
+        Label155.AutoSize = True
+        Label155.Font = New Font("Segoe UI", 10.0F)
+        Label155.Location = New Point(14, 96)
+        Label155.Name = "Label155"
+        Label155.Size = New Size(138, 19)
+        Label155.TabIndex = 0
+        Label155.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label156
+        ' 
+        Label156.AutoSize = True
+        Label156.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Label156.Location = New Point(14, 51)
+        Label156.Name = "Label156"
+        Label156.Size = New Size(233, 28)
+        Label156.TabIndex = 0
+        Label156.Text = "ROOM P301 SCHEDULE"
+        Label156.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' r302Panel
+        ' 
+        r302Panel.BackColor = Color.White
+        r302Panel.BackgroundImage = CType(resources.GetObject("r302Panel.BackgroundImage"), Image)
+        r302Panel.Controls.Add(Button41)
+        r302Panel.Controls.Add(Label157)
+        r302Panel.Controls.Add(Label158)
+        r302Panel.Controls.Add(Label159)
+        r302Panel.Controls.Add(Label160)
+        r302Panel.Controls.Add(Label161)
+        r302Panel.Controls.Add(Label162)
+        r302Panel.Controls.Add(Label163)
+        r302Panel.Controls.Add(Label164)
+        r302Panel.Controls.Add(Label165)
+        r302Panel.Location = New Point(672, 95)
+        r302Panel.Name = "r302Panel"
+        r302Panel.Size = New Size(313, 426)
+        r302Panel.TabIndex = 48
+        r302Panel.Visible = False
+        ' 
+        ' Button41
+        ' 
+        Button41.BackColor = Color.Transparent
+        Button41.Cursor = Cursors.Hand
+        Button41.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Button41.FlatAppearance.BorderSize = 0
+        Button41.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button41.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button41.FlatStyle = FlatStyle.Flat
+        Button41.Location = New Point(119, 390)
+        Button41.Name = "Button41"
+        Button41.Size = New Size(75, 20)
+        Button41.TabIndex = 1
+        Button41.UseVisualStyleBackColor = False
+        ' 
+        ' Label157
+        ' 
+        Label157.AutoSize = True
+        Label157.Font = New Font("Segoe UI", 10.0F)
+        Label157.Location = New Point(14, 287)
+        Label157.Name = "Label157"
+        Label157.Size = New Size(138, 19)
+        Label157.TabIndex = 0
+        Label157.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label158
+        ' 
+        Label158.AutoSize = True
+        Label158.Font = New Font("Segoe UI", 10.0F)
+        Label158.Location = New Point(14, 179)
+        Label158.Name = "Label158"
+        Label158.Size = New Size(138, 19)
+        Label158.TabIndex = 0
+        Label158.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label159
+        ' 
+        Label159.AutoSize = True
+        Label159.Font = New Font("Segoe UI", 10.0F)
+        Label159.Location = New Point(14, 259)
+        Label159.Name = "Label159"
+        Label159.Size = New Size(138, 19)
+        Label159.TabIndex = 0
+        Label159.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label160
+        ' 
+        Label160.AutoSize = True
+        Label160.Font = New Font("Segoe UI", 10.0F)
+        Label160.Location = New Point(14, 232)
+        Label160.Name = "Label160"
+        Label160.Size = New Size(138, 19)
+        Label160.TabIndex = 0
+        Label160.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label161
+        ' 
+        Label161.AutoSize = True
+        Label161.Font = New Font("Segoe UI", 10.0F)
+        Label161.Location = New Point(14, 151)
+        Label161.Name = "Label161"
+        Label161.Size = New Size(138, 19)
+        Label161.TabIndex = 0
+        Label161.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label162
+        ' 
+        Label162.AutoSize = True
+        Label162.Font = New Font("Segoe UI", 10.0F)
+        Label162.Location = New Point(14, 204)
+        Label162.Name = "Label162"
+        Label162.Size = New Size(138, 19)
+        Label162.TabIndex = 0
+        Label162.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label163
+        ' 
+        Label163.AutoSize = True
+        Label163.Font = New Font("Segoe UI", 10.0F)
+        Label163.Location = New Point(14, 124)
+        Label163.Name = "Label163"
+        Label163.Size = New Size(138, 19)
+        Label163.TabIndex = 0
+        Label163.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label164
+        ' 
+        Label164.AutoSize = True
+        Label164.Font = New Font("Segoe UI", 10.0F)
+        Label164.Location = New Point(14, 96)
+        Label164.Name = "Label164"
+        Label164.Size = New Size(138, 19)
+        Label164.TabIndex = 0
+        Label164.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label165
+        ' 
+        Label165.AutoSize = True
+        Label165.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Label165.Location = New Point(14, 51)
+        Label165.Name = "Label165"
+        Label165.Size = New Size(233, 28)
+        Label165.TabIndex = 0
+        Label165.Text = "ROOM P302 SCHEDULE"
+        Label165.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' r303Panel
+        ' 
+        r303Panel.BackColor = Color.White
+        r303Panel.BackgroundImage = CType(resources.GetObject("r303Panel.BackgroundImage"), Image)
+        r303Panel.Controls.Add(Button45)
+        r303Panel.Controls.Add(Label166)
+        r303Panel.Controls.Add(Label167)
+        r303Panel.Controls.Add(Label168)
+        r303Panel.Controls.Add(Label169)
+        r303Panel.Controls.Add(Label170)
+        r303Panel.Controls.Add(Label171)
+        r303Panel.Controls.Add(Label172)
+        r303Panel.Controls.Add(Label173)
+        r303Panel.Controls.Add(Label174)
+        r303Panel.Location = New Point(672, 95)
+        r303Panel.Name = "r303Panel"
+        r303Panel.Size = New Size(313, 426)
+        r303Panel.TabIndex = 49
+        r303Panel.Visible = False
+        ' 
+        ' Button45
+        ' 
+        Button45.BackColor = Color.Transparent
+        Button45.Cursor = Cursors.Hand
+        Button45.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Button45.FlatAppearance.BorderSize = 0
+        Button45.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button45.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button45.FlatStyle = FlatStyle.Flat
+        Button45.Location = New Point(119, 390)
+        Button45.Name = "Button45"
+        Button45.Size = New Size(75, 20)
+        Button45.TabIndex = 1
+        Button45.UseVisualStyleBackColor = False
+        ' 
+        ' Label166
+        ' 
+        Label166.AutoSize = True
+        Label166.Font = New Font("Segoe UI", 10.0F)
+        Label166.Location = New Point(14, 287)
+        Label166.Name = "Label166"
+        Label166.Size = New Size(138, 19)
+        Label166.TabIndex = 0
+        Label166.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label167
+        ' 
+        Label167.AutoSize = True
+        Label167.Font = New Font("Segoe UI", 10.0F)
+        Label167.Location = New Point(14, 179)
+        Label167.Name = "Label167"
+        Label167.Size = New Size(138, 19)
+        Label167.TabIndex = 0
+        Label167.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label168
+        ' 
+        Label168.AutoSize = True
+        Label168.Font = New Font("Segoe UI", 10.0F)
+        Label168.Location = New Point(14, 259)
+        Label168.Name = "Label168"
+        Label168.Size = New Size(138, 19)
+        Label168.TabIndex = 0
+        Label168.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label169
+        ' 
+        Label169.AutoSize = True
+        Label169.Font = New Font("Segoe UI", 10.0F)
+        Label169.Location = New Point(14, 232)
+        Label169.Name = "Label169"
+        Label169.Size = New Size(138, 19)
+        Label169.TabIndex = 0
+        Label169.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label170
+        ' 
+        Label170.AutoSize = True
+        Label170.Font = New Font("Segoe UI", 10.0F)
+        Label170.Location = New Point(14, 151)
+        Label170.Name = "Label170"
+        Label170.Size = New Size(138, 19)
+        Label170.TabIndex = 0
+        Label170.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label171
+        ' 
+        Label171.AutoSize = True
+        Label171.Font = New Font("Segoe UI", 10.0F)
+        Label171.Location = New Point(14, 204)
+        Label171.Name = "Label171"
+        Label171.Size = New Size(138, 19)
+        Label171.TabIndex = 0
+        Label171.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label172
+        ' 
+        Label172.AutoSize = True
+        Label172.Font = New Font("Segoe UI", 10.0F)
+        Label172.Location = New Point(14, 124)
+        Label172.Name = "Label172"
+        Label172.Size = New Size(138, 19)
+        Label172.TabIndex = 0
+        Label172.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label173
+        ' 
+        Label173.AutoSize = True
+        Label173.Font = New Font("Segoe UI", 10.0F)
+        Label173.Location = New Point(14, 96)
+        Label173.Name = "Label173"
+        Label173.Size = New Size(138, 19)
+        Label173.TabIndex = 0
+        Label173.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label174
+        ' 
+        Label174.AutoSize = True
+        Label174.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Label174.Location = New Point(14, 51)
+        Label174.Name = "Label174"
+        Label174.Size = New Size(233, 28)
+        Label174.TabIndex = 0
+        Label174.Text = "ROOM P303 SCHEDULE"
+        Label174.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' r304Panel
+        ' 
+        r304Panel.BackColor = Color.White
+        r304Panel.BackgroundImage = CType(resources.GetObject("r304Panel.BackgroundImage"), Image)
+        r304Panel.Controls.Add(Button48)
+        r304Panel.Controls.Add(Label175)
+        r304Panel.Controls.Add(Label176)
+        r304Panel.Controls.Add(Label177)
+        r304Panel.Controls.Add(Label178)
+        r304Panel.Controls.Add(Label179)
+        r304Panel.Controls.Add(Label180)
+        r304Panel.Controls.Add(Label181)
+        r304Panel.Controls.Add(Label182)
+        r304Panel.Controls.Add(Label183)
+        r304Panel.Location = New Point(672, 95)
+        r304Panel.Name = "r304Panel"
+        r304Panel.Size = New Size(313, 426)
+        r304Panel.TabIndex = 50
+        r304Panel.Visible = False
+        ' 
+        ' Button48
+        ' 
+        Button48.BackColor = Color.Transparent
+        Button48.Cursor = Cursors.Hand
+        Button48.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Button48.FlatAppearance.BorderSize = 0
+        Button48.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button48.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button48.FlatStyle = FlatStyle.Flat
+        Button48.Location = New Point(119, 390)
+        Button48.Name = "Button48"
+        Button48.Size = New Size(75, 20)
+        Button48.TabIndex = 1
+        Button48.UseVisualStyleBackColor = False
+        ' 
+        ' Label175
+        ' 
+        Label175.AutoSize = True
+        Label175.Font = New Font("Segoe UI", 10.0F)
+        Label175.Location = New Point(14, 287)
+        Label175.Name = "Label175"
+        Label175.Size = New Size(138, 19)
+        Label175.TabIndex = 0
+        Label175.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label176
+        ' 
+        Label176.AutoSize = True
+        Label176.Font = New Font("Segoe UI", 10.0F)
+        Label176.Location = New Point(14, 179)
+        Label176.Name = "Label176"
+        Label176.Size = New Size(138, 19)
+        Label176.TabIndex = 0
+        Label176.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label177
+        ' 
+        Label177.AutoSize = True
+        Label177.Font = New Font("Segoe UI", 10.0F)
+        Label177.Location = New Point(14, 259)
+        Label177.Name = "Label177"
+        Label177.Size = New Size(138, 19)
+        Label177.TabIndex = 0
+        Label177.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label178
+        ' 
+        Label178.AutoSize = True
+        Label178.Font = New Font("Segoe UI", 10.0F)
+        Label178.Location = New Point(14, 232)
+        Label178.Name = "Label178"
+        Label178.Size = New Size(138, 19)
+        Label178.TabIndex = 0
+        Label178.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label179
+        ' 
+        Label179.AutoSize = True
+        Label179.Font = New Font("Segoe UI", 10.0F)
+        Label179.Location = New Point(14, 151)
+        Label179.Name = "Label179"
+        Label179.Size = New Size(138, 19)
+        Label179.TabIndex = 0
+        Label179.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label180
+        ' 
+        Label180.AutoSize = True
+        Label180.Font = New Font("Segoe UI", 10.0F)
+        Label180.Location = New Point(14, 204)
+        Label180.Name = "Label180"
+        Label180.Size = New Size(138, 19)
+        Label180.TabIndex = 0
+        Label180.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label181
+        ' 
+        Label181.AutoSize = True
+        Label181.Font = New Font("Segoe UI", 10.0F)
+        Label181.Location = New Point(14, 124)
+        Label181.Name = "Label181"
+        Label181.Size = New Size(138, 19)
+        Label181.TabIndex = 0
+        Label181.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label182
+        ' 
+        Label182.AutoSize = True
+        Label182.Font = New Font("Segoe UI", 10.0F)
+        Label182.Location = New Point(14, 96)
+        Label182.Name = "Label182"
+        Label182.Size = New Size(138, 19)
+        Label182.TabIndex = 0
+        Label182.Text = "7:00 - 10:00  RECESS"
+        ' 
+        ' Label183
+        ' 
+        Label183.AutoSize = True
+        Label183.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Label183.Location = New Point(14, 51)
+        Label183.Name = "Label183"
+        Label183.Size = New Size(233, 28)
+        Label183.TabIndex = 0
+        Label183.Text = "ROOM P304 SCHEDULE"
+        Label183.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lab2SchedPanel
+        ' 
+        lab2SchedPanel.BackColor = Color.White
+        lab2SchedPanel.BackgroundImage = CType(resources.GetObject("lab2SchedPanel.BackgroundImage"), Image)
+        lab2SchedPanel.Controls.Add(Label184)
+        lab2SchedPanel.Controls.Add(Button52)
+        lab2SchedPanel.Controls.Add(Button53)
+        lab2SchedPanel.Controls.Add(Button54)
+        lab2SchedPanel.Controls.Add(Button55)
+        lab2SchedPanel.Controls.Add(Button56)
+        lab2SchedPanel.Controls.Add(Button57)
+        lab2SchedPanel.Controls.Add(Button58)
+        lab2SchedPanel.Controls.Add(Button59)
+        lab2SchedPanel.Controls.Add(Button60)
+        lab2SchedPanel.Controls.Add(Button61)
+        lab2SchedPanel.Controls.Add(Button62)
+        lab2SchedPanel.Location = New Point(672, 95)
+        lab2SchedPanel.Name = "lab2SchedPanel"
+        lab2SchedPanel.Size = New Size(313, 426)
+        lab2SchedPanel.TabIndex = 51
+        lab2SchedPanel.Visible = False
+        ' 
+        ' Label184
+        ' 
+        Label184.AutoSize = True
+        Label184.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Label184.Location = New Point(76, 31)
+        Label184.Name = "Label184"
+        Label184.Size = New Size(163, 28)
+        Label184.TabIndex = 6
+        Label184.Text = "RESERVE ROOM"
+        Label184.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Button52
+        ' 
+        Button52.FlatAppearance.BorderSize = 0
+        Button52.FlatStyle = FlatStyle.Flat
+        Button52.Location = New Point(68, 341)
+        Button52.Name = "Button52"
+        Button52.Size = New Size(179, 26)
+        Button52.TabIndex = 5
+        Button52.Text = "4:00 PM - 5:00 PM"
+        Button52.UseVisualStyleBackColor = True
+        ' 
+        ' Button53
+        ' 
+        Button53.FlatAppearance.BorderSize = 0
+        Button53.FlatStyle = FlatStyle.Flat
+        Button53.Location = New Point(68, 311)
+        Button53.Name = "Button53"
+        Button53.Size = New Size(179, 26)
+        Button53.TabIndex = 5
+        Button53.Text = "3:00 PM - 4:00 PM"
+        Button53.UseVisualStyleBackColor = True
+        ' 
+        ' Button54
+        ' 
+        Button54.FlatAppearance.BorderSize = 0
+        Button54.FlatStyle = FlatStyle.Flat
+        Button54.Location = New Point(68, 282)
+        Button54.Name = "Button54"
+        Button54.Size = New Size(179, 26)
+        Button54.TabIndex = 5
+        Button54.Text = "2:00 PM - 3:00 PM"
+        Button54.UseVisualStyleBackColor = True
+        ' 
+        ' Button55
+        ' 
+        Button55.FlatAppearance.BorderSize = 0
+        Button55.FlatStyle = FlatStyle.Flat
+        Button55.Location = New Point(68, 253)
+        Button55.Name = "Button55"
+        Button55.Size = New Size(179, 26)
+        Button55.TabIndex = 5
+        Button55.Text = "1:00 PM - 2:00 PM"
+        Button55.UseVisualStyleBackColor = True
+        ' 
+        ' Button56
+        ' 
+        Button56.FlatAppearance.BorderSize = 0
+        Button56.FlatStyle = FlatStyle.Flat
+        Button56.Location = New Point(68, 223)
+        Button56.Name = "Button56"
+        Button56.Size = New Size(179, 26)
+        Button56.TabIndex = 5
+        Button56.Text = "12:00 PM - 1:00 PM"
+        Button56.UseVisualStyleBackColor = True
+        ' 
+        ' Button57
+        ' 
+        Button57.FlatAppearance.BorderSize = 0
+        Button57.FlatStyle = FlatStyle.Flat
+        Button57.Location = New Point(68, 193)
+        Button57.Name = "Button57"
+        Button57.Size = New Size(179, 26)
+        Button57.TabIndex = 5
+        Button57.Text = "11:00 AM - 12:00 PM"
+        Button57.UseVisualStyleBackColor = True
+        ' 
+        ' Button58
+        ' 
+        Button58.FlatAppearance.BorderSize = 0
+        Button58.FlatStyle = FlatStyle.Flat
+        Button58.Location = New Point(68, 164)
+        Button58.Name = "Button58"
+        Button58.Size = New Size(179, 26)
+        Button58.TabIndex = 4
+        Button58.Text = "10:00 AM - 11:00 AM"
+        Button58.UseVisualStyleBackColor = True
+        ' 
+        ' Button59
+        ' 
+        Button59.FlatAppearance.BorderSize = 0
+        Button59.FlatStyle = FlatStyle.Flat
+        Button59.Location = New Point(68, 134)
+        Button59.Name = "Button59"
+        Button59.Size = New Size(179, 26)
+        Button59.TabIndex = 4
+        Button59.Text = "9:00 AM - 10:00 AM" & vbCrLf
+        Button59.UseVisualStyleBackColor = True
+        ' 
+        ' Button60
+        ' 
+        Button60.FlatAppearance.BorderSize = 0
+        Button60.FlatStyle = FlatStyle.Flat
+        Button60.Location = New Point(68, 104)
+        Button60.Name = "Button60"
+        Button60.Size = New Size(179, 26)
+        Button60.TabIndex = 4
+        Button60.Text = "8:00 AM - 9:00 AM" & vbCrLf
+        Button60.UseVisualStyleBackColor = True
+        ' 
+        ' Button61
+        ' 
+        Button61.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        Button61.FlatAppearance.BorderSize = 0
+        Button61.FlatStyle = FlatStyle.Flat
+        Button61.Location = New Point(68, 74)
+        Button61.Name = "Button61"
+        Button61.Size = New Size(179, 26)
+        Button61.TabIndex = 4
+        Button61.Text = "7:00 AM - 8:00 AM" & vbCrLf
+        Button61.UseVisualStyleBackColor = False
+        ' 
+        ' Button62
+        ' 
+        Button62.BackColor = Color.Transparent
+        Button62.Cursor = Cursors.Hand
+        Button62.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Button62.FlatAppearance.BorderSize = 0
+        Button62.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button62.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button62.FlatStyle = FlatStyle.Flat
+        Button62.Location = New Point(119, 388)
+        Button62.Name = "Button62"
+        Button62.Size = New Size(75, 23)
+        Button62.TabIndex = 3
+        Button62.UseVisualStyleBackColor = False
+        ' 
         ' PRRC_BLDG
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1050, 591)
+        Controls.Add(lab2SchedPanel)
+        Controls.Add(r304Panel)
+        Controls.Add(r303Panel)
+        Controls.Add(r302Panel)
+        Controls.Add(r301Panel)
         Controls.Add(r208Panel)
         Controls.Add(r207Panel)
         Controls.Add(r206Panel)
@@ -3180,6 +3910,16 @@ Partial Class PRRC_BLDG
         r207Panel.PerformLayout()
         r208Panel.ResumeLayout(False)
         r208Panel.PerformLayout()
+        r301Panel.ResumeLayout(False)
+        r301Panel.PerformLayout()
+        r302Panel.ResumeLayout(False)
+        r302Panel.PerformLayout()
+        r303Panel.ResumeLayout(False)
+        r303Panel.PerformLayout()
+        r304Panel.ResumeLayout(False)
+        r304Panel.PerformLayout()
+        lab2SchedPanel.ResumeLayout(False)
+        lab2SchedPanel.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -3234,16 +3974,16 @@ Partial Class PRRC_BLDG
     Friend WithEvents thirdFloorPanel As Panel
     Friend WithEvents Label12 As Label
     Friend WithEvents Button38 As Button
-    Friend WithEvents Button39 As Button
+    Friend WithEvents r301Btn As Button
     Friend WithEvents Button40 As Button
-    Friend WithEvents Button41 As Button
+    Friend WithEvents r302Btn As Button
     Friend WithEvents Button42 As Button
     Friend WithEvents Button43 As Button
     Friend WithEvents Button44 As Button
-    Friend WithEvents Button45 As Button
-    Friend WithEvents Button46 As Button
+    Friend WithEvents r303Btn As Button
+    Friend WithEvents lab2Btn As Button
     Friend WithEvents Button47 As Button
-    Friend WithEvents Button48 As Button
+    Friend WithEvents r304Btn As Button
     Friend WithEvents lab1Btn As Button
     Friend WithEvents Button50 As Button
     Friend WithEvents lab1SchedPanel As Panel
@@ -3436,4 +4176,61 @@ Partial Class PRRC_BLDG
     Friend WithEvents Label145 As Label
     Friend WithEvents Label146 As Label
     Friend WithEvents Label147 As Label
+    Friend WithEvents r301Panel As Panel
+    Friend WithEvents Button39 As Button
+    Friend WithEvents Label148 As Label
+    Friend WithEvents Label149 As Label
+    Friend WithEvents Label150 As Label
+    Friend WithEvents Label151 As Label
+    Friend WithEvents Label152 As Label
+    Friend WithEvents Label153 As Label
+    Friend WithEvents Label154 As Label
+    Friend WithEvents Label155 As Label
+    Friend WithEvents Label156 As Label
+    Friend WithEvents r302Panel As Panel
+    Friend WithEvents Button41 As Button
+    Friend WithEvents Label157 As Label
+    Friend WithEvents Label158 As Label
+    Friend WithEvents Label159 As Label
+    Friend WithEvents Label160 As Label
+    Friend WithEvents Label161 As Label
+    Friend WithEvents Label162 As Label
+    Friend WithEvents Label163 As Label
+    Friend WithEvents Label164 As Label
+    Friend WithEvents Label165 As Label
+    Friend WithEvents r303Panel As Panel
+    Friend WithEvents Button45 As Button
+    Friend WithEvents Label166 As Label
+    Friend WithEvents Label167 As Label
+    Friend WithEvents Label168 As Label
+    Friend WithEvents Label169 As Label
+    Friend WithEvents Label170 As Label
+    Friend WithEvents Label171 As Label
+    Friend WithEvents Label172 As Label
+    Friend WithEvents Label173 As Label
+    Friend WithEvents Label174 As Label
+    Friend WithEvents r304Panel As Panel
+    Friend WithEvents Button48 As Button
+    Friend WithEvents Label175 As Label
+    Friend WithEvents Label176 As Label
+    Friend WithEvents Label177 As Label
+    Friend WithEvents Label178 As Label
+    Friend WithEvents Label179 As Label
+    Friend WithEvents Label180 As Label
+    Friend WithEvents Label181 As Label
+    Friend WithEvents Label182 As Label
+    Friend WithEvents Label183 As Label
+    Friend WithEvents lab2SchedPanel As Panel
+    Friend WithEvents Label184 As Label
+    Friend WithEvents Button52 As Button
+    Friend WithEvents Button53 As Button
+    Friend WithEvents Button54 As Button
+    Friend WithEvents Button55 As Button
+    Friend WithEvents Button56 As Button
+    Friend WithEvents Button57 As Button
+    Friend WithEvents Button58 As Button
+    Friend WithEvents Button59 As Button
+    Friend WithEvents Button60 As Button
+    Friend WithEvents Button61 As Button
+    Friend WithEvents Button62 As Button
 End Class
