@@ -1,6 +1,18 @@
 ﻿Imports System.Net
+Imports MySql.Data.MySqlClient
 
 Public Class PRRC_BLDG
+    Private connectionString As String = "server=localhost;userid=root;password=;database=prac"
+    Private connection As MySqlConnection
+    Private Sub PRRC_BLDG_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
+        ' Start the timer
+        updateDB.Interval = 1000
+        updateDB.Start()
+        Timer1.Start()
+        checkAvailability7to8()
+    End Sub
+
     Private Sub r101backBtn_Click(sender As Object, e As EventArgs) Handles r101backBtn.Click
         r101Panel.Hide()
     End Sub
@@ -99,17 +111,37 @@ Public Class PRRC_BLDG
         Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
     End Sub
 
+    Sub checkAvailability7to8()
+        Dim time As String = "7:00-8:00"
+        Dim query As String = "SELECT Approved FROM lab1sched WHERE Time = @Time"
 
-    Private Sub PRRC_BLDG_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
-        ' Start the timer
-        Timer1.Start()
+        ' Create a connection
+        Using connection As New MySqlConnection(connectionString)
+            ' Create a command
+            Using command As New MySqlCommand(query, connection)
+                ' Add the parameter to the command
+                command.Parameters.AddWithValue("@Time", time)
 
-    End Sub
+                ' Open the connection
+                connection.Open()
 
-
-    Sub checkAvailability()
-
+                ' Execute the command and read the result
+                Using reader As MySqlDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        ' Read the value from the cell
+                        Dim approved As Boolean = Convert.ToBoolean(reader("Approved"))
+                        ' Check the value
+                        If approved Then
+                            roomsched1.BackColor = Color.Red
+                            roomsched1.Enabled = False
+                        Else
+                            roomsched1.BackColor = Color.Green
+                            roomsched1.Enabled = True
+                        End If
+                    End If
+                End Using
+            End Using
+        End Using
     End Sub
     Private Sub Button49_Click(sender As Object, e As EventArgs) Handles Button49.Click
         lab1SchedPanel.Hide()
@@ -122,5 +154,9 @@ Public Class PRRC_BLDG
     Private Sub Button51_Click_1(sender As Object, e As EventArgs) Handles Button51.Click
         Me.Hide()
         NAVIGATE_CAMPUS.Show()
+    End Sub
+
+    Private Sub updateDB_Tick(sender As Object, e As EventArgs) Handles updateDB.Tick
+        checkAvailability7to8()
     End Sub
 End Class

@@ -57,18 +57,18 @@ Partial Class ADMIN_DB
         ' reviewGrid
         ' 
         reviewGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        reviewGrid.Enabled = False
         reviewGrid.Location = New Point(12, 12)
         reviewGrid.Name = "reviewGrid"
+        reviewGrid.ReadOnly = True
         reviewGrid.Size = New Size(778, 263)
         reviewGrid.TabIndex = 3
         ' 
         ' acceptedGrid
         ' 
         acceptedGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        acceptedGrid.Enabled = False
         acceptedGrid.Location = New Point(0, 70)
         acceptedGrid.Name = "acceptedGrid"
+        acceptedGrid.ReadOnly = True
         acceptedGrid.Size = New Size(778, 312)
         acceptedGrid.TabIndex = 4
         ' 

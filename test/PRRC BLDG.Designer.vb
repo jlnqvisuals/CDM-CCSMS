@@ -106,6 +106,7 @@ Partial Class PRRC_BLDG
         Label16 = New Label()
         ContextMenuStrip1 = New ContextMenuStrip(components)
         Button51 = New Button()
+        updateDB = New Timer(components)
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
@@ -763,12 +764,13 @@ Partial Class PRRC_BLDG
         ' 
         ' roomsched1
         ' 
+        roomsched1.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
         roomsched1.Location = New Point(19, 17)
         roomsched1.Name = "roomsched1"
         roomsched1.Size = New Size(125, 25)
         roomsched1.TabIndex = 4
         roomsched1.Text = "7:00 AM - 8:00 AM" & vbCrLf
-        roomsched1.UseVisualStyleBackColor = True
+        roomsched1.UseVisualStyleBackColor = False
         ' 
         ' Button49
         ' 
@@ -932,6 +934,9 @@ Partial Class PRRC_BLDG
         Button51.Text = "EXIT BUILDING"
         Button51.UseVisualStyleBackColor = True
         ' 
+        ' updateDB
+        ' 
+        ' 
         ' PRRC_BLDG
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -1040,4 +1045,5 @@ Partial Class PRRC_BLDG
     Friend WithEvents roomsched5 As Button
     Friend WithEvents roomsched9 As Button
     Friend WithEvents Button51 As Button
+    Friend WithEvents updateDB As Timer
 End Class
