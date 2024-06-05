@@ -1,4 +1,6 @@
-﻿Public Class PRRC_BLDG
+﻿Imports System.Net
+
+Public Class PRRC_BLDG
     Private Sub r101backBtn_Click(sender As Object, e As EventArgs) Handles r101backBtn.Click
         r101Panel.Hide()
     End Sub
@@ -86,5 +88,16 @@
         firstFloorPanel.Hide()
         thirdFloorPanel.Hide()
         secondFloorPanel.Show()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
+    End Sub
+
+
+    Private Sub PRRC_BLDG_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
+        ' Start the timer
+        Timer1.Start()
     End Sub
 End Class

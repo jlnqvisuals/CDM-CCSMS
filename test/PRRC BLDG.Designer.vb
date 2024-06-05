@@ -22,6 +22,7 @@ Partial Class PRRC_BLDG
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Button1 = New Button()
         r101Btn = New Button()
         Button3 = New Button()
@@ -77,6 +78,9 @@ Partial Class PRRC_BLDG
         Button36 = New Button()
         Button35 = New Button()
         lab1SchedPanel = New Panel()
+        Label15 = New Label()
+        Label14 = New Label()
+        Label13 = New Label()
         Label12 = New Label()
         Button38 = New Button()
         Button39 = New Button()
@@ -91,10 +95,13 @@ Partial Class PRRC_BLDG
         Button48 = New Button()
         lab1Btn = New Button()
         Button50 = New Button()
+        Timer1 = New Timer(components)
+        Label16 = New Label()
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
         thirdFloorPanel.SuspendLayout()
+        lab1SchedPanel.SuspendLayout()
         SuspendLayout()
         ' 
         ' Button1
@@ -351,9 +358,9 @@ Partial Class PRRC_BLDG
         firstFloorPanel.Controls.Add(Button5)
         firstFloorPanel.Controls.Add(Button6)
         firstFloorPanel.Controls.Add(Button8)
-        firstFloorPanel.Location = New Point(12, 12)
+        firstFloorPanel.Location = New Point(12, 27)
         firstFloorPanel.Name = "firstFloorPanel"
-        firstFloorPanel.Size = New Size(785, 434)
+        firstFloorPanel.Size = New Size(785, 419)
         firstFloorPanel.TabIndex = 3
         ' 
         ' Button34
@@ -408,9 +415,9 @@ Partial Class PRRC_BLDG
         secondFloorPanel.Controls.Add(Button23)
         secondFloorPanel.Controls.Add(Button24)
         secondFloorPanel.Controls.Add(Button25)
-        secondFloorPanel.Location = New Point(12, 12)
+        secondFloorPanel.Location = New Point(12, 27)
         secondFloorPanel.Name = "secondFloorPanel"
-        secondFloorPanel.Size = New Size(785, 434)
+        secondFloorPanel.Size = New Size(785, 419)
         secondFloorPanel.TabIndex = 4
         ' 
         ' Button31
@@ -620,9 +627,9 @@ Partial Class PRRC_BLDG
         thirdFloorPanel.Controls.Add(Button48)
         thirdFloorPanel.Controls.Add(lab1Btn)
         thirdFloorPanel.Controls.Add(Button50)
-        thirdFloorPanel.Location = New Point(12, 12)
+        thirdFloorPanel.Location = New Point(12, 27)
         thirdFloorPanel.Name = "thirdFloorPanel"
-        thirdFloorPanel.Size = New Size(785, 434)
+        thirdFloorPanel.Size = New Size(785, 419)
         thirdFloorPanel.TabIndex = 5
         ' 
         ' Button37
@@ -657,11 +664,41 @@ Partial Class PRRC_BLDG
         ' 
         ' lab1SchedPanel
         ' 
+        lab1SchedPanel.Controls.Add(Label15)
+        lab1SchedPanel.Controls.Add(Label14)
+        lab1SchedPanel.Controls.Add(Label13)
         lab1SchedPanel.Location = New Point(510, 17)
         lab1SchedPanel.Name = "lab1SchedPanel"
         lab1SchedPanel.Size = New Size(264, 400)
         lab1SchedPanel.TabIndex = 32
         lab1SchedPanel.Visible = False
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Location = New Point(19, 82)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(47, 15)
+        Label15.TabIndex = 2
+        Label15.Text = "Label15"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Location = New Point(19, 55)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(47, 15)
+        Label14.TabIndex = 1
+        Label14.Text = "Label14"
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Location = New Point(19, 29)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(47, 15)
+        Label13.TabIndex = 0
+        Label13.Text = "Label13"
         ' 
         ' Label12
         ' 
@@ -790,14 +827,27 @@ Partial Class PRRC_BLDG
         Button50.Text = "???"
         Button50.UseVisualStyleBackColor = True
         ' 
+        ' Timer1
+        ' 
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Location = New Point(12, 9)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(47, 15)
+        Label16.TabIndex = 6
+        Label16.Text = "Label16"
+        ' 
         ' PRRC_BLDG
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(firstFloorPanel)
+        Controls.Add(Label16)
         Controls.Add(thirdFloorPanel)
         Controls.Add(secondFloorPanel)
+        Controls.Add(firstFloorPanel)
         Name = "PRRC_BLDG"
         Text = "PRRC_BLDG"
         r101Panel.ResumeLayout(False)
@@ -808,7 +858,10 @@ Partial Class PRRC_BLDG
         secondFloorPanel.PerformLayout()
         thirdFloorPanel.ResumeLayout(False)
         thirdFloorPanel.PerformLayout()
+        lab1SchedPanel.ResumeLayout(False)
+        lab1SchedPanel.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Button1 As Button
@@ -880,4 +933,9 @@ Partial Class PRRC_BLDG
     Friend WithEvents Button37 As Button
     Friend WithEvents Button36 As Button
     Friend WithEvents Button35 As Button
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label16 As Label
 End Class
