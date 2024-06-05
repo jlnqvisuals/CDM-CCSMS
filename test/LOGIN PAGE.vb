@@ -282,7 +282,9 @@ Public Class LOGIN_PAGE
             Hide()
             MainDB_User.Show()
         Else
-            MsgBox("Invalid Username/Password.")
+            FORGET_UN_PASS_PROMPT.Show()
+            FORGET_UN_PASS_PROMPT.StartCloseTimer()
+            'MsgBox("Invalid Username/Password.")
         End If
     End Sub
 
@@ -567,6 +569,50 @@ Public Class LOGIN_PAGE
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
+    End Sub
+
+    Private Sub loginPanel_Paint(sender As Object, e As PaintEventArgs) Handles loginPanel.Paint
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles PrivacyPolicy_Panel.Paint
+
+    End Sub
+
+    Private Sub PrivacyPolicyBTN_Click(sender As Object, e As EventArgs) Handles PrivacyPolicyBTN.Click
+        PrivacyPolicy_Panel.Visible = True
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        PrivacyPolicy_Panel.Visible = False
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
+
+    Private Sub TnC_BTN_Click(sender As Object, e As EventArgs) Handles TnC_BTN.Click
+        TnC_Panel.Visible = True
+    End Sub
+
+    Private Sub TnC_Panel_Paint(sender As Object, e As PaintEventArgs) Handles TnC_Panel.Paint
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        TnC_Panel.Visible = False
+    End Sub
+
+    Private Sub ContactsBTN_Click(sender As Object, e As EventArgs) Handles ContactsBTN.Click
+        ContactUs_Panel.Visible = True
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        ContactUs_Panel.Visible = False
     End Sub
 End Class
 
