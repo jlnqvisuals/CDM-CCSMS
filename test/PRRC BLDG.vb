@@ -4,13 +4,16 @@ Imports MySql.Data.MySqlClient
 Public Class PRRC_BLDG
     Private connectionString As String = "server=localhost;userid=root;password=;database=prac"
     Private connection As MySqlConnection
+
+    Public Shared desiredtime As String = ""
+
     Private Sub PRRC_BLDG_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
         ' Start the timer
         updateDB.Interval = 1000
         updateDB.Start()
         Timer1.Start()
-        checkAvailability7to8()
+        checkAvailability("7:00-8:00", roomsched1)
     End Sub
 
     Private Sub r101backBtn_Click(sender As Object, e As EventArgs) Handles r101backBtn.Click
@@ -111,8 +114,8 @@ Public Class PRRC_BLDG
         Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
     End Sub
 
-    Sub checkAvailability7to8()
-        Dim time As String = "7:00-8:00"
+    Sub checkAvailability(schedtime As String, Button As Button)
+        Dim time As String = schedtime
         Dim query As String = "SELECT Approved FROM lab1sched WHERE Time = @Time"
 
         ' Create a connection
@@ -132,11 +135,11 @@ Public Class PRRC_BLDG
                         Dim approved As Boolean = Convert.ToBoolean(reader("Approved"))
                         ' Check the value
                         If approved Then
-                            roomsched1.BackColor = Color.Red
-                            roomsched1.Enabled = False
+                            Button.BackColor = Color.Red
+                            Button.Enabled = False
                         Else
-                            roomsched1.BackColor = Color.Green
-                            roomsched1.Enabled = True
+                            Button.BackColor = Color.Green
+                            Button.Enabled = True
                         End If
                     End If
                 End Using
@@ -157,6 +160,15 @@ Public Class PRRC_BLDG
     End Sub
 
     Private Sub updateDB_Tick(sender As Object, e As EventArgs) Handles updateDB.Tick
-        checkAvailability7to8()
+        checkAvailability("7:00-8:00", roomsched1)
+        checkAvailability("8:00-9:00", roomsched2)
+        checkAvailability("9:00-10:00", roomsched3)
+        checkAvailability("10:00-11:00", roomsched4)
+        checkAvailability("11:00-12:00", roomsched5)
+        checkAvailability("12:00-1:00", roomsched6)
+        checkAvailability("1:00-2:00", roomsched7)
+        checkAvailability("2:00-3:00", roomsched8)
+        checkAvailability("3:00-4:00", roomsched9)
+        checkAvailability("4:00-5:00", roomsched10)
     End Sub
 End Class

@@ -5,6 +5,7 @@ Public Class _7to8amSched
     Private connectionString As String = "server=localhost;userid=root;password=;database=prac"
     Private connection As MySqlConnection
 
+
     Private Sub _7to8amSched_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         getCurrentUser(LOGIN_PAGE.StudentID)
         sidTxt.Text = LOGIN_PAGE.StudentID
@@ -47,7 +48,7 @@ Public Class _7to8amSched
     End Sub
 
     Private Sub reqRoomBtn_Click(sender As Object, e As EventArgs) Handles reqRoomBtn.Click
-        Dim Time As String = "7:00-8:00"
+        Dim Time As String = PRRC_BLDG.desiredtime
         Dim createdBy As String = nameTxt.Text
         Dim reason As String = reasonTxt.Text
         Dim SID As String = LOGIN_PAGE.StudentID
