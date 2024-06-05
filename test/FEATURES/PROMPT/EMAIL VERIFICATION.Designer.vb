@@ -25,8 +25,6 @@ Partial Class EMAIL_VERIFICATION
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EMAIL_VERIFICATION))
         verifyBtn = New Button()
         verifyTxt = New TextBox()
-        Label3 = New Label()
-        Label2 = New Label()
         Button1 = New Button()
         SuspendLayout()
         ' 
@@ -46,37 +44,12 @@ Partial Class EMAIL_VERIFICATION
         ' 
         ' verifyTxt
         ' 
+        verifyTxt.BackColor = Color.FromArgb(CByte(217), CByte(217), CByte(217))
         verifyTxt.BorderStyle = BorderStyle.None
         verifyTxt.Location = New Point(83, 64)
         verifyTxt.Name = "verifyTxt"
         verifyTxt.Size = New Size(130, 16)
         verifyTxt.TabIndex = 6
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.BackColor = Color.Transparent
-        Label3.FlatStyle = FlatStyle.Flat
-        Label3.Font = New Font("Poppins", 8F)
-        Label3.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
-        Label3.Location = New Point(48, 40)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(201, 19)
-        Label3.TabIndex = 5
-        Label3.Text = "A code has been sent to your inbox"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.FlatStyle = FlatStyle.Flat
-        Label2.Font = New Font("Poppins", 10F, FontStyle.Bold)
-        Label2.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
-        Label2.Location = New Point(48, 23)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(200, 25)
-        Label2.TabIndex = 4
-        Label2.Text = "EMAIL VERIFICATION (OTP)"
         ' 
         ' Button1
         ' 
@@ -101,8 +74,6 @@ Partial Class EMAIL_VERIFICATION
         Controls.Add(Button1)
         Controls.Add(verifyBtn)
         Controls.Add(verifyTxt)
-        Controls.Add(Label3)
-        Controls.Add(Label2)
         FormBorderStyle = FormBorderStyle.None
         Name = "EMAIL_VERIFICATION"
         StartPosition = FormStartPosition.CenterScreen
@@ -113,7 +84,5 @@ Partial Class EMAIL_VERIFICATION
 
     Friend WithEvents verifyBtn As Button
     Friend WithEvents verifyTxt As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
 End Class

@@ -83,11 +83,15 @@ Public Class EMAIL_VERIFICATION
         Me.Close()
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub verifyTxt_TextChanged(sender As Object, e As EventArgs) Handles verifyTxt.TextChanged
 
     End Sub
 End Class

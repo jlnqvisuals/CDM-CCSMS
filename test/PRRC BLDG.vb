@@ -69,7 +69,12 @@ Public Class PRRC_BLDG
     End Sub
 
     Private Sub lab1Btn_Click(sender As Object, e As EventArgs) Handles lab1Btn.Click
-        lab1SchedPanel.Visible = True
+        If lab1SchedPanel.Visible = False Then
+            lab1SchedPanel.Visible = True
+        Else
+            lab1SchedPanel.Visible = False
+        End If
+
     End Sub
 
     Private Sub Button47_Click(sender As Object, e As EventArgs) Handles Button47.Click
@@ -99,5 +104,13 @@ Public Class PRRC_BLDG
         Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
         ' Start the timer
         Timer1.Start()
+    End Sub
+
+    Private Sub Button49_Click(sender As Object, e As EventArgs) Handles Button49.Click
+        lab1SchedPanel.Hide()
+    End Sub
+
+    Private Sub Button51_Click(sender As Object, e As EventArgs) Handles Button51.Click
+
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class DevInf
+Partial Class RootDB_Pass
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,25 +22,11 @@ Partial Class DevInf
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DevInf))
-        ExitBTN = New Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RootDB_Pass))
         Button1 = New Button()
+        Button2 = New Button()
+        txtPinCode = New TextBox()
         SuspendLayout()
-        ' 
-        ' ExitBTN
-        ' 
-        ExitBTN.BackColor = Color.Transparent
-        ExitBTN.Cursor = Cursors.Hand
-        ExitBTN.FlatAppearance.BorderSize = 0
-        ExitBTN.FlatAppearance.MouseDownBackColor = Color.Transparent
-        ExitBTN.FlatAppearance.MouseOverBackColor = Color.Transparent
-        ExitBTN.FlatStyle = FlatStyle.Flat
-        ExitBTN.ForeColor = Color.Transparent
-        ExitBTN.Location = New Point(448, 15)
-        ExitBTN.Name = "ExitBTN"
-        ExitBTN.Size = New Size(10, 10)
-        ExitBTN.TabIndex = 11
-        ExitBTN.UseVisualStyleBackColor = False
         ' 
         ' Button1
         ' 
@@ -50,30 +36,57 @@ Partial Class DevInf
         Button1.FlatAppearance.MouseDownBackColor = Color.Transparent
         Button1.FlatAppearance.MouseOverBackColor = Color.Transparent
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.ForeColor = Color.Transparent
-        Button1.Location = New Point(228, 381)
+        Button1.Location = New Point(263, 11)
         Button1.Name = "Button1"
-        Button1.Size = New Size(24, 28)
-        Button1.TabIndex = 12
+        Button1.Size = New Size(22, 23)
+        Button1.TabIndex = 9
         Button1.UseVisualStyleBackColor = False
         ' 
-        ' DevInf
+        ' Button2
+        ' 
+        Button2.BackColor = Color.Transparent
+        Button2.BackgroundImageLayout = ImageLayout.None
+        Button2.Cursor = Cursors.Hand
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button2.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Button2.Location = New Point(104, 104)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(89, 20)
+        Button2.TabIndex = 10
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' txtPinCode
+        ' 
+        txtPinCode.BackColor = Color.FromArgb(CByte(217), CByte(217), CByte(217))
+        txtPinCode.BorderStyle = BorderStyle.None
+        txtPinCode.Cursor = Cursors.IBeam
+        txtPinCode.Location = New Point(83, 64)
+        txtPinCode.Name = "txtPinCode"
+        txtPinCode.Size = New Size(130, 16)
+        txtPinCode.TabIndex = 11
+        ' 
+        ' RootDB_Pass
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(475, 565)
+        BackgroundImageLayout = ImageLayout.None
+        ClientSize = New Size(296, 144)
+        Controls.Add(txtPinCode)
+        Controls.Add(Button2)
         Controls.Add(Button1)
-        Controls.Add(ExitBTN)
-        DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
-        Name = "DevInf"
+        Name = "RootDB_Pass"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "DevInf"
+        Text = "RootDB_Pass"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
-    Friend WithEvents ExitBTN As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents txtPinCode As TextBox
 End Class

@@ -78,6 +78,7 @@ Partial Class PRRC_BLDG
         Button36 = New Button()
         Button35 = New Button()
         lab1SchedPanel = New Panel()
+        Button49 = New Button()
         Label15 = New Label()
         Label14 = New Label()
         Label13 = New Label()
@@ -97,6 +98,7 @@ Partial Class PRRC_BLDG
         Button50 = New Button()
         Timer1 = New Timer(components)
         Label16 = New Label()
+        Button51 = New Button()
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
@@ -664,6 +666,8 @@ Partial Class PRRC_BLDG
         ' 
         ' lab1SchedPanel
         ' 
+        lab1SchedPanel.Controls.Add(Button51)
+        lab1SchedPanel.Controls.Add(Button49)
         lab1SchedPanel.Controls.Add(Label15)
         lab1SchedPanel.Controls.Add(Label14)
         lab1SchedPanel.Controls.Add(Label13)
@@ -672,6 +676,15 @@ Partial Class PRRC_BLDG
         lab1SchedPanel.Size = New Size(264, 400)
         lab1SchedPanel.TabIndex = 32
         lab1SchedPanel.Visible = False
+        ' 
+        ' Button49
+        ' 
+        Button49.Location = New Point(177, 371)
+        Button49.Name = "Button49"
+        Button49.Size = New Size(75, 23)
+        Button49.TabIndex = 3
+        Button49.Text = "Back"
+        Button49.UseVisualStyleBackColor = True
         ' 
         ' Label15
         ' 
@@ -839,6 +852,15 @@ Partial Class PRRC_BLDG
         Label16.TabIndex = 6
         Label16.Text = "Label16"
         ' 
+        ' Button51
+        ' 
+        Button51.Location = New Point(19, 371)
+        Button51.Name = "Button51"
+        Button51.Size = New Size(88, 23)
+        Button51.TabIndex = 4
+        Button51.Text = "Add Schedule"
+        Button51.UseVisualStyleBackColor = True
+        ' 
         ' PRRC_BLDG
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -938,4 +960,6 @@ Partial Class PRRC_BLDG
     Friend WithEvents Label13 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label16 As Label
+    Friend WithEvents Button49 As Button
+    Friend WithEvents Button51 As Button
 End Class

@@ -4048,7 +4048,7 @@
     <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="DateTime_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>912, 107</value>
+    <value>894, 107</value>
   </data>
   <data name="DateTime_Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>259, 19</value>

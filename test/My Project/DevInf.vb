@@ -21,12 +21,10 @@ Public Class DevInf
     End Sub
 
     Private Sub ExitBTN_Click(sender As Object, e As EventArgs) Handles ExitBTN.Click
-        Me.Close()
+        Close
     End Sub
 
-
-
-
-
-
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        RootDB_Pass.Show()
+    End Sub
 End Class

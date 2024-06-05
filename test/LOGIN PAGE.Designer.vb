@@ -125,6 +125,7 @@ Partial Class LOGIN_PAGE
         ' regBtn
         ' 
         regBtn.Cursor = Cursors.Hand
+        regBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
         regBtn.FlatAppearance.BorderSize = 0
         regBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         regBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
@@ -140,6 +141,7 @@ Partial Class LOGIN_PAGE
         ' loginBtn
         ' 
         loginBtn.Cursor = Cursors.Hand
+        loginBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
         loginBtn.FlatAppearance.BorderSize = 0
         loginBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         loginBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
@@ -199,6 +201,7 @@ Partial Class LOGIN_PAGE
         ' showRegBtn
         ' 
         showRegBtn.Cursor = Cursors.Hand
+        showRegBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
         showRegBtn.FlatAppearance.BorderSize = 0
         showRegBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         showRegBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
@@ -213,6 +216,7 @@ Partial Class LOGIN_PAGE
         ' showLoginBtn
         ' 
         showLoginBtn.Cursor = Cursors.Hand
+        showLoginBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
         showLoginBtn.FlatAppearance.BorderSize = 0
         showLoginBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         showLoginBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
@@ -642,15 +646,15 @@ Partial Class LOGIN_PAGE
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1050, 591)
-        Controls.Add(ContactUs_Panel)
-        Controls.Add(TnC_Panel)
-        Controls.Add(PrivacyPolicy_Panel)
         Controls.Add(ContactsBTN)
         Controls.Add(TnC_BTN)
         Controls.Add(PrivacyPolicyBTN)
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
+        Controls.Add(ContactUs_Panel)
+        Controls.Add(TnC_Panel)
+        Controls.Add(PrivacyPolicy_Panel)
         Controls.Add(loginPanel)
         Controls.Add(regPanel)
         Controls.Add(PictureBox1)
