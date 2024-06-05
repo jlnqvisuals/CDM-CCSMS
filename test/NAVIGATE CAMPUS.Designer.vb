@@ -72,6 +72,7 @@ Partial Class NAVIGATE_CAMPUS
         prrcBldgBtn.Cursor = Cursors.Hand
         prrcBldgBtn.FlatAppearance.BorderSize = 0
         prrcBldgBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
+        prrcBldgBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         prrcBldgBtn.FlatStyle = FlatStyle.Flat
         prrcBldgBtn.ForeColor = SystemColors.ControlText
         prrcBldgBtn.Location = New Point(241, 358)

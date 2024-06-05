@@ -171,4 +171,8 @@ Public Class PRRC_BLDG
         checkAvailability("3:00-4:00", roomsched9)
         checkAvailability("4:00-5:00", roomsched10)
     End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+
+    End Sub
 End Class

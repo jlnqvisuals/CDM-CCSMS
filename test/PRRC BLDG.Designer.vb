@@ -23,6 +23,7 @@ Partial Class PRRC_BLDG
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PRRC_BLDG))
         Button1 = New Button()
         r101Btn = New Button()
         Button3 = New Button()
@@ -78,6 +79,7 @@ Partial Class PRRC_BLDG
         Button36 = New Button()
         Button35 = New Button()
         lab1SchedPanel = New Panel()
+        roomsched10 = New Button()
         roomsched9 = New Button()
         roomsched8 = New Button()
         roomsched7 = New Button()
@@ -107,7 +109,6 @@ Partial Class PRRC_BLDG
         ContextMenuStrip1 = New ContextMenuStrip(components)
         Button51 = New Button()
         updateDB = New Timer(components)
-        roomsched10 = New Button()
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
@@ -244,9 +245,9 @@ Partial Class PRRC_BLDG
         r101Panel.Controls.Add(Label3)
         r101Panel.Controls.Add(Label2)
         r101Panel.Controls.Add(Label1)
-        r101Panel.Location = New Point(515, 4)
+        r101Panel.Location = New Point(671, 93)
         r101Panel.Name = "r101Panel"
-        r101Panel.Size = New Size(259, 426)
+        r101Panel.Size = New Size(313, 426)
         r101Panel.TabIndex = 1
         ' 
         ' r101backBtn
@@ -343,7 +344,8 @@ Partial Class PRRC_BLDG
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(140, 46)
+        Label10.ForeColor = Color.White
+        Label10.Location = New Point(140, 39)
         Label10.Name = "Label10"
         Label10.Size = New Size(219, 47)
         Label10.TabIndex = 2
@@ -351,12 +353,12 @@ Partial Class PRRC_BLDG
         ' 
         ' firstFloorPanel
         ' 
+        firstFloorPanel.BackColor = Color.Transparent
         firstFloorPanel.Controls.Add(Button34)
         firstFloorPanel.Controls.Add(Button33)
         firstFloorPanel.Controls.Add(Button32)
         firstFloorPanel.Controls.Add(Label10)
         firstFloorPanel.Controls.Add(Button1)
-        firstFloorPanel.Controls.Add(r101Panel)
         firstFloorPanel.Controls.Add(r101Btn)
         firstFloorPanel.Controls.Add(Button13)
         firstFloorPanel.Controls.Add(Button3)
@@ -369,9 +371,10 @@ Partial Class PRRC_BLDG
         firstFloorPanel.Controls.Add(Button5)
         firstFloorPanel.Controls.Add(Button6)
         firstFloorPanel.Controls.Add(Button8)
-        firstFloorPanel.Location = New Point(12, 27)
+        firstFloorPanel.ForeColor = Color.Black
+        firstFloorPanel.Location = New Point(74, 110)
         firstFloorPanel.Name = "firstFloorPanel"
-        firstFloorPanel.Size = New Size(785, 419)
+        firstFloorPanel.Size = New Size(502, 330)
         firstFloorPanel.TabIndex = 3
         ' 
         ' Button34
@@ -396,7 +399,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button32
         ' 
-        Button32.Location = New Point(211, 102)
+        Button32.Location = New Point(211, 101)
         Button32.Name = "Button32"
         Button32.Size = New Size(76, 23)
         Button32.TabIndex = 3
@@ -406,6 +409,7 @@ Partial Class PRRC_BLDG
         ' 
         ' secondFloorPanel
         ' 
+        secondFloorPanel.BackColor = Color.Transparent
         secondFloorPanel.Controls.Add(Button31)
         secondFloorPanel.Controls.Add(Button29)
         secondFloorPanel.Controls.Add(Button27)
@@ -426,9 +430,9 @@ Partial Class PRRC_BLDG
         secondFloorPanel.Controls.Add(Button23)
         secondFloorPanel.Controls.Add(Button24)
         secondFloorPanel.Controls.Add(Button25)
-        secondFloorPanel.Location = New Point(12, 27)
+        secondFloorPanel.Location = New Point(74, 110)
         secondFloorPanel.Name = "secondFloorPanel"
-        secondFloorPanel.Size = New Size(785, 419)
+        secondFloorPanel.Size = New Size(502, 330)
         secondFloorPanel.TabIndex = 4
         ' 
         ' Button31
@@ -495,6 +499,7 @@ Partial Class PRRC_BLDG
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label11.ForeColor = Color.White
         Label11.Location = New Point(117, 46)
         Label11.Name = "Label11"
         Label11.Size = New Size(270, 47)
@@ -620,10 +625,10 @@ Partial Class PRRC_BLDG
         ' 
         ' thirdFloorPanel
         ' 
+        thirdFloorPanel.BackColor = Color.Transparent
         thirdFloorPanel.Controls.Add(Button37)
         thirdFloorPanel.Controls.Add(Button36)
         thirdFloorPanel.Controls.Add(Button35)
-        thirdFloorPanel.Controls.Add(lab1SchedPanel)
         thirdFloorPanel.Controls.Add(Label12)
         thirdFloorPanel.Controls.Add(Button38)
         thirdFloorPanel.Controls.Add(Button39)
@@ -638,14 +643,14 @@ Partial Class PRRC_BLDG
         thirdFloorPanel.Controls.Add(Button48)
         thirdFloorPanel.Controls.Add(lab1Btn)
         thirdFloorPanel.Controls.Add(Button50)
-        thirdFloorPanel.Location = New Point(12, 27)
+        thirdFloorPanel.Location = New Point(74, 110)
         thirdFloorPanel.Name = "thirdFloorPanel"
-        thirdFloorPanel.Size = New Size(785, 419)
+        thirdFloorPanel.Size = New Size(502, 330)
         thirdFloorPanel.TabIndex = 5
         ' 
         ' Button37
         ' 
-        Button37.Location = New Point(425, 284)
+        Button37.Location = New Point(425, 281)
         Button37.Name = "Button37"
         Button37.Size = New Size(60, 23)
         Button37.TabIndex = 33
@@ -655,7 +660,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button36
         ' 
-        Button36.Location = New Point(211, 181)
+        Button36.Location = New Point(211, 178)
         Button36.Name = "Button36"
         Button36.Size = New Size(76, 23)
         Button36.TabIndex = 33
@@ -665,7 +670,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button35
         ' 
-        Button35.Location = New Point(13, 284)
+        Button35.Location = New Point(13, 281)
         Button35.Name = "Button35"
         Button35.Size = New Size(60, 23)
         Button35.TabIndex = 33
@@ -686,11 +691,20 @@ Partial Class PRRC_BLDG
         lab1SchedPanel.Controls.Add(roomsched2)
         lab1SchedPanel.Controls.Add(roomsched1)
         lab1SchedPanel.Controls.Add(Button49)
-        lab1SchedPanel.Location = New Point(491, 17)
+        lab1SchedPanel.Location = New Point(671, 93)
         lab1SchedPanel.Name = "lab1SchedPanel"
-        lab1SchedPanel.Size = New Size(283, 400)
+        lab1SchedPanel.Size = New Size(313, 426)
         lab1SchedPanel.TabIndex = 32
         lab1SchedPanel.Visible = False
+        ' 
+        ' roomsched10
+        ' 
+        roomsched10.Location = New Point(19, 284)
+        roomsched10.Name = "roomsched10"
+        roomsched10.Size = New Size(125, 22)
+        roomsched10.TabIndex = 5
+        roomsched10.Text = "4:00 PM - 5:00 PM"
+        roomsched10.UseVisualStyleBackColor = True
         ' 
         ' roomsched9
         ' 
@@ -776,7 +790,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button49
         ' 
-        Button49.Location = New Point(177, 371)
+        Button49.Location = New Point(150, 284)
         Button49.Name = "Button49"
         Button49.Size = New Size(75, 23)
         Button49.TabIndex = 3
@@ -787,7 +801,8 @@ Partial Class PRRC_BLDG
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(140, 46)
+        Label12.ForeColor = Color.White
+        Label12.Location = New Point(139, 40)
         Label12.Name = "Label12"
         Label12.Size = New Size(233, 47)
         Label12.TabIndex = 31
@@ -795,7 +810,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button38
         ' 
-        Button38.Location = New Point(13, 131)
+        Button38.Location = New Point(13, 128)
         Button38.Name = "Button38"
         Button38.Size = New Size(60, 47)
         Button38.TabIndex = 18
@@ -804,7 +819,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button39
         ' 
-        Button39.Location = New Point(79, 131)
+        Button39.Location = New Point(79, 128)
         Button39.Name = "Button39"
         Button39.Size = New Size(60, 47)
         Button39.TabIndex = 19
@@ -813,7 +828,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button40
         ' 
-        Button40.Location = New Point(425, 234)
+        Button40.Location = New Point(425, 231)
         Button40.Name = "Button40"
         Button40.Size = New Size(60, 47)
         Button40.TabIndex = 20
@@ -822,7 +837,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button41
         ' 
-        Button41.Location = New Point(145, 131)
+        Button41.Location = New Point(145, 128)
         Button41.Name = "Button41"
         Button41.Size = New Size(60, 47)
         Button41.TabIndex = 21
@@ -831,7 +846,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button42
         ' 
-        Button42.Location = New Point(359, 234)
+        Button42.Location = New Point(359, 231)
         Button42.Name = "Button42"
         Button42.Size = New Size(60, 47)
         Button42.TabIndex = 22
@@ -840,7 +855,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button43
         ' 
-        Button43.Location = New Point(211, 131)
+        Button43.Location = New Point(211, 128)
         Button43.Name = "Button43"
         Button43.Size = New Size(76, 47)
         Button43.TabIndex = 23
@@ -849,7 +864,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button44
         ' 
-        Button44.Location = New Point(425, 131)
+        Button44.Location = New Point(425, 128)
         Button44.Name = "Button44"
         Button44.Size = New Size(60, 47)
         Button44.TabIndex = 24
@@ -858,7 +873,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button45
         ' 
-        Button45.Location = New Point(79, 234)
+        Button45.Location = New Point(79, 231)
         Button45.Name = "Button45"
         Button45.Size = New Size(60, 47)
         Button45.TabIndex = 25
@@ -867,7 +882,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button46
         ' 
-        Button46.Location = New Point(359, 131)
+        Button46.Location = New Point(359, 128)
         Button46.Name = "Button46"
         Button46.Size = New Size(60, 47)
         Button46.TabIndex = 26
@@ -876,7 +891,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button47
         ' 
-        Button47.Location = New Point(13, 234)
+        Button47.Location = New Point(13, 231)
         Button47.Name = "Button47"
         Button47.Size = New Size(60, 47)
         Button47.TabIndex = 27
@@ -885,7 +900,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button48
         ' 
-        Button48.Location = New Point(145, 234)
+        Button48.Location = New Point(145, 231)
         Button48.Name = "Button48"
         Button48.Size = New Size(60, 47)
         Button48.TabIndex = 28
@@ -894,7 +909,7 @@ Partial Class PRRC_BLDG
         ' 
         ' lab1Btn
         ' 
-        lab1Btn.Location = New Point(293, 131)
+        lab1Btn.Location = New Point(293, 128)
         lab1Btn.Name = "lab1Btn"
         lab1Btn.Size = New Size(60, 47)
         lab1Btn.TabIndex = 29
@@ -903,7 +918,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button50
         ' 
-        Button50.Location = New Point(293, 234)
+        Button50.Location = New Point(293, 231)
         Button50.Name = "Button50"
         Button50.Size = New Size(60, 47)
         Button50.TabIndex = 30
@@ -916,7 +931,7 @@ Partial Class PRRC_BLDG
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Location = New Point(12, 9)
+        Label16.Location = New Point(723, 9)
         Label16.Name = "Label16"
         Label16.Size = New Size(47, 15)
         Label16.TabIndex = 6
@@ -929,7 +944,7 @@ Partial Class PRRC_BLDG
         ' 
         ' Button51
         ' 
-        Button51.Location = New Point(680, 5)
+        Button51.Location = New Point(934, 9)
         Button51.Name = "Button51"
         Button51.Size = New Size(106, 23)
         Button51.TabIndex = 7
@@ -939,26 +954,22 @@ Partial Class PRRC_BLDG
         ' updateDB
         ' 
         ' 
-        ' roomsched10
-        ' 
-        roomsched10.Location = New Point(19, 284)
-        roomsched10.Name = "roomsched10"
-        roomsched10.Size = New Size(125, 22)
-        roomsched10.TabIndex = 5
-        roomsched10.Text = "4:00 PM - 5:00 PM"
-        roomsched10.UseVisualStyleBackColor = True
-        ' 
         ' PRRC_BLDG
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        ClientSize = New Size(1050, 591)
         Controls.Add(Button51)
         Controls.Add(Label16)
+        Controls.Add(lab1SchedPanel)
+        Controls.Add(r101Panel)
         Controls.Add(thirdFloorPanel)
         Controls.Add(secondFloorPanel)
         Controls.Add(firstFloorPanel)
+        FormBorderStyle = FormBorderStyle.None
         Name = "PRRC_BLDG"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "PRRC_BLDG"
         r101Panel.ResumeLayout(False)
         r101Panel.PerformLayout()
