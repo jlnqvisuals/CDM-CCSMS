@@ -97,7 +97,8 @@ Public Class NAVIGATE_CAMPUS
     End Sub
 
     Private Sub newNavBtn_Click(sender As Object, e As EventArgs) Handles newNavBtn.Click
-
+        Me.Hide()
+        NEW_BUILDING.Show()
     End Sub
 
     Private Sub newBackBtn_Click(sender As Object, e As EventArgs) Handles newBackBtn.Click
