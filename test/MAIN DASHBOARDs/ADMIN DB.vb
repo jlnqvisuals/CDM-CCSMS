@@ -6,13 +6,14 @@ Public Class ADMIN_DB
     Private connection As MySqlConnection
 
     Private Sub ADMIN_DB_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DisplayData()
-        AcceptedData()
-
+        DisplayData1()
+        AcceptedData1()
+        DisplayData2()
+        AcceptedData2()
     End Sub
 
 
-    Sub DisplayData()
+    Sub DisplayData1()
         Dim query As String = "SELECT * FROM lab1sched WHERE Approved = 0"
 
         Using connection As New MySqlConnection(connectionString)
@@ -30,7 +31,25 @@ Public Class ADMIN_DB
         End Using
     End Sub
 
-    Sub AcceptedData()
+    Sub DisplayData2()
+        Dim query As String = "SELECT * FROM lab2sched WHERE Approved = 0"
+
+        Using connection As New MySqlConnection(connectionString)
+            Using command As New MySqlCommand(query, connection)
+                connection.Open()
+
+                Dim dataTable As New DataTable()
+
+                Using adapter As New MySqlDataAdapter(command)
+                    adapter.Fill(dataTable)
+                End Using
+
+                reviewGrid2.DataSource = dataTable
+            End Using
+        End Using
+    End Sub
+
+    Sub AcceptedData1()
         Dim query As String = "SELECT * FROM lab1sched WHERE Approved = 1"
 
         Using connection As New MySqlConnection(connectionString)
@@ -51,10 +70,31 @@ Public Class ADMIN_DB
         Next
     End Sub
 
-    Private Sub acceptBtn_Click(sender As Object, e As EventArgs) Handles acceptBtn.Click
-        Dim ID As Integer = CInt(reviewGrid.SelectedRows(0).Cells("ID").Value)
+    Sub AcceptedData2()
+        Dim query As String = "SELECT * FROM lab2sched WHERE Approved = 1"
 
-        Dim updateQuery As String = "UPDATE lab1sched SET Approved = 1 WHERE ID = @ID"
+        Using connection As New MySqlConnection(connectionString)
+            Using command As New MySqlCommand(query, connection)
+                connection.Open()
+
+                Dim dataTable As New DataTable()
+
+                Using adapter As New MySqlDataAdapter(command)
+                    adapter.Fill(dataTable)
+                End Using
+
+                acceptedGrid2.DataSource = dataTable
+            End Using
+        End Using
+        For Each column As DataGridViewColumn In reviewGrid.Columns
+            column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+        Next
+    End Sub
+
+    Private Sub acceptBtn_Click(sender As Object, e As EventArgs) Handles acceptBtn.Click
+        Dim ID As Integer = reviewGrid.SelectedRows(0).Cells("ID").Value
+
+        Dim updateQuery = "UPDATE lab1sched SET Approved = 1 WHERE ID = @ID"
 
         Using connection As New MySqlConnection(connectionString)
             Using command As New MySqlCommand(updateQuery, connection)
@@ -63,11 +103,11 @@ Public Class ADMIN_DB
                 command.ExecuteNonQuery()
             End Using
         End Using
-        DisplayData()
-        AcceptedData()
+        DisplayData1()
+        AcceptedData1()
     End Sub
 
-    Private Sub btnReject_Click(sender As Object, e As EventArgs) Handles rejectBtn.Click
+    Private Sub rejectBtn_Click(sender As Object, e As EventArgs) Handles rejectBtn.Click
         Dim ID As Integer = CInt(reviewGrid.SelectedRows(0).Cells("ID").Value)
 
         Dim deleteQuery As String = "DELETE FROM lab1sched WHERE ID = @ID"
@@ -79,18 +119,18 @@ Public Class ADMIN_DB
                 command.ExecuteNonQuery()
             End Using
         End Using
-        DisplayData()
-        AcceptedData()
+        DisplayData1()
+        AcceptedData1()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        acceptedLogPanel.Hide()
+        acceptedLogPanel.Visible = False
+        Panel1.Visible = True
     End Sub
 
     Private Sub schedLogBtn_Click(sender As Object, e As EventArgs) Handles schedLogBtn.Click
         acceptedLogPanel.Visible = True
-        acceptedLogPanel.Show()
-        acceptedLogPanel.BringToFront()
+        Panel1.Visible = False
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -99,11 +139,44 @@ Public Class ADMIN_DB
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        AcceptedData()
-        DisplayData()
+        AcceptedData1()
+        DisplayData1()
+        DisplayData2()
+        AcceptedData2()
     End Sub
 
-    Private Sub acceptedLogPanel_Paint(sender As Object, e As PaintEventArgs) Handles acceptedLogPanel.Paint
+    Private Sub acceptBtn2_Click(sender As Object, e As EventArgs) Handles acceptBtn2.Click
+        Dim ID As Integer = reviewGrid2.SelectedRows(0).Cells("ID").Value
 
+        Dim updateQuery = "UPDATE lab2sched SET Approved = 1 WHERE ID = @ID"
+
+        Using connection As New MySqlConnection(connectionString)
+            Using command As New MySqlCommand(updateQuery, connection)
+                command.Parameters.AddWithValue("@ID", ID)
+                connection.Open()
+                command.ExecuteNonQuery()
+            End Using
+        End Using
+        DisplayData2()
+        AcceptedData2()
+
+
+
+    End Sub
+
+    Private Sub rejectBtn2_Click(sender As Object, e As EventArgs) Handles rejectBtn2.Click
+        Dim ID As Integer = CInt(reviewGrid2.SelectedRows(0).Cells("ID").Value)
+
+        Dim deleteQuery As String = "DELETE FROM lab2sched WHERE ID = @ID"
+
+        Using connection As New MySqlConnection(connectionString)
+            Using command As New MySqlCommand(deleteQuery, connection)
+                command.Parameters.AddWithValue("@ID", ID)
+                connection.Open()
+                command.ExecuteNonQuery()
+            End Using
+        End Using
+        DisplayData2()
+        AcceptedData2()
     End Sub
 End Class

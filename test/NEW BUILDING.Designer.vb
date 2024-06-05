@@ -713,10 +713,10 @@ Partial Class NEW_BUILDING
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(816, 463)
         Controls.Add(Button18)
+        Controls.Add(newBldgF2Panel)
         Controls.Add(newBldgF1Panel)
         Controls.Add(newBldgF4Panel)
         Controls.Add(newBldgF3Panel)
-        Controls.Add(newBldgF2Panel)
         Name = "NEW_BUILDING"
         Text = "NEW_BUILDING"
         newBldgF1Panel.ResumeLayout(False)

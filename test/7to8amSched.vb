@@ -85,8 +85,8 @@ Public Class _7to8amSched
         Dim SID As String = LOGIN_PAGE.StudentID
 
         Using connection As New MySqlConnection(connectionString)
-            Dim insertQuery As String = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
-            Dim command As New MySqlCommand(insertQuery, connection)
+
+            Dim command As New MySqlCommand(PRRC_BLDG.insertQuery, connection)
             command.Parameters.AddWithValue("@Time", Time)
             command.Parameters.AddWithValue("@Reason", reason)
             command.Parameters.AddWithValue("@CreatedBy", createdBy)
@@ -96,6 +96,8 @@ Public Class _7to8amSched
             command.ExecuteNonQuery()
         End Using
         MsgBox("Room Reservation Established, Please wait for admin approval.")
+        Me.Hide()
+        PRRC_BLDG.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
