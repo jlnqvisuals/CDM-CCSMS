@@ -53,8 +53,6 @@ Partial Class NEW_BUILDING
         Button25 = New Button()
         Button26 = New Button()
         Button27 = New Button()
-        Button28 = New Button()
-        Button29 = New Button()
         Button30 = New Button()
         Label2 = New Label()
         newBldgF3Panel = New Panel()
@@ -64,7 +62,6 @@ Partial Class NEW_BUILDING
         Button36 = New Button()
         Button38 = New Button()
         Button39 = New Button()
-        Button40 = New Button()
         Button41 = New Button()
         Button42 = New Button()
         Button43 = New Button()
@@ -274,8 +271,6 @@ Partial Class NEW_BUILDING
         newBldgF2Panel.Controls.Add(Button25)
         newBldgF2Panel.Controls.Add(Button26)
         newBldgF2Panel.Controls.Add(Button27)
-        newBldgF2Panel.Controls.Add(Button28)
-        newBldgF2Panel.Controls.Add(Button29)
         newBldgF2Panel.Controls.Add(Button30)
         newBldgF2Panel.Controls.Add(Label2)
         newBldgF2Panel.Location = New Point(23, 21)
@@ -285,7 +280,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button16
         ' 
-        Button16.Location = New Point(478, 206)
+        Button16.Location = New Point(373, 230)
         Button16.Name = "Button16"
         Button16.Size = New Size(50, 23)
         Button16.TabIndex = 2
@@ -296,7 +291,7 @@ Partial Class NEW_BUILDING
         ' Button33
         ' 
         Button33.Font = New Font("Segoe UI", 6F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button33.Location = New Point(478, 280)
+        Button33.Location = New Point(373, 304)
         Button33.Name = "Button33"
         Button33.Size = New Size(50, 23)
         Button33.TabIndex = 2
@@ -307,7 +302,7 @@ Partial Class NEW_BUILDING
         ' Button31
         ' 
         Button31.Font = New Font("Segoe UI", 6F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button31.Location = New Point(8, 280)
+        Button31.Location = New Point(22, 304)
         Button31.Name = "Button31"
         Button31.Size = New Size(50, 23)
         Button31.TabIndex = 2
@@ -317,7 +312,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button17
         ' 
-        Button17.Location = New Point(8, 206)
+        Button17.Location = New Point(22, 230)
         Button17.Name = "Button17"
         Button17.Size = New Size(50, 23)
         Button17.TabIndex = 2
@@ -327,7 +322,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button19
         ' 
-        Button19.Location = New Point(366, 235)
+        Button19.Location = New Point(242, 259)
         Button19.Name = "Button19"
         Button19.Size = New Size(50, 39)
         Button19.TabIndex = 1
@@ -336,7 +331,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button20
         ' 
-        Button20.Location = New Point(310, 235)
+        Button20.Location = New Point(186, 259)
         Button20.Name = "Button20"
         Button20.Size = New Size(50, 39)
         Button20.TabIndex = 1
@@ -345,34 +340,34 @@ Partial Class NEW_BUILDING
         ' 
         ' Button21
         ' 
-        Button21.Location = New Point(366, 166)
+        Button21.Location = New Point(241, 190)
         Button21.Name = "Button21"
-        Button21.Size = New Size(50, 39)
+        Button21.Size = New Size(71, 39)
         Button21.TabIndex = 1
         Button21.Text = "206"
         Button21.UseVisualStyleBackColor = True
         ' 
         ' Button22
         ' 
-        Button22.Location = New Point(176, 235)
+        Button22.Location = New Point(87, 259)
         Button22.Name = "Button22"
-        Button22.Size = New Size(50, 39)
+        Button22.Size = New Size(93, 39)
         Button22.TabIndex = 1
         Button22.Text = "204"
         Button22.UseVisualStyleBackColor = True
         ' 
         ' Button23
         ' 
-        Button23.Location = New Point(310, 166)
+        Button23.Location = New Point(164, 190)
         Button23.Name = "Button23"
-        Button23.Size = New Size(50, 39)
+        Button23.Size = New Size(71, 39)
         Button23.TabIndex = 1
         Button23.Text = "205"
         Button23.UseVisualStyleBackColor = True
         ' 
         ' Button24
         ' 
-        Button24.Location = New Point(478, 235)
+        Button24.Location = New Point(373, 259)
         Button24.Name = "Button24"
         Button24.Size = New Size(50, 39)
         Button24.TabIndex = 1
@@ -381,7 +376,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button25
         ' 
-        Button25.Location = New Point(8, 235)
+        Button25.Location = New Point(22, 259)
         Button25.Name = "Button25"
         Button25.Size = New Size(50, 39)
         Button25.TabIndex = 1
@@ -390,45 +385,27 @@ Partial Class NEW_BUILDING
         ' 
         ' Button26
         ' 
-        Button26.Location = New Point(422, 235)
+        Button26.Location = New Point(301, 259)
         Button26.Name = "Button26"
-        Button26.Size = New Size(50, 39)
+        Button26.Size = New Size(30, 39)
         Button26.TabIndex = 1
         Button26.Text = "CR" & vbCrLf & "M"
         Button26.UseVisualStyleBackColor = True
         ' 
         ' Button27
         ' 
-        Button27.Location = New Point(64, 235)
+        Button27.Location = New Point(337, 259)
         Button27.Name = "Button27"
-        Button27.Size = New Size(50, 39)
+        Button27.Size = New Size(30, 39)
         Button27.TabIndex = 1
         Button27.Text = "CR" & vbCrLf & "F" & vbCrLf
         Button27.UseVisualStyleBackColor = True
         ' 
-        ' Button28
-        ' 
-        Button28.Location = New Point(120, 235)
-        Button28.Name = "Button28"
-        Button28.Size = New Size(50, 39)
-        Button28.TabIndex = 1
-        Button28.Text = "203"
-        Button28.UseVisualStyleBackColor = True
-        ' 
-        ' Button29
-        ' 
-        Button29.Location = New Point(176, 166)
-        Button29.Name = "Button29"
-        Button29.Size = New Size(50, 39)
-        Button29.TabIndex = 1
-        Button29.Text = "202"
-        Button29.UseVisualStyleBackColor = True
-        ' 
         ' Button30
         ' 
-        Button30.Location = New Point(120, 166)
+        Button30.Location = New Point(87, 190)
         Button30.Name = "Button30"
-        Button30.Size = New Size(50, 39)
+        Button30.Size = New Size(71, 39)
         Button30.TabIndex = 1
         Button30.Text = "201"
         Button30.UseVisualStyleBackColor = True
@@ -451,7 +428,6 @@ Partial Class NEW_BUILDING
         newBldgF3Panel.Controls.Add(Button36)
         newBldgF3Panel.Controls.Add(Button38)
         newBldgF3Panel.Controls.Add(Button39)
-        newBldgF3Panel.Controls.Add(Button40)
         newBldgF3Panel.Controls.Add(Button41)
         newBldgF3Panel.Controls.Add(Button42)
         newBldgF3Panel.Controls.Add(Button43)
@@ -469,7 +445,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button32
         ' 
-        Button32.Location = New Point(478, 206)
+        Button32.Location = New Point(373, 206)
         Button32.Name = "Button32"
         Button32.Size = New Size(50, 23)
         Button32.TabIndex = 2
@@ -480,7 +456,7 @@ Partial Class NEW_BUILDING
         ' Button34
         ' 
         Button34.Font = New Font("Segoe UI", 6F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button34.Location = New Point(478, 280)
+        Button34.Location = New Point(373, 280)
         Button34.Name = "Button34"
         Button34.Size = New Size(50, 23)
         Button34.TabIndex = 2
@@ -511,7 +487,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button38
         ' 
-        Button38.Location = New Point(366, 235)
+        Button38.Location = New Point(245, 235)
         Button38.Name = "Button38"
         Button38.Size = New Size(50, 39)
         Button38.TabIndex = 1
@@ -520,25 +496,16 @@ Partial Class NEW_BUILDING
         ' 
         ' Button39
         ' 
-        Button39.Location = New Point(310, 235)
+        Button39.Location = New Point(189, 235)
         Button39.Name = "Button39"
         Button39.Size = New Size(50, 39)
         Button39.TabIndex = 1
         Button39.Text = "307"
         Button39.UseVisualStyleBackColor = True
         ' 
-        ' Button40
-        ' 
-        Button40.Location = New Point(366, 166)
-        Button40.Name = "Button40"
-        Button40.Size = New Size(50, 39)
-        Button40.TabIndex = 1
-        Button40.Text = "306"
-        Button40.UseVisualStyleBackColor = True
-        ' 
         ' Button41
         ' 
-        Button41.Location = New Point(176, 235)
+        Button41.Location = New Point(133, 235)
         Button41.Name = "Button41"
         Button41.Size = New Size(50, 39)
         Button41.TabIndex = 1
@@ -547,16 +514,16 @@ Partial Class NEW_BUILDING
         ' 
         ' Button42
         ' 
-        Button42.Location = New Point(310, 166)
+        Button42.Location = New Point(252, 166)
         Button42.Name = "Button42"
-        Button42.Size = New Size(50, 39)
+        Button42.Size = New Size(65, 39)
         Button42.TabIndex = 1
         Button42.Text = "305"
         Button42.UseVisualStyleBackColor = True
         ' 
         ' Button43
         ' 
-        Button43.Location = New Point(478, 235)
+        Button43.Location = New Point(373, 235)
         Button43.Name = "Button43"
         Button43.Size = New Size(50, 39)
         Button43.TabIndex = 1
@@ -574,25 +541,25 @@ Partial Class NEW_BUILDING
         ' 
         ' Button45
         ' 
-        Button45.Location = New Point(422, 235)
+        Button45.Location = New Point(301, 235)
         Button45.Name = "Button45"
-        Button45.Size = New Size(50, 39)
+        Button45.Size = New Size(30, 39)
         Button45.TabIndex = 1
         Button45.Text = "CR" & vbCrLf & "M"
         Button45.UseVisualStyleBackColor = True
         ' 
         ' Button46
         ' 
-        Button46.Location = New Point(64, 235)
+        Button46.Location = New Point(337, 235)
         Button46.Name = "Button46"
-        Button46.Size = New Size(50, 39)
+        Button46.Size = New Size(30, 39)
         Button46.TabIndex = 1
         Button46.Text = "CR" & vbCrLf & "F" & vbCrLf
         Button46.UseVisualStyleBackColor = True
         ' 
         ' Button47
         ' 
-        Button47.Location = New Point(120, 235)
+        Button47.Location = New Point(77, 235)
         Button47.Name = "Button47"
         Button47.Size = New Size(50, 39)
         Button47.TabIndex = 1
@@ -601,18 +568,18 @@ Partial Class NEW_BUILDING
         ' 
         ' Button48
         ' 
-        Button48.Location = New Point(176, 166)
+        Button48.Location = New Point(164, 166)
         Button48.Name = "Button48"
-        Button48.Size = New Size(50, 39)
+        Button48.Size = New Size(82, 39)
         Button48.TabIndex = 1
         Button48.Text = "302"
         Button48.UseVisualStyleBackColor = True
         ' 
         ' Button49
         ' 
-        Button49.Location = New Point(120, 166)
+        Button49.Location = New Point(77, 166)
         Button49.Name = "Button49"
-        Button49.Size = New Size(50, 39)
+        Button49.Size = New Size(81, 39)
         Button49.TabIndex = 1
         Button49.Text = "301"
         Button49.UseVisualStyleBackColor = True
@@ -713,10 +680,10 @@ Partial Class NEW_BUILDING
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(816, 463)
         Controls.Add(Button18)
+        Controls.Add(newBldgF3Panel)
         Controls.Add(newBldgF2Panel)
         Controls.Add(newBldgF1Panel)
         Controls.Add(newBldgF4Panel)
-        Controls.Add(newBldgF3Panel)
         Name = "NEW_BUILDING"
         Text = "NEW_BUILDING"
         newBldgF1Panel.ResumeLayout(False)
@@ -760,8 +727,6 @@ Partial Class NEW_BUILDING
     Friend WithEvents Button25 As Button
     Friend WithEvents Button26 As Button
     Friend WithEvents Button27 As Button
-    Friend WithEvents Button28 As Button
-    Friend WithEvents Button29 As Button
     Friend WithEvents Button30 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Button33 As Button
@@ -770,7 +735,6 @@ Partial Class NEW_BUILDING
     Friend WithEvents Button35 As Button
     Friend WithEvents Button38 As Button
     Friend WithEvents Button39 As Button
-    Friend WithEvents Button40 As Button
     Friend WithEvents Button41 As Button
     Friend WithEvents Button42 As Button
     Friend WithEvents Button43 As Button

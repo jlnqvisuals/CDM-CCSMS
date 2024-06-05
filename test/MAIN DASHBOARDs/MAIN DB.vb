@@ -151,6 +151,11 @@ Public Class MainDB_User
         Me.Hide()
         LOGIN_PAGE.Show()
     End Sub
+
+    Private Sub SEARCHCAMPUS_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        SEARCH_CAMPUS.Show()
+    End Sub
 End Class
 
 
