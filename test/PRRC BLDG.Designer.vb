@@ -78,6 +78,13 @@ Partial Class PRRC_BLDG
         Button36 = New Button()
         Button35 = New Button()
         lab1SchedPanel = New Panel()
+        Button58 = New Button()
+        Button57 = New Button()
+        Button56 = New Button()
+        Button55 = New Button()
+        Button54 = New Button()
+        Button53 = New Button()
+        Button52 = New Button()
         Button51 = New Button()
         Button49 = New Button()
         Label12 = New Label()
@@ -97,9 +104,7 @@ Partial Class PRRC_BLDG
         Timer1 = New Timer(components)
         Label16 = New Label()
         ContextMenuStrip1 = New ContextMenuStrip(components)
-        Button52 = New Button()
-        Button53 = New Button()
-        Button54 = New Button()
+        Button59 = New Button()
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
@@ -667,24 +672,92 @@ Partial Class PRRC_BLDG
         ' 
         ' lab1SchedPanel
         ' 
+        lab1SchedPanel.Controls.Add(Button59)
+        lab1SchedPanel.Controls.Add(Button58)
+        lab1SchedPanel.Controls.Add(Button57)
+        lab1SchedPanel.Controls.Add(Button56)
+        lab1SchedPanel.Controls.Add(Button55)
         lab1SchedPanel.Controls.Add(Button54)
         lab1SchedPanel.Controls.Add(Button53)
         lab1SchedPanel.Controls.Add(Button52)
         lab1SchedPanel.Controls.Add(Button51)
         lab1SchedPanel.Controls.Add(Button49)
-        lab1SchedPanel.Location = New Point(510, 17)
+        lab1SchedPanel.Location = New Point(491, 17)
         lab1SchedPanel.Name = "lab1SchedPanel"
-        lab1SchedPanel.Size = New Size(264, 400)
+        lab1SchedPanel.Size = New Size(283, 400)
         lab1SchedPanel.TabIndex = 32
         lab1SchedPanel.Visible = False
+        ' 
+        ' Button58
+        ' 
+        Button58.Location = New Point(19, 228)
+        Button58.Name = "Button58"
+        Button58.Size = New Size(125, 22)
+        Button58.TabIndex = 5
+        Button58.Text = "3:00 PM - 4:00 PM"
+        Button58.UseVisualStyleBackColor = True
+        ' 
+        ' Button57
+        ' 
+        Button57.Location = New Point(19, 201)
+        Button57.Name = "Button57"
+        Button57.Size = New Size(125, 21)
+        Button57.TabIndex = 5
+        Button57.Text = "2:00 PM - 3:00 PM"
+        Button57.UseVisualStyleBackColor = True
+        ' 
+        ' Button56
+        ' 
+        Button56.Location = New Point(19, 169)
+        Button56.Name = "Button56"
+        Button56.Size = New Size(125, 26)
+        Button56.TabIndex = 5
+        Button56.Text = "1:00 PM - 2:00 PM"
+        Button56.UseVisualStyleBackColor = True
+        ' 
+        ' Button55
+        ' 
+        Button55.Location = New Point(19, 141)
+        Button55.Name = "Button55"
+        Button55.Size = New Size(125, 22)
+        Button55.TabIndex = 5
+        Button55.Text = "12:00 PM - 1:00 PM"
+        Button55.UseVisualStyleBackColor = True
+        ' 
+        ' Button54
+        ' 
+        Button54.Location = New Point(19, 114)
+        Button54.Name = "Button54"
+        Button54.Size = New Size(125, 21)
+        Button54.TabIndex = 4
+        Button54.Text = "11:00 AM - 12:00 PM"
+        Button54.UseVisualStyleBackColor = True
+        ' 
+        ' Button53
+        ' 
+        Button53.Location = New Point(19, 82)
+        Button53.Name = "Button53"
+        Button53.Size = New Size(125, 26)
+        Button53.TabIndex = 4
+        Button53.Text = "9:00 AM - 10:00 AM" & vbCrLf
+        Button53.UseVisualStyleBackColor = True
+        ' 
+        ' Button52
+        ' 
+        Button52.Location = New Point(19, 48)
+        Button52.Name = "Button52"
+        Button52.Size = New Size(125, 28)
+        Button52.TabIndex = 4
+        Button52.Text = "8:00 AM - 9:00 AM" & vbCrLf
+        Button52.UseVisualStyleBackColor = True
         ' 
         ' Button51
         ' 
         Button51.Location = New Point(19, 17)
         Button51.Name = "Button51"
-        Button51.Size = New Size(233, 39)
+        Button51.Size = New Size(125, 25)
         Button51.TabIndex = 4
-        Button51.Text = "7:00 AM - 8:00 AM" & vbCrLf & "AVAILABLE" & vbCrLf
+        Button51.Text = "7:00 AM - 8:00 AM" & vbCrLf
         Button51.UseVisualStyleBackColor = True
         ' 
         ' Button49
@@ -840,32 +913,14 @@ Partial Class PRRC_BLDG
         ContextMenuStrip1.Name = "ContextMenuStrip1"
         ContextMenuStrip1.Size = New Size(61, 4)
         ' 
-        ' Button52
+        ' Button59
         ' 
-        Button52.Location = New Point(19, 59)
-        Button52.Name = "Button52"
-        Button52.Size = New Size(233, 39)
-        Button52.TabIndex = 4
-        Button52.Text = "8:00 AM - 9:00 AM" & vbCrLf & "AVAILABLE" & vbCrLf
-        Button52.UseVisualStyleBackColor = True
-        ' 
-        ' Button53
-        ' 
-        Button53.Location = New Point(19, 101)
-        Button53.Name = "Button53"
-        Button53.Size = New Size(233, 39)
-        Button53.TabIndex = 4
-        Button53.Text = "9:00 AM - 10:00 AM" & vbCrLf & "AVAILABLE" & vbCrLf
-        Button53.UseVisualStyleBackColor = True
-        ' 
-        ' Button54
-        ' 
-        Button54.Location = New Point(19, 146)
-        Button54.Name = "Button54"
-        Button54.Size = New Size(233, 39)
-        Button54.TabIndex = 4
-        Button54.Text = "11:00 AM - 12:00 PM" & vbCrLf & "AVAILABLE" & vbCrLf
-        Button54.UseVisualStyleBackColor = True
+        Button59.Location = New Point(19, 256)
+        Button59.Name = "Button59"
+        Button59.Size = New Size(125, 22)
+        Button59.TabIndex = 5
+        Button59.Text = "4:00 PM - 5:00 PM"
+        Button59.UseVisualStyleBackColor = True
         ' 
         ' PRRC_BLDG
         ' 
@@ -968,4 +1023,9 @@ Partial Class PRRC_BLDG
     Friend WithEvents Button54 As Button
     Friend WithEvents Button53 As Button
     Friend WithEvents Button52 As Button
+    Friend WithEvents Button58 As Button
+    Friend WithEvents Button57 As Button
+    Friend WithEvents Button56 As Button
+    Friend WithEvents Button55 As Button
+    Friend WithEvents Button59 As Button
 End Class

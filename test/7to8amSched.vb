@@ -44,4 +44,22 @@ Public Class _7to8amSched
         nameTxt.Text = FirstName & " " & LastName
 
     End Sub
+
+    Private Sub reqRoomBtn_Click(sender As Object, e As EventArgs) Handles reqRoomBtn.Click
+        Dim Time As String = "7:00-8:00"
+        Dim createdBy As String = nameTxt.Text
+        Dim reason As String = reasonTxt.Text
+
+        Using connection As New MySqlConnection(connectionString)
+            Dim insertQuery As String = "INSERT INTO sched (Time, Reason, CreatedBy) VALUES (@Time, @Reason, @CreatedBy)"
+            Dim command As New MySqlCommand(insertQuery, connection)
+            command.Parameters.AddWithValue("@Time", Time)
+            command.Parameters.AddWithValue("@Reason", reason)
+            command.Parameters.AddWithValue("@CreatedBy", createdBy)
+            connection.Open()
+
+            command.ExecuteNonQuery()
+        End Using
+        MsgBox("Please wait for admin approval.")
+    End Sub
 End Class

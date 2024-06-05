@@ -25,7 +25,7 @@ Partial Class _7to8amSched
         nameTxt = New TextBox()
         Label1 = New Label()
         Label2 = New Label()
-        TextBox1 = New TextBox()
+        reasonTxt = New TextBox()
         reqRoomBtn = New Button()
         SuspendLayout()
         ' 
@@ -55,14 +55,14 @@ Partial Class _7to8amSched
         Label2.TabIndex = 2
         Label2.Text = "REASON:"
         ' 
-        ' TextBox1
+        ' reasonTxt
         ' 
-        TextBox1.Location = New Point(157, 73)
-        TextBox1.Multiline = True
-        TextBox1.Name = "TextBox1"
-        TextBox1.ScrollBars = ScrollBars.Horizontal
-        TextBox1.Size = New Size(198, 125)
-        TextBox1.TabIndex = 3
+        reasonTxt.Location = New Point(157, 73)
+        reasonTxt.Multiline = True
+        reasonTxt.Name = "reasonTxt"
+        reasonTxt.ScrollBars = ScrollBars.Horizontal
+        reasonTxt.Size = New Size(198, 125)
+        reasonTxt.TabIndex = 3
         ' 
         ' reqRoomBtn
         ' 
@@ -79,7 +79,7 @@ Partial Class _7to8amSched
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(389, 281)
         Controls.Add(reqRoomBtn)
-        Controls.Add(TextBox1)
+        Controls.Add(reasonTxt)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(nameTxt)
@@ -92,6 +92,6 @@ Partial Class _7to8amSched
     Friend WithEvents nameTxt As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents reasonTxt As TextBox
     Friend WithEvents reqRoomBtn As Button
 End Class
