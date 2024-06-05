@@ -280,7 +280,7 @@ Partial Class NEW_BUILDING
         newBldgF2Panel.Controls.Add(Label2)
         newBldgF2Panel.Location = New Point(23, 21)
         newBldgF2Panel.Name = "newBldgF2Panel"
-        newBldgF2Panel.Size = New Size(776, 426)
+        newBldgF2Panel.Size = New Size(557, 426)
         newBldgF2Panel.TabIndex = 1
         ' 
         ' Button16

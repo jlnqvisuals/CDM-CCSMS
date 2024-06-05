@@ -102,4 +102,8 @@ Public Class ADMIN_DB
         AcceptedData()
         DisplayData()
     End Sub
+
+    Private Sub acceptedLogPanel_Paint(sender As Object, e As PaintEventArgs) Handles acceptedLogPanel.Paint
+
+    End Sub
 End Class
