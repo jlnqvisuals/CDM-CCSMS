@@ -258,6 +258,7 @@ Partial Class PRRC_BLDG
         ' r101backBtn
         ' 
         r101backBtn.BackColor = Color.Transparent
+        r101backBtn.Cursor = Cursors.Hand
         r101backBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
         r101backBtn.FlatAppearance.BorderSize = 0
         r101backBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
@@ -973,6 +974,7 @@ Partial Class PRRC_BLDG
         ' Button49
         ' 
         Button49.BackColor = Color.Transparent
+        Button49.Cursor = Cursors.Hand
         Button49.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
         Button49.FlatAppearance.BorderSize = 0
         Button49.FlatAppearance.MouseDownBackColor = Color.Transparent
@@ -994,7 +996,7 @@ Partial Class PRRC_BLDG
         Label16.FlatStyle = FlatStyle.Flat
         Label16.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label16.ForeColor = Color.White
-        Label16.Location = New Point(706, 12)
+        Label16.Location = New Point(786, 12)
         Label16.Name = "Label16"
         Label16.Size = New Size(53, 17)
         Label16.TabIndex = 6
@@ -1007,12 +1009,17 @@ Partial Class PRRC_BLDG
         ' 
         ' Button51
         ' 
-        Button51.Location = New Point(934, 9)
+        Button51.BackColor = Color.Transparent
+        Button51.Cursor = Cursors.Hand
+        Button51.FlatAppearance.BorderSize = 0
+        Button51.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button51.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button51.FlatStyle = FlatStyle.Flat
+        Button51.Location = New Point(1020, 13)
         Button51.Name = "Button51"
-        Button51.Size = New Size(106, 23)
+        Button51.Size = New Size(16, 18)
         Button51.TabIndex = 7
-        Button51.Text = "EXIT BUILDING"
-        Button51.UseVisualStyleBackColor = True
+        Button51.UseVisualStyleBackColor = False
         ' 
         ' updateDB
         ' 
@@ -1037,11 +1044,11 @@ Partial Class PRRC_BLDG
         Controls.Add(PictureBox1)
         Controls.Add(Button51)
         Controls.Add(Label16)
-        Controls.Add(lab1SchedPanel)
         Controls.Add(r101Panel)
         Controls.Add(firstFloorPanel)
         Controls.Add(thirdFloorPanel)
         Controls.Add(secondFloorPanel)
+        Controls.Add(lab1SchedPanel)
         FormBorderStyle = FormBorderStyle.None
         Name = "PRRC_BLDG"
         StartPosition = FormStartPosition.CenterScreen
