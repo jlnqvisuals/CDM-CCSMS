@@ -11,7 +11,7 @@ Public Class ADMIN_DB
 
 
     Sub DisplayData()
-        Dim query As String = "SELECT * FROM sched WHERE Approved = 0"
+        Dim query As String = "SELECT * FROM lab1sched WHERE Approved = 0"
 
         Using connection As New MySqlConnection(connectionString)
             Using command As New MySqlCommand(query, connection)
@@ -29,7 +29,7 @@ Public Class ADMIN_DB
     End Sub
 
     Sub AcceptedData()
-        Dim query As String = "SELECT * FROM sched WHERE Approved = 1"
+        Dim query As String = "SELECT * FROM lab1sched WHERE Approved = 1"
 
         Using connection As New MySqlConnection(connectionString)
             Using command As New MySqlCommand(query, connection)
@@ -52,7 +52,7 @@ Public Class ADMIN_DB
     Private Sub acceptBtn_Click(sender As Object, e As EventArgs) Handles acceptBtn.Click
         Dim ID As Integer = CInt(reviewGrid.SelectedRows(0).Cells("ID").Value)
 
-        Dim updateQuery As String = "UPDATE sched SET Approved = 1 WHERE ID = @ID"
+        Dim updateQuery As String = "UPDATE lab1sched SET Approved = 1 WHERE ID = @ID"
 
         Using connection As New MySqlConnection(connectionString)
             Using command As New MySqlCommand(updateQuery, connection)
@@ -68,7 +68,7 @@ Public Class ADMIN_DB
     Private Sub btnReject_Click(sender As Object, e As EventArgs) Handles rejectBtn.Click
         Dim ID As Integer = CInt(reviewGrid.SelectedRows(0).Cells("ID").Value)
 
-        Dim deleteQuery As String = "DELETE FROM sched WHERE ID = @ID"
+        Dim deleteQuery As String = "DELETE FROM lab1sched WHERE ID = @ID"
 
         Using connection As New MySqlConnection(connectionString)
             Using command As New MySqlCommand(deleteQuery, connection)
@@ -89,5 +89,10 @@ Public Class ADMIN_DB
         acceptedLogPanel.Visible = True
         acceptedLogPanel.Show()
         acceptedLogPanel.BringToFront()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        LOGIN_PAGE.Show()
     End Sub
 End Class

@@ -614,6 +614,16 @@ Public Class LOGIN_PAGE
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         ContactUs_Panel.Visible = False
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        If logUser.Text = "admin" And logPass.Text = "admin" Then
+            Me.Close()
+            ADMIN_DB.Show()
+        Else
+            MsgBox("LOGIN ERROR")
+        End If
+
+    End Sub
 End Class
 
 

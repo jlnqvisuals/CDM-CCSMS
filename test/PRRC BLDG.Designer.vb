@@ -78,14 +78,15 @@ Partial Class PRRC_BLDG
         Button36 = New Button()
         Button35 = New Button()
         lab1SchedPanel = New Panel()
-        Button58 = New Button()
-        Button57 = New Button()
-        Button56 = New Button()
-        Button55 = New Button()
-        Button54 = New Button()
-        Button53 = New Button()
-        Button52 = New Button()
-        Button51 = New Button()
+        roomsched9 = New Button()
+        roomsched8 = New Button()
+        roomsched7 = New Button()
+        roomsched6 = New Button()
+        roomsched5 = New Button()
+        roomsched4 = New Button()
+        roomsched3 = New Button()
+        roomsched2 = New Button()
+        roomsched1 = New Button()
         Button49 = New Button()
         Label12 = New Label()
         Button38 = New Button()
@@ -104,7 +105,7 @@ Partial Class PRRC_BLDG
         Timer1 = New Timer(components)
         Label16 = New Label()
         ContextMenuStrip1 = New ContextMenuStrip(components)
-        Button59 = New Button()
+        Button51 = New Button()
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
@@ -672,15 +673,15 @@ Partial Class PRRC_BLDG
         ' 
         ' lab1SchedPanel
         ' 
-        lab1SchedPanel.Controls.Add(Button59)
-        lab1SchedPanel.Controls.Add(Button58)
-        lab1SchedPanel.Controls.Add(Button57)
-        lab1SchedPanel.Controls.Add(Button56)
-        lab1SchedPanel.Controls.Add(Button55)
-        lab1SchedPanel.Controls.Add(Button54)
-        lab1SchedPanel.Controls.Add(Button53)
-        lab1SchedPanel.Controls.Add(Button52)
-        lab1SchedPanel.Controls.Add(Button51)
+        lab1SchedPanel.Controls.Add(roomsched9)
+        lab1SchedPanel.Controls.Add(roomsched8)
+        lab1SchedPanel.Controls.Add(roomsched7)
+        lab1SchedPanel.Controls.Add(roomsched6)
+        lab1SchedPanel.Controls.Add(roomsched5)
+        lab1SchedPanel.Controls.Add(roomsched4)
+        lab1SchedPanel.Controls.Add(roomsched3)
+        lab1SchedPanel.Controls.Add(roomsched2)
+        lab1SchedPanel.Controls.Add(roomsched1)
         lab1SchedPanel.Controls.Add(Button49)
         lab1SchedPanel.Location = New Point(491, 17)
         lab1SchedPanel.Name = "lab1SchedPanel"
@@ -688,77 +689,86 @@ Partial Class PRRC_BLDG
         lab1SchedPanel.TabIndex = 32
         lab1SchedPanel.Visible = False
         ' 
-        ' Button58
+        ' roomsched9
         ' 
-        Button58.Location = New Point(19, 228)
-        Button58.Name = "Button58"
-        Button58.Size = New Size(125, 22)
-        Button58.TabIndex = 5
-        Button58.Text = "3:00 PM - 4:00 PM"
-        Button58.UseVisualStyleBackColor = True
+        roomsched9.Location = New Point(19, 256)
+        roomsched9.Name = "roomsched9"
+        roomsched9.Size = New Size(125, 22)
+        roomsched9.TabIndex = 5
+        roomsched9.Text = "4:00 PM - 5:00 PM"
+        roomsched9.UseVisualStyleBackColor = True
         ' 
-        ' Button57
+        ' roomsched8
         ' 
-        Button57.Location = New Point(19, 201)
-        Button57.Name = "Button57"
-        Button57.Size = New Size(125, 21)
-        Button57.TabIndex = 5
-        Button57.Text = "2:00 PM - 3:00 PM"
-        Button57.UseVisualStyleBackColor = True
+        roomsched8.Location = New Point(19, 228)
+        roomsched8.Name = "roomsched8"
+        roomsched8.Size = New Size(125, 22)
+        roomsched8.TabIndex = 5
+        roomsched8.Text = "3:00 PM - 4:00 PM"
+        roomsched8.UseVisualStyleBackColor = True
         ' 
-        ' Button56
+        ' roomsched7
         ' 
-        Button56.Location = New Point(19, 169)
-        Button56.Name = "Button56"
-        Button56.Size = New Size(125, 26)
-        Button56.TabIndex = 5
-        Button56.Text = "1:00 PM - 2:00 PM"
-        Button56.UseVisualStyleBackColor = True
+        roomsched7.Location = New Point(19, 201)
+        roomsched7.Name = "roomsched7"
+        roomsched7.Size = New Size(125, 21)
+        roomsched7.TabIndex = 5
+        roomsched7.Text = "2:00 PM - 3:00 PM"
+        roomsched7.UseVisualStyleBackColor = True
         ' 
-        ' Button55
+        ' roomsched6
         ' 
-        Button55.Location = New Point(19, 141)
-        Button55.Name = "Button55"
-        Button55.Size = New Size(125, 22)
-        Button55.TabIndex = 5
-        Button55.Text = "12:00 PM - 1:00 PM"
-        Button55.UseVisualStyleBackColor = True
+        roomsched6.Location = New Point(19, 169)
+        roomsched6.Name = "roomsched6"
+        roomsched6.Size = New Size(125, 26)
+        roomsched6.TabIndex = 5
+        roomsched6.Text = "1:00 PM - 2:00 PM"
+        roomsched6.UseVisualStyleBackColor = True
         ' 
-        ' Button54
+        ' roomsched5
         ' 
-        Button54.Location = New Point(19, 114)
-        Button54.Name = "Button54"
-        Button54.Size = New Size(125, 21)
-        Button54.TabIndex = 4
-        Button54.Text = "11:00 AM - 12:00 PM"
-        Button54.UseVisualStyleBackColor = True
+        roomsched5.Location = New Point(19, 141)
+        roomsched5.Name = "roomsched5"
+        roomsched5.Size = New Size(125, 22)
+        roomsched5.TabIndex = 5
+        roomsched5.Text = "12:00 PM - 1:00 PM"
+        roomsched5.UseVisualStyleBackColor = True
         ' 
-        ' Button53
+        ' roomsched4
         ' 
-        Button53.Location = New Point(19, 82)
-        Button53.Name = "Button53"
-        Button53.Size = New Size(125, 26)
-        Button53.TabIndex = 4
-        Button53.Text = "9:00 AM - 10:00 AM" & vbCrLf
-        Button53.UseVisualStyleBackColor = True
+        roomsched4.Location = New Point(19, 114)
+        roomsched4.Name = "roomsched4"
+        roomsched4.Size = New Size(125, 21)
+        roomsched4.TabIndex = 4
+        roomsched4.Text = "11:00 AM - 12:00 PM"
+        roomsched4.UseVisualStyleBackColor = True
         ' 
-        ' Button52
+        ' roomsched3
         ' 
-        Button52.Location = New Point(19, 48)
-        Button52.Name = "Button52"
-        Button52.Size = New Size(125, 28)
-        Button52.TabIndex = 4
-        Button52.Text = "8:00 AM - 9:00 AM" & vbCrLf
-        Button52.UseVisualStyleBackColor = True
+        roomsched3.Location = New Point(19, 82)
+        roomsched3.Name = "roomsched3"
+        roomsched3.Size = New Size(125, 26)
+        roomsched3.TabIndex = 4
+        roomsched3.Text = "9:00 AM - 10:00 AM" & vbCrLf
+        roomsched3.UseVisualStyleBackColor = True
         ' 
-        ' Button51
+        ' roomsched2
         ' 
-        Button51.Location = New Point(19, 17)
-        Button51.Name = "Button51"
-        Button51.Size = New Size(125, 25)
-        Button51.TabIndex = 4
-        Button51.Text = "7:00 AM - 8:00 AM" & vbCrLf
-        Button51.UseVisualStyleBackColor = True
+        roomsched2.Location = New Point(19, 48)
+        roomsched2.Name = "roomsched2"
+        roomsched2.Size = New Size(125, 28)
+        roomsched2.TabIndex = 4
+        roomsched2.Text = "8:00 AM - 9:00 AM" & vbCrLf
+        roomsched2.UseVisualStyleBackColor = True
+        ' 
+        ' roomsched1
+        ' 
+        roomsched1.Location = New Point(19, 17)
+        roomsched1.Name = "roomsched1"
+        roomsched1.Size = New Size(125, 25)
+        roomsched1.TabIndex = 4
+        roomsched1.Text = "7:00 AM - 8:00 AM" & vbCrLf
+        roomsched1.UseVisualStyleBackColor = True
         ' 
         ' Button49
         ' 
@@ -913,20 +923,21 @@ Partial Class PRRC_BLDG
         ContextMenuStrip1.Name = "ContextMenuStrip1"
         ContextMenuStrip1.Size = New Size(61, 4)
         ' 
-        ' Button59
+        ' Button51
         ' 
-        Button59.Location = New Point(19, 256)
-        Button59.Name = "Button59"
-        Button59.Size = New Size(125, 22)
-        Button59.TabIndex = 5
-        Button59.Text = "4:00 PM - 5:00 PM"
-        Button59.UseVisualStyleBackColor = True
+        Button51.Location = New Point(680, 5)
+        Button51.Name = "Button51"
+        Button51.Size = New Size(106, 23)
+        Button51.TabIndex = 7
+        Button51.Text = "EXIT BUILDING"
+        Button51.UseVisualStyleBackColor = True
         ' 
         ' PRRC_BLDG
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button51)
         Controls.Add(Label16)
         Controls.Add(thirdFloorPanel)
         Controls.Add(secondFloorPanel)
@@ -1018,14 +1029,15 @@ Partial Class PRRC_BLDG
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label16 As Label
     Friend WithEvents Button49 As Button
-    Friend WithEvents Button51 As Button
+    Friend WithEvents roomsched1 As Button
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
-    Friend WithEvents Button54 As Button
-    Friend WithEvents Button53 As Button
-    Friend WithEvents Button52 As Button
-    Friend WithEvents Button58 As Button
-    Friend WithEvents Button57 As Button
-    Friend WithEvents Button56 As Button
-    Friend WithEvents Button55 As Button
-    Friend WithEvents Button59 As Button
+    Friend WithEvents roomsched4 As Button
+    Friend WithEvents roomsched3 As Button
+    Friend WithEvents roomsched2 As Button
+    Friend WithEvents roomsched8 As Button
+    Friend WithEvents roomsched7 As Button
+    Friend WithEvents roomsched6 As Button
+    Friend WithEvents roomsched5 As Button
+    Friend WithEvents roomsched9 As Button
+    Friend WithEvents Button51 As Button
 End Class

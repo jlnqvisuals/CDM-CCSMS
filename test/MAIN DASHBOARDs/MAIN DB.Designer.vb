@@ -42,6 +42,7 @@ Partial Class MainDB_User
         PictureBox1 = New PictureBox()
         DnT = New Timer(components)
         DateTime_Label = New Label()
+        logoutMdbBtn = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -204,10 +205,17 @@ Partial Class MainDB_User
         DateTime_Label.ForeColor = Color.White
         DateTime_Label.Name = "DateTime_Label"
         ' 
+        ' logoutMdbBtn
+        ' 
+        resources.ApplyResources(logoutMdbBtn, "logoutMdbBtn")
+        logoutMdbBtn.Name = "logoutMdbBtn"
+        logoutMdbBtn.UseVisualStyleBackColor = True
+        ' 
         ' MainDB_User
         ' 
         AutoScaleMode = AutoScaleMode.Inherit
         resources.ApplyResources(Me, "$this")
+        Controls.Add(logoutMdbBtn)
         Controls.Add(DateTime_Label)
         Controls.Add(PictureBox1)
         Controls.Add(StudentID)
@@ -250,4 +258,5 @@ Partial Class MainDB_User
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents DnT As Timer
     Friend WithEvents DateTime_Label As Label
+    Friend WithEvents logoutMdbBtn As Button
 End Class

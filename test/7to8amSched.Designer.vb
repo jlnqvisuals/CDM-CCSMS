@@ -27,6 +27,8 @@ Partial Class _7to8amSched
         Label2 = New Label()
         reasonTxt = New TextBox()
         reqRoomBtn = New Button()
+        Label3 = New Label()
+        sidTxt = New TextBox()
         SuspendLayout()
         ' 
         ' nameTxt
@@ -49,7 +51,7 @@ Partial Class _7to8amSched
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(96, 76)
+        Label2.Location = New Point(96, 104)
         Label2.Name = "Label2"
         Label2.Size = New Size(55, 15)
         Label2.TabIndex = 2
@@ -57,7 +59,7 @@ Partial Class _7to8amSched
         ' 
         ' reasonTxt
         ' 
-        reasonTxt.Location = New Point(157, 73)
+        reasonTxt.Location = New Point(157, 101)
         reasonTxt.Multiline = True
         reasonTxt.Name = "reasonTxt"
         reasonTxt.ScrollBars = ScrollBars.Horizontal
@@ -66,22 +68,41 @@ Partial Class _7to8amSched
         ' 
         ' reqRoomBtn
         ' 
-        reqRoomBtn.Location = New Point(280, 217)
+        reqRoomBtn.Location = New Point(280, 245)
         reqRoomBtn.Name = "reqRoomBtn"
         reqRoomBtn.Size = New Size(75, 23)
         reqRoomBtn.TabIndex = 4
         reqRoomBtn.Text = "REQUEST"
         reqRoomBtn.UseVisualStyleBackColor = True
         ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(113, 66)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(27, 15)
+        Label3.TabIndex = 5
+        Label3.Text = "SID:"
+        ' 
+        ' sidTxt
+        ' 
+        sidTxt.Enabled = False
+        sidTxt.Location = New Point(143, 63)
+        sidTxt.Name = "sidTxt"
+        sidTxt.Size = New Size(212, 23)
+        sidTxt.TabIndex = 0
+        ' 
         ' _7to8amSched
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(389, 281)
+        Controls.Add(Label3)
         Controls.Add(reqRoomBtn)
         Controls.Add(reasonTxt)
         Controls.Add(Label2)
         Controls.Add(Label1)
+        Controls.Add(sidTxt)
         Controls.Add(nameTxt)
         Name = "_7to8amSched"
         Text = "_7to8amSched"
@@ -94,4 +115,6 @@ Partial Class _7to8amSched
     Friend WithEvents Label2 As Label
     Friend WithEvents reasonTxt As TextBox
     Friend WithEvents reqRoomBtn As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents sidTxt As TextBox
 End Class

@@ -30,6 +30,7 @@ Partial Class ADMIN_DB
         acceptedLogPanel = New Panel()
         Button1 = New Button()
         Label1 = New Label()
+        Button2 = New Button()
         CType(reviewGrid, ComponentModel.ISupportInitialize).BeginInit()
         CType(acceptedGrid, ComponentModel.ISupportInitialize).BeginInit()
         acceptedLogPanel.SuspendLayout()
@@ -110,11 +111,21 @@ Partial Class ADMIN_DB
         Label1.TabIndex = 5
         Label1.Text = "ACCEPTED SCHEDULE LOG"
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(680, 493)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(75, 23)
+        Button2.TabIndex = 7
+        Button2.Text = "LOG OUT"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' ADMIN_DB
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(802, 540)
+        Controls.Add(Button2)
         Controls.Add(schedLogBtn)
         Controls.Add(reviewGrid)
         Controls.Add(rejectBtn)
@@ -140,4 +151,5 @@ Partial Class ADMIN_DB
     Friend WithEvents acceptedLogPanel As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button2 As Button
 End Class

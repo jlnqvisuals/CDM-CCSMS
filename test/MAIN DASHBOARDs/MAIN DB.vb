@@ -104,10 +104,6 @@ Public Class MainDB_User
 
     End Sub
 
-    Private Sub logOutBtn_Click(sender As Object, e As EventArgs)
-        Close
-        LOGIN_PAGE.Show
-    End Sub
 
     Private Sub ExitBTN_Click(sender As Object, e As EventArgs) Handles ExitBTN.Click
         EXIT_PROMPT.Show()
@@ -140,23 +136,21 @@ Public Class MainDB_User
         DateTime_Label.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
         ' Start the timer
         DnT.Start()
-        End Sub
+    End Sub
 
-        Private Sub DateTime_Tick(sender As Object, e As EventArgs) Handles DnT.Tick
+    Private Sub DateTime_Tick(sender As Object, e As EventArgs) Handles DnT.Tick
         ' Update the label with the current date and time in the desired format
         DateTime_Label.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
     End Sub
 
-        Private Sub DateTime_Label_Click(sender As Object, e As EventArgs) Handles DateTime_Label.Click
-            ' You can leave this event handler empty or add any additional actions you want to perform when the label is clicked.
-        End Sub
+    Private Sub DateTime_Label_Click(sender As Object, e As EventArgs) Handles DateTime_Label.Click
+        ' You can leave this event handler empty or add any additional actions you want to perform when the label is clicked.
+    End Sub
 
-
-
-
-
-
-
+    Private Sub logoutMdbBtn_Click(sender As Object, e As EventArgs) Handles logoutMdbBtn.Click
+        Me.Hide()
+        LOGIN_PAGE.Show()
+    End Sub
 End Class
 
 

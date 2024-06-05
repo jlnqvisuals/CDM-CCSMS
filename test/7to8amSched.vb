@@ -7,6 +7,7 @@ Public Class _7to8amSched
 
     Private Sub _7to8amSched_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         getCurrentUser(LOGIN_PAGE.StudentID)
+        sidTxt.Text = LOGIN_PAGE.StudentID
     End Sub
 
     Dim FirstName As String = ""
@@ -49,13 +50,15 @@ Public Class _7to8amSched
         Dim Time As String = "7:00-8:00"
         Dim createdBy As String = nameTxt.Text
         Dim reason As String = reasonTxt.Text
+        Dim SID As String = LOGIN_PAGE.StudentID
 
         Using connection As New MySqlConnection(connectionString)
-            Dim insertQuery As String = "INSERT INTO sched (Time, Reason, CreatedBy) VALUES (@Time, @Reason, @CreatedBy)"
+            Dim insertQuery As String = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
             Dim command As New MySqlCommand(insertQuery, connection)
             command.Parameters.AddWithValue("@Time", Time)
             command.Parameters.AddWithValue("@Reason", reason)
             command.Parameters.AddWithValue("@CreatedBy", createdBy)
+            command.Parameters.AddWithValue("@SID", SID)
             connection.Open()
 
             command.ExecuteNonQuery()

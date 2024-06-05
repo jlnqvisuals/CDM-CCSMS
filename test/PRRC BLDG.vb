@@ -104,15 +104,23 @@ Public Class PRRC_BLDG
         Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
         ' Start the timer
         Timer1.Start()
+
     End Sub
 
+
+    Sub checkAvailability()
+
+    End Sub
     Private Sub Button49_Click(sender As Object, e As EventArgs) Handles Button49.Click
         lab1SchedPanel.Hide()
     End Sub
 
-    Private Sub Button51_Click(sender As Object, e As EventArgs) Handles Button51.Click
+    Private Sub Button51_Click(sender As Object, e As EventArgs) Handles roomsched1.Click
         _7to8amSched.Show()
     End Sub
 
-
+    Private Sub Button51_Click_1(sender As Object, e As EventArgs) Handles Button51.Click
+        Me.Hide()
+        NAVIGATE_CAMPUS.Show()
+    End Sub
 End Class
