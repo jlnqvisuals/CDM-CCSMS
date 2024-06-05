@@ -53,6 +53,7 @@ Partial Class NAVIGATE_CAMPUS
         adminBldgBtn.BackgroundImage = CType(resources.GetObject("adminBldgBtn.BackgroundImage"), Image)
         adminBldgBtn.BackgroundImageLayout = ImageLayout.None
         adminBldgBtn.Cursor = Cursors.Hand
+        adminBldgBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(216), CByte(216), CByte(216))
         adminBldgBtn.FlatAppearance.BorderSize = 0
         adminBldgBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         adminBldgBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
@@ -70,6 +71,7 @@ Partial Class NAVIGATE_CAMPUS
         prrcBldgBtn.BackgroundImage = CType(resources.GetObject("prrcBldgBtn.BackgroundImage"), Image)
         prrcBldgBtn.BackgroundImageLayout = ImageLayout.None
         prrcBldgBtn.Cursor = Cursors.Hand
+        prrcBldgBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(216), CByte(216), CByte(216))
         prrcBldgBtn.FlatAppearance.BorderSize = 0
         prrcBldgBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         prrcBldgBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
@@ -87,6 +89,7 @@ Partial Class NAVIGATE_CAMPUS
         newBldgBtn.BackgroundImage = CType(resources.GetObject("newBldgBtn.BackgroundImage"), Image)
         newBldgBtn.BackgroundImageLayout = ImageLayout.None
         newBldgBtn.Cursor = Cursors.Hand
+        newBldgBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(216), CByte(216), CByte(216))
         newBldgBtn.FlatAppearance.BorderSize = 0
         newBldgBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         newBldgBtn.FlatAppearance.MouseOverBackColor = Color.Transparent

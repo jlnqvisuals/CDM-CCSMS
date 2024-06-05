@@ -78,18 +78,6 @@ Partial Class PRRC_BLDG
         Button37 = New Button()
         Button36 = New Button()
         Button35 = New Button()
-        lab1SchedPanel = New Panel()
-        roomsched10 = New Button()
-        roomsched9 = New Button()
-        roomsched8 = New Button()
-        roomsched7 = New Button()
-        roomsched6 = New Button()
-        roomsched5 = New Button()
-        roomsched4 = New Button()
-        roomsched3 = New Button()
-        roomsched2 = New Button()
-        roomsched1 = New Button()
-        Button49 = New Button()
         Label12 = New Label()
         Button38 = New Button()
         Button39 = New Button()
@@ -104,16 +92,31 @@ Partial Class PRRC_BLDG
         Button48 = New Button()
         lab1Btn = New Button()
         Button50 = New Button()
+        lab1SchedPanel = New Panel()
+        Label13 = New Label()
+        roomsched10 = New Button()
+        roomsched9 = New Button()
+        roomsched8 = New Button()
+        roomsched7 = New Button()
+        roomsched6 = New Button()
+        roomsched5 = New Button()
+        roomsched4 = New Button()
+        roomsched3 = New Button()
+        roomsched2 = New Button()
+        roomsched1 = New Button()
+        Button49 = New Button()
         Timer1 = New Timer(components)
         Label16 = New Label()
         ContextMenuStrip1 = New ContextMenuStrip(components)
         Button51 = New Button()
         updateDB = New Timer(components)
+        PictureBox1 = New PictureBox()
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
         thirdFloorPanel.SuspendLayout()
         lab1SchedPanel.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Button1
@@ -235,6 +238,8 @@ Partial Class PRRC_BLDG
         ' 
         ' r101Panel
         ' 
+        r101Panel.BackColor = Color.White
+        r101Panel.BackgroundImage = CType(resources.GetObject("r101Panel.BackgroundImage"), Image)
         r101Panel.Controls.Add(r101backBtn)
         r101Panel.Controls.Add(Label9)
         r101Panel.Controls.Add(Label5)
@@ -252,102 +257,117 @@ Partial Class PRRC_BLDG
         ' 
         ' r101backBtn
         ' 
-        r101backBtn.Location = New Point(172, 390)
+        r101backBtn.BackColor = Color.Transparent
+        r101backBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        r101backBtn.FlatAppearance.BorderSize = 0
+        r101backBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
+        r101backBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
+        r101backBtn.FlatStyle = FlatStyle.Flat
+        r101backBtn.Location = New Point(119, 390)
         r101backBtn.Name = "r101backBtn"
-        r101backBtn.Size = New Size(75, 23)
+        r101backBtn.Size = New Size(75, 20)
         r101backBtn.TabIndex = 1
-        r101backBtn.Text = "Back"
-        r101backBtn.UseVisualStyleBackColor = True
+        r101backBtn.UseVisualStyleBackColor = False
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
+        Label9.Font = New Font("Segoe UI", 10F)
         Label9.Location = New Point(14, 287)
         Label9.Name = "Label9"
-        Label9.Size = New Size(111, 15)
+        Label9.Size = New Size(138, 19)
         Label9.TabIndex = 0
         Label9.Text = "7:00 - 10:00  RECESS"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
+        Label5.Font = New Font("Segoe UI", 10F)
         Label5.Location = New Point(14, 179)
         Label5.Name = "Label5"
-        Label5.Size = New Size(111, 15)
+        Label5.Size = New Size(138, 19)
         Label5.TabIndex = 0
         Label5.Text = "7:00 - 10:00  RECESS"
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI", 10F)
         Label8.Location = New Point(14, 259)
         Label8.Name = "Label8"
-        Label8.Size = New Size(111, 15)
+        Label8.Size = New Size(138, 19)
         Label8.TabIndex = 0
         Label8.Text = "7:00 - 10:00  RECESS"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI", 10F)
         Label7.Location = New Point(14, 232)
         Label7.Name = "Label7"
-        Label7.Size = New Size(111, 15)
+        Label7.Size = New Size(138, 19)
         Label7.TabIndex = 0
         Label7.Text = "7:00 - 10:00  RECESS"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI", 10F)
         Label4.Location = New Point(14, 151)
         Label4.Name = "Label4"
-        Label4.Size = New Size(111, 15)
+        Label4.Size = New Size(138, 19)
         Label4.TabIndex = 0
         Label4.Text = "7:00 - 10:00  RECESS"
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI", 10F)
         Label6.Location = New Point(14, 204)
         Label6.Name = "Label6"
-        Label6.Size = New Size(111, 15)
+        Label6.Size = New Size(138, 19)
         Label6.TabIndex = 0
         Label6.Text = "7:00 - 10:00  RECESS"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 10F)
         Label3.Location = New Point(14, 124)
         Label3.Name = "Label3"
-        Label3.Size = New Size(111, 15)
+        Label3.Size = New Size(138, 19)
         Label3.TabIndex = 0
         Label3.Text = "7:00 - 10:00  RECESS"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 10F)
         Label2.Location = New Point(14, 96)
         Label2.Name = "Label2"
-        Label2.Size = New Size(111, 15)
+        Label2.Size = New Size(138, 19)
         Label2.TabIndex = 0
         Label2.Text = "7:00 - 10:00  RECESS"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(14, 12)
+        Label1.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label1.Location = New Point(14, 51)
         Label1.Name = "Label1"
-        Label1.Size = New Size(106, 15)
+        Label1.Size = New Size(233, 28)
         Label1.TabIndex = 0
-        Label1.Text = "ROOM SCHEDULE:"
+        Label1.Text = "ROOM P101 SCHEDULE"
+        Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label10.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.ForeColor = Color.White
-        Label10.Location = New Point(140, 39)
+        Label10.Location = New Point(136, 39)
         Label10.Name = "Label10"
-        Label10.Size = New Size(219, 47)
+        Label10.Size = New Size(235, 47)
         Label10.TabIndex = 2
         Label10.Text = "FIRST FLOOR"
         ' 
@@ -498,11 +518,11 @@ Partial Class PRRC_BLDG
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label11.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label11.ForeColor = Color.White
-        Label11.Location = New Point(117, 46)
+        Label11.Location = New Point(108, 39)
         Label11.Name = "Label11"
-        Label11.Size = New Size(270, 47)
+        Label11.Size = New Size(284, 47)
         Label11.TabIndex = 16
         Label11.Text = "SECOND FLOOR"
         ' 
@@ -678,133 +698,14 @@ Partial Class PRRC_BLDG
         Button35.UseVisualStyleBackColor = True
         Button35.Visible = False
         ' 
-        ' lab1SchedPanel
-        ' 
-        lab1SchedPanel.Controls.Add(roomsched10)
-        lab1SchedPanel.Controls.Add(roomsched9)
-        lab1SchedPanel.Controls.Add(roomsched8)
-        lab1SchedPanel.Controls.Add(roomsched7)
-        lab1SchedPanel.Controls.Add(roomsched6)
-        lab1SchedPanel.Controls.Add(roomsched5)
-        lab1SchedPanel.Controls.Add(roomsched4)
-        lab1SchedPanel.Controls.Add(roomsched3)
-        lab1SchedPanel.Controls.Add(roomsched2)
-        lab1SchedPanel.Controls.Add(roomsched1)
-        lab1SchedPanel.Controls.Add(Button49)
-        lab1SchedPanel.Location = New Point(671, 93)
-        lab1SchedPanel.Name = "lab1SchedPanel"
-        lab1SchedPanel.Size = New Size(313, 426)
-        lab1SchedPanel.TabIndex = 32
-        lab1SchedPanel.Visible = False
-        ' 
-        ' roomsched10
-        ' 
-        roomsched10.Location = New Point(19, 284)
-        roomsched10.Name = "roomsched10"
-        roomsched10.Size = New Size(125, 22)
-        roomsched10.TabIndex = 5
-        roomsched10.Text = "4:00 PM - 5:00 PM"
-        roomsched10.UseVisualStyleBackColor = True
-        ' 
-        ' roomsched9
-        ' 
-        roomsched9.Location = New Point(19, 256)
-        roomsched9.Name = "roomsched9"
-        roomsched9.Size = New Size(125, 22)
-        roomsched9.TabIndex = 5
-        roomsched9.Text = "3:00 PM - 4:00 PM"
-        roomsched9.UseVisualStyleBackColor = True
-        ' 
-        ' roomsched8
-        ' 
-        roomsched8.Location = New Point(19, 228)
-        roomsched8.Name = "roomsched8"
-        roomsched8.Size = New Size(125, 22)
-        roomsched8.TabIndex = 5
-        roomsched8.Text = "2:00 PM - 3:00 PM"
-        roomsched8.UseVisualStyleBackColor = True
-        ' 
-        ' roomsched7
-        ' 
-        roomsched7.Location = New Point(19, 201)
-        roomsched7.Name = "roomsched7"
-        roomsched7.Size = New Size(125, 21)
-        roomsched7.TabIndex = 5
-        roomsched7.Text = "1:00 PM - 2:00 PM"
-        roomsched7.UseVisualStyleBackColor = True
-        ' 
-        ' roomsched6
-        ' 
-        roomsched6.Location = New Point(19, 169)
-        roomsched6.Name = "roomsched6"
-        roomsched6.Size = New Size(125, 26)
-        roomsched6.TabIndex = 5
-        roomsched6.Text = "12:00 PM - 1:00 PM"
-        roomsched6.UseVisualStyleBackColor = True
-        ' 
-        ' roomsched5
-        ' 
-        roomsched5.Location = New Point(19, 141)
-        roomsched5.Name = "roomsched5"
-        roomsched5.Size = New Size(125, 22)
-        roomsched5.TabIndex = 5
-        roomsched5.Text = "11:00 AM - 12:00 PM"
-        roomsched5.UseVisualStyleBackColor = True
-        ' 
-        ' roomsched4
-        ' 
-        roomsched4.Location = New Point(19, 114)
-        roomsched4.Name = "roomsched4"
-        roomsched4.Size = New Size(125, 21)
-        roomsched4.TabIndex = 4
-        roomsched4.Text = "10:00 AM - 11:00 AM"
-        roomsched4.UseVisualStyleBackColor = True
-        ' 
-        ' roomsched3
-        ' 
-        roomsched3.Location = New Point(19, 82)
-        roomsched3.Name = "roomsched3"
-        roomsched3.Size = New Size(125, 26)
-        roomsched3.TabIndex = 4
-        roomsched3.Text = "9:00 AM - 10:00 AM" & vbCrLf
-        roomsched3.UseVisualStyleBackColor = True
-        ' 
-        ' roomsched2
-        ' 
-        roomsched2.Location = New Point(19, 48)
-        roomsched2.Name = "roomsched2"
-        roomsched2.Size = New Size(125, 28)
-        roomsched2.TabIndex = 4
-        roomsched2.Text = "8:00 AM - 9:00 AM" & vbCrLf
-        roomsched2.UseVisualStyleBackColor = True
-        ' 
-        ' roomsched1
-        ' 
-        roomsched1.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
-        roomsched1.Location = New Point(19, 17)
-        roomsched1.Name = "roomsched1"
-        roomsched1.Size = New Size(125, 25)
-        roomsched1.TabIndex = 4
-        roomsched1.Text = "7:00 AM - 8:00 AM" & vbCrLf
-        roomsched1.UseVisualStyleBackColor = False
-        ' 
-        ' Button49
-        ' 
-        Button49.Location = New Point(150, 284)
-        Button49.Name = "Button49"
-        Button49.Size = New Size(75, 23)
-        Button49.TabIndex = 3
-        Button49.Text = "Back"
-        Button49.UseVisualStyleBackColor = True
-        ' 
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label12.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label12.ForeColor = Color.White
-        Label12.Location = New Point(139, 40)
+        Label12.Location = New Point(124, 40)
         Label12.Name = "Label12"
-        Label12.Size = New Size(233, 47)
+        Label12.Size = New Size(250, 47)
         Label12.TabIndex = 31
         Label12.Text = "THIRD FLOOR"
         ' 
@@ -925,15 +826,177 @@ Partial Class PRRC_BLDG
         Button50.Text = "???"
         Button50.UseVisualStyleBackColor = True
         ' 
+        ' lab1SchedPanel
+        ' 
+        lab1SchedPanel.BackColor = Color.White
+        lab1SchedPanel.BackgroundImage = CType(resources.GetObject("lab1SchedPanel.BackgroundImage"), Image)
+        lab1SchedPanel.Controls.Add(Label13)
+        lab1SchedPanel.Controls.Add(roomsched10)
+        lab1SchedPanel.Controls.Add(roomsched9)
+        lab1SchedPanel.Controls.Add(roomsched8)
+        lab1SchedPanel.Controls.Add(roomsched7)
+        lab1SchedPanel.Controls.Add(roomsched6)
+        lab1SchedPanel.Controls.Add(roomsched5)
+        lab1SchedPanel.Controls.Add(roomsched4)
+        lab1SchedPanel.Controls.Add(roomsched3)
+        lab1SchedPanel.Controls.Add(roomsched2)
+        lab1SchedPanel.Controls.Add(roomsched1)
+        lab1SchedPanel.Controls.Add(Button49)
+        lab1SchedPanel.Location = New Point(671, 93)
+        lab1SchedPanel.Name = "lab1SchedPanel"
+        lab1SchedPanel.Size = New Size(313, 426)
+        lab1SchedPanel.TabIndex = 32
+        lab1SchedPanel.Visible = False
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Label13.Location = New Point(76, 31)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(163, 28)
+        Label13.TabIndex = 6
+        Label13.Text = "RESERVE ROOM"
+        Label13.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' roomsched10
+        ' 
+        roomsched10.FlatAppearance.BorderSize = 0
+        roomsched10.FlatStyle = FlatStyle.Flat
+        roomsched10.Location = New Point(68, 341)
+        roomsched10.Name = "roomsched10"
+        roomsched10.Size = New Size(179, 26)
+        roomsched10.TabIndex = 5
+        roomsched10.Text = "4:00 PM - 5:00 PM"
+        roomsched10.UseVisualStyleBackColor = True
+        ' 
+        ' roomsched9
+        ' 
+        roomsched9.FlatAppearance.BorderSize = 0
+        roomsched9.FlatStyle = FlatStyle.Flat
+        roomsched9.Location = New Point(68, 311)
+        roomsched9.Name = "roomsched9"
+        roomsched9.Size = New Size(179, 26)
+        roomsched9.TabIndex = 5
+        roomsched9.Text = "3:00 PM - 4:00 PM"
+        roomsched9.UseVisualStyleBackColor = True
+        ' 
+        ' roomsched8
+        ' 
+        roomsched8.FlatAppearance.BorderSize = 0
+        roomsched8.FlatStyle = FlatStyle.Flat
+        roomsched8.Location = New Point(68, 282)
+        roomsched8.Name = "roomsched8"
+        roomsched8.Size = New Size(179, 26)
+        roomsched8.TabIndex = 5
+        roomsched8.Text = "2:00 PM - 3:00 PM"
+        roomsched8.UseVisualStyleBackColor = True
+        ' 
+        ' roomsched7
+        ' 
+        roomsched7.FlatAppearance.BorderSize = 0
+        roomsched7.FlatStyle = FlatStyle.Flat
+        roomsched7.Location = New Point(68, 253)
+        roomsched7.Name = "roomsched7"
+        roomsched7.Size = New Size(179, 26)
+        roomsched7.TabIndex = 5
+        roomsched7.Text = "1:00 PM - 2:00 PM"
+        roomsched7.UseVisualStyleBackColor = True
+        ' 
+        ' roomsched6
+        ' 
+        roomsched6.FlatAppearance.BorderSize = 0
+        roomsched6.FlatStyle = FlatStyle.Flat
+        roomsched6.Location = New Point(68, 223)
+        roomsched6.Name = "roomsched6"
+        roomsched6.Size = New Size(179, 26)
+        roomsched6.TabIndex = 5
+        roomsched6.Text = "12:00 PM - 1:00 PM"
+        roomsched6.UseVisualStyleBackColor = True
+        ' 
+        ' roomsched5
+        ' 
+        roomsched5.FlatAppearance.BorderSize = 0
+        roomsched5.FlatStyle = FlatStyle.Flat
+        roomsched5.Location = New Point(68, 193)
+        roomsched5.Name = "roomsched5"
+        roomsched5.Size = New Size(179, 26)
+        roomsched5.TabIndex = 5
+        roomsched5.Text = "11:00 AM - 12:00 PM"
+        roomsched5.UseVisualStyleBackColor = True
+        ' 
+        ' roomsched4
+        ' 
+        roomsched4.FlatAppearance.BorderSize = 0
+        roomsched4.FlatStyle = FlatStyle.Flat
+        roomsched4.Location = New Point(68, 164)
+        roomsched4.Name = "roomsched4"
+        roomsched4.Size = New Size(179, 26)
+        roomsched4.TabIndex = 4
+        roomsched4.Text = "10:00 AM - 11:00 AM"
+        roomsched4.UseVisualStyleBackColor = True
+        ' 
+        ' roomsched3
+        ' 
+        roomsched3.FlatAppearance.BorderSize = 0
+        roomsched3.FlatStyle = FlatStyle.Flat
+        roomsched3.Location = New Point(68, 134)
+        roomsched3.Name = "roomsched3"
+        roomsched3.Size = New Size(179, 26)
+        roomsched3.TabIndex = 4
+        roomsched3.Text = "9:00 AM - 10:00 AM" & vbCrLf
+        roomsched3.UseVisualStyleBackColor = True
+        ' 
+        ' roomsched2
+        ' 
+        roomsched2.FlatAppearance.BorderSize = 0
+        roomsched2.FlatStyle = FlatStyle.Flat
+        roomsched2.Location = New Point(68, 104)
+        roomsched2.Name = "roomsched2"
+        roomsched2.Size = New Size(179, 26)
+        roomsched2.TabIndex = 4
+        roomsched2.Text = "8:00 AM - 9:00 AM" & vbCrLf
+        roomsched2.UseVisualStyleBackColor = True
+        ' 
+        ' roomsched1
+        ' 
+        roomsched1.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        roomsched1.FlatAppearance.BorderSize = 0
+        roomsched1.FlatStyle = FlatStyle.Flat
+        roomsched1.Location = New Point(68, 74)
+        roomsched1.Name = "roomsched1"
+        roomsched1.Size = New Size(179, 26)
+        roomsched1.TabIndex = 4
+        roomsched1.Text = "7:00 AM - 8:00 AM" & vbCrLf
+        roomsched1.UseVisualStyleBackColor = False
+        ' 
+        ' Button49
+        ' 
+        Button49.BackColor = Color.Transparent
+        Button49.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Button49.FlatAppearance.BorderSize = 0
+        Button49.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button49.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button49.FlatStyle = FlatStyle.Flat
+        Button49.Location = New Point(119, 388)
+        Button49.Name = "Button49"
+        Button49.Size = New Size(75, 23)
+        Button49.TabIndex = 3
+        Button49.UseVisualStyleBackColor = False
+        ' 
         ' Timer1
         ' 
         ' 
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Location = New Point(723, 9)
+        Label16.BackColor = Color.Transparent
+        Label16.FlatStyle = FlatStyle.Flat
+        Label16.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label16.ForeColor = Color.White
+        Label16.Location = New Point(706, 12)
         Label16.Name = "Label16"
-        Label16.Size = New Size(47, 15)
+        Label16.Size = New Size(53, 17)
         Label16.TabIndex = 6
         Label16.Text = "Label16"
         ' 
@@ -954,19 +1017,31 @@ Partial Class PRRC_BLDG
         ' updateDB
         ' 
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), Image)
+        PictureBox1.BackgroundImageLayout = ImageLayout.Stretch
+        PictureBox1.Location = New Point(74, 458)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(513, 24)
+        PictureBox1.TabIndex = 33
+        PictureBox1.TabStop = False
+        ' 
         ' PRRC_BLDG
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1050, 591)
+        Controls.Add(PictureBox1)
         Controls.Add(Button51)
         Controls.Add(Label16)
         Controls.Add(lab1SchedPanel)
         Controls.Add(r101Panel)
+        Controls.Add(firstFloorPanel)
         Controls.Add(thirdFloorPanel)
         Controls.Add(secondFloorPanel)
-        Controls.Add(firstFloorPanel)
         FormBorderStyle = FormBorderStyle.None
         Name = "PRRC_BLDG"
         StartPosition = FormStartPosition.CenterScreen
@@ -980,6 +1055,8 @@ Partial Class PRRC_BLDG
         thirdFloorPanel.ResumeLayout(False)
         thirdFloorPanel.PerformLayout()
         lab1SchedPanel.ResumeLayout(False)
+        lab1SchedPanel.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -1069,4 +1146,6 @@ Partial Class PRRC_BLDG
     Friend WithEvents Button51 As Button
     Friend WithEvents updateDB As Timer
     Friend WithEvents roomsched10 As Button
+    Friend WithEvents Label13 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

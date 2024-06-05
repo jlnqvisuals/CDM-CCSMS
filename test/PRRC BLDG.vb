@@ -175,4 +175,20 @@ Public Class PRRC_BLDG
     Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
 
     End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub r101Panel_Paint(sender As Object, e As PaintEventArgs) Handles r101Panel.Paint
+
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+
+    End Sub
+
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+
+    End Sub
 End Class
