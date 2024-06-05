@@ -48,12 +48,10 @@ Public Class PRRC_BLDG
     End Sub
 
     Private Sub r101backBtn_Click(sender As Object, e As EventArgs) Handles r101backBtn.Click
-        r101Panel.Hide()
+        r101Panel.Visible = False
     End Sub
 
-    Private Sub r101Btn_Click(sender As Object, e As EventArgs) Handles r101Btn.Click
-        r101Panel.Show()
-    End Sub
+
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         isVisible(Button32)
@@ -203,23 +201,81 @@ Public Class PRRC_BLDG
         checkAvailability("4:00-5:00", roomsched10)
     End Sub
 
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
-
+    Sub isPanelVisible(mainPanel As Panel, pan1 As Panel, pan2 As Panel, pan3 As Panel, pan4 As Panel, pan5 As Panel, pan6 As Panel, pan7 As Panel)
+        If mainPanel.Visible = False Then
+            mainPanel.Visible = True
+            pan1.Visible = False
+            pan2.Visible = False
+            pan3.Visible = False
+            pan4.Visible = False
+            pan5.Visible = False
+            pan6.Visible = False
+            pan7.Visible = False
+        Else
+            mainPanel.Visible = False
+            pan1.Visible = False
+            pan2.Visible = False
+            pan3.Visible = False
+            pan4.Visible = False
+            pan5.Visible = False
+            pan6.Visible = False
+            pan7.Visible = False
+        End If
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
+    'FIRST FLOOR ROOMS
+    Private Sub r101Btn_Click(sender As Object, e As EventArgs) Handles r101Btn.Click
+        isPanelVisible(r101Panel, r102Panel, r108Panel, r103Panel, r104Panel, r105Panel, r106Panel, r107Panel)
+    End Sub
+    Private Sub r102Btn_Click(sender As Object, e As EventArgs) Handles r102Btn.Click
+        isPanelVisible(r102Panel, r101Panel, r108Panel, r103Panel, r104Panel, r105Panel, r106Panel, r107Panel)
+    End Sub
+    Private Sub r103Btn_Click(sender As Object, e As EventArgs) Handles r103Btn.Click
+        isPanelVisible(r103Panel, r101Panel, r102Panel, r108Panel, r104Panel, r105Panel, r106Panel, r107Panel)
+    End Sub
+    Private Sub r104Btn_Click(sender As Object, e As EventArgs) Handles r104Btn.Click
+        isPanelVisible(r104Panel, r101Panel, r102Panel, r103Panel, r108Panel, r105Panel, r106Panel, r107Panel)
+    End Sub
+    Private Sub r105Btn_Click(sender As Object, e As EventArgs) Handles r105Btn.Click
+        isPanelVisible(r105Panel, r101Panel, r102Panel, r103Panel, r104Panel, r108Panel, r106Panel, r107Panel)
+    End Sub
+    Private Sub r106Btn_Click(sender As Object, e As EventArgs) Handles r106Btn.Click
+        isPanelVisible(r106Panel, r101Panel, r102Panel, r103Panel, r104Panel, r105Panel, r108Panel, r107Panel)
+    End Sub
+    Private Sub r107Btn_Click(sender As Object, e As EventArgs) Handles r107Btn.Click
+        isPanelVisible(r107Panel, r101Panel, r102Panel, r103Panel, r104Panel, r105Panel, r106Panel, r108Panel)
+    End Sub
+    Private Sub r108Btn_Click(sender As Object, e As EventArgs) Handles r108Btn.Click
+        isPanelVisible(r108Panel, r101Panel, r102Panel, r103Panel, r104Panel, r105Panel, r106Panel, r107Panel)
     End Sub
 
-    Private Sub r101Panel_Paint(sender As Object, e As PaintEventArgs) Handles r101Panel.Paint
-
+    'SECOND FLOOR ROOMS
+    Private Sub r201Btn_Click(sender As Object, e As EventArgs) Handles r201Btn.Click
+        isPanelVisible(r201Panel, r202Panel, r208Panel, r203Panel, r204Panel, r205Panel, r206Panel, r207Panel)
+    End Sub
+    Private Sub r202Btn_Click(sender As Object, e As EventArgs) Handles r202Btn.Click
+        isPanelVisible(r202Panel, r201Panel, r208Panel, r203Panel, r204Panel, r205Panel, r206Panel, r207Panel)
+    End Sub
+    Private Sub r203Btn_Click(sender As Object, e As EventArgs) Handles r203Btn.Click
+        isPanelVisible(r203Panel, r201Panel, r202Panel, r208Panel, r204Panel, r205Panel, r106Panel, r107Panel)
+    End Sub
+    Private Sub r204Btn_Click(sender As Object, e As EventArgs) Handles r204Btn.Click
+        isPanelVisible(r204Panel, r201Panel, r202Panel, r203Panel, r208Panel, r205Panel, r206Panel, r207Panel)
+    End Sub
+    Private Sub r205Btn_Click(sender As Object, e As EventArgs) Handles r205Btn.Click
+        isPanelVisible(r205Panel, r201Panel, r202Panel, r203Panel, r204Panel, r208Panel, r106Panel, r107Panel)
+    End Sub
+    Private Sub r206Btn_Click(sender As Object, e As EventArgs) Handles r206Btn.Click
+        isPanelVisible(r206Panel, r201Panel, r202Panel, r203Panel, r204Panel, r205Panel, r208Panel, r207Panel)
+    End Sub
+    Private Sub r207Btn_Click(sender As Object, e As EventArgs) Handles r207Btn.Click
+        isPanelVisible(r207Panel, r201Panel, r202Panel, r203Panel, r204Panel, r205Panel, r206Panel, r208Panel)
+    End Sub
+    Private Sub r208Btn_Click(sender As Object, e As EventArgs) Handles r208Btn.Click
+        isPanelVisible(r208Panel, r201Panel, r202Panel, r203Panel, r204Panel, r205Panel, r206Panel, r207Panel)
     End Sub
 
-    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+    'THIRD FLOOR ROOMS
 
-    End Sub
 
-    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
-
-    End Sub
 End Class
