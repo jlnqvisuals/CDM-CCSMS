@@ -65,6 +65,7 @@ Partial Class LOGIN_PAGE
         Button7 = New Button()
         Label3 = New Label()
         TextBox3 = New TextBox()
+        Button8 = New Button()
         loginPanel.SuspendLayout()
         regPanel.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -639,6 +640,15 @@ Partial Class LOGIN_PAGE
         TextBox3.TabIndex = 12
         TextBox3.Text = vbCrLf & "- OFFICIAL SOCIAL MEDIA -" & vbCrLf & "Facebook:" & vbCrLf & vbCrLf & vbCrLf & "- DEVELOPERS -" & vbCrLf & "DEL VALLE, FRENCH JOHN" & vbCrLf & "GitHub: " & vbCrLf & "Facebook:" & vbCrLf & vbCrLf & "QUILINO, JOHN LLOYD N." & vbCrLf & "GitHub:" & vbCrLf & "Facebook: "
         ' 
+        ' Button8
+        ' 
+        Button8.Location = New Point(826, 9)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(114, 23)
+        Button8.TabIndex = 17
+        Button8.Text = "LOG IN AS ADMIN"
+        Button8.UseVisualStyleBackColor = True
+        ' 
         ' LOGIN_PAGE
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -646,6 +656,7 @@ Partial Class LOGIN_PAGE
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1050, 591)
+        Controls.Add(Button8)
         Controls.Add(ContactsBTN)
         Controls.Add(TnC_BTN)
         Controls.Add(PrivacyPolicyBTN)
@@ -719,5 +730,6 @@ Partial Class LOGIN_PAGE
     Friend WithEvents Button7 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Button8 As Button
 
 End Class

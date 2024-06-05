@@ -78,10 +78,8 @@ Partial Class PRRC_BLDG
         Button36 = New Button()
         Button35 = New Button()
         lab1SchedPanel = New Panel()
+        Button51 = New Button()
         Button49 = New Button()
-        Label15 = New Label()
-        Label14 = New Label()
-        Label13 = New Label()
         Label12 = New Label()
         Button38 = New Button()
         Button39 = New Button()
@@ -98,7 +96,10 @@ Partial Class PRRC_BLDG
         Button50 = New Button()
         Timer1 = New Timer(components)
         Label16 = New Label()
-        Button51 = New Button()
+        ContextMenuStrip1 = New ContextMenuStrip(components)
+        Button52 = New Button()
+        Button53 = New Button()
+        Button54 = New Button()
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
@@ -666,16 +667,25 @@ Partial Class PRRC_BLDG
         ' 
         ' lab1SchedPanel
         ' 
+        lab1SchedPanel.Controls.Add(Button54)
+        lab1SchedPanel.Controls.Add(Button53)
+        lab1SchedPanel.Controls.Add(Button52)
         lab1SchedPanel.Controls.Add(Button51)
         lab1SchedPanel.Controls.Add(Button49)
-        lab1SchedPanel.Controls.Add(Label15)
-        lab1SchedPanel.Controls.Add(Label14)
-        lab1SchedPanel.Controls.Add(Label13)
         lab1SchedPanel.Location = New Point(510, 17)
         lab1SchedPanel.Name = "lab1SchedPanel"
         lab1SchedPanel.Size = New Size(264, 400)
         lab1SchedPanel.TabIndex = 32
         lab1SchedPanel.Visible = False
+        ' 
+        ' Button51
+        ' 
+        Button51.Location = New Point(19, 17)
+        Button51.Name = "Button51"
+        Button51.Size = New Size(233, 39)
+        Button51.TabIndex = 4
+        Button51.Text = "7:00 AM - 8:00 AM" & vbCrLf & "AVAILABLE" & vbCrLf
+        Button51.UseVisualStyleBackColor = True
         ' 
         ' Button49
         ' 
@@ -685,33 +695,6 @@ Partial Class PRRC_BLDG
         Button49.TabIndex = 3
         Button49.Text = "Back"
         Button49.UseVisualStyleBackColor = True
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Location = New Point(19, 82)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(47, 15)
-        Label15.TabIndex = 2
-        Label15.Text = "Label15"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Location = New Point(19, 55)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(47, 15)
-        Label14.TabIndex = 1
-        Label14.Text = "Label14"
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Location = New Point(19, 29)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(47, 15)
-        Label13.TabIndex = 0
-        Label13.Text = "Label13"
         ' 
         ' Label12
         ' 
@@ -852,14 +835,37 @@ Partial Class PRRC_BLDG
         Label16.TabIndex = 6
         Label16.Text = "Label16"
         ' 
-        ' Button51
+        ' ContextMenuStrip1
         ' 
-        Button51.Location = New Point(19, 371)
-        Button51.Name = "Button51"
-        Button51.Size = New Size(88, 23)
-        Button51.TabIndex = 4
-        Button51.Text = "Add Schedule"
-        Button51.UseVisualStyleBackColor = True
+        ContextMenuStrip1.Name = "ContextMenuStrip1"
+        ContextMenuStrip1.Size = New Size(61, 4)
+        ' 
+        ' Button52
+        ' 
+        Button52.Location = New Point(19, 59)
+        Button52.Name = "Button52"
+        Button52.Size = New Size(233, 39)
+        Button52.TabIndex = 4
+        Button52.Text = "8:00 AM - 9:00 AM" & vbCrLf & "AVAILABLE" & vbCrLf
+        Button52.UseVisualStyleBackColor = True
+        ' 
+        ' Button53
+        ' 
+        Button53.Location = New Point(19, 101)
+        Button53.Name = "Button53"
+        Button53.Size = New Size(233, 39)
+        Button53.TabIndex = 4
+        Button53.Text = "9:00 AM - 10:00 AM" & vbCrLf & "AVAILABLE" & vbCrLf
+        Button53.UseVisualStyleBackColor = True
+        ' 
+        ' Button54
+        ' 
+        Button54.Location = New Point(19, 146)
+        Button54.Name = "Button54"
+        Button54.Size = New Size(233, 39)
+        Button54.TabIndex = 4
+        Button54.Text = "11:00 AM - 12:00 PM" & vbCrLf & "AVAILABLE" & vbCrLf
+        Button54.UseVisualStyleBackColor = True
         ' 
         ' PRRC_BLDG
         ' 
@@ -881,7 +887,6 @@ Partial Class PRRC_BLDG
         thirdFloorPanel.ResumeLayout(False)
         thirdFloorPanel.PerformLayout()
         lab1SchedPanel.ResumeLayout(False)
-        lab1SchedPanel.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -955,11 +960,12 @@ Partial Class PRRC_BLDG
     Friend WithEvents Button37 As Button
     Friend WithEvents Button36 As Button
     Friend WithEvents Button35 As Button
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label13 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label16 As Label
     Friend WithEvents Button49 As Button
     Friend WithEvents Button51 As Button
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents Button54 As Button
+    Friend WithEvents Button53 As Button
+    Friend WithEvents Button52 As Button
 End Class

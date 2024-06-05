@@ -109,47 +109,12 @@ Public Class MainDB_User
         LOGIN_PAGE.Show
     End Sub
 
-
     Private Sub ExitBTN_Click(sender As Object, e As EventArgs) Handles ExitBTN.Click
         EXIT_PROMPT.Show()
     End Sub
 
-
-
     Private Sub NGD_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         getCurrentUser(LOGIN_PAGE.StudentID)
-    End Sub
-
-
-
-
-
-    Private Sub currentUser_Click(sender As Object, e As EventArgs) Handles currentUser.Click
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-
-
-
-    Private Sub Label03_Click_1(sender As Object, e As EventArgs)
-
-
-    End Sub
-
-    Private Sub Label1_Click_1(sender As Object, e As EventArgs)
-
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles MinBTN.Click
