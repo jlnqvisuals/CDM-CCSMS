@@ -133,7 +133,7 @@ Partial Class NAVIGATE_CAMPUS
         Label2.Name = "Label2"
         Label2.Size = New Size(131, 23)
         Label2.TabIndex = 7
-        Label2.Text = "Floor count: 4"
+        Label2.Text = "Floor count: 2"
         ' 
         ' adminBackBtn
         ' 
@@ -225,7 +225,7 @@ Partial Class NAVIGATE_CAMPUS
         Label8.Name = "Label8"
         Label8.Size = New Size(131, 23)
         Label8.TabIndex = 0
-        Label8.Text = "Floor count: 4"
+        Label8.Text = "Floor count: 3"
         ' 
         ' newBldgPanel
         ' 
@@ -318,9 +318,9 @@ Partial Class NAVIGATE_CAMPUS
         Controls.Add(newBldgBtn)
         Controls.Add(prrcBldgBtn)
         Controls.Add(adminBldgBtn)
+        Controls.Add(adminBldgPanel)
         Controls.Add(newBldgPanel)
         Controls.Add(prrcBldgPanel)
-        Controls.Add(adminBldgPanel)
         ForeColor = SystemColors.ControlText
         FormBorderStyle = FormBorderStyle.None
         Name = "NAVIGATE_CAMPUS"

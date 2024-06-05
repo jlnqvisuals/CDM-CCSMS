@@ -106,7 +106,8 @@ Public Class NAVIGATE_CAMPUS
     End Sub
 
     Private Sub adminNavBtn_Click(sender As Object, e As EventArgs) Handles adminNavBtn.Click
-
+        Me.Hide()
+        FACULTY_BUILDING.Show()
     End Sub
 
     Private Sub adminBackBtn_Click(sender As Object, e As EventArgs) Handles adminBackBtn.Click
