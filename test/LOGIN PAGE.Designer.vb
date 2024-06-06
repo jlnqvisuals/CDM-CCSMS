@@ -174,6 +174,7 @@ Partial Class LOGIN_PAGE
         ' GuestBTN
         ' 
         GuestBTN.Cursor = Cursors.Hand
+        GuestBTN.FlatAppearance.BorderColor = Color.White
         GuestBTN.FlatAppearance.BorderSize = 0
         GuestBTN.FlatAppearance.MouseDownBackColor = Color.Transparent
         GuestBTN.FlatAppearance.MouseOverBackColor = Color.Transparent

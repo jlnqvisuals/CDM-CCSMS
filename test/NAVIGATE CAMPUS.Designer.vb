@@ -59,7 +59,7 @@ Partial Class NAVIGATE_CAMPUS
         adminBldgBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         adminBldgBtn.FlatStyle = FlatStyle.Flat
         adminBldgBtn.ForeColor = SystemColors.ControlText
-        adminBldgBtn.Location = New Point(152, 144)
+        adminBldgBtn.Location = New Point(159, 159)
         adminBldgBtn.Name = "adminBldgBtn"
         adminBldgBtn.Size = New Size(155, 125)
         adminBldgBtn.TabIndex = 0
@@ -77,7 +77,7 @@ Partial Class NAVIGATE_CAMPUS
         prrcBldgBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         prrcBldgBtn.FlatStyle = FlatStyle.Flat
         prrcBldgBtn.ForeColor = SystemColors.ControlText
-        prrcBldgBtn.Location = New Point(241, 358)
+        prrcBldgBtn.Location = New Point(229, 335)
         prrcBldgBtn.Name = "prrcBldgBtn"
         prrcBldgBtn.Size = New Size(155, 125)
         prrcBldgBtn.TabIndex = 0
@@ -95,7 +95,7 @@ Partial Class NAVIGATE_CAMPUS
         newBldgBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         newBldgBtn.FlatStyle = FlatStyle.Flat
         newBldgBtn.ForeColor = SystemColors.ControlText
-        newBldgBtn.Location = New Point(422, 217)
+        newBldgBtn.Location = New Point(423, 228)
         newBldgBtn.Name = "newBldgBtn"
         newBldgBtn.Size = New Size(155, 125)
         newBldgBtn.TabIndex = 0
@@ -105,14 +105,14 @@ Partial Class NAVIGATE_CAMPUS
         ' 
         adminBldgPanel.BackColor = Color.Transparent
         adminBldgPanel.BackgroundImage = CType(resources.GetObject("adminBldgPanel.BackgroundImage"), Image)
-        adminBldgPanel.BackgroundImageLayout = ImageLayout.Stretch
+        adminBldgPanel.BackgroundImageLayout = ImageLayout.None
         adminBldgPanel.Controls.Add(Label1)
         adminBldgPanel.Controls.Add(Label2)
         adminBldgPanel.Controls.Add(adminBackBtn)
         adminBldgPanel.Controls.Add(adminNavBtn)
-        adminBldgPanel.Location = New Point(654, 78)
+        adminBldgPanel.Location = New Point(691, 76)
         adminBldgPanel.Name = "adminBldgPanel"
-        adminBldgPanel.Size = New Size(347, 459)
+        adminBldgPanel.Size = New Size(290, 459)
         adminBldgPanel.TabIndex = 1
         ' 
         ' Label1
@@ -143,7 +143,7 @@ Partial Class NAVIGATE_CAMPUS
         adminBackBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         adminBackBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         adminBackBtn.FlatStyle = FlatStyle.Flat
-        adminBackBtn.Location = New Point(188, 410)
+        adminBackBtn.Location = New Point(161, 409)
         adminBackBtn.Name = "adminBackBtn"
         adminBackBtn.Size = New Size(75, 23)
         adminBackBtn.TabIndex = 1
@@ -157,7 +157,7 @@ Partial Class NAVIGATE_CAMPUS
         adminNavBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         adminNavBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         adminNavBtn.FlatStyle = FlatStyle.Flat
-        adminNavBtn.Location = New Point(84, 410)
+        adminNavBtn.Location = New Point(53, 409)
         adminNavBtn.Name = "adminNavBtn"
         adminNavBtn.Size = New Size(75, 23)
         adminNavBtn.TabIndex = 1
@@ -167,14 +167,14 @@ Partial Class NAVIGATE_CAMPUS
         ' 
         prrcBldgPanel.BackColor = Color.Transparent
         prrcBldgPanel.BackgroundImage = CType(resources.GetObject("prrcBldgPanel.BackgroundImage"), Image)
-        prrcBldgPanel.BackgroundImageLayout = ImageLayout.Stretch
+        prrcBldgPanel.BackgroundImageLayout = ImageLayout.None
         prrcBldgPanel.Controls.Add(prrcBackBtn)
         prrcBldgPanel.Controls.Add(prrcNavBtn)
         prrcBldgPanel.Controls.Add(Label7)
         prrcBldgPanel.Controls.Add(Label8)
-        prrcBldgPanel.Location = New Point(654, 78)
+        prrcBldgPanel.Location = New Point(691, 76)
         prrcBldgPanel.Name = "prrcBldgPanel"
-        prrcBldgPanel.Size = New Size(347, 459)
+        prrcBldgPanel.Size = New Size(290, 459)
         prrcBldgPanel.TabIndex = 1
         ' 
         ' prrcBackBtn
@@ -186,7 +186,7 @@ Partial Class NAVIGATE_CAMPUS
         prrcBackBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         prrcBackBtn.FlatStyle = FlatStyle.Flat
         prrcBackBtn.ForeColor = Color.Transparent
-        prrcBackBtn.Location = New Point(188, 410)
+        prrcBackBtn.Location = New Point(160, 409)
         prrcBackBtn.Name = "prrcBackBtn"
         prrcBackBtn.Size = New Size(75, 23)
         prrcBackBtn.TabIndex = 1
@@ -201,7 +201,7 @@ Partial Class NAVIGATE_CAMPUS
         prrcNavBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         prrcNavBtn.FlatStyle = FlatStyle.Flat
         prrcNavBtn.ForeColor = Color.Transparent
-        prrcNavBtn.Location = New Point(83, 410)
+        prrcNavBtn.Location = New Point(53, 409)
         prrcNavBtn.Name = "prrcNavBtn"
         prrcNavBtn.Size = New Size(75, 23)
         prrcNavBtn.TabIndex = 1
@@ -231,14 +231,14 @@ Partial Class NAVIGATE_CAMPUS
         ' 
         newBldgPanel.BackColor = Color.Transparent
         newBldgPanel.BackgroundImage = CType(resources.GetObject("newBldgPanel.BackgroundImage"), Image)
-        newBldgPanel.BackgroundImageLayout = ImageLayout.Stretch
+        newBldgPanel.BackgroundImageLayout = ImageLayout.None
         newBldgPanel.Controls.Add(Label4)
         newBldgPanel.Controls.Add(Label5)
         newBldgPanel.Controls.Add(newBackBtn)
         newBldgPanel.Controls.Add(newNavBtn)
-        newBldgPanel.Location = New Point(654, 78)
+        newBldgPanel.Location = New Point(691, 76)
         newBldgPanel.Name = "newBldgPanel"
-        newBldgPanel.Size = New Size(347, 459)
+        newBldgPanel.Size = New Size(290, 459)
         newBldgPanel.TabIndex = 1
         ' 
         ' Label4
@@ -270,7 +270,7 @@ Partial Class NAVIGATE_CAMPUS
         newBackBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         newBackBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         newBackBtn.FlatStyle = FlatStyle.Flat
-        newBackBtn.Location = New Point(188, 410)
+        newBackBtn.Location = New Point(162, 409)
         newBackBtn.Name = "newBackBtn"
         newBackBtn.Size = New Size(75, 23)
         newBackBtn.TabIndex = 1
@@ -285,7 +285,7 @@ Partial Class NAVIGATE_CAMPUS
         newNavBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         newNavBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         newNavBtn.FlatStyle = FlatStyle.Flat
-        newNavBtn.Location = New Point(83, 410)
+        newNavBtn.Location = New Point(55, 409)
         newNavBtn.Name = "newNavBtn"
         newNavBtn.Size = New Size(75, 23)
         newNavBtn.TabIndex = 1
@@ -318,9 +318,9 @@ Partial Class NAVIGATE_CAMPUS
         Controls.Add(newBldgBtn)
         Controls.Add(prrcBldgBtn)
         Controls.Add(adminBldgBtn)
+        Controls.Add(prrcBldgPanel)
         Controls.Add(adminBldgPanel)
         Controls.Add(newBldgPanel)
-        Controls.Add(prrcBldgPanel)
         ForeColor = SystemColors.ControlText
         FormBorderStyle = FormBorderStyle.None
         Name = "NAVIGATE_CAMPUS"

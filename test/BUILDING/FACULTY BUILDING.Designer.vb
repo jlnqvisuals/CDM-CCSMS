@@ -74,59 +74,77 @@ Partial Class FACULTY_BUILDING
         ' 
         ' Button6
         ' 
+        Button6.BackColor = Color.Olive
+        Button6.FlatStyle = FlatStyle.Flat
+        Button6.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         Button6.Location = New Point(458, 144)
         Button6.Name = "Button6"
         Button6.Size = New Size(78, 23)
         Button6.TabIndex = 4
         Button6.Text = "UP"
-        Button6.UseVisualStyleBackColor = True
+        Button6.UseVisualStyleBackColor = False
         Button6.Visible = False
         ' 
         ' Button5
         ' 
+        Button5.BackColor = Color.Olive
+        Button5.FlatStyle = FlatStyle.Flat
+        Button5.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         Button5.Location = New Point(75, 144)
         Button5.Name = "Button5"
         Button5.Size = New Size(78, 23)
         Button5.TabIndex = 4
         Button5.Text = "UP"
-        Button5.UseVisualStyleBackColor = True
+        Button5.UseVisualStyleBackColor = False
         Button5.Visible = False
         ' 
         ' Button2
         ' 
+        Button2.BackColor = Color.Yellow
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         Button2.Location = New Point(75, 173)
         Button2.Name = "Button2"
         Button2.Size = New Size(78, 50)
         Button2.TabIndex = 3
         Button2.Text = "STAIR"
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Button1
         ' 
+        Button1.BackColor = Color.Yellow
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         Button1.Location = New Point(458, 173)
         Button1.Name = "Button1"
         Button1.Size = New Size(78, 50)
         Button1.TabIndex = 3
         Button1.Text = "STAIR"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button4
         ' 
+        Button4.BackColor = Color.Yellow
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         Button4.Location = New Point(317, 173)
         Button4.Name = "Button4"
         Button4.Size = New Size(135, 50)
         Button4.TabIndex = 1
         Button4.Text = "???"
-        Button4.UseVisualStyleBackColor = True
+        Button4.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
+        Button3.BackColor = Color.Yellow
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         Button3.Location = New Point(159, 173)
         Button3.Name = "Button3"
         Button3.Size = New Size(152, 50)
         Button3.TabIndex = 1
         Button3.Text = "REGISTRAR"
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' facultyF2Panel
         ' 
@@ -156,59 +174,83 @@ Partial Class FACULTY_BUILDING
         ' 
         ' Button12
         ' 
+        Button12.BackColor = Color.Olive
+        Button12.FlatStyle = FlatStyle.Flat
+        Button12.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Button12.ForeColor = Color.Black
         Button12.Location = New Point(464, 229)
         Button12.Name = "Button12"
         Button12.Size = New Size(75, 23)
         Button12.TabIndex = 4
         Button12.Text = "DOWN"
-        Button12.UseVisualStyleBackColor = True
+        Button12.UseVisualStyleBackColor = False
         Button12.Visible = False
         ' 
         ' Button11
         ' 
+        Button11.BackColor = Color.Olive
+        Button11.FlatStyle = FlatStyle.Flat
+        Button11.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Button11.ForeColor = Color.Black
         Button11.Location = New Point(75, 229)
         Button11.Name = "Button11"
         Button11.Size = New Size(75, 23)
         Button11.TabIndex = 3
         Button11.Text = "DOWN"
-        Button11.UseVisualStyleBackColor = True
+        Button11.UseVisualStyleBackColor = False
         Button11.Visible = False
         ' 
         ' Button10
         ' 
+        Button10.BackColor = Color.Yellow
+        Button10.FlatStyle = FlatStyle.Flat
+        Button10.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Button10.ForeColor = Color.Black
         Button10.Location = New Point(75, 172)
         Button10.Name = "Button10"
         Button10.Size = New Size(75, 51)
         Button10.TabIndex = 2
         Button10.Text = "STAIR"
-        Button10.UseVisualStyleBackColor = True
+        Button10.UseVisualStyleBackColor = False
         ' 
         ' Button9
         ' 
+        Button9.BackColor = Color.Yellow
+        Button9.FlatStyle = FlatStyle.Flat
+        Button9.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Button9.ForeColor = Color.Black
         Button9.Location = New Point(464, 172)
         Button9.Name = "Button9"
         Button9.Size = New Size(75, 51)
         Button9.TabIndex = 2
         Button9.Text = "STAIR"
-        Button9.UseVisualStyleBackColor = True
+        Button9.UseVisualStyleBackColor = False
         ' 
         ' Button8
         ' 
+        Button8.BackColor = Color.Yellow
+        Button8.FlatStyle = FlatStyle.Flat
+        Button8.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Button8.ForeColor = Color.Black
         Button8.Location = New Point(310, 172)
         Button8.Name = "Button8"
         Button8.Size = New Size(148, 51)
         Button8.TabIndex = 1
         Button8.Text = "LIBRARY"
-        Button8.UseVisualStyleBackColor = True
+        Button8.UseVisualStyleBackColor = False
         ' 
         ' Button7
         ' 
+        Button7.BackColor = Color.Yellow
+        Button7.FlatStyle = FlatStyle.Flat
+        Button7.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        Button7.ForeColor = Color.Black
         Button7.Location = New Point(156, 172)
         Button7.Name = "Button7"
         Button7.Size = New Size(148, 51)
         Button7.TabIndex = 1
         Button7.Text = "GUIDANCE"
-        Button7.UseVisualStyleBackColor = True
+        Button7.UseVisualStyleBackColor = False
         ' 
         ' Button13
         ' 
@@ -244,8 +286,8 @@ Partial Class FACULTY_BUILDING
         ClientSize = New Size(1050, 591)
         Controls.Add(PictureBox1)
         Controls.Add(Button13)
-        Controls.Add(facultyF2Panel)
         Controls.Add(facultyF1Panel)
+        Controls.Add(facultyF2Panel)
         FormBorderStyle = FormBorderStyle.None
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "FACULTY_BUILDING"

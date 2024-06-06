@@ -30,17 +30,11 @@ Partial Class MainDB_User
         StudentID = New Label()
         MinBTN = New Button()
         Panel1 = New Panel()
-        Label4 = New Label()
-        Label5 = New Label()
-        navigateBtn = New Button()
-        Label1 = New Label()
-        Label2 = New Label()
         Button2 = New Button()
-        PictureBox1 = New PictureBox()
         DnT = New Timer(components)
         DateTime_Label = New Label()
         logoutMdbBtn = New Button()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        navigateBtn = New Button()
         SuspendLayout()
         ' 
         ' currentUser
@@ -104,47 +98,6 @@ Partial Class MainDB_User
         Panel1.BackColor = Color.Transparent
         Panel1.Name = "Panel1"
         ' 
-        ' Label4
-        ' 
-        Label4.BackColor = Color.Transparent
-        Label4.FlatStyle = FlatStyle.Flat
-        resources.ApplyResources(Label4, "Label4")
-        Label4.ForeColor = Color.White
-        Label4.Name = "Label4"
-        ' 
-        ' Label5
-        ' 
-        resources.ApplyResources(Label5, "Label5")
-        Label5.BackColor = Color.Transparent
-        Label5.ForeColor = Color.FromArgb(CByte(224), CByte(253), CByte(43))
-        Label5.Name = "Label5"
-        ' 
-        ' navigateBtn
-        ' 
-        navigateBtn.BackColor = Color.Transparent
-        resources.ApplyResources(navigateBtn, "navigateBtn")
-        navigateBtn.Cursor = Cursors.Hand
-        navigateBtn.FlatAppearance.BorderSize = 0
-        navigateBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
-        navigateBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
-        navigateBtn.Name = "navigateBtn"
-        navigateBtn.UseVisualStyleBackColor = False
-        ' 
-        ' Label1
-        ' 
-        Label1.BackColor = Color.Transparent
-        Label1.FlatStyle = FlatStyle.Flat
-        resources.ApplyResources(Label1, "Label1")
-        Label1.ForeColor = Color.White
-        Label1.Name = "Label1"
-        ' 
-        ' Label2
-        ' 
-        resources.ApplyResources(Label2, "Label2")
-        Label2.BackColor = Color.Transparent
-        Label2.ForeColor = Color.FromArgb(CByte(224), CByte(253), CByte(43))
-        Label2.Name = "Label2"
-        ' 
         ' Button2
         ' 
         Button2.BackColor = Color.Transparent
@@ -155,13 +108,6 @@ Partial Class MainDB_User
         Button2.FlatAppearance.MouseOverBackColor = Color.Transparent
         Button2.Name = "Button2"
         Button2.UseVisualStyleBackColor = False
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.BackColor = Color.Transparent
-        resources.ApplyResources(PictureBox1, "PictureBox1")
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.TabStop = False
         ' 
         ' DnT
         ' 
@@ -188,18 +134,24 @@ Partial Class MainDB_User
         logoutMdbBtn.Name = "logoutMdbBtn"
         logoutMdbBtn.UseVisualStyleBackColor = False
         ' 
+        ' navigateBtn
+        ' 
+        navigateBtn.BackColor = Color.Transparent
+        resources.ApplyResources(navigateBtn, "navigateBtn")
+        navigateBtn.Cursor = Cursors.Hand
+        navigateBtn.FlatAppearance.BorderSize = 0
+        navigateBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
+        navigateBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
+        navigateBtn.Name = "navigateBtn"
+        navigateBtn.UseVisualStyleBackColor = False
+        ' 
         ' MainDB_User
         ' 
         AutoScaleMode = AutoScaleMode.Inherit
         resources.ApplyResources(Me, "$this")
         Controls.Add(logoutMdbBtn)
         Controls.Add(DateTime_Label)
-        Controls.Add(PictureBox1)
-        Controls.Add(Label1)
-        Controls.Add(Label2)
         Controls.Add(Button2)
-        Controls.Add(Label4)
-        Controls.Add(Label5)
         Controls.Add(navigateBtn)
         Controls.Add(Panel1)
         Controls.Add(MinBTN)
@@ -210,7 +162,6 @@ Partial Class MainDB_User
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Name = "MainDB_User"
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -220,14 +171,9 @@ Partial Class MainDB_User
     Friend WithEvents StudentID As Label
     Friend WithEvents MinBTN As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents navigateBtn As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Button2 As Button
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents DnT As Timer
     Friend WithEvents DateTime_Label As Label
     Friend WithEvents logoutMdbBtn As Button
+    Friend WithEvents navigateBtn As Button
 End Class

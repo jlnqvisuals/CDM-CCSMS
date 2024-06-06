@@ -364,120 +364,146 @@ Partial Class PRRC_BLDG
         ' 
         ' Button1
         ' 
+        Button1.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(192))
+        Button1.FlatStyle = FlatStyle.Flat
         Button1.Location = New Point(13, 128)
         Button1.Name = "Button1"
         Button1.Size = New Size(60, 47)
         Button1.TabIndex = 0
         Button1.Text = "MALE CR"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' r101Btn
         ' 
+        r101Btn.BackColor = Color.Yellow
+        r101Btn.FlatStyle = FlatStyle.Flat
         r101Btn.Location = New Point(79, 128)
         r101Btn.Name = "r101Btn"
         r101Btn.Size = New Size(60, 47)
         r101Btn.TabIndex = 0
         r101Btn.Text = "101"
-        r101Btn.UseVisualStyleBackColor = True
+        r101Btn.UseVisualStyleBackColor = False
         ' 
         ' r102Btn
         ' 
+        r102Btn.BackColor = Color.Yellow
+        r102Btn.FlatStyle = FlatStyle.Flat
         r102Btn.Location = New Point(145, 128)
         r102Btn.Name = "r102Btn"
         r102Btn.Size = New Size(60, 47)
         r102Btn.TabIndex = 0
         r102Btn.Text = "102"
-        r102Btn.UseVisualStyleBackColor = True
+        r102Btn.UseVisualStyleBackColor = False
         ' 
         ' r103Btn
         ' 
+        r103Btn.BackColor = Color.Yellow
+        r103Btn.FlatStyle = FlatStyle.Flat
         r103Btn.Location = New Point(79, 231)
         r103Btn.Name = "r103Btn"
         r103Btn.Size = New Size(60, 47)
         r103Btn.TabIndex = 0
         r103Btn.Text = "103"
-        r103Btn.UseVisualStyleBackColor = True
+        r103Btn.UseVisualStyleBackColor = False
         ' 
         ' r104Btn
         ' 
+        r104Btn.BackColor = Color.Yellow
+        r104Btn.FlatStyle = FlatStyle.Flat
         r104Btn.Location = New Point(145, 231)
         r104Btn.Name = "r104Btn"
         r104Btn.Size = New Size(60, 47)
         r104Btn.TabIndex = 0
         r104Btn.Text = "104"
-        r104Btn.UseVisualStyleBackColor = True
+        r104Btn.UseVisualStyleBackColor = False
         ' 
         ' r105Btn
         ' 
+        r105Btn.BackColor = Color.Yellow
+        r105Btn.FlatStyle = FlatStyle.Flat
         r105Btn.Location = New Point(293, 128)
         r105Btn.Name = "r105Btn"
         r105Btn.Size = New Size(60, 47)
         r105Btn.TabIndex = 0
         r105Btn.Text = "105"
-        r105Btn.UseVisualStyleBackColor = True
+        r105Btn.UseVisualStyleBackColor = False
         ' 
         ' r106Btn
         ' 
+        r106Btn.BackColor = Color.Yellow
+        r106Btn.FlatStyle = FlatStyle.Flat
         r106Btn.Location = New Point(359, 128)
         r106Btn.Name = "r106Btn"
         r106Btn.Size = New Size(60, 47)
         r106Btn.TabIndex = 0
         r106Btn.Text = "106"
-        r106Btn.UseVisualStyleBackColor = True
+        r106Btn.UseVisualStyleBackColor = False
         ' 
         ' r107Btn
         ' 
+        r107Btn.BackColor = Color.Yellow
+        r107Btn.FlatStyle = FlatStyle.Flat
         r107Btn.Location = New Point(293, 231)
         r107Btn.Name = "r107Btn"
         r107Btn.Size = New Size(60, 47)
         r107Btn.TabIndex = 0
         r107Btn.Text = "107"
-        r107Btn.UseVisualStyleBackColor = True
+        r107Btn.UseVisualStyleBackColor = False
         ' 
         ' r108Btn
         ' 
+        r108Btn.BackColor = Color.Yellow
+        r108Btn.FlatStyle = FlatStyle.Flat
         r108Btn.Location = New Point(359, 231)
         r108Btn.Name = "r108Btn"
         r108Btn.Size = New Size(60, 47)
         r108Btn.TabIndex = 0
         r108Btn.Text = "108"
-        r108Btn.UseVisualStyleBackColor = True
+        r108Btn.UseVisualStyleBackColor = False
         ' 
         ' Button10
         ' 
+        Button10.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(192))
+        Button10.FlatStyle = FlatStyle.Flat
         Button10.Location = New Point(425, 128)
         Button10.Name = "Button10"
         Button10.Size = New Size(60, 47)
         Button10.TabIndex = 0
         Button10.Text = "FEMALE CR"
-        Button10.UseVisualStyleBackColor = True
+        Button10.UseVisualStyleBackColor = False
         ' 
         ' Button11
         ' 
+        Button11.BackColor = Color.White
+        Button11.FlatStyle = FlatStyle.Flat
         Button11.Location = New Point(211, 128)
         Button11.Name = "Button11"
         Button11.Size = New Size(76, 47)
         Button11.TabIndex = 0
         Button11.Text = "STAIR"
-        Button11.UseVisualStyleBackColor = True
+        Button11.UseVisualStyleBackColor = False
         ' 
         ' Button12
         ' 
+        Button12.BackColor = Color.White
+        Button12.FlatStyle = FlatStyle.Flat
         Button12.Location = New Point(13, 231)
         Button12.Name = "Button12"
         Button12.Size = New Size(60, 47)
         Button12.TabIndex = 0
         Button12.Text = "STAIR"
-        Button12.UseVisualStyleBackColor = True
+        Button12.UseVisualStyleBackColor = False
         ' 
         ' Button13
         ' 
+        Button13.BackColor = Color.White
+        Button13.FlatStyle = FlatStyle.Flat
         Button13.Location = New Point(425, 231)
         Button13.Name = "Button13"
         Button13.Size = New Size(60, 47)
         Button13.TabIndex = 0
         Button13.Text = "STAIR"
-        Button13.UseVisualStyleBackColor = True
+        Button13.UseVisualStyleBackColor = False
         ' 
         ' r101Panel
         ' 
@@ -644,32 +670,38 @@ Partial Class PRRC_BLDG
         ' 
         ' Button34
         ' 
+        Button34.BackColor = Color.Olive
+        Button34.FlatStyle = FlatStyle.Flat
         Button34.Location = New Point(13, 205)
         Button34.Name = "Button34"
         Button34.Size = New Size(60, 23)
         Button34.TabIndex = 3
         Button34.Text = "UP"
-        Button34.UseVisualStyleBackColor = True
+        Button34.UseVisualStyleBackColor = False
         Button34.Visible = False
         ' 
         ' Button33
         ' 
+        Button33.BackColor = Color.Olive
+        Button33.FlatStyle = FlatStyle.Flat
         Button33.Location = New Point(425, 205)
         Button33.Name = "Button33"
         Button33.Size = New Size(60, 23)
         Button33.TabIndex = 3
         Button33.Text = "UP"
-        Button33.UseVisualStyleBackColor = True
+        Button33.UseVisualStyleBackColor = False
         Button33.Visible = False
         ' 
         ' Button32
         ' 
+        Button32.BackColor = Color.Olive
+        Button32.FlatStyle = FlatStyle.Flat
         Button32.Location = New Point(211, 101)
         Button32.Name = "Button32"
         Button32.Size = New Size(76, 23)
         Button32.TabIndex = 3
         Button32.Text = "UP"
-        Button32.UseVisualStyleBackColor = True
+        Button32.UseVisualStyleBackColor = False
         Button32.Visible = False
         ' 
         ' secondFloorPanel
@@ -702,62 +734,74 @@ Partial Class PRRC_BLDG
         ' 
         ' Button31
         ' 
+        Button31.BackColor = Color.Olive
+        Button31.FlatStyle = FlatStyle.Flat
         Button31.Location = New Point(425, 284)
         Button31.Name = "Button31"
         Button31.Size = New Size(60, 23)
         Button31.TabIndex = 17
         Button31.Text = "DOWN"
-        Button31.UseVisualStyleBackColor = True
+        Button31.UseVisualStyleBackColor = False
         Button31.Visible = False
         ' 
         ' Button29
         ' 
+        Button29.BackColor = Color.Olive
+        Button29.FlatStyle = FlatStyle.Flat
         Button29.Location = New Point(222, 181)
         Button29.Name = "Button29"
         Button29.Size = New Size(60, 23)
         Button29.TabIndex = 17
         Button29.Text = "DOWN"
-        Button29.UseVisualStyleBackColor = True
+        Button29.UseVisualStyleBackColor = False
         Button29.Visible = False
         ' 
         ' Button27
         ' 
+        Button27.BackColor = Color.Olive
+        Button27.FlatStyle = FlatStyle.Flat
         Button27.Location = New Point(13, 284)
         Button27.Name = "Button27"
         Button27.Size = New Size(60, 23)
         Button27.TabIndex = 17
         Button27.Text = "DOWN"
-        Button27.UseVisualStyleBackColor = True
+        Button27.UseVisualStyleBackColor = False
         Button27.Visible = False
         ' 
         ' Button30
         ' 
+        Button30.BackColor = Color.Olive
+        Button30.FlatStyle = FlatStyle.Flat
         Button30.Location = New Point(425, 202)
         Button30.Name = "Button30"
         Button30.Size = New Size(60, 23)
         Button30.TabIndex = 17
         Button30.Text = "UP"
-        Button30.UseVisualStyleBackColor = True
+        Button30.UseVisualStyleBackColor = False
         Button30.Visible = False
         ' 
         ' Button28
         ' 
+        Button28.BackColor = Color.Olive
+        Button28.FlatStyle = FlatStyle.Flat
         Button28.Location = New Point(222, 99)
         Button28.Name = "Button28"
         Button28.Size = New Size(60, 23)
         Button28.TabIndex = 17
         Button28.Text = "UP"
-        Button28.UseVisualStyleBackColor = True
+        Button28.UseVisualStyleBackColor = False
         Button28.Visible = False
         ' 
         ' Button26
         ' 
+        Button26.BackColor = Color.Olive
+        Button26.FlatStyle = FlatStyle.Flat
         Button26.Location = New Point(13, 202)
         Button26.Name = "Button26"
         Button26.Size = New Size(60, 23)
         Button26.TabIndex = 17
         Button26.Text = "UP"
-        Button26.UseVisualStyleBackColor = True
+        Button26.UseVisualStyleBackColor = False
         Button26.Visible = False
         ' 
         ' Label11
@@ -773,120 +817,146 @@ Partial Class PRRC_BLDG
         ' 
         ' Button2
         ' 
+        Button2.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(192))
+        Button2.FlatStyle = FlatStyle.Flat
         Button2.Location = New Point(13, 128)
         Button2.Name = "Button2"
         Button2.Size = New Size(60, 47)
         Button2.TabIndex = 3
         Button2.Text = "MALE CR"
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' r201Btn
         ' 
+        r201Btn.BackColor = Color.Yellow
+        r201Btn.FlatStyle = FlatStyle.Flat
         r201Btn.Location = New Point(79, 128)
         r201Btn.Name = "r201Btn"
         r201Btn.Size = New Size(60, 47)
         r201Btn.TabIndex = 4
         r201Btn.Text = "201"
-        r201Btn.UseVisualStyleBackColor = True
+        r201Btn.UseVisualStyleBackColor = False
         ' 
         ' Button15
         ' 
+        Button15.BackColor = Color.White
+        Button15.FlatStyle = FlatStyle.Flat
         Button15.Location = New Point(425, 231)
         Button15.Name = "Button15"
         Button15.Size = New Size(60, 47)
         Button15.TabIndex = 5
         Button15.Text = "STAIR"
-        Button15.UseVisualStyleBackColor = True
+        Button15.UseVisualStyleBackColor = False
         ' 
         ' r202Btn
         ' 
+        r202Btn.BackColor = Color.Yellow
+        r202Btn.FlatStyle = FlatStyle.Flat
         r202Btn.Location = New Point(145, 128)
         r202Btn.Name = "r202Btn"
         r202Btn.Size = New Size(60, 47)
         r202Btn.TabIndex = 6
         r202Btn.Text = "202"
-        r202Btn.UseVisualStyleBackColor = True
+        r202Btn.UseVisualStyleBackColor = False
         ' 
         ' r208Btn
         ' 
+        r208Btn.BackColor = Color.Yellow
+        r208Btn.FlatStyle = FlatStyle.Flat
         r208Btn.Location = New Point(359, 231)
         r208Btn.Name = "r208Btn"
         r208Btn.Size = New Size(60, 47)
         r208Btn.TabIndex = 7
         r208Btn.Text = "208"
-        r208Btn.UseVisualStyleBackColor = True
+        r208Btn.UseVisualStyleBackColor = False
         ' 
         ' Button18
         ' 
+        Button18.BackColor = Color.White
+        Button18.FlatStyle = FlatStyle.Flat
         Button18.Location = New Point(211, 128)
         Button18.Name = "Button18"
         Button18.Size = New Size(76, 47)
         Button18.TabIndex = 8
         Button18.Text = "STAIR"
-        Button18.UseVisualStyleBackColor = True
+        Button18.UseVisualStyleBackColor = False
         ' 
         ' Button19
         ' 
+        Button19.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(192))
+        Button19.FlatStyle = FlatStyle.Flat
         Button19.Location = New Point(425, 128)
         Button19.Name = "Button19"
         Button19.Size = New Size(60, 47)
         Button19.TabIndex = 9
         Button19.Text = "FEMALE CR"
-        Button19.UseVisualStyleBackColor = True
+        Button19.UseVisualStyleBackColor = False
         ' 
         ' r203Btn
         ' 
+        r203Btn.BackColor = Color.Yellow
+        r203Btn.FlatStyle = FlatStyle.Flat
         r203Btn.Location = New Point(79, 231)
         r203Btn.Name = "r203Btn"
         r203Btn.Size = New Size(60, 47)
         r203Btn.TabIndex = 10
         r203Btn.Text = "203"
-        r203Btn.UseVisualStyleBackColor = True
+        r203Btn.UseVisualStyleBackColor = False
         ' 
         ' r206Btn
         ' 
+        r206Btn.BackColor = Color.Yellow
+        r206Btn.FlatStyle = FlatStyle.Flat
         r206Btn.Location = New Point(359, 128)
         r206Btn.Name = "r206Btn"
         r206Btn.Size = New Size(60, 47)
         r206Btn.TabIndex = 11
         r206Btn.Text = "206"
-        r206Btn.UseVisualStyleBackColor = True
+        r206Btn.UseVisualStyleBackColor = False
         ' 
         ' Button22
         ' 
+        Button22.BackColor = Color.White
+        Button22.FlatStyle = FlatStyle.Flat
         Button22.Location = New Point(13, 231)
         Button22.Name = "Button22"
         Button22.Size = New Size(60, 47)
         Button22.TabIndex = 12
         Button22.Text = "STAIR"
-        Button22.UseVisualStyleBackColor = True
+        Button22.UseVisualStyleBackColor = False
         ' 
         ' r204Btn
         ' 
+        r204Btn.BackColor = Color.Yellow
+        r204Btn.FlatStyle = FlatStyle.Flat
         r204Btn.Location = New Point(145, 231)
         r204Btn.Name = "r204Btn"
         r204Btn.Size = New Size(60, 47)
         r204Btn.TabIndex = 13
         r204Btn.Text = "204"
-        r204Btn.UseVisualStyleBackColor = True
+        r204Btn.UseVisualStyleBackColor = False
         ' 
         ' r205Btn
         ' 
+        r205Btn.BackColor = Color.Yellow
+        r205Btn.FlatStyle = FlatStyle.Flat
         r205Btn.Location = New Point(293, 128)
         r205Btn.Name = "r205Btn"
         r205Btn.Size = New Size(60, 47)
         r205Btn.TabIndex = 14
         r205Btn.Text = "205"
-        r205Btn.UseVisualStyleBackColor = True
+        r205Btn.UseVisualStyleBackColor = False
         ' 
         ' r207Btn
         ' 
+        r207Btn.BackColor = Color.Yellow
+        r207Btn.FlatStyle = FlatStyle.Flat
         r207Btn.Location = New Point(293, 231)
         r207Btn.Name = "r207Btn"
         r207Btn.Size = New Size(60, 47)
         r207Btn.TabIndex = 15
         r207Btn.Text = "207"
-        r207Btn.UseVisualStyleBackColor = True
+        r207Btn.UseVisualStyleBackColor = False
         ' 
         ' thirdFloorPanel
         ' 
@@ -915,32 +985,38 @@ Partial Class PRRC_BLDG
         ' 
         ' Button37
         ' 
+        Button37.BackColor = Color.Olive
+        Button37.FlatStyle = FlatStyle.Flat
         Button37.Location = New Point(425, 281)
         Button37.Name = "Button37"
         Button37.Size = New Size(60, 23)
         Button37.TabIndex = 33
         Button37.Text = "DOWN"
-        Button37.UseVisualStyleBackColor = True
+        Button37.UseVisualStyleBackColor = False
         Button37.Visible = False
         ' 
         ' Button36
         ' 
+        Button36.BackColor = Color.Olive
+        Button36.FlatStyle = FlatStyle.Flat
         Button36.Location = New Point(211, 178)
         Button36.Name = "Button36"
         Button36.Size = New Size(76, 23)
         Button36.TabIndex = 33
         Button36.Text = "DOWN"
-        Button36.UseVisualStyleBackColor = True
+        Button36.UseVisualStyleBackColor = False
         Button36.Visible = False
         ' 
         ' Button35
         ' 
+        Button35.BackColor = Color.Olive
+        Button35.FlatStyle = FlatStyle.Flat
         Button35.Location = New Point(13, 281)
         Button35.Name = "Button35"
         Button35.Size = New Size(60, 23)
         Button35.TabIndex = 33
         Button35.Text = "DOWN"
-        Button35.UseVisualStyleBackColor = True
+        Button35.UseVisualStyleBackColor = False
         Button35.Visible = False
         ' 
         ' Label12
@@ -956,120 +1032,146 @@ Partial Class PRRC_BLDG
         ' 
         ' Button38
         ' 
+        Button38.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(192))
+        Button38.FlatStyle = FlatStyle.Flat
         Button38.Location = New Point(13, 128)
         Button38.Name = "Button38"
         Button38.Size = New Size(60, 47)
         Button38.TabIndex = 18
         Button38.Text = "MALE CR"
-        Button38.UseVisualStyleBackColor = True
+        Button38.UseVisualStyleBackColor = False
         ' 
         ' r301Btn
         ' 
+        r301Btn.BackColor = Color.Yellow
+        r301Btn.FlatStyle = FlatStyle.Flat
         r301Btn.Location = New Point(79, 128)
         r301Btn.Name = "r301Btn"
         r301Btn.Size = New Size(60, 47)
         r301Btn.TabIndex = 19
         r301Btn.Text = "301"
-        r301Btn.UseVisualStyleBackColor = True
+        r301Btn.UseVisualStyleBackColor = False
         ' 
         ' Button40
         ' 
+        Button40.BackColor = Color.White
+        Button40.FlatStyle = FlatStyle.Flat
         Button40.Location = New Point(425, 231)
         Button40.Name = "Button40"
         Button40.Size = New Size(60, 47)
         Button40.TabIndex = 20
         Button40.Text = "STAIR"
-        Button40.UseVisualStyleBackColor = True
+        Button40.UseVisualStyleBackColor = False
         ' 
         ' r302Btn
         ' 
+        r302Btn.BackColor = Color.Yellow
+        r302Btn.FlatStyle = FlatStyle.Flat
         r302Btn.Location = New Point(145, 128)
         r302Btn.Name = "r302Btn"
         r302Btn.Size = New Size(60, 47)
         r302Btn.TabIndex = 21
         r302Btn.Text = "302"
-        r302Btn.UseVisualStyleBackColor = True
+        r302Btn.UseVisualStyleBackColor = False
         ' 
         ' Button42
         ' 
+        Button42.BackColor = Color.Yellow
+        Button42.FlatStyle = FlatStyle.Flat
         Button42.Location = New Point(359, 231)
         Button42.Name = "Button42"
         Button42.Size = New Size(60, 47)
         Button42.TabIndex = 22
         Button42.Text = "???"
-        Button42.UseVisualStyleBackColor = True
+        Button42.UseVisualStyleBackColor = False
         ' 
         ' Button43
         ' 
+        Button43.BackColor = Color.White
+        Button43.FlatStyle = FlatStyle.Flat
         Button43.Location = New Point(211, 128)
         Button43.Name = "Button43"
         Button43.Size = New Size(76, 47)
         Button43.TabIndex = 23
         Button43.Text = "STAIR"
-        Button43.UseVisualStyleBackColor = True
+        Button43.UseVisualStyleBackColor = False
         ' 
         ' Button44
         ' 
+        Button44.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(192))
+        Button44.FlatStyle = FlatStyle.Flat
         Button44.Location = New Point(425, 128)
         Button44.Name = "Button44"
         Button44.Size = New Size(60, 47)
         Button44.TabIndex = 24
         Button44.Text = "FEMALE CR"
-        Button44.UseVisualStyleBackColor = True
+        Button44.UseVisualStyleBackColor = False
         ' 
         ' r303Btn
         ' 
+        r303Btn.BackColor = Color.Yellow
+        r303Btn.FlatStyle = FlatStyle.Flat
         r303Btn.Location = New Point(79, 231)
         r303Btn.Name = "r303Btn"
         r303Btn.Size = New Size(60, 47)
         r303Btn.TabIndex = 25
         r303Btn.Text = "303"
-        r303Btn.UseVisualStyleBackColor = True
+        r303Btn.UseVisualStyleBackColor = False
         ' 
         ' lab2Btn
         ' 
+        lab2Btn.BackColor = Color.Yellow
+        lab2Btn.FlatStyle = FlatStyle.Flat
         lab2Btn.Location = New Point(359, 128)
         lab2Btn.Name = "lab2Btn"
         lab2Btn.Size = New Size(60, 47)
         lab2Btn.TabIndex = 26
         lab2Btn.Text = "LAB 2"
-        lab2Btn.UseVisualStyleBackColor = True
+        lab2Btn.UseVisualStyleBackColor = False
         ' 
         ' Button47
         ' 
+        Button47.BackColor = Color.White
+        Button47.FlatStyle = FlatStyle.Flat
         Button47.Location = New Point(13, 231)
         Button47.Name = "Button47"
         Button47.Size = New Size(60, 47)
         Button47.TabIndex = 27
         Button47.Text = "STAIR"
-        Button47.UseVisualStyleBackColor = True
+        Button47.UseVisualStyleBackColor = False
         ' 
         ' r304Btn
         ' 
+        r304Btn.BackColor = Color.Yellow
+        r304Btn.FlatStyle = FlatStyle.Flat
         r304Btn.Location = New Point(145, 231)
         r304Btn.Name = "r304Btn"
         r304Btn.Size = New Size(60, 47)
         r304Btn.TabIndex = 28
         r304Btn.Text = "304"
-        r304Btn.UseVisualStyleBackColor = True
+        r304Btn.UseVisualStyleBackColor = False
         ' 
         ' lab1Btn
         ' 
+        lab1Btn.BackColor = Color.Yellow
+        lab1Btn.FlatStyle = FlatStyle.Flat
         lab1Btn.Location = New Point(293, 128)
         lab1Btn.Name = "lab1Btn"
         lab1Btn.Size = New Size(60, 47)
         lab1Btn.TabIndex = 29
         lab1Btn.Text = "LAB 1"
-        lab1Btn.UseVisualStyleBackColor = True
+        lab1Btn.UseVisualStyleBackColor = False
         ' 
         ' Button50
         ' 
+        Button50.BackColor = Color.Yellow
+        Button50.FlatStyle = FlatStyle.Flat
         Button50.Location = New Point(293, 231)
         Button50.Name = "Button50"
         Button50.Size = New Size(60, 47)
         Button50.TabIndex = 30
         Button50.Text = "???"
-        Button50.UseVisualStyleBackColor = True
+        Button50.UseVisualStyleBackColor = False
         ' 
         ' lab1SchedPanel
         ' 
@@ -1109,6 +1211,7 @@ Partial Class PRRC_BLDG
         roomsched10.BackColor = Color.Green
         roomsched10.FlatAppearance.BorderSize = 0
         roomsched10.FlatStyle = FlatStyle.Flat
+        roomsched10.ForeColor = Color.White
         roomsched10.Location = New Point(68, 341)
         roomsched10.Name = "roomsched10"
         roomsched10.Size = New Size(179, 26)
@@ -1121,6 +1224,7 @@ Partial Class PRRC_BLDG
         roomsched9.BackColor = Color.Green
         roomsched9.FlatAppearance.BorderSize = 0
         roomsched9.FlatStyle = FlatStyle.Flat
+        roomsched9.ForeColor = Color.White
         roomsched9.Location = New Point(68, 311)
         roomsched9.Name = "roomsched9"
         roomsched9.Size = New Size(179, 26)
@@ -1133,6 +1237,7 @@ Partial Class PRRC_BLDG
         roomsched8.BackColor = Color.Green
         roomsched8.FlatAppearance.BorderSize = 0
         roomsched8.FlatStyle = FlatStyle.Flat
+        roomsched8.ForeColor = Color.White
         roomsched8.Location = New Point(68, 282)
         roomsched8.Name = "roomsched8"
         roomsched8.Size = New Size(179, 26)
@@ -1145,6 +1250,7 @@ Partial Class PRRC_BLDG
         roomsched7.BackColor = Color.Green
         roomsched7.FlatAppearance.BorderSize = 0
         roomsched7.FlatStyle = FlatStyle.Flat
+        roomsched7.ForeColor = Color.White
         roomsched7.Location = New Point(68, 253)
         roomsched7.Name = "roomsched7"
         roomsched7.Size = New Size(179, 26)
@@ -1157,6 +1263,7 @@ Partial Class PRRC_BLDG
         roomsched6.BackColor = Color.Green
         roomsched6.FlatAppearance.BorderSize = 0
         roomsched6.FlatStyle = FlatStyle.Flat
+        roomsched6.ForeColor = Color.White
         roomsched6.Location = New Point(68, 223)
         roomsched6.Name = "roomsched6"
         roomsched6.Size = New Size(179, 26)
@@ -1169,6 +1276,7 @@ Partial Class PRRC_BLDG
         roomsched5.BackColor = Color.Green
         roomsched5.FlatAppearance.BorderSize = 0
         roomsched5.FlatStyle = FlatStyle.Flat
+        roomsched5.ForeColor = Color.White
         roomsched5.Location = New Point(68, 193)
         roomsched5.Name = "roomsched5"
         roomsched5.Size = New Size(179, 26)
@@ -1181,6 +1289,7 @@ Partial Class PRRC_BLDG
         roomsched4.BackColor = Color.Green
         roomsched4.FlatAppearance.BorderSize = 0
         roomsched4.FlatStyle = FlatStyle.Flat
+        roomsched4.ForeColor = Color.White
         roomsched4.Location = New Point(68, 164)
         roomsched4.Name = "roomsched4"
         roomsched4.Size = New Size(179, 26)
@@ -1193,6 +1302,7 @@ Partial Class PRRC_BLDG
         roomsched3.BackColor = Color.Green
         roomsched3.FlatAppearance.BorderSize = 0
         roomsched3.FlatStyle = FlatStyle.Flat
+        roomsched3.ForeColor = Color.White
         roomsched3.Location = New Point(68, 134)
         roomsched3.Name = "roomsched3"
         roomsched3.Size = New Size(179, 26)
@@ -1205,6 +1315,7 @@ Partial Class PRRC_BLDG
         roomsched2.BackColor = Color.Green
         roomsched2.FlatAppearance.BorderSize = 0
         roomsched2.FlatStyle = FlatStyle.Flat
+        roomsched2.ForeColor = Color.White
         roomsched2.Location = New Point(68, 104)
         roomsched2.Name = "roomsched2"
         roomsched2.Size = New Size(179, 26)
@@ -1217,6 +1328,7 @@ Partial Class PRRC_BLDG
         roomsched1.BackColor = Color.Green
         roomsched1.FlatAppearance.BorderSize = 0
         roomsched1.FlatStyle = FlatStyle.Flat
+        roomsched1.ForeColor = Color.White
         roomsched1.Location = New Point(68, 74)
         roomsched1.Name = "roomsched1"
         roomsched1.Size = New Size(179, 26)
@@ -3720,6 +3832,7 @@ Partial Class PRRC_BLDG
         lab2sched10.BackColor = Color.Green
         lab2sched10.FlatAppearance.BorderSize = 0
         lab2sched10.FlatStyle = FlatStyle.Flat
+        lab2sched10.ForeColor = Color.White
         lab2sched10.Location = New Point(68, 341)
         lab2sched10.Name = "lab2sched10"
         lab2sched10.Size = New Size(179, 26)
@@ -3732,6 +3845,7 @@ Partial Class PRRC_BLDG
         lab2sched9.BackColor = Color.Green
         lab2sched9.FlatAppearance.BorderSize = 0
         lab2sched9.FlatStyle = FlatStyle.Flat
+        lab2sched9.ForeColor = Color.White
         lab2sched9.Location = New Point(68, 311)
         lab2sched9.Name = "lab2sched9"
         lab2sched9.Size = New Size(179, 26)
@@ -3744,6 +3858,7 @@ Partial Class PRRC_BLDG
         lab2sched8.BackColor = Color.Green
         lab2sched8.FlatAppearance.BorderSize = 0
         lab2sched8.FlatStyle = FlatStyle.Flat
+        lab2sched8.ForeColor = Color.White
         lab2sched8.Location = New Point(68, 282)
         lab2sched8.Name = "lab2sched8"
         lab2sched8.Size = New Size(179, 26)
@@ -3756,6 +3871,7 @@ Partial Class PRRC_BLDG
         lab2sched7.BackColor = Color.Green
         lab2sched7.FlatAppearance.BorderSize = 0
         lab2sched7.FlatStyle = FlatStyle.Flat
+        lab2sched7.ForeColor = Color.White
         lab2sched7.Location = New Point(68, 253)
         lab2sched7.Name = "lab2sched7"
         lab2sched7.Size = New Size(179, 26)
@@ -3768,6 +3884,7 @@ Partial Class PRRC_BLDG
         lab2sched6.BackColor = Color.Green
         lab2sched6.FlatAppearance.BorderSize = 0
         lab2sched6.FlatStyle = FlatStyle.Flat
+        lab2sched6.ForeColor = Color.White
         lab2sched6.Location = New Point(68, 223)
         lab2sched6.Name = "lab2sched6"
         lab2sched6.Size = New Size(179, 26)
@@ -3780,6 +3897,7 @@ Partial Class PRRC_BLDG
         lab2sched5.BackColor = Color.Green
         lab2sched5.FlatAppearance.BorderSize = 0
         lab2sched5.FlatStyle = FlatStyle.Flat
+        lab2sched5.ForeColor = Color.White
         lab2sched5.Location = New Point(68, 193)
         lab2sched5.Name = "lab2sched5"
         lab2sched5.Size = New Size(179, 26)
@@ -3792,6 +3910,7 @@ Partial Class PRRC_BLDG
         lab2sched4.BackColor = Color.Green
         lab2sched4.FlatAppearance.BorderSize = 0
         lab2sched4.FlatStyle = FlatStyle.Flat
+        lab2sched4.ForeColor = Color.White
         lab2sched4.Location = New Point(68, 164)
         lab2sched4.Name = "lab2sched4"
         lab2sched4.Size = New Size(179, 26)
@@ -3804,6 +3923,7 @@ Partial Class PRRC_BLDG
         lab2sched3.BackColor = Color.Green
         lab2sched3.FlatAppearance.BorderSize = 0
         lab2sched3.FlatStyle = FlatStyle.Flat
+        lab2sched3.ForeColor = Color.White
         lab2sched3.Location = New Point(68, 134)
         lab2sched3.Name = "lab2sched3"
         lab2sched3.Size = New Size(179, 26)
@@ -3816,6 +3936,7 @@ Partial Class PRRC_BLDG
         lab2sched2.BackColor = Color.Green
         lab2sched2.FlatAppearance.BorderSize = 0
         lab2sched2.FlatStyle = FlatStyle.Flat
+        lab2sched2.ForeColor = Color.White
         lab2sched2.Location = New Point(68, 104)
         lab2sched2.Name = "lab2sched2"
         lab2sched2.Size = New Size(179, 26)
@@ -3828,6 +3949,7 @@ Partial Class PRRC_BLDG
         lab2sched1.BackColor = Color.Green
         lab2sched1.FlatAppearance.BorderSize = 0
         lab2sched1.FlatStyle = FlatStyle.Flat
+        lab2sched1.ForeColor = Color.White
         lab2sched1.Location = New Point(68, 74)
         lab2sched1.Name = "lab2sched1"
         lab2sched1.Size = New Size(179, 26)
@@ -3870,7 +3992,6 @@ Partial Class PRRC_BLDG
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1050, 591)
-        Controls.Add(lab2SchedPanel)
         Controls.Add(lab1SchedPanel)
         Controls.Add(r304Panel)
         Controls.Add(r303Panel)
@@ -3899,6 +4020,7 @@ Partial Class PRRC_BLDG
         Controls.Add(firstFloorPanel)
         Controls.Add(thirdFloorPanel)
         Controls.Add(secondFloorPanel)
+        Controls.Add(lab2SchedPanel)
         FormBorderStyle = FormBorderStyle.None
         Name = "PRRC_BLDG"
         StartPosition = FormStartPosition.CenterScreen

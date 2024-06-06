@@ -5,6 +5,8 @@
 'TEST COMMIT/PUSH 2
 
 
+
+
 Imports System.Drawing.Drawing2D
 Imports System.Net.Mail
 Imports System.Web
@@ -259,11 +261,6 @@ Public Class LOGIN_PAGE
             End Using
         End Using
     End Function
-
-
-
-
-
 
 
 
@@ -628,8 +625,8 @@ Public Class LOGIN_PAGE
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles GuestBTN.Click
-        GUEST_DB.Show()
-        Me.Hide()
+        'GUEST_DB.Show()
+        'Me.Hide()
 
     End Sub
 
