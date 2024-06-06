@@ -48,7 +48,7 @@ Partial Class _7to8amSched
         ' 
         reasonTxt.BackColor = Color.White
         reasonTxt.BorderStyle = BorderStyle.None
-        reasonTxt.Location = New Point(56, 230)
+        reasonTxt.Location = New Point(56, 301)
         reasonTxt.Multiline = True
         reasonTxt.Name = "reasonTxt"
         reasonTxt.ScrollBars = ScrollBars.Horizontal
@@ -63,7 +63,7 @@ Partial Class _7to8amSched
         reqRoomBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
         reqRoomBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         reqRoomBtn.FlatStyle = FlatStyle.Flat
-        reqRoomBtn.Location = New Point(77, 349)
+        reqRoomBtn.Location = New Point(78, 418)
         reqRoomBtn.Name = "reqRoomBtn"
         reqRoomBtn.Size = New Size(141, 23)
         reqRoomBtn.TabIndex = 4
@@ -101,7 +101,7 @@ Partial Class _7to8amSched
         ' dateToday_Label
         ' 
         dateToday_Label.AutoSize = True
-        dateToday_Label.Location = New Point(20, 8)
+        dateToday_Label.Location = New Point(309, 453)
         dateToday_Label.Name = "dateToday_Label"
         dateToday_Label.Size = New Size(41, 15)
         dateToday_Label.TabIndex = 8
@@ -109,10 +109,12 @@ Partial Class _7to8amSched
         ' 
         ' DateTimePicker1
         ' 
+        DateTimePicker1.CalendarTitleBackColor = Color.Transparent
+        DateTimePicker1.CalendarTrailingForeColor = Color.Transparent
         DateTimePicker1.Format = DateTimePickerFormat.Short
-        DateTimePicker1.Location = New Point(56, 61)
+        DateTimePicker1.Location = New Point(56, 216)
         DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(200, 23)
+        DateTimePicker1.Size = New Size(185, 23)
         DateTimePicker1.TabIndex = 9
         DateTimePicker1.Value = New Date(2024, 6, 6, 12, 11, 6, 0)
         ' 
@@ -122,7 +124,7 @@ Partial Class _7to8amSched
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.None
-        ClientSize = New Size(296, 398)
+        ClientSize = New Size(296, 477)
         Controls.Add(DateTimePicker1)
         Controls.Add(dateToday_Label)
         Controls.Add(Button2)
