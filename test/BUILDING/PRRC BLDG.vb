@@ -1,4 +1,5 @@
-﻿Imports System.Drawing.Drawing2D
+﻿Imports System.Diagnostics.Eventing
+Imports System.Drawing.Drawing2D
 Imports System.Net
 Imports MySql.Data.MySqlClient
 
@@ -315,8 +316,8 @@ Public Class PRRC_BLDG
 
 
     Private Sub Button51_Click_1(sender As Object, e As EventArgs) Handles Button51.Click
-        Me.Hide()
         NAVIGATE_CAMPUS.Show()
+        Me.Close()
     End Sub
 
     Private Sub updateDB_Tick(sender As Object, e As EventArgs) Handles updateDB.Tick
