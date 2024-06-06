@@ -34,11 +34,6 @@ Partial Class SEARCH_CAMPUS
         AdminToPRRC = New Panel()
         PRRCtoAdmin = New Panel()
         Panel1.SuspendLayout()
-        NewBLDGtoPRRC.SuspendLayout()
-        PRRCtoNewBLDG.SuspendLayout()
-        AdmintoNewBLDG.SuspendLayout()
-        NewBLDGtoAdmin.SuspendLayout()
-        AdminToPRRC.SuspendLayout()
         SuspendLayout()
         ' 
         ' fromCBox
@@ -46,7 +41,7 @@ Partial Class SEARCH_CAMPUS
         fromCBox.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         fromCBox.FlatStyle = FlatStyle.Flat
         fromCBox.FormattingEnabled = True
-        fromCBox.Items.AddRange(New Object() {"FACULTY BUILDING", "NEW BUILDING", "OLD BUILDING"})
+        fromCBox.Items.AddRange(New Object() {"ADMIN BUILDING", "YNARES BUILDING", "PRRC BUILDING"})
         fromCBox.Location = New Point(59, 163)
         fromCBox.Name = "fromCBox"
         fromCBox.Size = New Size(233, 23)
@@ -57,7 +52,7 @@ Partial Class SEARCH_CAMPUS
         toCBox.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         toCBox.FlatStyle = FlatStyle.Flat
         toCBox.FormattingEnabled = True
-        toCBox.Items.AddRange(New Object() {"FACULTY BUILDING", "NEW BUILDING", "OLD BUILDING"})
+        toCBox.Items.AddRange(New Object() {"ADMIN BUILDING", "YNARES BUILDING", "PRRC BUILDING"})
         toCBox.Location = New Point(59, 109)
         toCBox.Name = "toCBox"
         toCBox.Size = New Size(233, 23)
@@ -91,51 +86,51 @@ Partial Class SEARCH_CAMPUS
         ' 
         NewBLDGtoPRRC.BackgroundImage = CType(resources.GetObject("NewBLDGtoPRRC.BackgroundImage"), Image)
         NewBLDGtoPRRC.BackgroundImageLayout = ImageLayout.Stretch
-        NewBLDGtoPRRC.Controls.Add(PRRCtoNewBLDG)
         NewBLDGtoPRRC.Location = New Point(0, 0)
         NewBLDGtoPRRC.Name = "NewBLDGtoPRRC"
         NewBLDGtoPRRC.Size = New Size(543, 591)
         NewBLDGtoPRRC.TabIndex = 5
+        NewBLDGtoPRRC.Visible = False
         ' 
         ' PRRCtoNewBLDG
         ' 
         PRRCtoNewBLDG.BackgroundImage = CType(resources.GetObject("PRRCtoNewBLDG.BackgroundImage"), Image)
         PRRCtoNewBLDG.BackgroundImageLayout = ImageLayout.Stretch
-        PRRCtoNewBLDG.Controls.Add(AdmintoNewBLDG)
         PRRCtoNewBLDG.Location = New Point(0, 0)
         PRRCtoNewBLDG.Name = "PRRCtoNewBLDG"
         PRRCtoNewBLDG.Size = New Size(543, 591)
         PRRCtoNewBLDG.TabIndex = 6
+        PRRCtoNewBLDG.Visible = False
         ' 
         ' AdmintoNewBLDG
         ' 
         AdmintoNewBLDG.BackgroundImage = CType(resources.GetObject("AdmintoNewBLDG.BackgroundImage"), Image)
         AdmintoNewBLDG.BackgroundImageLayout = ImageLayout.Stretch
-        AdmintoNewBLDG.Controls.Add(NewBLDGtoAdmin)
         AdmintoNewBLDG.Location = New Point(0, 0)
         AdmintoNewBLDG.Name = "AdmintoNewBLDG"
         AdmintoNewBLDG.Size = New Size(543, 591)
         AdmintoNewBLDG.TabIndex = 7
+        AdmintoNewBLDG.Visible = False
         ' 
         ' NewBLDGtoAdmin
         ' 
         NewBLDGtoAdmin.BackgroundImage = CType(resources.GetObject("NewBLDGtoAdmin.BackgroundImage"), Image)
         NewBLDGtoAdmin.BackgroundImageLayout = ImageLayout.Stretch
-        NewBLDGtoAdmin.Controls.Add(AdminToPRRC)
         NewBLDGtoAdmin.Location = New Point(0, 0)
         NewBLDGtoAdmin.Name = "NewBLDGtoAdmin"
         NewBLDGtoAdmin.Size = New Size(543, 591)
         NewBLDGtoAdmin.TabIndex = 8
+        NewBLDGtoAdmin.Visible = False
         ' 
         ' AdminToPRRC
         ' 
         AdminToPRRC.BackgroundImage = CType(resources.GetObject("AdminToPRRC.BackgroundImage"), Image)
         AdminToPRRC.BackgroundImageLayout = ImageLayout.Stretch
-        AdminToPRRC.Controls.Add(PRRCtoAdmin)
         AdminToPRRC.Location = New Point(0, 0)
         AdminToPRRC.Name = "AdminToPRRC"
         AdminToPRRC.Size = New Size(543, 591)
         AdminToPRRC.TabIndex = 9
+        AdminToPRRC.Visible = False
         ' 
         ' PRRCtoAdmin
         ' 
@@ -145,6 +140,7 @@ Partial Class SEARCH_CAMPUS
         PRRCtoAdmin.Name = "PRRCtoAdmin"
         PRRCtoAdmin.Size = New Size(543, 591)
         PRRCtoAdmin.TabIndex = 10
+        PRRCtoAdmin.Visible = False
         ' 
         ' SEARCH_CAMPUS
         ' 
@@ -153,6 +149,11 @@ Partial Class SEARCH_CAMPUS
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.None
         ClientSize = New Size(1050, 591)
+        Controls.Add(PRRCtoNewBLDG)
+        Controls.Add(AdmintoNewBLDG)
+        Controls.Add(NewBLDGtoAdmin)
+        Controls.Add(AdminToPRRC)
+        Controls.Add(PRRCtoAdmin)
         Controls.Add(NewBLDGtoPRRC)
         Controls.Add(Panel1)
         Controls.Add(Button1)
@@ -162,11 +163,6 @@ Partial Class SEARCH_CAMPUS
         StartPosition = FormStartPosition.CenterScreen
         Text = "SEARCH_CAMPUS"
         Panel1.ResumeLayout(False)
-        NewBLDGtoPRRC.ResumeLayout(False)
-        PRRCtoNewBLDG.ResumeLayout(False)
-        AdmintoNewBLDG.ResumeLayout(False)
-        NewBLDGtoAdmin.ResumeLayout(False)
-        AdminToPRRC.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
