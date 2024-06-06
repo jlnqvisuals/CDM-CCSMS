@@ -40,6 +40,7 @@ Public Class PRRC_BLDG
 
     Private Sub PRRC_BLDG_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
+        datePickerLabel.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy")
         ' Start the timer
         updateDB.Interval = 1000
         updateDB.Start()
@@ -131,17 +132,21 @@ Public Class PRRC_BLDG
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
+        datePickerLabel.Text = DateTime.Now.ToString("M/d/yyyy")
+        timecheckerLabel.Text = DateTime.Now.ToString("HH")
     End Sub
 
     Sub checkAvailabilityLab1(schedtime As String, Button As Button)
         Dim time As String = schedtime
-        Dim query As String = "SELECT Approved FROM lab1sched WHERE Time = @Time"
+        Dim currentDate As String = datePickerLabel.Text
+        Dim query As String = "SELECT Approved FROM lab1sched WHERE Date = @Date AND Time = @Time"
 
         ' Create a connection
         Using connection As New MySqlConnection(connectionString)
             ' Create a command
             Using command As New MySqlCommand(query, connection)
                 ' Add the parameter to the command
+                command.Parameters.AddWithValue("@Date", currentDate)
                 command.Parameters.AddWithValue("@Time", time)
 
                 ' Open the connection
@@ -168,13 +173,15 @@ Public Class PRRC_BLDG
 
     Sub checkAvailabilityLab2(schedtime As String, Button As Button)
         Dim time As String = schedtime
-        Dim query As String = "SELECT Approved FROM lab2sched WHERE Time = @Time"
+        Dim currentDate As String = datePickerLabel.Text
+        Dim query As String = "SELECT Approved FROM lab2sched WHERE Date = @Date AND Time = @Time"
 
         ' Create a connection
         Using connection As New MySqlConnection(connectionString)
             ' Create a command
             Using command As New MySqlCommand(query, connection)
                 ' Add the parameter to the command
+                command.Parameters.AddWithValue("@Date", currentDate)
                 command.Parameters.AddWithValue("@Time", time)
 
                 ' Open the connection
@@ -206,104 +213,104 @@ Public Class PRRC_BLDG
     'LAB 1 SCHEDULES
     Private Sub roomsched1_Click(sender As Object, e As EventArgs) Handles roomsched1.Click
         desiredtime = "7:00-8:00"
-        insertQuery = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab1sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub roomsched2_Click(sender As Object, e As EventArgs) Handles roomsched2.Click
         desiredtime = "8:00-9:00"
-        insertQuery = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab1sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub roomsched3_Click(sender As Object, e As EventArgs) Handles roomsched3.Click
         desiredtime = "9:00-10:00"
-        insertQuery = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab1sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub roomsched4_Click(sender As Object, e As EventArgs) Handles roomsched4.Click
         desiredtime = "10:00-11:00"
-        insertQuery = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab1sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub roomsched5_Click(sender As Object, e As EventArgs) Handles roomsched5.Click
         desiredtime = "11:00-12:00"
-        insertQuery = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab1sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub roomsched6_Click(sender As Object, e As EventArgs) Handles roomsched6.Click
         desiredtime = "12:00-1:00"
-        insertQuery = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab1sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub roomsched7_Click(sender As Object, e As EventArgs) Handles roomsched7.Click
         desiredtime = "1:00-2:00"
-        insertQuery = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab1sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub roomsched8_Click(sender As Object, e As EventArgs) Handles roomsched8.Click
         desiredtime = "2:00-3:00"
-        insertQuery = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab1sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub roomsched9_Click(sender As Object, e As EventArgs) Handles roomsched9.Click
         desiredtime = "3:00-4:00"
-        insertQuery = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab1sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub roomsched10_Click(sender As Object, e As EventArgs) Handles roomsched10.Click
         desiredtime = "4:00-5:00"
-        insertQuery = "INSERT INTO lab1sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab1sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
 
     'LAB 2 SCHEDULES
     Private Sub lab2sched1_Click(sender As Object, e As EventArgs) Handles lab2sched1.Click
         desiredtime = "7:00-8:00"
-        insertQuery = "INSERT INTO lab2sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab2sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub lab2sched2_Click(sender As Object, e As EventArgs) Handles lab2sched2.Click
         desiredtime = "8:00-9:00"
-        insertQuery = "INSERT INTO lab2sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab2sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub lab2sched3_Click(sender As Object, e As EventArgs) Handles lab2sched3.Click
         desiredtime = "9:00-10:00"
-        insertQuery = "INSERT INTO lab2sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab2sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub lab2sched4_Click(sender As Object, e As EventArgs) Handles lab2sched4.Click
         desiredtime = "10:00-11:00"
-        insertQuery = "INSERT INTO lab2sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab2sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub lab2sched5_Click(sender As Object, e As EventArgs) Handles lab2sched5.Click
         desiredtime = "11:00-12:00"
-        insertQuery = "INSERT INTO lab2sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab2sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub lab2sched6_Click(sender As Object, e As EventArgs) Handles lab2sched6.Click
         desiredtime = "12:00-1:00"
-        insertQuery = "INSERT INTO lab2sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab2sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub lab2sched7_Click(sender As Object, e As EventArgs) Handles lab2sched7.Click
         desiredtime = "1:00-2:00"
-        insertQuery = "INSERT INTO lab2sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab2sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub lab2sched8_Click(sender As Object, e As EventArgs) Handles lab2sched8.Click
         desiredtime = "2:00-3:00"
-        insertQuery = "INSERT INTO lab2sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab2sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub lab2sched9_Click(sender As Object, e As EventArgs) Handles lab2sched9.Click
         desiredtime = "3:00-4:00"
-        insertQuery = "INSERT INTO lab2sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab2sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
     Private Sub lab2sched10_Click(sender As Object, e As EventArgs) Handles lab2sched10.Click
         desiredtime = "4:00-5:00"
-        insertQuery = "INSERT INTO lab2sched (Time, Reason, CreatedBy, SID) VALUES (@Time, @Reason, @CreatedBy, @SID)"
+        insertQuery = "INSERT INTO lab2sched (Date, Time, Reason, CreatedBy, SID) VALUES (@Date, @Time, @Reason, @CreatedBy, @SID)"
         _7to8amSched.Show()
     End Sub
 
@@ -324,6 +331,17 @@ Public Class PRRC_BLDG
         checkAvailabilityLab1("2:00-3:00", roomsched8)
         checkAvailabilityLab1("3:00-4:00", roomsched9)
         checkAvailabilityLab1("4:00-5:00", roomsched10)
+
+        checkAvailabilityLab2("7:00-8:00", lab2sched1)
+        checkAvailabilityLab2("8:00-9:00", lab2sched2)
+        checkAvailabilityLab2("9:00-10:00", lab2sched3)
+        checkAvailabilityLab2("10:00-11:00", lab2sched4)
+        checkAvailabilityLab2("11:00-12:00", lab2sched5)
+        checkAvailabilityLab2("12:00-1:00", lab2sched6)
+        checkAvailabilityLab2("1:00-2:00", lab2sched7)
+        checkAvailabilityLab2("2:00-3:00", lab2sched8)
+        checkAvailabilityLab2("3:00-4:00", lab2sched9)
+        checkAvailabilityLab2("4:00-5:00", lab2sched10)
     End Sub
 
     Sub isPanelVisible(mainPanel As Panel, pan1 As Panel, pan2 As Panel, pan3 As Panel, pan4 As Panel, pan5 As Panel, pan6 As Panel, pan7 As Panel)

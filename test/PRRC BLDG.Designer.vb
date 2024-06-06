@@ -333,6 +333,8 @@ Partial Class PRRC_BLDG
         lab2sched2 = New Button()
         lab2sched1 = New Button()
         Button62 = New Button()
+        datePickerLabel = New Label()
+        timecheckerLabel = New Label()
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
@@ -3849,12 +3851,36 @@ Partial Class PRRC_BLDG
         Button62.TabIndex = 3
         Button62.UseVisualStyleBackColor = False
         ' 
+        ' datePickerLabel
+        ' 
+        datePickerLabel.AutoSize = True
+        datePickerLabel.BackColor = Color.Transparent
+        datePickerLabel.FlatStyle = FlatStyle.Flat
+        datePickerLabel.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        datePickerLabel.ForeColor = Color.White
+        datePickerLabel.Location = New Point(564, 14)
+        datePickerLabel.Name = "datePickerLabel"
+        datePickerLabel.Size = New Size(73, 17)
+        datePickerLabel.TabIndex = 6
+        datePickerLabel.Text = "date picker"
+        datePickerLabel.Visible = False
+        ' 
+        ' timecheckerLabel
+        ' 
+        timecheckerLabel.AutoSize = True
+        timecheckerLabel.Location = New Point(474, 16)
+        timecheckerLabel.Name = "timecheckerLabel"
+        timecheckerLabel.Size = New Size(53, 15)
+        timecheckerLabel.TabIndex = 52
+        timecheckerLabel.Text = "Label185"
+        ' 
         ' PRRC_BLDG
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1050, 591)
+        Controls.Add(timecheckerLabel)
         Controls.Add(lab2SchedPanel)
         Controls.Add(lab1SchedPanel)
         Controls.Add(r304Panel)
@@ -3875,6 +3901,7 @@ Partial Class PRRC_BLDG
         Controls.Add(r105Panel)
         Controls.Add(PictureBox1)
         Controls.Add(Button51)
+        Controls.Add(datePickerLabel)
         Controls.Add(Label16)
         Controls.Add(r104Panel)
         Controls.Add(r103Panel)
@@ -4251,4 +4278,6 @@ Partial Class PRRC_BLDG
     Friend WithEvents lab2sched2 As Button
     Friend WithEvents lab2sched1 As Button
     Friend WithEvents Button62 As Button
+    Friend WithEvents datePickerLabel As Label
+    Friend WithEvents timecheckerLabel As Label
 End Class

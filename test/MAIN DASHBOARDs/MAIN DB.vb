@@ -148,8 +148,9 @@ Public Class MainDB_User
     End Sub
 
     Private Sub logoutMdbBtn_Click(sender As Object, e As EventArgs) Handles logoutMdbBtn.Click
-        Me.Hide()
         LOGIN_PAGE.Show()
+        Me.Close()
+
     End Sub
 
     Private Sub SEARCHCAMPUS_Click(sender As Object, e As EventArgs) Handles Button2.Click
