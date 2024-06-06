@@ -177,7 +177,7 @@ Partial Class NEW_BUILDING
         Button5.Name = "Button5"
         Button5.Size = New Size(50, 39)
         Button5.TabIndex = 1
-        Button5.Text = "106"
+        Button5.Text = "???"
         Button5.UseVisualStyleBackColor = True
         ' 
         ' Button7
@@ -195,7 +195,7 @@ Partial Class NEW_BUILDING
         Button4.Name = "Button4"
         Button4.Size = New Size(50, 39)
         Button4.TabIndex = 1
-        Button4.Text = "105"
+        Button4.Text = "???"
         Button4.UseVisualStyleBackColor = True
         ' 
         ' Button13
