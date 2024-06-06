@@ -1,4 +1,5 @@
 ﻿Imports System.Drawing.Drawing2D
+Imports System.Net
 Imports MySql.Data.MySqlClient
 
 Public Class _7to8amSched
@@ -40,6 +41,9 @@ Public Class _7to8amSched
     Private Sub _7to8amSched_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         getCurrentUser(LOGIN_PAGE.StudentID)
         sidTxt.Text = LOGIN_PAGE.StudentID
+        dateToday_Label.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy")
+        ' Start the timer
+        dateToday.Start()
     End Sub
 
     Dim FirstName As String = ""
@@ -83,10 +87,12 @@ Public Class _7to8amSched
         Dim createdBy As String = nameTxt.Text
         Dim reason As String = reasonTxt.Text
         Dim SID As String = LOGIN_PAGE.StudentID
+        Dim SchedDate As String = DateTimePicker1.Value.Date
 
         Using connection As New MySqlConnection(connectionString)
 
             Dim command As New MySqlCommand(PRRC_BLDG.insertQuery, connection)
+            command.Parameters.AddWithValue("@Date", SchedDate)
             command.Parameters.AddWithValue("@Time", Time)
             command.Parameters.AddWithValue("@Reason", reason)
             command.Parameters.AddWithValue("@CreatedBy", createdBy)
@@ -103,5 +109,9 @@ Public Class _7to8amSched
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Close()
 
+    End Sub
+
+    Private Sub dateToday_Tick(sender As Object, e As EventArgs) Handles dateToday.Tick
+        dateToday_Label.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy")
     End Sub
 End Class

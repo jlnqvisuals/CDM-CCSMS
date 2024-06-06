@@ -22,12 +22,16 @@ Partial Class _7to8amSched
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(_7to8amSched))
         nameTxt = New TextBox()
         reasonTxt = New TextBox()
         reqRoomBtn = New Button()
         sidTxt = New TextBox()
         Button2 = New Button()
+        dateToday = New Timer(components)
+        dateToday_Label = New Label()
+        DateTimePicker1 = New DateTimePicker()
         SuspendLayout()
         ' 
         ' nameTxt
@@ -91,6 +95,27 @@ Partial Class _7to8amSched
         Button2.TabIndex = 7
         Button2.UseVisualStyleBackColor = False
         ' 
+        ' dateToday
+        ' 
+        ' 
+        ' dateToday_Label
+        ' 
+        dateToday_Label.AutoSize = True
+        dateToday_Label.Location = New Point(20, 8)
+        dateToday_Label.Name = "dateToday_Label"
+        dateToday_Label.Size = New Size(41, 15)
+        dateToday_Label.TabIndex = 8
+        dateToday_Label.Text = "Label1"
+        ' 
+        ' DateTimePicker1
+        ' 
+        DateTimePicker1.Format = DateTimePickerFormat.Short
+        DateTimePicker1.Location = New Point(56, 61)
+        DateTimePicker1.Name = "DateTimePicker1"
+        DateTimePicker1.Size = New Size(200, 23)
+        DateTimePicker1.TabIndex = 9
+        DateTimePicker1.Value = New Date(2024, 6, 6, 12, 11, 6, 0)
+        ' 
         ' _7to8amSched
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -98,6 +123,8 @@ Partial Class _7to8amSched
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.None
         ClientSize = New Size(296, 398)
+        Controls.Add(DateTimePicker1)
+        Controls.Add(dateToday_Label)
         Controls.Add(Button2)
         Controls.Add(reqRoomBtn)
         Controls.Add(reasonTxt)
@@ -117,4 +144,7 @@ Partial Class _7to8amSched
     Friend WithEvents reqRoomBtn As Button
     Friend WithEvents sidTxt As TextBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents dateToday As Timer
+    Friend WithEvents dateToday_Label As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
