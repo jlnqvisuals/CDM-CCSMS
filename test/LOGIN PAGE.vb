@@ -615,7 +615,7 @@ Public Class LOGIN_PAGE
         ContactUs_Panel.Visible = False
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles SignAsAdminBTN.Click
         If logUser.Text = "admin" And logPass.Text = "admin" Then
             Me.Hide()
             ADMIN_MENU_DB.Show()
@@ -627,9 +627,9 @@ Public Class LOGIN_PAGE
 
     End Sub
 
-    Private Sub GuestBTN_Click(sender As Object, e As EventArgs) Handles GuestBTN.Click
-        Me.Close()
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles GuestBTN.Click
         GUEST_DB.Show()
+        Me.Hide()
 
     End Sub
 

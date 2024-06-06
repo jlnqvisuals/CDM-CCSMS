@@ -61,6 +61,7 @@ Partial Class SEARCH_CAMPUS
         ' Button1
         ' 
         Button1.BackColor = Color.Transparent
+        Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatAppearance.MouseDownBackColor = Color.Transparent
         Button1.FlatAppearance.MouseOverBackColor = Color.Transparent

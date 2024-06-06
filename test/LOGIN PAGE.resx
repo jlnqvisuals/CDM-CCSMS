@@ -892,45 +892,43 @@ Your privacy is of utmost importance to us. This Privacy Policy outlines how we 
 
 1. Information We Collect
 
-1.1 Personal Information: When you use CDM-CCSMS, we collect the following personal information:
-Name
-Last Name
-Student Number
-Email Address
+	1.1 Personal Information: When you use CDM-CCSMS, we collect the following personal information:
+	Name, Last Name, Student Number, Email Address
 
 2. How We Use Your Information
 
-2.1 Providing Services: We utilize the information collected to facilitate the functionality of CDM-CCSMS, offering personalized experiences, and addressing inquiries or requests.
+	2.1 Providing Services: We utilize the information collected to facilitate the functionality of CDM-CCSMS, offering personalized experiences, and addressing inquiries or requests.
 
-2.2 Communication: Your email address may be used to communicate updates, announcements, and other pertinent information regarding CDM-CCSMS.
+	2.2 Communication: Your email address may be used to communicate updates, announcements, and other pertinent information regarding CDM-CCSMS.
 
 3. Information Sharing
 
-We do not share your information with third parties except as outlined below:
+	We do not share your information with third parties except as outlined below:
 
-We may share data with third-party service providers to assist in operating, maintaining, and improving CDM-CCSMS.
-These service providers are contractually obligated to uphold data protection standards and are restricted from using your information for any other purpose.
+	We may share data with third-party service providers to assist in operating, maintaining, and improving CDM-CCSMS.
+	These service providers are contractually obligated to uphold data protection standards and are restricted from using your information for any other purpose.
 
 4. Data Security
 
-4.1 Security Measures: We employ industry-standard security measures to safeguard your information from unauthorized access, disclosure, alteration, or destruction.
+	4.1 Security Measures: We employ industry-standard security measures to safeguard your information from unauthorized access, disclosure, alteration, or destruction.
 
-4.2 Data Retention: Your information is retained for as long as necessary to fulfill the purposes stated in this Privacy Policy, unless extended retention is mandated or permitted by law.
+	4.2 Data Retention: Your information is retained for as long as necessary to fulfill the purposes stated in this Privacy Policy, unless extended retention is mandated or permitted by law.
 
 5. Your Choices
 
-5.1 Opt-Out: You have the option to opt-out of receiving communications from us by following provided instructions in our communications or by directly contacting us.
+	5.1 Opt-Out: You have the option to opt-out of receiving communications from us by following provided instructions in our communications or by directly contacting us.
 
-5.2 Access and Update: You may access and update your personal information by contacting us directly.
+	5.2 Access and Update: You may access and update your personal information by contacting us directly.
 
 6. Changes to this Privacy Policy
 
-This Privacy Policy may undergo revisions to reflect changes in operational practices, legal requirements, or regulatory standards. We will notify you of significant alterations by posting the updated version on our website or through other suitable channels.
+	This Privacy Policy may undergo revisions to reflect changes in operational practices, legal requirements, or regulatory standards. We will notify you of significant alterations by posting the updated 	version on our website or through other suitable channels.
 
 7. Contact Us
-Should you have any queries or concerns regarding this Privacy Policy or our data practices, please reach out to us at [contact email].
+	Should you have any queries or concerns regarding this Privacy Policy or our data practices, please reach out to us at cdm.ccsms@gmail.com.
 
-Effective Date: [Date]</value>
+	Effective Date: June 6, 2024 - 11:44 am
+</value>
   </data>
   <data name="PrivacyPolicy_Panel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1051,12 +1049,39 @@ Effective Date: [Date]</value>
 </value>
   </data>
   <data name="TextBox2.Text" xml:space="preserve">
-    <value>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
-Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
-Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
-Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+    <value>1. Introduction
+Welcome to the Colegio de Montalban Centralized Campus Smart Map System (CDM CCSMS). By using our software, you agree to comply with and be bound by the following terms and conditions. Please review these terms carefully. If you do not agree with these terms, you should not use this software.
+
+2. User Responsibilities
+Account Information: You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+Usage: You agree to use CDM CCSMS only for lawful purposes and in accordance with these terms.
+Prohibited Activities: You agree not to misuse the software by attempting unauthorized access to any part of the system, introducing viruses, or engaging in any activity that disrupts or interferes with the proper functioning of the system.
+
+3. Room Reservations
+Eligibility: Room reservation features are available to authorized users only. Unauthorized use is strictly prohibited.
+Reservation Policy: All reservations must comply with the institution’s policies. Misuse of the reservation system may result in the suspension or termination of access.
+Cancellations: Users must follow the established procedure for canceling reservations to avoid penalties.
+
+4. Privacy Policy
+Data Collection: We collect personal information necessary for the operation of the system, including name, email address, and usage data.
+Data Usage: Your data will be used to improve our services, facilitate room reservations, and ensure the security of our system.
+Data Protection: We implement appropriate security measures to protect your data. However, we cannot guarantee absolute security against all threats.
+
+5. Intellectual Property
+Ownership: All content, features, and functionality of CDM CCSMS are the exclusive property of Colegio de Montalban or its licensors.
+Restrictions: You may not copy, modify, distribute, or create derivative works based on any part of the software without express written permission.
+
+6. Limitation of Liability
+No Warranty: CDM CCSMS is provided "as is" without warranties of any kind, either express or implied.
+Liability: In no event shall Colegio de Montalban be liable for any damages arising out of or in connection with your use of the software.
+
+7. Modifications to Terms
+We reserve the right to modify these terms at any time. Your continued use of CDM CCSMS after any changes constitutes your acceptance of the new terms. It is your responsibility to review these terms periodically.
+
+8. Contact Information
+For any questions or concerns about these terms, please contact us at cdm.ccsms@gmail.com.
+
+By using the Colegio de Montalban Centralized Campus Smart Map System, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions.
 </value>
   </data>
   <data name="ContactUs_Panel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1118,10 +1143,26 @@ Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Ma
         R/4DXx3O15lXu6gAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Button8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TextBox3.Text" xml:space="preserve">
+    <value>
+- OFFICIAL SOCIAL MEDIA -
+Facebook: https://www.facebook.com/Tech.DMS
+https://github.com/CDMCCSMS
+
+- DEVELOPERS -
+DEL VALLE, FRENCH JOHN                                               QUILINO, JOHN LLOYD N.
+https://github.com/frenched                                     https://github.com/jlnqvisuals
+https://www.facebook.com/frenchdv                  https://www.facebook.com/quilino.jlnq
+
+
+   
+
+</value>
+  </data>
+  <data name="SignAsAdminBTN.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAG0AAAAUCAYAAACH1bNfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAA5hJREFUaEPtmr9PFEEUxxcEURA5fqgNnSWNtldoTcTE8rTB7uxoFEqNRFswodUG
+        DAAACwwBP0AiyAAAA5hJREFUaEPtmr9PFEEUxxcEURA5fqgNnSWNtldoTcTE8rTB7uxoFEqNRFswodUG
         OkgukUo7bSyBBOsj+Acc/gGwvs+473g3DN7u3ca7Yif5Znfmzbx5b77vzQzLRaESx1FJsCSoCepnZ1Fc
         4L9hL1n3xYSO9kU6P5GBDU9Rgd6g3pa809NoPTCwQI8hvLxJKGotCEIDCvQHJOPWEqr+Fml4HupYoL/A
         0ZVQFkXSkMtl4+j4SvxufSwoy4qNj6Nx4/dAUNYrfP9x1fkYkl2GnP1oCHGljrMMY+YezsTzzybj8sKU

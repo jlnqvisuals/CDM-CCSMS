@@ -62,10 +62,11 @@ Partial Class LOGIN_PAGE
         Label2 = New Label()
         TextBox2 = New TextBox()
         ContactUs_Panel = New Panel()
+        Button9 = New Button()
         Button7 = New Button()
         Label3 = New Label()
         TextBox3 = New TextBox()
-        Button8 = New Button()
+        SignAsAdminBTN = New Button()
         loginPanel.SuspendLayout()
         regPanel.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -172,18 +173,16 @@ Partial Class LOGIN_PAGE
         ' 
         ' GuestBTN
         ' 
-        GuestBTN.BackColor = Color.Transparent
         GuestBTN.Cursor = Cursors.Hand
         GuestBTN.FlatAppearance.BorderSize = 0
         GuestBTN.FlatAppearance.MouseDownBackColor = Color.Transparent
         GuestBTN.FlatAppearance.MouseOverBackColor = Color.Transparent
         GuestBTN.FlatStyle = FlatStyle.Flat
-        GuestBTN.ForeColor = Color.Transparent
-        GuestBTN.Location = New Point(47, 255)
+        GuestBTN.Location = New Point(54, 252)
         GuestBTN.Name = "GuestBTN"
-        GuestBTN.Size = New Size(201, 23)
-        GuestBTN.TabIndex = 11
-        GuestBTN.UseVisualStyleBackColor = False
+        GuestBTN.Size = New Size(190, 31)
+        GuestBTN.TabIndex = 5
+        GuestBTN.UseVisualStyleBackColor = True
         ' 
         ' Button1
         ' 
@@ -589,6 +588,7 @@ Partial Class LOGIN_PAGE
         ' 
         ContactUs_Panel.BackColor = Color.Transparent
         ContactUs_Panel.BackgroundImage = CType(resources.GetObject("ContactUs_Panel.BackgroundImage"), Image)
+        ContactUs_Panel.Controls.Add(Button9)
         ContactUs_Panel.Controls.Add(Button7)
         ContactUs_Panel.Controls.Add(Label3)
         ContactUs_Panel.Controls.Add(TextBox3)
@@ -597,6 +597,21 @@ Partial Class LOGIN_PAGE
         ContactUs_Panel.Size = New Size(911, 373)
         ContactUs_Panel.TabIndex = 16
         ContactUs_Panel.Visible = False
+        ' 
+        ' Button9
+        ' 
+        Button9.Cursor = Cursors.Hand
+        Button9.FlatAppearance.BorderColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
+        Button9.FlatAppearance.BorderSize = 0
+        Button9.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button9.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button9.FlatStyle = FlatStyle.Flat
+        Button9.ForeColor = Color.Transparent
+        Button9.Location = New Point(399, 341)
+        Button9.Name = "Button9"
+        Button9.Size = New Size(96, 20)
+        Button9.TabIndex = 12
+        Button9.UseVisualStyleBackColor = True
         ' 
         ' Button7
         ' 
@@ -638,23 +653,23 @@ Partial Class LOGIN_PAGE
         TextBox3.ScrollBars = ScrollBars.Vertical
         TextBox3.Size = New Size(845, 247)
         TextBox3.TabIndex = 12
-        TextBox3.Text = vbCrLf & "- OFFICIAL SOCIAL MEDIA -" & vbCrLf & "Facebook:" & vbCrLf & vbCrLf & vbCrLf & "- DEVELOPERS -" & vbCrLf & "DEL VALLE, FRENCH JOHN" & vbCrLf & "GitHub: " & vbCrLf & "Facebook:" & vbCrLf & vbCrLf & "QUILINO, JOHN LLOYD N." & vbCrLf & "GitHub:" & vbCrLf & "Facebook: "
+        TextBox3.Text = resources.GetString("TextBox3.Text")
         ' 
-        ' Button8
+        ' SignAsAdminBTN
         ' 
-        Button8.BackColor = Color.Transparent
-        Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), Image)
-        Button8.BackgroundImageLayout = ImageLayout.None
-        Button8.Cursor = Cursors.Hand
-        Button8.FlatAppearance.BorderSize = 0
-        Button8.FlatAppearance.MouseDownBackColor = Color.Transparent
-        Button8.FlatAppearance.MouseOverBackColor = Color.Transparent
-        Button8.FlatStyle = FlatStyle.Flat
-        Button8.Location = New Point(847, 11)
-        Button8.Name = "Button8"
-        Button8.Size = New Size(109, 20)
-        Button8.TabIndex = 17
-        Button8.UseVisualStyleBackColor = False
+        SignAsAdminBTN.BackColor = Color.Transparent
+        SignAsAdminBTN.BackgroundImage = CType(resources.GetObject("SignAsAdminBTN.BackgroundImage"), Image)
+        SignAsAdminBTN.BackgroundImageLayout = ImageLayout.None
+        SignAsAdminBTN.Cursor = Cursors.Hand
+        SignAsAdminBTN.FlatAppearance.BorderSize = 0
+        SignAsAdminBTN.FlatAppearance.MouseDownBackColor = Color.Transparent
+        SignAsAdminBTN.FlatAppearance.MouseOverBackColor = Color.Transparent
+        SignAsAdminBTN.FlatStyle = FlatStyle.Flat
+        SignAsAdminBTN.Location = New Point(847, 11)
+        SignAsAdminBTN.Name = "SignAsAdminBTN"
+        SignAsAdminBTN.Size = New Size(109, 20)
+        SignAsAdminBTN.TabIndex = 17
+        SignAsAdminBTN.UseVisualStyleBackColor = False
         ' 
         ' LOGIN_PAGE
         ' 
@@ -663,19 +678,19 @@ Partial Class LOGIN_PAGE
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1050, 591)
-        Controls.Add(Button8)
+        Controls.Add(SignAsAdminBTN)
         Controls.Add(ContactsBTN)
         Controls.Add(TnC_BTN)
         Controls.Add(PrivacyPolicyBTN)
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
-        Controls.Add(loginPanel)
-        Controls.Add(regPanel)
-        Controls.Add(PictureBox1)
         Controls.Add(ContactUs_Panel)
         Controls.Add(TnC_Panel)
         Controls.Add(PrivacyPolicy_Panel)
+        Controls.Add(loginPanel)
+        Controls.Add(regPanel)
+        Controls.Add(PictureBox1)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
@@ -722,7 +737,6 @@ Partial Class LOGIN_PAGE
     Friend WithEvents PrivacyPolicyBTN As Button
     Friend WithEvents TnC_BTN As Button
     Friend WithEvents ContactsBTN As Button
-    Friend WithEvents GuestBTN As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox1 As TextBox
@@ -737,6 +751,8 @@ Partial Class LOGIN_PAGE
     Friend WithEvents Button7 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Button8 As Button
+    Friend WithEvents SignAsAdminBTN As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents GuestBTN As Button
 
 End Class
