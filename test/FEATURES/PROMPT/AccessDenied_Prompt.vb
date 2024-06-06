@@ -1,10 +1,9 @@
 ﻿Imports System.Drawing.Drawing2D
 
-Public Class FORGET_UN_PASS_PROMPT
+Public Class AccessDenied_Prompt
 
 
-
-    Private Sub timerClose_Tick(sender As Object, e As EventArgs) Handles TimerClose.Tick
+    Private Sub timerClose1_Tick(sender As Object, e As EventArgs) Handles TimerClose.Tick
         TimerClose.Stop() ' Stop the timer
         Me.Close() ' Close Form2 after 3 seconds
     End Sub
@@ -12,14 +11,6 @@ Public Class FORGET_UN_PASS_PROMPT
     Public Sub StartCloseTimer()
         TimerClose.Start() ' Start the timer
     End Sub
-
-
-
-
-
-
-
-
 
 
     Private Sub RoundedCorners(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -44,8 +35,7 @@ Public Class FORGET_UN_PASS_PROMPT
 
 
 
+    Private Sub TimerClose_Tick(sender As Object, e As EventArgs) Handles TimerClose.Tick
 
-
-
-
+    End Sub
 End Class

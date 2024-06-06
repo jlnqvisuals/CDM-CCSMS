@@ -1,7 +1,6 @@
 ﻿Imports System.Drawing.Drawing2D
 
-Public Class SEARCH_CAMPUS
-
+Public Class ADMIN_MENU_DB
 
 
 
@@ -23,7 +22,6 @@ Public Class SEARCH_CAMPUS
         Me.Region = New Region(path)
 
     End Sub
-
 
 
 
@@ -60,14 +58,22 @@ Public Class SEARCH_CAMPUS
 
 
 
+    Private Sub AcceptRoomReservBTN_Click(sender As Object, e As EventArgs) Handles AcceptRoomReservBTN.Click
+        Me.Close()
+        ADMIN_DB.Show()
 
-    Private Sub SEARCH_CAMPUS_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub SearchCampusBTN_Click(sender As Object, e As EventArgs) Handles SearchCampusBTN.Click
         Me.Close()
-        MainDB_User.Show()
+        SEARCH_CAMPUS.Show()
 
+
+    End Sub
+
+    Private Sub NavigateCampusBTN_Click(sender As Object, e As EventArgs) Handles NavigateCampusBTN.Click
+        Me.Close()
+        NAVIGATE_CAMPUS.Show()
     End Sub
 End Class

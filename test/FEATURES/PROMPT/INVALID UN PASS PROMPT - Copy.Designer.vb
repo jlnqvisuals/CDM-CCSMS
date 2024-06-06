@@ -24,12 +24,12 @@ Partial Class FORGET_UN_PASS_PROMPT
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FORGET_UN_PASS_PROMPT))
-        TimerClose = New Timer(components)
+        TimerClose1 = New Timer(components)
         SuspendLayout()
         ' 
-        ' TimerClose
+        ' TimerClose1
         ' 
-        TimerClose.Interval = 2000
+        TimerClose1.Interval = 2000
         ' 
         ' FORGET_UN_PASS_PROMPT
         ' 
@@ -46,5 +46,5 @@ Partial Class FORGET_UN_PASS_PROMPT
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents TimerClose As Timer
+    Friend WithEvents TimerClose1 As Timer
 End Class

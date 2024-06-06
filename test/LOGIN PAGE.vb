@@ -618,10 +618,18 @@ Public Class LOGIN_PAGE
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         If logUser.Text = "admin" And logPass.Text = "admin" Then
             Me.Hide()
-            ADMIN_DB.Show()
+            ADMIN_MENU_DB.Show()
+            'ADMIN_DB.Show()
         Else
-            MsgBox("LOGIN ERROR")
+            AccessDenied_Prompt.Show()
+            AccessDenied_Prompt.StartCloseTimer()
         End If
+
+    End Sub
+
+    Private Sub GuestBTN_Click(sender As Object, e As EventArgs) Handles GuestBTN.Click
+        Me.Close()
+        GUEST_DB.Show()
 
     End Sub
 End Class

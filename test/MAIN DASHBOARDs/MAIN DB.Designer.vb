@@ -36,9 +36,6 @@ Partial Class MainDB_User
         Label1 = New Label()
         Label2 = New Label()
         Button2 = New Button()
-        Label3 = New Label()
-        Label6 = New Label()
-        Button4 = New Button()
         PictureBox1 = New PictureBox()
         DnT = New Timer(components)
         DateTime_Label = New Label()
@@ -159,32 +156,6 @@ Partial Class MainDB_User
         Button2.Name = "Button2"
         Button2.UseVisualStyleBackColor = False
         ' 
-        ' Label3
-        ' 
-        Label3.BackColor = Color.Transparent
-        Label3.FlatStyle = FlatStyle.Flat
-        resources.ApplyResources(Label3, "Label3")
-        Label3.ForeColor = Color.White
-        Label3.Name = "Label3"
-        ' 
-        ' Label6
-        ' 
-        resources.ApplyResources(Label6, "Label6")
-        Label6.BackColor = Color.Transparent
-        Label6.ForeColor = Color.FromArgb(CByte(224), CByte(253), CByte(43))
-        Label6.Name = "Label6"
-        ' 
-        ' Button4
-        ' 
-        Button4.BackColor = Color.Transparent
-        resources.ApplyResources(Button4, "Button4")
-        Button4.Cursor = Cursors.Hand
-        Button4.FlatAppearance.BorderSize = 0
-        Button4.FlatAppearance.MouseDownBackColor = Color.Transparent
-        Button4.FlatAppearance.MouseOverBackColor = Color.Transparent
-        Button4.Name = "Button4"
-        Button4.UseVisualStyleBackColor = False
-        ' 
         ' PictureBox1
         ' 
         PictureBox1.BackColor = Color.Transparent
@@ -207,9 +178,15 @@ Partial Class MainDB_User
         ' 
         ' logoutMdbBtn
         ' 
+        logoutMdbBtn.BackColor = Color.Transparent
         resources.ApplyResources(logoutMdbBtn, "logoutMdbBtn")
+        logoutMdbBtn.Cursor = Cursors.Hand
+        logoutMdbBtn.FlatAppearance.BorderColor = Color.FromArgb(CByte(0), CByte(64), CByte(0))
+        logoutMdbBtn.FlatAppearance.BorderSize = 0
+        logoutMdbBtn.FlatAppearance.MouseDownBackColor = Color.Transparent
+        logoutMdbBtn.FlatAppearance.MouseOverBackColor = Color.Transparent
         logoutMdbBtn.Name = "logoutMdbBtn"
-        logoutMdbBtn.UseVisualStyleBackColor = True
+        logoutMdbBtn.UseVisualStyleBackColor = False
         ' 
         ' MainDB_User
         ' 
@@ -218,10 +195,6 @@ Partial Class MainDB_User
         Controls.Add(logoutMdbBtn)
         Controls.Add(DateTime_Label)
         Controls.Add(PictureBox1)
-        Controls.Add(StudentID)
-        Controls.Add(Label3)
-        Controls.Add(Label6)
-        Controls.Add(Button4)
         Controls.Add(Label1)
         Controls.Add(Label2)
         Controls.Add(Button2)
@@ -230,9 +203,10 @@ Partial Class MainDB_User
         Controls.Add(navigateBtn)
         Controls.Add(Panel1)
         Controls.Add(MinBTN)
-        Controls.Add(currentUser)
         Controls.Add(AboutBTN)
         Controls.Add(ExitBTN)
+        Controls.Add(currentUser)
+        Controls.Add(StudentID)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Name = "MainDB_User"
@@ -252,9 +226,6 @@ Partial Class MainDB_User
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button2 As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Button4 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents DnT As Timer
     Friend WithEvents DateTime_Label As Label

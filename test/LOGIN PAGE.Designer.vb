@@ -642,12 +642,19 @@ Partial Class LOGIN_PAGE
         ' 
         ' Button8
         ' 
-        Button8.Location = New Point(826, 9)
+        Button8.BackColor = Color.Transparent
+        Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), Image)
+        Button8.BackgroundImageLayout = ImageLayout.None
+        Button8.Cursor = Cursors.Hand
+        Button8.FlatAppearance.BorderSize = 0
+        Button8.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button8.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button8.FlatStyle = FlatStyle.Flat
+        Button8.Location = New Point(847, 11)
         Button8.Name = "Button8"
-        Button8.Size = New Size(114, 23)
+        Button8.Size = New Size(109, 20)
         Button8.TabIndex = 17
-        Button8.Text = "LOG IN AS ADMIN"
-        Button8.UseVisualStyleBackColor = True
+        Button8.UseVisualStyleBackColor = False
         ' 
         ' LOGIN_PAGE
         ' 

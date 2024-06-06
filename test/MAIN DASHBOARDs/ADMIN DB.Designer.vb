@@ -51,7 +51,7 @@ Partial Class ADMIN_DB
         ' 
         ' acceptBtn
         ' 
-        acceptBtn.Location = New Point(519, 177)
+        acceptBtn.Location = New Point(249, 175)
         acceptBtn.Name = "acceptBtn"
         acceptBtn.Size = New Size(75, 23)
         acceptBtn.TabIndex = 1
@@ -60,7 +60,7 @@ Partial Class ADMIN_DB
         ' 
         ' rejectBtn
         ' 
-        rejectBtn.Location = New Point(600, 177)
+        rejectBtn.Location = New Point(330, 175)
         rejectBtn.Name = "rejectBtn"
         rejectBtn.Size = New Size(75, 23)
         rejectBtn.TabIndex = 2
@@ -70,10 +70,10 @@ Partial Class ADMIN_DB
         ' reviewGrid
         ' 
         reviewGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        reviewGrid.Location = New Point(146, 25)
+        reviewGrid.Location = New Point(16, 23)
         reviewGrid.Name = "reviewGrid"
         reviewGrid.ReadOnly = True
-        reviewGrid.Size = New Size(529, 146)
+        reviewGrid.Size = New Size(389, 146)
         reviewGrid.TabIndex = 3
         ' 
         ' acceptedGrid
@@ -82,12 +82,12 @@ Partial Class ADMIN_DB
         acceptedGrid.Location = New Point(0, 84)
         acceptedGrid.Name = "acceptedGrid"
         acceptedGrid.ReadOnly = True
-        acceptedGrid.Size = New Size(778, 116)
+        acceptedGrid.Size = New Size(344, 116)
         acceptedGrid.TabIndex = 4
         ' 
         ' schedLogBtn
         ' 
-        schedLogBtn.Location = New Point(689, 451)
+        schedLogBtn.Location = New Point(16, 386)
         schedLogBtn.Name = "schedLogBtn"
         schedLogBtn.Size = New Size(75, 23)
         schedLogBtn.TabIndex = 5
@@ -102,16 +102,16 @@ Partial Class ADMIN_DB
         acceptedLogPanel.Controls.Add(acceptedGrid2)
         acceptedLogPanel.Controls.Add(acceptedGrid)
         acceptedLogPanel.Controls.Add(Label1)
-        acceptedLogPanel.Location = New Point(12, 12)
+        acceptedLogPanel.Location = New Point(823, 52)
         acceptedLogPanel.Name = "acceptedLogPanel"
-        acceptedLogPanel.Size = New Size(778, 434)
+        acceptedLogPanel.Size = New Size(381, 434)
         acceptedLogPanel.TabIndex = 6
         acceptedLogPanel.Visible = False
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(347, 218)
+        Label3.Location = New Point(33, 219)
         Label3.Name = "Label3"
         Label3.Size = New Size(37, 15)
         Label3.TabIndex = 7
@@ -120,7 +120,7 @@ Partial Class ADMIN_DB
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(347, 66)
+        Label2.Location = New Point(33, 67)
         Label2.Name = "Label2"
         Label2.Size = New Size(37, 15)
         Label2.TabIndex = 7
@@ -128,7 +128,7 @@ Partial Class ADMIN_DB
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(689, 396)
+        Button1.Location = New Point(22, 359)
         Button1.Name = "Button1"
         Button1.Size = New Size(75, 23)
         Button1.TabIndex = 6
@@ -141,14 +141,14 @@ Partial Class ADMIN_DB
         acceptedGrid2.Location = New Point(0, 236)
         acceptedGrid2.Name = "acceptedGrid2"
         acceptedGrid2.ReadOnly = True
-        acceptedGrid2.Size = New Size(778, 116)
+        acceptedGrid2.Size = New Size(344, 116)
         acceptedGrid2.TabIndex = 4
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(236, 19)
+        Label1.Location = New Point(22, 25)
         Label1.Name = "Label1"
         Label1.Size = New Size(296, 32)
         Label1.TabIndex = 5
@@ -156,16 +156,16 @@ Partial Class ADMIN_DB
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(715, 505)
+        Button2.Location = New Point(1129, 12)
         Button2.Name = "Button2"
         Button2.Size = New Size(75, 23)
         Button2.TabIndex = 7
-        Button2.Text = "LOG OUT"
+        Button2.Text = "back"
         Button2.UseVisualStyleBackColor = True
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(15, 505)
+        Button3.Location = New Point(707, 48)
         Button3.Name = "Button3"
         Button3.Size = New Size(75, 23)
         Button3.TabIndex = 8
@@ -183,15 +183,15 @@ Partial Class ADMIN_DB
         Panel1.Controls.Add(schedLogBtn)
         Panel1.Controls.Add(rejectBtn2)
         Panel1.Controls.Add(rejectBtn)
-        Panel1.Location = New Point(12, 12)
+        Panel1.Location = New Point(170, 41)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(778, 487)
+        Panel1.Size = New Size(430, 487)
         Panel1.TabIndex = 9
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(387, 218)
+        Label5.Location = New Point(41, 216)
         Label5.Name = "Label5"
         Label5.Size = New Size(37, 15)
         Label5.TabIndex = 6
@@ -200,7 +200,7 @@ Partial Class ADMIN_DB
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(387, 7)
+        Label4.Location = New Point(41, 5)
         Label4.Name = "Label4"
         Label4.Size = New Size(37, 15)
         Label4.TabIndex = 6
@@ -209,15 +209,15 @@ Partial Class ADMIN_DB
         ' reviewGrid2
         ' 
         reviewGrid2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        reviewGrid2.Location = New Point(146, 236)
+        reviewGrid2.Location = New Point(16, 234)
         reviewGrid2.Name = "reviewGrid2"
         reviewGrid2.ReadOnly = True
-        reviewGrid2.Size = New Size(529, 146)
+        reviewGrid2.Size = New Size(389, 146)
         reviewGrid2.TabIndex = 3
         ' 
         ' acceptBtn2
         ' 
-        acceptBtn2.Location = New Point(519, 388)
+        acceptBtn2.Location = New Point(249, 386)
         acceptBtn2.Name = "acceptBtn2"
         acceptBtn2.Size = New Size(75, 23)
         acceptBtn2.TabIndex = 1
@@ -226,7 +226,7 @@ Partial Class ADMIN_DB
         ' 
         ' rejectBtn2
         ' 
-        rejectBtn2.Location = New Point(600, 388)
+        rejectBtn2.Location = New Point(330, 386)
         rejectBtn2.Name = "rejectBtn2"
         rejectBtn2.Size = New Size(75, 23)
         rejectBtn2.TabIndex = 2
@@ -237,12 +237,14 @@ Partial Class ADMIN_DB
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(802, 540)
+        ClientSize = New Size(1216, 540)
         Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(acceptedLogPanel)
         Controls.Add(Panel1)
+        FormBorderStyle = FormBorderStyle.None
         Name = "ADMIN_DB"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "ADMIN_DB"
         CType(reviewGrid, ComponentModel.ISupportInitialize).EndInit()
         CType(acceptedGrid, ComponentModel.ISupportInitialize).EndInit()
