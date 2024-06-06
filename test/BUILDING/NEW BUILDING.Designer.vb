@@ -39,7 +39,6 @@ Partial Class NEW_BUILDING
         Button6 = New Button()
         Button2 = New Button()
         Button1 = New Button()
-        Label1 = New Label()
         newBldgF2Panel = New Panel()
         Button16 = New Button()
         Button33 = New Button()
@@ -55,7 +54,6 @@ Partial Class NEW_BUILDING
         Button26 = New Button()
         Button27 = New Button()
         Button30 = New Button()
-        Label2 = New Label()
         newBldgF3Panel = New Panel()
         Button32 = New Button()
         Button34 = New Button()
@@ -72,16 +70,18 @@ Partial Class NEW_BUILDING
         Button47 = New Button()
         Button48 = New Button()
         Button49 = New Button()
-        Label3 = New Label()
         newBldgF4Panel = New Panel()
         Button52 = New Button()
         Button51 = New Button()
         Button50 = New Button()
         Button37 = New Button()
         newBldgF4Status = New Label()
-        Label4 = New Label()
         Button18 = New Button()
         PictureBox1 = New PictureBox()
+        Label12 = New Label()
+        Label2 = New Label()
+        Label1 = New Label()
+        Label3 = New Label()
         newBldgF1Panel.SuspendLayout()
         newBldgF2Panel.SuspendLayout()
         newBldgF3Panel.SuspendLayout()
@@ -91,6 +91,8 @@ Partial Class NEW_BUILDING
         ' 
         ' newBldgF1Panel
         ' 
+        newBldgF1Panel.BackColor = Color.Transparent
+        newBldgF1Panel.Controls.Add(Label1)
         newBldgF1Panel.Controls.Add(Button15)
         newBldgF1Panel.Controls.Add(Button14)
         newBldgF1Panel.Controls.Add(Button3)
@@ -106,15 +108,14 @@ Partial Class NEW_BUILDING
         newBldgF1Panel.Controls.Add(Button6)
         newBldgF1Panel.Controls.Add(Button2)
         newBldgF1Panel.Controls.Add(Button1)
-        newBldgF1Panel.Controls.Add(Label1)
-        newBldgF1Panel.Location = New Point(23, 21)
+        newBldgF1Panel.Location = New Point(58, 99)
         newBldgF1Panel.Name = "newBldgF1Panel"
-        newBldgF1Panel.Size = New Size(776, 426)
+        newBldgF1Panel.Size = New Size(544, 349)
         newBldgF1Panel.TabIndex = 0
         ' 
         ' Button15
         ' 
-        Button15.Location = New Point(478, 206)
+        Button15.Location = New Point(482, 181)
         Button15.Name = "Button15"
         Button15.Size = New Size(50, 23)
         Button15.TabIndex = 2
@@ -124,7 +125,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button14
         ' 
-        Button14.Location = New Point(8, 206)
+        Button14.Location = New Point(12, 181)
         Button14.Name = "Button14"
         Button14.Size = New Size(50, 23)
         Button14.TabIndex = 2
@@ -134,7 +135,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(232, 173)
+        Button3.Location = New Point(236, 148)
         Button3.Name = "Button3"
         Button3.Size = New Size(72, 24)
         Button3.TabIndex = 1
@@ -143,7 +144,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button9
         ' 
-        Button9.Location = New Point(366, 235)
+        Button9.Location = New Point(370, 210)
         Button9.Name = "Button9"
         Button9.Size = New Size(50, 39)
         Button9.TabIndex = 1
@@ -152,7 +153,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button8
         ' 
-        Button8.Location = New Point(310, 235)
+        Button8.Location = New Point(314, 210)
         Button8.Name = "Button8"
         Button8.Size = New Size(50, 39)
         Button8.TabIndex = 1
@@ -161,7 +162,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button5
         ' 
-        Button5.Location = New Point(366, 166)
+        Button5.Location = New Point(370, 141)
         Button5.Name = "Button5"
         Button5.Size = New Size(50, 39)
         Button5.TabIndex = 1
@@ -170,7 +171,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button7
         ' 
-        Button7.Location = New Point(176, 235)
+        Button7.Location = New Point(180, 210)
         Button7.Name = "Button7"
         Button7.Size = New Size(50, 39)
         Button7.TabIndex = 1
@@ -179,7 +180,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button4
         ' 
-        Button4.Location = New Point(310, 166)
+        Button4.Location = New Point(314, 141)
         Button4.Name = "Button4"
         Button4.Size = New Size(50, 39)
         Button4.TabIndex = 1
@@ -188,7 +189,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button13
         ' 
-        Button13.Location = New Point(478, 235)
+        Button13.Location = New Point(482, 210)
         Button13.Name = "Button13"
         Button13.Size = New Size(50, 39)
         Button13.TabIndex = 1
@@ -197,7 +198,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button11
         ' 
-        Button11.Location = New Point(8, 235)
+        Button11.Location = New Point(12, 210)
         Button11.Name = "Button11"
         Button11.Size = New Size(50, 39)
         Button11.TabIndex = 1
@@ -206,7 +207,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button12
         ' 
-        Button12.Location = New Point(422, 235)
+        Button12.Location = New Point(426, 210)
         Button12.Name = "Button12"
         Button12.Size = New Size(50, 39)
         Button12.TabIndex = 1
@@ -215,7 +216,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button10
         ' 
-        Button10.Location = New Point(64, 235)
+        Button10.Location = New Point(68, 210)
         Button10.Name = "Button10"
         Button10.Size = New Size(50, 39)
         Button10.TabIndex = 1
@@ -224,7 +225,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button6
         ' 
-        Button6.Location = New Point(120, 235)
+        Button6.Location = New Point(124, 210)
         Button6.Name = "Button6"
         Button6.Size = New Size(50, 39)
         Button6.TabIndex = 1
@@ -233,7 +234,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(176, 166)
+        Button2.Location = New Point(180, 141)
         Button2.Name = "Button2"
         Button2.Size = New Size(50, 39)
         Button2.TabIndex = 1
@@ -242,25 +243,17 @@ Partial Class NEW_BUILDING
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(120, 166)
+        Button1.Location = New Point(124, 141)
         Button1.Name = "Button1"
         Button1.Size = New Size(50, 39)
         Button1.TabIndex = 1
         Button1.Text = "101"
         Button1.UseVisualStyleBackColor = True
         ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(138, 63)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(219, 47)
-        Label1.TabIndex = 0
-        Label1.Text = "FIRST FLOOR"
-        ' 
         ' newBldgF2Panel
         ' 
+        newBldgF2Panel.BackColor = Color.Transparent
+        newBldgF2Panel.Controls.Add(Label2)
         newBldgF2Panel.Controls.Add(Button16)
         newBldgF2Panel.Controls.Add(Button33)
         newBldgF2Panel.Controls.Add(Button31)
@@ -275,15 +268,14 @@ Partial Class NEW_BUILDING
         newBldgF2Panel.Controls.Add(Button26)
         newBldgF2Panel.Controls.Add(Button27)
         newBldgF2Panel.Controls.Add(Button30)
-        newBldgF2Panel.Controls.Add(Label2)
-        newBldgF2Panel.Location = New Point(23, 21)
+        newBldgF2Panel.Location = New Point(58, 99)
         newBldgF2Panel.Name = "newBldgF2Panel"
-        newBldgF2Panel.Size = New Size(557, 426)
+        newBldgF2Panel.Size = New Size(544, 349)
         newBldgF2Panel.TabIndex = 1
         ' 
         ' Button16
         ' 
-        Button16.Location = New Point(373, 230)
+        Button16.Location = New Point(426, 177)
         Button16.Name = "Button16"
         Button16.Size = New Size(50, 23)
         Button16.TabIndex = 2
@@ -294,7 +286,7 @@ Partial Class NEW_BUILDING
         ' Button33
         ' 
         Button33.Font = New Font("Segoe UI", 6F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button33.Location = New Point(373, 304)
+        Button33.Location = New Point(426, 251)
         Button33.Name = "Button33"
         Button33.Size = New Size(50, 23)
         Button33.TabIndex = 2
@@ -305,7 +297,7 @@ Partial Class NEW_BUILDING
         ' Button31
         ' 
         Button31.Font = New Font("Segoe UI", 6F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button31.Location = New Point(22, 304)
+        Button31.Location = New Point(75, 251)
         Button31.Name = "Button31"
         Button31.Size = New Size(50, 23)
         Button31.TabIndex = 2
@@ -315,7 +307,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button17
         ' 
-        Button17.Location = New Point(22, 230)
+        Button17.Location = New Point(75, 177)
         Button17.Name = "Button17"
         Button17.Size = New Size(50, 23)
         Button17.TabIndex = 2
@@ -325,7 +317,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button19
         ' 
-        Button19.Location = New Point(242, 259)
+        Button19.Location = New Point(295, 206)
         Button19.Name = "Button19"
         Button19.Size = New Size(50, 39)
         Button19.TabIndex = 1
@@ -334,7 +326,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button20
         ' 
-        Button20.Location = New Point(186, 259)
+        Button20.Location = New Point(239, 206)
         Button20.Name = "Button20"
         Button20.Size = New Size(50, 39)
         Button20.TabIndex = 1
@@ -343,7 +335,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button21
         ' 
-        Button21.Location = New Point(241, 190)
+        Button21.Location = New Point(294, 137)
         Button21.Name = "Button21"
         Button21.Size = New Size(71, 39)
         Button21.TabIndex = 1
@@ -352,7 +344,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button22
         ' 
-        Button22.Location = New Point(87, 259)
+        Button22.Location = New Point(140, 206)
         Button22.Name = "Button22"
         Button22.Size = New Size(93, 39)
         Button22.TabIndex = 1
@@ -361,7 +353,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button23
         ' 
-        Button23.Location = New Point(164, 190)
+        Button23.Location = New Point(217, 137)
         Button23.Name = "Button23"
         Button23.Size = New Size(71, 39)
         Button23.TabIndex = 1
@@ -370,7 +362,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button24
         ' 
-        Button24.Location = New Point(373, 259)
+        Button24.Location = New Point(426, 206)
         Button24.Name = "Button24"
         Button24.Size = New Size(50, 39)
         Button24.TabIndex = 1
@@ -379,7 +371,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button25
         ' 
-        Button25.Location = New Point(22, 259)
+        Button25.Location = New Point(75, 206)
         Button25.Name = "Button25"
         Button25.Size = New Size(50, 39)
         Button25.TabIndex = 1
@@ -388,7 +380,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button26
         ' 
-        Button26.Location = New Point(301, 259)
+        Button26.Location = New Point(354, 206)
         Button26.Name = "Button26"
         Button26.Size = New Size(30, 39)
         Button26.TabIndex = 1
@@ -397,7 +389,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button27
         ' 
-        Button27.Location = New Point(337, 259)
+        Button27.Location = New Point(390, 206)
         Button27.Name = "Button27"
         Button27.Size = New Size(30, 39)
         Button27.TabIndex = 1
@@ -406,26 +398,18 @@ Partial Class NEW_BUILDING
         ' 
         ' Button30
         ' 
-        Button30.Location = New Point(87, 190)
+        Button30.Location = New Point(140, 137)
         Button30.Name = "Button30"
         Button30.Size = New Size(71, 39)
         Button30.TabIndex = 1
         Button30.Text = "201"
         Button30.UseVisualStyleBackColor = True
         ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(138, 63)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(270, 47)
-        Label2.TabIndex = 0
-        Label2.Text = "SECOND FLOOR"
-        ' 
         ' newBldgF3Panel
         ' 
+        newBldgF3Panel.BackColor = Color.Transparent
         newBldgF3Panel.BackgroundImageLayout = ImageLayout.None
+        newBldgF3Panel.Controls.Add(Label12)
         newBldgF3Panel.Controls.Add(Button32)
         newBldgF3Panel.Controls.Add(Button34)
         newBldgF3Panel.Controls.Add(Button35)
@@ -441,15 +425,14 @@ Partial Class NEW_BUILDING
         newBldgF3Panel.Controls.Add(Button47)
         newBldgF3Panel.Controls.Add(Button48)
         newBldgF3Panel.Controls.Add(Button49)
-        newBldgF3Panel.Controls.Add(Label3)
-        newBldgF3Panel.Location = New Point(23, 21)
+        newBldgF3Panel.Location = New Point(58, 99)
         newBldgF3Panel.Name = "newBldgF3Panel"
-        newBldgF3Panel.Size = New Size(776, 426)
+        newBldgF3Panel.Size = New Size(544, 349)
         newBldgF3Panel.TabIndex = 3
         ' 
         ' Button32
         ' 
-        Button32.Location = New Point(373, 206)
+        Button32.Location = New Point(426, 177)
         Button32.Name = "Button32"
         Button32.Size = New Size(50, 23)
         Button32.TabIndex = 2
@@ -460,7 +443,7 @@ Partial Class NEW_BUILDING
         ' Button34
         ' 
         Button34.Font = New Font("Segoe UI", 6F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button34.Location = New Point(373, 280)
+        Button34.Location = New Point(426, 251)
         Button34.Name = "Button34"
         Button34.Size = New Size(50, 23)
         Button34.TabIndex = 2
@@ -471,7 +454,7 @@ Partial Class NEW_BUILDING
         ' Button35
         ' 
         Button35.Font = New Font("Segoe UI", 6F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button35.Location = New Point(8, 280)
+        Button35.Location = New Point(61, 251)
         Button35.Name = "Button35"
         Button35.Size = New Size(50, 23)
         Button35.TabIndex = 2
@@ -481,7 +464,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button36
         ' 
-        Button36.Location = New Point(8, 206)
+        Button36.Location = New Point(61, 177)
         Button36.Name = "Button36"
         Button36.Size = New Size(50, 23)
         Button36.TabIndex = 2
@@ -491,7 +474,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button38
         ' 
-        Button38.Location = New Point(245, 235)
+        Button38.Location = New Point(298, 206)
         Button38.Name = "Button38"
         Button38.Size = New Size(50, 39)
         Button38.TabIndex = 1
@@ -500,7 +483,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button39
         ' 
-        Button39.Location = New Point(189, 235)
+        Button39.Location = New Point(242, 206)
         Button39.Name = "Button39"
         Button39.Size = New Size(50, 39)
         Button39.TabIndex = 1
@@ -509,7 +492,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button41
         ' 
-        Button41.Location = New Point(133, 235)
+        Button41.Location = New Point(186, 206)
         Button41.Name = "Button41"
         Button41.Size = New Size(50, 39)
         Button41.TabIndex = 1
@@ -518,7 +501,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button42
         ' 
-        Button42.Location = New Point(252, 166)
+        Button42.Location = New Point(305, 137)
         Button42.Name = "Button42"
         Button42.Size = New Size(65, 39)
         Button42.TabIndex = 1
@@ -527,7 +510,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button43
         ' 
-        Button43.Location = New Point(373, 235)
+        Button43.Location = New Point(426, 206)
         Button43.Name = "Button43"
         Button43.Size = New Size(50, 39)
         Button43.TabIndex = 1
@@ -536,7 +519,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button44
         ' 
-        Button44.Location = New Point(8, 235)
+        Button44.Location = New Point(61, 206)
         Button44.Name = "Button44"
         Button44.Size = New Size(50, 39)
         Button44.TabIndex = 1
@@ -545,7 +528,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button45
         ' 
-        Button45.Location = New Point(301, 235)
+        Button45.Location = New Point(354, 206)
         Button45.Name = "Button45"
         Button45.Size = New Size(30, 39)
         Button45.TabIndex = 1
@@ -554,7 +537,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button46
         ' 
-        Button46.Location = New Point(337, 235)
+        Button46.Location = New Point(390, 206)
         Button46.Name = "Button46"
         Button46.Size = New Size(30, 39)
         Button46.TabIndex = 1
@@ -563,7 +546,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button47
         ' 
-        Button47.Location = New Point(77, 235)
+        Button47.Location = New Point(130, 206)
         Button47.Name = "Button47"
         Button47.Size = New Size(50, 39)
         Button47.TabIndex = 1
@@ -572,7 +555,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button48
         ' 
-        Button48.Location = New Point(164, 166)
+        Button48.Location = New Point(217, 137)
         Button48.Name = "Button48"
         Button48.Size = New Size(82, 39)
         Button48.TabIndex = 1
@@ -581,39 +564,30 @@ Partial Class NEW_BUILDING
         ' 
         ' Button49
         ' 
-        Button49.Location = New Point(77, 166)
+        Button49.Location = New Point(130, 137)
         Button49.Name = "Button49"
         Button49.Size = New Size(81, 39)
         Button49.TabIndex = 1
         Button49.Text = "301"
         Button49.UseVisualStyleBackColor = True
         ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(155, 88)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(233, 47)
-        Label3.TabIndex = 0
-        Label3.Text = "THIRD FLOOR"
-        ' 
         ' newBldgF4Panel
         ' 
+        newBldgF4Panel.BackColor = Color.Transparent
+        newBldgF4Panel.Controls.Add(Label3)
         newBldgF4Panel.Controls.Add(Button52)
         newBldgF4Panel.Controls.Add(Button51)
         newBldgF4Panel.Controls.Add(Button50)
         newBldgF4Panel.Controls.Add(Button37)
         newBldgF4Panel.Controls.Add(newBldgF4Status)
-        newBldgF4Panel.Controls.Add(Label4)
-        newBldgF4Panel.Location = New Point(23, 21)
+        newBldgF4Panel.Location = New Point(58, 99)
         newBldgF4Panel.Name = "newBldgF4Panel"
-        newBldgF4Panel.Size = New Size(776, 426)
+        newBldgF4Panel.Size = New Size(544, 349)
         newBldgF4Panel.TabIndex = 3
         ' 
         ' Button52
         ' 
-        Button52.Location = New Point(694, 326)
+        Button52.Location = New Point(458, 265)
         Button52.Name = "Button52"
         Button52.Size = New Size(63, 23)
         Button52.TabIndex = 3
@@ -623,7 +597,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button51
         ' 
-        Button51.Location = New Point(22, 326)
+        Button51.Location = New Point(21, 265)
         Button51.Name = "Button51"
         Button51.Size = New Size(63, 23)
         Button51.TabIndex = 3
@@ -633,7 +607,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button50
         ' 
-        Button50.Location = New Point(694, 280)
+        Button50.Location = New Point(458, 219)
         Button50.Name = "Button50"
         Button50.Size = New Size(63, 40)
         Button50.TabIndex = 2
@@ -642,7 +616,7 @@ Partial Class NEW_BUILDING
         ' 
         ' Button37
         ' 
-        Button37.Location = New Point(22, 280)
+        Button37.Location = New Point(21, 219)
         Button37.Name = "Button37"
         Button37.Size = New Size(63, 40)
         Button37.TabIndex = 2
@@ -652,31 +626,26 @@ Partial Class NEW_BUILDING
         ' newBldgF4Status
         ' 
         newBldgF4Status.AutoSize = True
-        newBldgF4Status.Font = New Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        newBldgF4Status.Location = New Point(38, 132)
+        newBldgF4Status.Font = New Font("Segoe UI", 16F)
+        newBldgF4Status.ForeColor = Color.White
+        newBldgF4Status.Location = New Point(103, 146)
         newBldgF4Status.Name = "newBldgF4Status"
-        newBldgF4Status.Size = New Size(719, 65)
+        newBldgF4Status.Size = New Size(331, 30)
         newBldgF4Status.TabIndex = 1
         newBldgF4Status.Text = "NO ONGOING CLASSES/EVENTS"
         ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(232, 25)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(283, 47)
-        Label4.TabIndex = 0
-        Label4.Text = "FUNCTION AREA"
-        ' 
         ' Button18
         ' 
-        Button18.Location = New Point(963, 12)
+        Button18.BackColor = Color.Transparent
+        Button18.FlatAppearance.BorderSize = 0
+        Button18.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button18.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button18.FlatStyle = FlatStyle.Flat
+        Button18.Location = New Point(1019, 13)
         Button18.Name = "Button18"
-        Button18.Size = New Size(75, 23)
+        Button18.Size = New Size(17, 17)
         Button18.TabIndex = 3
-        Button18.Text = "exit"
-        Button18.UseVisualStyleBackColor = True
+        Button18.UseVisualStyleBackColor = False
         ' 
         ' PictureBox1
         ' 
@@ -689,6 +658,50 @@ Partial Class NEW_BUILDING
         PictureBox1.TabIndex = 35
         PictureBox1.TabStop = False
         ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label12.ForeColor = Color.White
+        Label12.Location = New Point(143, 43)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(250, 47)
+        Label12.TabIndex = 32
+        Label12.Text = "THIRD FLOOR"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(134, 63)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(284, 47)
+        Label2.TabIndex = 32
+        Label2.Text = "SECOND FLOOR"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(158, 63)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(235, 47)
+        Label1.TabIndex = 32
+        Label1.Text = "FIRST FLOOR"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(120, 100)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(298, 47)
+        Label3.TabIndex = 32
+        Label3.Text = "FUNCTION HALL"
+        ' 
         ' NEW_BUILDING
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -698,10 +711,10 @@ Partial Class NEW_BUILDING
         ClientSize = New Size(1050, 591)
         Controls.Add(PictureBox1)
         Controls.Add(Button18)
-        Controls.Add(newBldgF3Panel)
-        Controls.Add(newBldgF2Panel)
         Controls.Add(newBldgF1Panel)
         Controls.Add(newBldgF4Panel)
+        Controls.Add(newBldgF3Panel)
+        Controls.Add(newBldgF2Panel)
         FormBorderStyle = FormBorderStyle.None
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "NEW_BUILDING"
@@ -732,7 +745,6 @@ Partial Class NEW_BUILDING
     Friend WithEvents Button6 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
     Friend WithEvents Button13 As Button
     Friend WithEvents Button14 As Button
     Friend WithEvents Button15 As Button
@@ -750,7 +762,6 @@ Partial Class NEW_BUILDING
     Friend WithEvents Button26 As Button
     Friend WithEvents Button27 As Button
     Friend WithEvents Button30 As Button
-    Friend WithEvents Label2 As Label
     Friend WithEvents Button33 As Button
     Friend WithEvents newBldgF3Panel As Panel
     Friend WithEvents Button34 As Button
@@ -766,7 +777,6 @@ Partial Class NEW_BUILDING
     Friend WithEvents Button47 As Button
     Friend WithEvents Button48 As Button
     Friend WithEvents Button49 As Button
-    Friend WithEvents Label3 As Label
     Friend WithEvents Button32 As Button
     Friend WithEvents Button36 As Button
     Friend WithEvents newBldgF4Panel As Panel
@@ -774,8 +784,11 @@ Partial Class NEW_BUILDING
     Friend WithEvents Button50 As Button
     Friend WithEvents Button37 As Button
     Friend WithEvents newBldgF4Status As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Button52 As Button
     Friend WithEvents Button18 As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label3 As Label
 End Class
