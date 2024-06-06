@@ -334,7 +334,6 @@ Partial Class PRRC_BLDG
         lab2sched1 = New Button()
         Button62 = New Button()
         datePickerLabel = New Label()
-        timecheckerLabel = New Label()
         r101Panel.SuspendLayout()
         firstFloorPanel.SuspendLayout()
         secondFloorPanel.SuspendLayout()
@@ -3865,22 +3864,12 @@ Partial Class PRRC_BLDG
         datePickerLabel.Text = "date picker"
         datePickerLabel.Visible = False
         ' 
-        ' timecheckerLabel
-        ' 
-        timecheckerLabel.AutoSize = True
-        timecheckerLabel.Location = New Point(474, 16)
-        timecheckerLabel.Name = "timecheckerLabel"
-        timecheckerLabel.Size = New Size(53, 15)
-        timecheckerLabel.TabIndex = 52
-        timecheckerLabel.Text = "Label185"
-        ' 
         ' PRRC_BLDG
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1050, 591)
-        Controls.Add(timecheckerLabel)
         Controls.Add(lab2SchedPanel)
         Controls.Add(lab1SchedPanel)
         Controls.Add(r304Panel)
@@ -3907,9 +3896,9 @@ Partial Class PRRC_BLDG
         Controls.Add(r103Panel)
         Controls.Add(r102Panel)
         Controls.Add(r101Panel)
+        Controls.Add(firstFloorPanel)
         Controls.Add(thirdFloorPanel)
         Controls.Add(secondFloorPanel)
-        Controls.Add(firstFloorPanel)
         FormBorderStyle = FormBorderStyle.None
         Name = "PRRC_BLDG"
         StartPosition = FormStartPosition.CenterScreen
@@ -4279,5 +4268,4 @@ Partial Class PRRC_BLDG
     Friend WithEvents lab2sched1 As Button
     Friend WithEvents Button62 As Button
     Friend WithEvents datePickerLabel As Label
-    Friend WithEvents timecheckerLabel As Label
 End Class

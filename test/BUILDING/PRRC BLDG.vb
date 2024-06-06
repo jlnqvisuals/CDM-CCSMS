@@ -133,7 +133,6 @@ Public Class PRRC_BLDG
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
         datePickerLabel.Text = DateTime.Now.ToString("M/d/yyyy")
-        timecheckerLabel.Text = DateTime.Now.ToString("HH")
     End Sub
 
     Sub checkAvailabilityLab1(schedtime As String, Button As Button)
