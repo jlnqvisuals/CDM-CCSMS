@@ -24,6 +24,7 @@ Partial Class NEW_BUILDING
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NEW_BUILDING))
         newBldgF1Panel = New Panel()
+        Label1 = New Label()
         Button15 = New Button()
         Button14 = New Button()
         Button3 = New Button()
@@ -40,6 +41,7 @@ Partial Class NEW_BUILDING
         Button2 = New Button()
         Button1 = New Button()
         newBldgF2Panel = New Panel()
+        Label2 = New Label()
         Button16 = New Button()
         Button33 = New Button()
         Button31 = New Button()
@@ -55,6 +57,7 @@ Partial Class NEW_BUILDING
         Button27 = New Button()
         Button30 = New Button()
         newBldgF3Panel = New Panel()
+        Label12 = New Label()
         Button32 = New Button()
         Button34 = New Button()
         Button35 = New Button()
@@ -71,6 +74,7 @@ Partial Class NEW_BUILDING
         Button48 = New Button()
         Button49 = New Button()
         newBldgF4Panel = New Panel()
+        Label3 = New Label()
         Button52 = New Button()
         Button51 = New Button()
         Button50 = New Button()
@@ -78,10 +82,6 @@ Partial Class NEW_BUILDING
         newBldgF4Status = New Label()
         Button18 = New Button()
         PictureBox1 = New PictureBox()
-        Label12 = New Label()
-        Label2 = New Label()
-        Label1 = New Label()
-        Label3 = New Label()
         newBldgF1Panel.SuspendLayout()
         newBldgF2Panel.SuspendLayout()
         newBldgF3Panel.SuspendLayout()
@@ -112,6 +112,17 @@ Partial Class NEW_BUILDING
         newBldgF1Panel.Name = "newBldgF1Panel"
         newBldgF1Panel.Size = New Size(544, 349)
         newBldgF1Panel.TabIndex = 0
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(158, 63)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(235, 47)
+        Label1.TabIndex = 32
+        Label1.Text = "FIRST FLOOR"
         ' 
         ' Button15
         ' 
@@ -273,6 +284,17 @@ Partial Class NEW_BUILDING
         newBldgF2Panel.Size = New Size(544, 349)
         newBldgF2Panel.TabIndex = 1
         ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(134, 63)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(284, 47)
+        Label2.TabIndex = 32
+        Label2.Text = "SECOND FLOOR"
+        ' 
         ' Button16
         ' 
         Button16.Location = New Point(426, 177)
@@ -430,6 +452,17 @@ Partial Class NEW_BUILDING
         newBldgF3Panel.Size = New Size(544, 349)
         newBldgF3Panel.TabIndex = 3
         ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label12.ForeColor = Color.White
+        Label12.Location = New Point(143, 43)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(250, 47)
+        Label12.TabIndex = 32
+        Label12.Text = "THIRD FLOOR"
+        ' 
         ' Button32
         ' 
         Button32.Location = New Point(426, 177)
@@ -585,6 +618,17 @@ Partial Class NEW_BUILDING
         newBldgF4Panel.Size = New Size(544, 349)
         newBldgF4Panel.TabIndex = 3
         ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.White
+        Label3.Location = New Point(120, 100)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(298, 47)
+        Label3.TabIndex = 32
+        Label3.Text = "FUNCTION HALL"
+        ' 
         ' Button52
         ' 
         Button52.Location = New Point(458, 265)
@@ -637,6 +681,7 @@ Partial Class NEW_BUILDING
         ' Button18
         ' 
         Button18.BackColor = Color.Transparent
+        Button18.Cursor = Cursors.Hand
         Button18.FlatAppearance.BorderSize = 0
         Button18.FlatAppearance.MouseDownBackColor = Color.Transparent
         Button18.FlatAppearance.MouseOverBackColor = Color.Transparent
@@ -657,50 +702,6 @@ Partial Class NEW_BUILDING
         PictureBox1.Size = New Size(513, 24)
         PictureBox1.TabIndex = 35
         PictureBox1.TabStop = False
-        ' 
-        ' Label12
-        ' 
-        Label12.AutoSize = True
-        Label12.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.ForeColor = Color.White
-        Label12.Location = New Point(143, 43)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(250, 47)
-        Label12.TabIndex = 32
-        Label12.Text = "THIRD FLOOR"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
-        Label2.Location = New Point(134, 63)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(284, 47)
-        Label2.TabIndex = 32
-        Label2.Text = "SECOND FLOOR"
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(158, 63)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(235, 47)
-        Label1.TabIndex = 32
-        Label1.Text = "FIRST FLOOR"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = Color.White
-        Label3.Location = New Point(120, 100)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(298, 47)
-        Label3.TabIndex = 32
-        Label3.Text = "FUNCTION HALL"
         ' 
         ' NEW_BUILDING
         ' 
