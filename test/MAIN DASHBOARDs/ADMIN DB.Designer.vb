@@ -22,14 +22,15 @@ Partial Class ADMIN_DB
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ADMIN_DB))
         acceptBtn = New Button()
         rejectBtn = New Button()
         reviewGrid = New DataGridView()
         acceptedGrid = New DataGridView()
         schedLogBtn = New Button()
         acceptedLogPanel = New Panel()
-        Label3 = New Label()
         Label2 = New Label()
+        Label3 = New Label()
         Button1 = New Button()
         acceptedGrid2 = New DataGridView()
         Label1 = New Label()
@@ -51,129 +52,185 @@ Partial Class ADMIN_DB
         ' 
         ' acceptBtn
         ' 
-        acceptBtn.Location = New Point(249, 175)
+        acceptBtn.BackColor = Color.Transparent
+        acceptBtn.BackgroundImage = CType(resources.GetObject("acceptBtn.BackgroundImage"), Image)
+        acceptBtn.BackgroundImageLayout = ImageLayout.Stretch
+        acceptBtn.Cursor = Cursors.Hand
+        acceptBtn.FlatStyle = FlatStyle.Flat
+        acceptBtn.ForeColor = Color.White
+        acceptBtn.Location = New Point(811, 35)
         acceptBtn.Name = "acceptBtn"
-        acceptBtn.Size = New Size(75, 23)
+        acceptBtn.Size = New Size(83, 30)
         acceptBtn.TabIndex = 1
         acceptBtn.Text = "Accept"
-        acceptBtn.UseVisualStyleBackColor = True
+        acceptBtn.UseVisualStyleBackColor = False
         ' 
         ' rejectBtn
         ' 
-        rejectBtn.Location = New Point(330, 175)
+        rejectBtn.BackColor = Color.Transparent
+        rejectBtn.BackgroundImage = CType(resources.GetObject("rejectBtn.BackgroundImage"), Image)
+        rejectBtn.BackgroundImageLayout = ImageLayout.Stretch
+        rejectBtn.Cursor = Cursors.Hand
+        rejectBtn.FlatStyle = FlatStyle.Flat
+        rejectBtn.ForeColor = Color.White
+        rejectBtn.Location = New Point(811, 64)
         rejectBtn.Name = "rejectBtn"
-        rejectBtn.Size = New Size(75, 23)
+        rejectBtn.Size = New Size(83, 30)
         rejectBtn.TabIndex = 2
         rejectBtn.Text = "Reject"
-        rejectBtn.UseVisualStyleBackColor = True
+        rejectBtn.UseVisualStyleBackColor = False
         ' 
         ' reviewGrid
         ' 
+        reviewGrid.BackgroundColor = Color.White
+        reviewGrid.BorderStyle = BorderStyle.None
         reviewGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        reviewGrid.Location = New Point(16, 23)
+        reviewGrid.Location = New Point(16, 35)
         reviewGrid.Name = "reviewGrid"
         reviewGrid.ReadOnly = True
-        reviewGrid.Size = New Size(389, 146)
+        reviewGrid.Size = New Size(784, 146)
         reviewGrid.TabIndex = 3
         ' 
         ' acceptedGrid
         ' 
+        acceptedGrid.BackgroundColor = Color.White
+        acceptedGrid.BorderStyle = BorderStyle.None
         acceptedGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        acceptedGrid.Location = New Point(0, 84)
+        acceptedGrid.Location = New Point(22, 52)
         acceptedGrid.Name = "acceptedGrid"
         acceptedGrid.ReadOnly = True
-        acceptedGrid.Size = New Size(344, 116)
+        acceptedGrid.Size = New Size(860, 116)
         acceptedGrid.TabIndex = 4
         ' 
         ' schedLogBtn
         ' 
-        schedLogBtn.Location = New Point(16, 386)
+        schedLogBtn.BackColor = Color.Transparent
+        schedLogBtn.BackgroundImage = CType(resources.GetObject("schedLogBtn.BackgroundImage"), Image)
+        schedLogBtn.BackgroundImageLayout = ImageLayout.Stretch
+        schedLogBtn.Cursor = Cursors.Hand
+        schedLogBtn.FlatStyle = FlatStyle.Flat
+        schedLogBtn.ForeColor = Color.White
+        schedLogBtn.Location = New Point(811, 336)
         schedLogBtn.Name = "schedLogBtn"
-        schedLogBtn.Size = New Size(75, 23)
+        schedLogBtn.Size = New Size(83, 30)
         schedLogBtn.TabIndex = 5
         schedLogBtn.Text = "View Log"
-        schedLogBtn.UseVisualStyleBackColor = True
+        schedLogBtn.UseVisualStyleBackColor = False
         ' 
         ' acceptedLogPanel
         ' 
-        acceptedLogPanel.Controls.Add(Label3)
+        acceptedLogPanel.BackColor = Color.Transparent
+        acceptedLogPanel.BackgroundImage = CType(resources.GetObject("acceptedLogPanel.BackgroundImage"), Image)
         acceptedLogPanel.Controls.Add(Label2)
+        acceptedLogPanel.Controls.Add(Label3)
         acceptedLogPanel.Controls.Add(Button1)
         acceptedLogPanel.Controls.Add(acceptedGrid2)
         acceptedLogPanel.Controls.Add(acceptedGrid)
         acceptedLogPanel.Controls.Add(Label1)
-        acceptedLogPanel.Location = New Point(823, 52)
+        acceptedLogPanel.Location = New Point(70, 162)
         acceptedLogPanel.Name = "acceptedLogPanel"
-        acceptedLogPanel.Size = New Size(381, 434)
+        acceptedLogPanel.Size = New Size(911, 373)
         acceptedLogPanel.TabIndex = 6
         acceptedLogPanel.Visible = False
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(33, 219)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(37, 15)
-        Label3.TabIndex = 7
-        Label3.Text = "LAB 2"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(33, 67)
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Label2.ForeColor = Color.FromArgb(CByte(56), CByte(15), CByte(12))
+        Label2.Location = New Point(22, 174)
         Label2.Name = "Label2"
-        Label2.Size = New Size(37, 15)
+        Label2.Size = New Size(215, 21)
         Label2.TabIndex = 7
-        Label2.Text = "LAB 1"
+        Label2.Text = "COMPUTER LABORATORY 2"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
+        Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Label3.ForeColor = Color.FromArgb(CByte(56), CByte(15), CByte(12))
+        Label3.Location = New Point(22, 26)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(215, 21)
+        Label3.TabIndex = 8
+        Label3.Text = "COMPUTER LABORATORY 1"
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(22, 359)
+        Button1.BackColor = Color.Transparent
+        Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
+        Button1.BackgroundImageLayout = ImageLayout.Stretch
+        Button1.Cursor = Cursors.Hand
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button1.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.ForeColor = Color.White
+        Button1.Location = New Point(410, 329)
         Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
+        Button1.Size = New Size(83, 30)
         Button1.TabIndex = 6
         Button1.Text = "Back"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' acceptedGrid2
         ' 
+        acceptedGrid2.BackgroundColor = Color.White
+        acceptedGrid2.BorderStyle = BorderStyle.None
         acceptedGrid2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        acceptedGrid2.Location = New Point(0, 236)
+        acceptedGrid2.Location = New Point(22, 200)
         acceptedGrid2.Name = "acceptedGrid2"
         acceptedGrid2.ReadOnly = True
-        acceptedGrid2.Size = New Size(344, 116)
+        acceptedGrid2.Size = New Size(860, 116)
         acceptedGrid2.TabIndex = 4
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(22, 25)
+        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold)
+        Label1.Location = New Point(300, 11)
         Label1.Name = "Label1"
-        Label1.Size = New Size(296, 32)
+        Label1.Size = New Size(312, 32)
         Label1.TabIndex = 5
         Label1.Text = "ACCEPTED SCHEDULE LOG"
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(1129, 12)
+        Button2.BackColor = Color.Transparent
+        Button2.BackgroundImageLayout = ImageLayout.None
+        Button2.Cursor = Cursors.Hand
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button2.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Location = New Point(1019, 12)
         Button2.Name = "Button2"
-        Button2.Size = New Size(75, 23)
+        Button2.Size = New Size(17, 19)
         Button2.TabIndex = 7
-        Button2.Text = "back"
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(707, 48)
+        Button3.BackColor = Color.Transparent
+        Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), Image)
+        Button3.BackgroundImageLayout = ImageLayout.Stretch
+        Button3.Cursor = Cursors.Hand
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.ForeColor = Color.White
+        Button3.Location = New Point(811, 307)
         Button3.Name = "Button3"
-        Button3.Size = New Size(75, 23)
+        Button3.Size = New Size(83, 30)
         Button3.TabIndex = 8
         Button3.Text = "Refresh"
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' Panel1
         ' 
+        Panel1.BackColor = Color.Transparent
+        Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), Image)
+        Panel1.Controls.Add(Button3)
         Panel1.Controls.Add(Label5)
         Panel1.Controls.Add(Label4)
         Panel1.Controls.Add(reviewGrid2)
@@ -183,66 +240,87 @@ Partial Class ADMIN_DB
         Panel1.Controls.Add(schedLogBtn)
         Panel1.Controls.Add(rejectBtn2)
         Panel1.Controls.Add(rejectBtn)
-        Panel1.Location = New Point(170, 41)
+        Panel1.Location = New Point(70, 162)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(430, 487)
+        Panel1.Size = New Size(911, 373)
         Panel1.TabIndex = 9
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(41, 216)
+        Label5.BackColor = Color.Transparent
+        Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Label5.ForeColor = Color.FromArgb(CByte(56), CByte(15), CByte(12))
+        Label5.Location = New Point(16, 189)
         Label5.Name = "Label5"
-        Label5.Size = New Size(37, 15)
+        Label5.Size = New Size(215, 21)
         Label5.TabIndex = 6
-        Label5.Text = "LAB 2"
+        Label5.Text = "COMPUTER LABORATORY 2"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(41, 5)
+        Label4.BackColor = Color.Transparent
+        Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Label4.ForeColor = Color.FromArgb(CByte(56), CByte(15), CByte(12))
+        Label4.Location = New Point(16, 11)
         Label4.Name = "Label4"
-        Label4.Size = New Size(37, 15)
+        Label4.Size = New Size(215, 21)
         Label4.TabIndex = 6
-        Label4.Text = "LAB 1"
+        Label4.Text = "COMPUTER LABORATORY 1"
         ' 
         ' reviewGrid2
         ' 
+        reviewGrid2.BackgroundColor = Color.White
+        reviewGrid2.BorderStyle = BorderStyle.None
         reviewGrid2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        reviewGrid2.Location = New Point(16, 234)
+        reviewGrid2.Location = New Point(16, 213)
         reviewGrid2.Name = "reviewGrid2"
         reviewGrid2.ReadOnly = True
-        reviewGrid2.Size = New Size(389, 146)
+        reviewGrid2.Size = New Size(784, 146)
         reviewGrid2.TabIndex = 3
         ' 
         ' acceptBtn2
         ' 
-        acceptBtn2.Location = New Point(249, 386)
+        acceptBtn2.BackColor = Color.Transparent
+        acceptBtn2.BackgroundImage = CType(resources.GetObject("acceptBtn2.BackgroundImage"), Image)
+        acceptBtn2.BackgroundImageLayout = ImageLayout.Stretch
+        acceptBtn2.Cursor = Cursors.Hand
+        acceptBtn2.FlatStyle = FlatStyle.Flat
+        acceptBtn2.ForeColor = Color.White
+        acceptBtn2.Location = New Point(811, 213)
         acceptBtn2.Name = "acceptBtn2"
-        acceptBtn2.Size = New Size(75, 23)
+        acceptBtn2.Size = New Size(83, 30)
         acceptBtn2.TabIndex = 1
         acceptBtn2.Text = "Accept"
-        acceptBtn2.UseVisualStyleBackColor = True
+        acceptBtn2.UseVisualStyleBackColor = False
         ' 
         ' rejectBtn2
         ' 
-        rejectBtn2.Location = New Point(330, 386)
+        rejectBtn2.BackColor = Color.Transparent
+        rejectBtn2.BackgroundImage = CType(resources.GetObject("rejectBtn2.BackgroundImage"), Image)
+        rejectBtn2.BackgroundImageLayout = ImageLayout.Stretch
+        rejectBtn2.Cursor = Cursors.Hand
+        rejectBtn2.FlatStyle = FlatStyle.Flat
+        rejectBtn2.ForeColor = Color.White
+        rejectBtn2.Location = New Point(811, 242)
         rejectBtn2.Name = "rejectBtn2"
-        rejectBtn2.Size = New Size(75, 23)
+        rejectBtn2.Size = New Size(83, 30)
         rejectBtn2.TabIndex = 2
         rejectBtn2.Text = "Reject"
-        rejectBtn2.UseVisualStyleBackColor = True
+        rejectBtn2.UseVisualStyleBackColor = False
         ' 
         ' ADMIN_DB
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1216, 540)
-        Controls.Add(Button3)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        ClientSize = New Size(1050, 591)
         Controls.Add(Button2)
-        Controls.Add(acceptedLogPanel)
         Controls.Add(Panel1)
+        Controls.Add(acceptedLogPanel)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "ADMIN_DB"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMIN_DB"
@@ -270,8 +348,6 @@ Partial Class ADMIN_DB
     Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents acceptedGrid2 As DataGridView
     Friend WithEvents Panel1 As Panel
     Friend WithEvents reviewGrid2 As DataGridView
@@ -279,4 +355,6 @@ Partial Class ADMIN_DB
     Friend WithEvents Label4 As Label
     Friend WithEvents acceptBtn2 As Button
     Friend WithEvents rejectBtn2 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class
