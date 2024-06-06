@@ -26,6 +26,10 @@ Partial Class ADMIN_MENU_DB
         SearchCampusBTN = New Button()
         AcceptRoomReservBTN = New Button()
         NavigateCampusBTN = New Button()
+        Button2 = New Button()
+        Button1 = New Button()
+        Button3 = New Button()
+        SignAsAdminBTN = New Button()
         SuspendLayout()
         ' 
         ' SearchCampusBTN
@@ -76,12 +80,78 @@ Partial Class ADMIN_MENU_DB
         NavigateCampusBTN.TabIndex = 41
         NavigateCampusBTN.UseVisualStyleBackColor = False
         ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.Transparent
+        Button2.BackgroundImageLayout = ImageLayout.None
+        Button2.Cursor = Cursors.Hand
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button2.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Location = New Point(1020, 12)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(17, 19)
+        Button2.TabIndex = 42
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.Transparent
+        Button1.BackgroundImageLayout = ImageLayout.None
+        Button1.Cursor = Cursors.Hand
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button1.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Location = New Point(992, 13)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(17, 19)
+        Button1.TabIndex = 43
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Button3
+        ' 
+        Button3.BackColor = Color.Transparent
+        Button3.BackgroundImageLayout = ImageLayout.None
+        Button3.Cursor = Cursors.Hand
+        Button3.FlatAppearance.BorderSize = 0
+        Button3.FlatAppearance.MouseDownBackColor = Color.Transparent
+        Button3.FlatAppearance.MouseOverBackColor = Color.Transparent
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Location = New Point(965, 12)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(17, 19)
+        Button3.TabIndex = 44
+        Button3.UseVisualStyleBackColor = False
+        ' 
+        ' SignAsAdminBTN
+        ' 
+        SignAsAdminBTN.BackColor = Color.Transparent
+        SignAsAdminBTN.BackgroundImage = CType(resources.GetObject("SignAsAdminBTN.BackgroundImage"), Image)
+        SignAsAdminBTN.BackgroundImageLayout = ImageLayout.None
+        SignAsAdminBTN.Cursor = Cursors.Hand
+        SignAsAdminBTN.FlatAppearance.BorderColor = Color.FromArgb(CByte(47), CByte(27), CByte(17))
+        SignAsAdminBTN.FlatAppearance.BorderSize = 0
+        SignAsAdminBTN.FlatAppearance.MouseDownBackColor = Color.Transparent
+        SignAsAdminBTN.FlatAppearance.MouseOverBackColor = Color.Transparent
+        SignAsAdminBTN.FlatStyle = FlatStyle.Flat
+        SignAsAdminBTN.Location = New Point(875, 11)
+        SignAsAdminBTN.Name = "SignAsAdminBTN"
+        SignAsAdminBTN.Size = New Size(78, 20)
+        SignAsAdminBTN.TabIndex = 45
+        SignAsAdminBTN.UseVisualStyleBackColor = False
+        ' 
         ' ADMIN_MENU_DB
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1050, 591)
+        Controls.Add(SignAsAdminBTN)
+        Controls.Add(Button3)
+        Controls.Add(Button1)
+        Controls.Add(Button2)
         Controls.Add(NavigateCampusBTN)
         Controls.Add(AcceptRoomReservBTN)
         Controls.Add(SearchCampusBTN)
@@ -95,4 +165,8 @@ Partial Class ADMIN_MENU_DB
     Friend WithEvents SearchCampusBTN As Button
     Friend WithEvents AcceptRoomReservBTN As Button
     Friend WithEvents NavigateCampusBTN As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents SignAsAdminBTN As Button
 End Class

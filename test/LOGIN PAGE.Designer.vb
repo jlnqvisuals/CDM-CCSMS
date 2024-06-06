@@ -661,14 +661,17 @@ Partial Class LOGIN_PAGE
         SignAsAdminBTN.BackgroundImage = CType(resources.GetObject("SignAsAdminBTN.BackgroundImage"), Image)
         SignAsAdminBTN.BackgroundImageLayout = ImageLayout.None
         SignAsAdminBTN.Cursor = Cursors.Hand
+        SignAsAdminBTN.FlatAppearance.BorderColor = Color.FromArgb(CByte(37), CByte(7), CByte(7))
         SignAsAdminBTN.FlatAppearance.BorderSize = 0
         SignAsAdminBTN.FlatAppearance.MouseDownBackColor = Color.Transparent
         SignAsAdminBTN.FlatAppearance.MouseOverBackColor = Color.Transparent
         SignAsAdminBTN.FlatStyle = FlatStyle.Flat
+        SignAsAdminBTN.Font = New Font("Segoe UI", 7F, FontStyle.Bold)
         SignAsAdminBTN.Location = New Point(847, 11)
         SignAsAdminBTN.Name = "SignAsAdminBTN"
         SignAsAdminBTN.Size = New Size(109, 20)
         SignAsAdminBTN.TabIndex = 17
+        SignAsAdminBTN.Text = "Administrator"
         SignAsAdminBTN.UseVisualStyleBackColor = False
         ' 
         ' LOGIN_PAGE
