@@ -22,6 +22,7 @@ Partial Class NEW_BUILDING
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NEW_BUILDING))
         newBldgF1Panel = New Panel()
         Button15 = New Button()
         Button14 = New Button()
@@ -80,10 +81,12 @@ Partial Class NEW_BUILDING
         newBldgF4Status = New Label()
         Label4 = New Label()
         Button18 = New Button()
+        PictureBox1 = New PictureBox()
         newBldgF1Panel.SuspendLayout()
         newBldgF2Panel.SuspendLayout()
         newBldgF3Panel.SuspendLayout()
         newBldgF4Panel.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' newBldgF1Panel
@@ -422,6 +425,7 @@ Partial Class NEW_BUILDING
         ' 
         ' newBldgF3Panel
         ' 
+        newBldgF3Panel.BackgroundImageLayout = ImageLayout.None
         newBldgF3Panel.Controls.Add(Button32)
         newBldgF3Panel.Controls.Add(Button34)
         newBldgF3Panel.Controls.Add(Button35)
@@ -667,24 +671,41 @@ Partial Class NEW_BUILDING
         ' 
         ' Button18
         ' 
-        Button18.Location = New Point(724, 2)
+        Button18.Location = New Point(963, 12)
         Button18.Name = "Button18"
         Button18.Size = New Size(75, 23)
         Button18.TabIndex = 3
         Button18.Text = "exit"
         Button18.UseVisualStyleBackColor = True
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), Image)
+        PictureBox1.BackgroundImageLayout = ImageLayout.Stretch
+        PictureBox1.Location = New Point(74, 458)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(513, 24)
+        PictureBox1.TabIndex = 35
+        PictureBox1.TabStop = False
+        ' 
         ' NEW_BUILDING
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(816, 463)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.None
+        ClientSize = New Size(1050, 591)
+        Controls.Add(PictureBox1)
         Controls.Add(Button18)
         Controls.Add(newBldgF3Panel)
         Controls.Add(newBldgF2Panel)
         Controls.Add(newBldgF1Panel)
         Controls.Add(newBldgF4Panel)
+        FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "NEW_BUILDING"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "NEW_BUILDING"
         newBldgF1Panel.ResumeLayout(False)
         newBldgF1Panel.PerformLayout()
@@ -694,6 +715,7 @@ Partial Class NEW_BUILDING
         newBldgF3Panel.PerformLayout()
         newBldgF4Panel.ResumeLayout(False)
         newBldgF4Panel.PerformLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -755,4 +777,5 @@ Partial Class NEW_BUILDING
     Friend WithEvents Label4 As Label
     Friend WithEvents Button52 As Button
     Friend WithEvents Button18 As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

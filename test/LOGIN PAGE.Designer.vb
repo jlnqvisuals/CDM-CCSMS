@@ -653,7 +653,7 @@ Partial Class LOGIN_PAGE
         TextBox3.ScrollBars = ScrollBars.Vertical
         TextBox3.Size = New Size(845, 247)
         TextBox3.TabIndex = 12
-        TextBox3.Text = vbCrLf & "- OFFICIAL SOCIAL MEDIA -" & vbCrLf & "Facebook:" & vbCrLf & vbCrLf & vbCrLf & "- DEVELOPERS -" & vbCrLf & "DEL VALLE, FRENCH JOHN" & vbCrLf & "GitHub: " & vbCrLf & "Facebook:" & vbCrLf & vbCrLf & "QUILINO, JOHN LLOYD N." & vbCrLf & "GitHub:" & vbCrLf & "Facebook: "
+        TextBox3.Text = resources.GetString("TextBox3.Text")
         ' 
         ' SignAsAdminBTN
         ' 
