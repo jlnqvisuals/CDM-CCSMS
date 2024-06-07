@@ -41,7 +41,7 @@ Public Class _7to8amSched
     Private Sub _7to8amSched_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         getCurrentUser(LOGIN_PAGE.StudentID)
         sidTxt.Text = LOGIN_PAGE.StudentID
-        dateToday_Label.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy")
+        dateToday_Label.Text = DateTime.Now.ToString("M d yyyy")
         ' Start the timer
         dateToday.Start()
     End Sub
@@ -113,5 +113,9 @@ Public Class _7to8amSched
 
     Private Sub dateToday_Tick(sender As Object, e As EventArgs) Handles dateToday.Tick
         dateToday_Label.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy")
+    End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
+
     End Sub
 End Class
