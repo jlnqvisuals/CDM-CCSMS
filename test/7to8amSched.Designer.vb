@@ -101,7 +101,7 @@ Partial Class _7to8amSched
         ' dateToday_Label
         ' 
         dateToday_Label.AutoSize = True
-        dateToday_Label.Location = New Point(309, 453)
+        dateToday_Label.Location = New Point(12, 9)
         dateToday_Label.Name = "dateToday_Label"
         dateToday_Label.Size = New Size(41, 15)
         dateToday_Label.TabIndex = 8
@@ -111,12 +111,13 @@ Partial Class _7to8amSched
         ' 
         DateTimePicker1.CalendarTitleBackColor = Color.Transparent
         DateTimePicker1.CalendarTrailingForeColor = Color.Transparent
+        DateTimePicker1.CustomFormat = "M/d/yyyy"
         DateTimePicker1.Format = DateTimePickerFormat.Short
         DateTimePicker1.Location = New Point(56, 216)
         DateTimePicker1.Name = "DateTimePicker1"
         DateTimePicker1.Size = New Size(185, 23)
         DateTimePicker1.TabIndex = 9
-        DateTimePicker1.Value = New Date(2024, 6, 6, 12, 11, 6, 0)
+        DateTimePicker1.Value = New Date(2024, 6, 7, 0, 0, 0, 0)
         ' 
         ' _7to8amSched
         ' 

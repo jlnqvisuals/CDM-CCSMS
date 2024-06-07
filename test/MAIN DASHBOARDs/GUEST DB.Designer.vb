@@ -22,9 +22,15 @@ Partial Class GUEST_DB
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "GUEST_DB"
+        SuspendLayout()
+        ' 
+        ' GUEST_DB
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Name = "GUEST_DB"
+        Text = "GUEST_DB"
+        ResumeLayout(False)
     End Sub
 End Class

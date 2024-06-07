@@ -56,7 +56,7 @@ Partial Class RootDB
         Button1.FlatAppearance.MouseDownBackColor = Color.Transparent
         Button1.FlatAppearance.MouseOverBackColor = Color.Transparent
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.Location = New Point(878, 358)
+        Button1.Location = New Point(878, 431)
         Button1.Name = "Button1"
         Button1.Size = New Size(116, 21)
         Button1.TabIndex = 1

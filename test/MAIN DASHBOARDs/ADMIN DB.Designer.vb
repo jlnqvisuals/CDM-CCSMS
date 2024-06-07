@@ -58,7 +58,7 @@ Partial Class ADMIN_DB
         acceptBtn.Cursor = Cursors.Hand
         acceptBtn.FlatStyle = FlatStyle.Flat
         acceptBtn.ForeColor = Color.White
-        acceptBtn.Location = New Point(811, 35)
+        acceptBtn.Location = New Point(16, 148)
         acceptBtn.Name = "acceptBtn"
         acceptBtn.Size = New Size(83, 30)
         acceptBtn.TabIndex = 1
@@ -73,7 +73,7 @@ Partial Class ADMIN_DB
         rejectBtn.Cursor = Cursors.Hand
         rejectBtn.FlatStyle = FlatStyle.Flat
         rejectBtn.ForeColor = Color.White
-        rejectBtn.Location = New Point(811, 64)
+        rejectBtn.Location = New Point(100, 148)
         rejectBtn.Name = "rejectBtn"
         rejectBtn.Size = New Size(83, 30)
         rejectBtn.TabIndex = 2
@@ -88,7 +88,7 @@ Partial Class ADMIN_DB
         reviewGrid.Location = New Point(16, 35)
         reviewGrid.Name = "reviewGrid"
         reviewGrid.ReadOnly = True
-        reviewGrid.Size = New Size(784, 146)
+        reviewGrid.Size = New Size(878, 107)
         reviewGrid.TabIndex = 3
         ' 
         ' acceptedGrid
@@ -168,7 +168,7 @@ Partial Class ADMIN_DB
         Button1.FlatAppearance.MouseOverBackColor = Color.Transparent
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = Color.White
-        Button1.Location = New Point(410, 329)
+        Button1.Location = New Point(811, 336)
         Button1.Name = "Button1"
         Button1.Size = New Size(83, 30)
         Button1.TabIndex = 6
@@ -219,7 +219,7 @@ Partial Class ADMIN_DB
         Button3.Cursor = Cursors.Hand
         Button3.FlatStyle = FlatStyle.Flat
         Button3.ForeColor = Color.White
-        Button3.Location = New Point(811, 307)
+        Button3.Location = New Point(722, 336)
         Button3.Name = "Button3"
         Button3.Size = New Size(83, 30)
         Button3.TabIndex = 8
@@ -277,7 +277,7 @@ Partial Class ADMIN_DB
         reviewGrid2.Location = New Point(16, 213)
         reviewGrid2.Name = "reviewGrid2"
         reviewGrid2.ReadOnly = True
-        reviewGrid2.Size = New Size(784, 146)
+        reviewGrid2.Size = New Size(878, 107)
         reviewGrid2.TabIndex = 3
         ' 
         ' acceptBtn2
@@ -288,7 +288,7 @@ Partial Class ADMIN_DB
         acceptBtn2.Cursor = Cursors.Hand
         acceptBtn2.FlatStyle = FlatStyle.Flat
         acceptBtn2.ForeColor = Color.White
-        acceptBtn2.Location = New Point(811, 213)
+        acceptBtn2.Location = New Point(16, 325)
         acceptBtn2.Name = "acceptBtn2"
         acceptBtn2.Size = New Size(83, 30)
         acceptBtn2.TabIndex = 1
@@ -303,7 +303,7 @@ Partial Class ADMIN_DB
         rejectBtn2.Cursor = Cursors.Hand
         rejectBtn2.FlatStyle = FlatStyle.Flat
         rejectBtn2.ForeColor = Color.White
-        rejectBtn2.Location = New Point(811, 242)
+        rejectBtn2.Location = New Point(100, 325)
         rejectBtn2.Name = "rejectBtn2"
         rejectBtn2.Size = New Size(83, 30)
         rejectBtn2.TabIndex = 2
