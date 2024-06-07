@@ -97,8 +97,8 @@ Public Class NAVIGATE_CAMPUS
     End Sub
 
     Private Sub newNavBtn_Click(sender As Object, e As EventArgs) Handles newNavBtn.Click
-        Me.Hide()
         NEW_BUILDING.Show()
+        Me.Close()
     End Sub
 
     Private Sub newBackBtn_Click(sender As Object, e As EventArgs) Handles newBackBtn.Click
@@ -106,8 +106,8 @@ Public Class NAVIGATE_CAMPUS
     End Sub
 
     Private Sub adminNavBtn_Click(sender As Object, e As EventArgs) Handles adminNavBtn.Click
-        Me.Hide()
         FACULTY_BUILDING.Show()
+        Me.Close()
     End Sub
 
     Private Sub adminBackBtn_Click(sender As Object, e As EventArgs) Handles adminBackBtn.Click
@@ -116,6 +116,7 @@ Public Class NAVIGATE_CAMPUS
 
     Private Sub prrcNavBtn_Click(sender As Object, e As EventArgs) Handles prrcNavBtn.Click
         PRRC_BLDG.Show()
+        Me.Close()
     End Sub
 
     Private Sub prrcBackBtn_Click(sender As Object, e As EventArgs) Handles prrcBackBtn.Click
