@@ -28,8 +28,12 @@ Partial Class GUEST_DB
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.Control
+        BackgroundImageLayout = ImageLayout.None
         ClientSize = New Size(800, 450)
+        FormBorderStyle = FormBorderStyle.None
         Name = "GUEST_DB"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "GUEST_DB"
         ResumeLayout(False)
     End Sub
