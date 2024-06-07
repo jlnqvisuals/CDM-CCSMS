@@ -135,7 +135,7 @@
     <value>2</value>
   </data>
   <data name="currentUser.Text" xml:space="preserve">
-    <value>Hi, John!</value>
+    <value>Hi, Guest!</value>
   </data>
   <data name="&gt;&gt;currentUser.Name" xml:space="preserve">
     <value>currentUser</value>
@@ -2293,7 +2293,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABBoAAAJPCAYAAADST7chAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAA/7JJREFUeF7M/QnUd0131gU+zze88zy/7/dlJDjQQkdksVqwtW1AWhBnEQ1ig6DQ
+        EAAACxABrSO9dQAA/7JJREFUeF7M/QnUd0131gU+zze88zy/7/dlJDjQQkdksVqwtW1AWhBnEQ1ig6DQ
         TIK0YKMJEEZDAgEJYAKLpTRRAr3SoiDIJBJRWAYVZApiQGIgIgKBREKSf+/fde2rap/zP/fzvl8Suvte
         61pVtWvvXbt2zXXO+d+PPvLMR29PP//M7bmXnr8988Kzt48++9QN2hkffvojKzzGd/gRxTfPAU+dMOmT
         74zOn3ac8651xJ6SnTadeMmT7gu7P3SnNzZc84PYGRz8OcoiFP+gHfSOssUz6ae8aVfoKx/dzxBWuhGa

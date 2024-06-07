@@ -40,6 +40,28 @@ Public Class PRRC_BLDG
 
 
     Private Sub PRRC_BLDG_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If LOGIN_PAGE.StudentID = "GUEST" Then
+            roomsched1.Enabled = False
+            roomsched2.Enabled = False
+            roomsched3.Enabled = False
+            roomsched4.Enabled = False
+            roomsched5.Enabled = False
+            roomsched6.Enabled = False
+            roomsched7.Enabled = False
+            roomsched8.Enabled = False
+            roomsched9.Enabled = False
+            roomsched10.Enabled = False
+            lab2sched1.Enabled = False
+            lab2sched2.Enabled = False
+            lab2sched3.Enabled = False
+            lab2sched4.Enabled = False
+            lab2sched5.Enabled = False
+            lab2sched6.Enabled = False
+            lab2sched7.Enabled = False
+            lab2sched8.Enabled = False
+            lab2sched9.Enabled = False
+            lab2sched10.Enabled = False
+        End If
         Label16.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
         datePickerLabel.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy")
         ' Start the timer

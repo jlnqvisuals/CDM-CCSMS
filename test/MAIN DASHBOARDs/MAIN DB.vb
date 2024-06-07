@@ -109,10 +109,6 @@ Public Class MainDB_User
         EXIT_PROMPT.Show()
     End Sub
 
-    Private Sub NGD_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        getCurrentUser(LOGIN_PAGE.StudentID)
-    End Sub
-
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles MinBTN.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
@@ -132,6 +128,9 @@ Public Class MainDB_User
 
 
     Private Sub MainDB_User_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If LOGIN_PAGE.StudentID <> "GUEST" Then
+            getCurrentUser(LOGIN_PAGE.StudentID)
+        End If
         ' Initialize the label text with the current date and time in the desired format
         DateTime_Label.Text = DateTime.Now.ToString("dddd - MMMM dd yyyy HH:mm tt")
         ' Start the timer
@@ -165,6 +164,8 @@ Public Class MainDB_User
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+
 End Class
 
 

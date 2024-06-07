@@ -479,7 +479,7 @@ Partial Class LOGIN_PAGE
         ' 
         TextBox1.BackColor = Color.White
         TextBox1.BorderStyle = BorderStyle.None
-        TextBox1.Font = New Font("Poppins", 10F)
+        TextBox1.Font = New Font("Microsoft Sans Serif", 10F)
         TextBox1.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
         TextBox1.Location = New Point(37, 66)
         TextBox1.Multiline = True
@@ -574,7 +574,7 @@ Partial Class LOGIN_PAGE
         ' 
         TextBox2.BackColor = Color.White
         TextBox2.BorderStyle = BorderStyle.None
-        TextBox2.Font = New Font("Poppins", 10F)
+        TextBox2.Font = New Font("Microsoft Sans Serif", 10F)
         TextBox2.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
         TextBox2.Location = New Point(37, 66)
         TextBox2.Multiline = True
@@ -645,7 +645,7 @@ Partial Class LOGIN_PAGE
         ' 
         TextBox3.BackColor = Color.White
         TextBox3.BorderStyle = BorderStyle.None
-        TextBox3.Font = New Font("Poppins", 10F)
+        TextBox3.Font = New Font("Microsoft Sans Serif", 10F)
         TextBox3.ForeColor = Color.FromArgb(CByte(20), CByte(62), CByte(35))
         TextBox3.Location = New Point(37, 66)
         TextBox3.Multiline = True
@@ -689,12 +689,12 @@ Partial Class LOGIN_PAGE
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
-        Controls.Add(ContactUs_Panel)
-        Controls.Add(TnC_Panel)
-        Controls.Add(PrivacyPolicy_Panel)
         Controls.Add(loginPanel)
         Controls.Add(regPanel)
         Controls.Add(PictureBox1)
+        Controls.Add(ContactUs_Panel)
+        Controls.Add(TnC_Panel)
+        Controls.Add(PrivacyPolicy_Panel)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Icon = CType(resources.GetObject("$this.Icon"), Icon)

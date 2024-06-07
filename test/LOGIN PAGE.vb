@@ -276,8 +276,8 @@ Public Class LOGIN_PAGE
             StudentID = logUser.Text
             logUser.Text = ""
             logPass.Text = ""
-            Hide()
             MainDB_User.Show()
+            Me.Hide()
         Else
             FORGET_UN_PASS_PROMPT.Show()
             FORGET_UN_PASS_PROMPT.StartCloseTimer()
@@ -625,8 +625,9 @@ Public Class LOGIN_PAGE
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles GuestBTN.Click
-        'GUEST_DB.Show()
-        'Me.Hide()
+        LOGIN_PAGE.StudentID = "GUEST"
+        MainDB_User.Show()
+        Me.Hide()
 
     End Sub
 
