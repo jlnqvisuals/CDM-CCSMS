@@ -128,7 +128,13 @@ Public Class MainDB_User
 
 
     Private Sub MainDB_User_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If LOGIN_PAGE.StudentID <> "GUEST" Then
+        If LOGIN_PAGE.StudentID = "GUEST" Then
+            currentUser.Text = "GUEST ACCOUNT"
+            StudentID.Text = "CDM-CCSMS"
+        ElseIf LOGIN_PAGE.StudentID = "ADMIN" Then
+            currentUser.Text = "ADMIN ACCOUNT"
+            StudentID.Text = "CDM-CCSMS"
+        Else
             getCurrentUser(LOGIN_PAGE.StudentID)
         End If
         ' Initialize the label text with the current date and time in the desired format
@@ -165,7 +171,9 @@ Public Class MainDB_User
 
     End Sub
 
+    Private Sub currentUser_Click(sender As Object, e As EventArgs) Handles currentUser.Click
 
+    End Sub
 End Class
 
 

@@ -66,8 +66,14 @@ Public Class SEARCH_CAMPUS
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
-        MainDB_User.Show()
+        If LOGIN_PAGE.StudentID = "ADMIN" Then
+            Me.Close()
+            ADMIN_MENU_DB.Show()
+        Else
+            Me.Close()
+            MainDB_User.Show()
+        End If
+
 
     End Sub
 

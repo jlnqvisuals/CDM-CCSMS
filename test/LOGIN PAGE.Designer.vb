@@ -689,12 +689,12 @@ Partial Class LOGIN_PAGE
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
-        Controls.Add(loginPanel)
-        Controls.Add(regPanel)
-        Controls.Add(PictureBox1)
         Controls.Add(ContactUs_Panel)
         Controls.Add(TnC_Panel)
         Controls.Add(PrivacyPolicy_Panel)
+        Controls.Add(loginPanel)
+        Controls.Add(regPanel)
+        Controls.Add(PictureBox1)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
         Icon = CType(resources.GetObject("$this.Icon"), Icon)

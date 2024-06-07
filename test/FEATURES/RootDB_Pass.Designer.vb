@@ -79,6 +79,7 @@ Partial Class RootDB_Pass
         Controls.Add(Button2)
         Controls.Add(Button1)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "RootDB_Pass"
         StartPosition = FormStartPosition.CenterScreen
         Text = "RootDB_Pass"

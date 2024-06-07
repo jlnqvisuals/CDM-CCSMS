@@ -68,6 +68,7 @@ Partial Class DevInf
         Controls.Add(ExitBTN)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "DevInf"
         StartPosition = FormStartPosition.CenterScreen
         Text = "DevInf"

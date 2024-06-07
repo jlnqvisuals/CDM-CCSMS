@@ -4022,6 +4022,7 @@ Partial Class PRRC_BLDG
         Controls.Add(secondFloorPanel)
         Controls.Add(lab2SchedPanel)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "PRRC_BLDG"
         StartPosition = FormStartPosition.CenterScreen
         Text = "PRRC_BLDG"

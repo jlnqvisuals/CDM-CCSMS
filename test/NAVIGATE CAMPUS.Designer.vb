@@ -323,6 +323,7 @@ Partial Class NAVIGATE_CAMPUS
         Controls.Add(newBldgPanel)
         ForeColor = SystemColors.ControlText
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "NAVIGATE_CAMPUS"
         StartPosition = FormStartPosition.CenterScreen
         Text = "NAVIGATE_CAMPUS"

@@ -100,6 +100,7 @@ Partial Class AboutDev
         Controls.Add(ExitBTN)
         Controls.Add(Button1)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "AboutDev"
         StartPosition = FormStartPosition.CenterScreen
         Text = "AboutDev"

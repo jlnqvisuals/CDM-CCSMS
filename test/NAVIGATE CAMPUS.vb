@@ -124,10 +124,13 @@ Public Class NAVIGATE_CAMPUS
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Close()
-        MainDB_User.Show()
-
-
+        If LOGIN_PAGE.StudentID = "ADMIN" Then
+            Me.Close()
+            ADMIN_MENU_DB.Show()
+        Else
+            Me.Close()
+            MainDB_User.Show()
+        End If
     End Sub
 
     Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click

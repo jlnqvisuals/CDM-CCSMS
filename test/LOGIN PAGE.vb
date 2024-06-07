@@ -626,6 +626,7 @@ Public Class LOGIN_PAGE
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles GuestBTN.Click
         LOGIN_PAGE.StudentID = "GUEST"
+
         MainDB_User.Show()
         Me.Hide()
 

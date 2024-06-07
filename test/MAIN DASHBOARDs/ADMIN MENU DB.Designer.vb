@@ -156,6 +156,7 @@ Partial Class ADMIN_MENU_DB
         Controls.Add(AcceptRoomReservBTN)
         Controls.Add(SearchCampusBTN)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "ADMIN_MENU_DB"
         StartPosition = FormStartPosition.CenterScreen
         Text = "ADMIN_MENU_DB"

@@ -32,6 +32,7 @@ Partial Class Splash_Screen
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(484, 246)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Splash_Screen"
         ShowInTaskbar = False
         StartPosition = FormStartPosition.CenterScreen
