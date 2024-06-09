@@ -102,6 +102,9 @@ Public Class _7to8amSched
             command.ExecuteNonQuery()
         End Using
         MsgBox("Room Reservation Established, Please wait for admin approval.")
+        nameTxt.Text = ""
+        sidTxt.Text = ""
+        reasonTxt.Text = ""
         Me.Hide()
         PRRC_BLDG.Show()
     End Sub

@@ -153,6 +153,7 @@ Public Class MainDB_User
     End Sub
 
     Private Sub logoutMdbBtn_Click(sender As Object, e As EventArgs) Handles logoutMdbBtn.Click
+
         LOGIN_PAGE.Show()
         Me.Close()
 

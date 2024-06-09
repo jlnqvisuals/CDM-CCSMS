@@ -614,6 +614,7 @@ Public Class LOGIN_PAGE
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles SignAsAdminBTN.Click
         If logUser.Text = "admin" And logPass.Text = "admin" Then
+
             Me.Hide()
             ADMIN_MENU_DB.Show()
             'ADMIN_DB.Show()

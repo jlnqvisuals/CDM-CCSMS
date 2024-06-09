@@ -20,7 +20,7 @@ Public Class ADMIN_MENU_DB
 
         ' Apply the custom region to the form
         Me.Region = New Region(path)
-
+        LOGIN_PAGE.StudentID = "ADMIN"
     End Sub
 
 
@@ -66,7 +66,7 @@ Public Class ADMIN_MENU_DB
     End Sub
 
     Private Sub SearchCampusBTN_Click(sender As Object, e As EventArgs) Handles SearchCampusBTN.Click
-        LOGIN_PAGE.StudentID = "ADMIN"
+
         Me.Close()
         SEARCH_CAMPUS.Show()
 
@@ -74,7 +74,7 @@ Public Class ADMIN_MENU_DB
     End Sub
 
     Private Sub NavigateCampusBTN_Click(sender As Object, e As EventArgs) Handles NavigateCampusBTN.Click
-        LOGIN_PAGE.StudentID = "ADMIN"
+
         Me.Close()
         NAVIGATE_CAMPUS.Show()
     End Sub
